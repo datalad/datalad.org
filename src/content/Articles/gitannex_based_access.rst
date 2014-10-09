@@ -7,6 +7,12 @@ Working with big data without losing track
 :summary: Git-annex based access to the entire dataset available
 :slug: gitannex_based_access
 
+.. note::
+   
+   Borrowed from the http://studyforrest.org as a good use-case for
+   demonstrating reasoning for use of git-annex by data providers.
+
+
 Data sharing can be very simple: just put a few files on a web-server.
 However, without (at least) proper documentation re-using a dataset that has
 been *thrown over the wall* can be a fairly expensive endeavour.

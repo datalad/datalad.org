@@ -4,67 +4,69 @@ About this Project
 :slug: about
 :menulabel: About
 
-This project is an open invitation to anyone and everyone to participate in a
-decentralized effort to explore the opportunities of open science in
-neuroimaging. We aim to document how much (scientific) value can be generated
-from a data release |---| from the publication of scientific findings derived
-from this dataset, algorithms and methods evaluated on this dataset, and/or
-extensions of this dataset by acquisition and incorporation of new data.
+This project aims to adapt the model of open-source software (OSS)
+distributions to address the technical limitations of today\'s
+data-sharing and develop all components of a "data distribution". The
+key concepts are: 1) Leverage - but do not replace - independent,
+existing, and future data hosting solutions to form a federated
+platform for data-sharing. 2) Employ software for data tracking and
+deployment logistics specialized for large data (git-annex_) built
+atop Git_, the most capable distributed version control system (dVCS)
+available today, to enable efficient data access at any level of
+granularity (from single files to entire collections of
+datasets). DataLad will provide access to data available from various
+sources (e.g. lab or consortium web-sites such as
+http://humanconnectome.org; data sharing portals such as
+http://openfmri.org and http://crcns.org) through a single
+interface. It will enable students and scientists to operate on data
+using familiar concepts, such as files and directories, while
+transparently managing data access and authorization with underlying
+hosting providers.
 
-For questions and inquiries leave a comment, or email `info@studyforrest.org
-<mailto:info@studyforrest.org?subject=studyforrest.org>`_.
+For questions and inquiries leave a comment, or email `info@datalad.org
+<mailto:info@datalad.org?subject=datalad.org>`_.
 
-This website is maintained by the `Psychoinformatics lab
-<http://www.ipsy.ovgu.de/ipsy/en/psychoinformatics.html>`_ at the
-Otto-von-Guericke University Magdeburg, Germany.
+Historical note
+===============
 
-Acknowledgements
-================
+Originally project was named DataGit. It was later renamed into a more
+distinctive DataLad to avoid Git trademark infringement.
+
+Acknowledgments 
+===============
 
 .. raw:: html
 
  	<div class="row">
           <div class="col-sm-6">
-            <p>German Federal Ministry of Education and Research (BMBF) as part of
-             the US-German collaboration in computational neuroscience (CRCNS)
-             project <em>"Development of general high-dimensional models of neuronal
-             representation spaces"</em>
-             (<a href="http://haxbylab.dartmouth.edu">Haxby</a>/<a
-             href="http://www.ee.princeton.edu/ramadge/doku.php">Ramagde</a>/<a
+            <p>US-German collaboration in computational neuroscience (CRCNS)
+             project <em>"DataGit: converging catalogues, warehouses, and deployment logistics into a federated 'data distribution'"</em>
+             (<a href="http://haxbylab.dartmouth.edu/ppl/yarik.html">Halchenko</a>/<a
              href="http://www.psychoinformatics.de">Hanke</a>),
-             co-funded by the BMBF and the US National
-             Science Foundation (BMBF 01GQ1112; NSF 1129855).</p>
+             co-funded by the US National
+             Science Foundation and BMBF (NSF 1429999).</p>
           </div><!-- /.col-sm-6 -->
           <div class="col-sm-6">
-            <img src="/pics/bmbf_logo.jpg" alt="BMBF logo">&nbsp;<img src="/pics/binc_germany_usa.jpg" alt="Bernstein international collaboration logo">
+            <img src="/pics/nsf_logo.gif" width="100px" height="100px" alt="NSF logo">
+			&nbsp;
+            <img src="/pics/bmbf_logo.jpg" alt="BMBF logo">
           </div><!-- /.col-sm-6 -->
         </div><!-- /.row -->
+	<p> Hosted at
         <div class="row">
           <div class="col-sm-7">
-            <p>The German federal state of Saxony-Anhalt,
-             Project: <a href="http://www.cbbs.eu">Center for Behavioral Brain
-             Sciences</a>.</p>
-	  </div><!-- /.col-sm-7 -->
+            <p>The <a href="http://www.dartmouth.edu">Dartmouth College</a>,
+             Hanover, NH, USA.</p>
+          </div><!-- /.col-sm-7 -->
           <div class="col-sm-5">
-            <img src="/pics/cbbs_logo.png" alt="CBBS logo">
+            <img src="/pics/dartmouth_logo.png" alt="Dartmouth logo">
           </div><!-- /.col-sm-5 -->
-        </div><!-- /.row -->
-        <div class="row">
           <div class="col-sm-7">
             <p>The <a href="http://www.ovgu.de">Otto-von-Guericke-University</a>,
              Magdeburg, Germany.</p>
           </div><!-- /.col-sm-7 -->
           <div class="col-sm-5">
             <img src="/pics/ovgu_logo.png" alt="OvGU logo">
-          </div><!-- /.col-sm-5 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-7">
-            <p>The <a href="http://www.lin-magdeburg.de">Leibniz Institute for
-             Neurobiology</a>, Magdeburg, Germany.</p>
-	  </div><!-- /.col-sm-7 -->
-          <div class="col-sm-5">
-            <img src="/pics/lin_logo.png" alt="LIN logo">
           </div><!-- /.col-sm-5 -->
         </div><!-- /.row -->
 
@@ -77,20 +79,16 @@ Legal info
      target="_blank">Bootstrap toolkit</a>: Copyright 2013 Twitter, Inc
      under the <a href="http://opensource.org/licenses/MIT"
      target="_blank">MIT license</a>.</p>
-    <p>The <a
-     href="http://commons.wikimedia.org/wiki/File:ForrestGump-Jenny-Boat-2055.jpg"
-     target="_blank">original image of the "Jenny" boat</a> is by David R.
-     Tribble and licensed under <a
-     href="http://creativecommons.org/licenses/by-sa/3.0/deed.en"
-     target="_blank">CC BY SA 3.0</a>.</p>
-    <p>The 7T magnet image is by D. Mahler and (c) 2012
-     <a href="http://www.cbbs.eu">Center for Behavioral Brain Sciences</a>,
-     Magdeburg.</p>
     <p>All linked and referenced publications and figures are copyrighted by
      their respective authors and/or publishers &mdash; used with permission.</p>
-    <p>All other images and artwork are copyright by Michael Hanke and
+    <p>All other images and artwork are copyright by DataLad authors and
      licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/"
      target="_blank">CC BY SA 4.0</a>.</p>
+	<p>DataLad itself is released under
+     <a href="http://opensource.org/licenses/MIT" target="_blank">
+     MIT license</a>.</p>
 
 .. |---| unicode:: U+02014 .. em dash
 
+.. _git-annex: http://git-annex.branchable.com
+.. _git: http://git-scm.com

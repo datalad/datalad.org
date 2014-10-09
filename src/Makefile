@@ -69,6 +69,7 @@ else
 endif
 
 devserver:
+	mkdir -p $(OUTPUTDIR)
 ifdef PORT
 	$(BASEDIR)/develop_server.sh restart $(PORT)
 else

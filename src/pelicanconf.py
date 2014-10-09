@@ -2,17 +2,19 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Michael Hanke'
-SITENAME = u'studyforrest.org'
-SITESUBTITLE = u'A de-centralized mass-collaboration attempt'
+AUTHOR = u'DataLad Team'
+SITENAME = u'datalad.org'
+SITESUBTITLE = u'A scientific data distribution'
 SITEURL = ''
+# SITELOGO = 'static/datalad_logo.png'
+# HIDE_SITENAME = True
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 LOCALE = u'en_US.UTF-8'
 
-THEME = '../pelican-bootstrap3'
+THEME = '../themes/pelican-bootstrap3'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -20,13 +22,18 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Psyinf lab', 'http://psychoinformatics.de'),
+LINKS =  (
           ('NeuroDebian', 'http://neuro.debian.net'),
-          ('PyMVPA', 'http://www.pymvpa.org'))
+          ('PyMVPA', 'http://www.pymvpa.org'),
+          ('studyforrest.org', 'studyforrest.org'),
+          )
 
 # Social widget
-SOCIAL = (('twitter', 'http://twitter.com/studyforrest'),
-          ('github', 'http://github.com/hanke/gumpdata'),)
+SOCIAL = (('twitter', 'http://twitter.com/datalad'),
+          ('github', 'http://github.com/datalad'),)
+
+GITHUB_USER = 'DataLad'
+GITHUB_SKIP_FORK = True
 
 DEFAULT_PAGINATION = 10
 
@@ -43,7 +50,7 @@ CUSTOM_CSS = 'css/forrest.css'
 
 TYPOGRIFY = False
 
-STATIC_PATHS = ['images', 'pics', 'css', 'js', 'data']
+STATIC_PATHS = ['images', 'pics', 'css', 'js'] # , 'data']
 
 #MENUITEMS = [('First', 'crzy URL')]
 
@@ -58,18 +65,17 @@ DISPLAY_ARTICLE_INFO_ON_INDEX = True
 
 CC_LICENSE = 'CC-BY-SA'
 
-ADDTHIS_PROFILE = 'ra-53a573780cc42d73'
+ADDTHIS_PROFILE = 'ra-54357285299eeaa8'
 ADDTHIS_DATA_TRACK_ADDRESSBAR = False
 
-DISQUS_SITENAME = 'studyforrest'
+DISQUS_SITENAME = 'datalad'
 
 #ABOUT_ME = "Some crap on me"
 #AVARTAR = "img"
 
-GOOGLE_ANALYTICS = "UA-46839658-1"
+GOOGLE_ANALYTICS = "UA-55535442-1"
 
-
-#TWITTER_USERNAME = 'studyforrest'
+#TWITTER_USERNAME = 'datalad'
 #TWITTER_WIDGET_ID = '435327568237965312'
 
 # Tell Pelican to change the path to 'static/custom.css' in the output dir
