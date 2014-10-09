@@ -1,0 +1,9 @@
+bower_components
+node_modules
+*.swp
+xtk
+src/content/data
+src/cache
+d3
+generated
+*.pyc
