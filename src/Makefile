@@ -30,6 +30,9 @@ ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
 endif
 
+all:
+	$(MAKE) -C content/pics/
+
 help:
 	@echo 'Makefile for a pelican Web site                                        '
 	@echo '                                                                       '

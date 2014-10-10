@@ -46,7 +46,7 @@ BOOTSTRAP_NAVBAR_INVERSE = False
 #BOOTSTRAP_THEME = 'united'
 
 DOCUTIL_CSS = True
-CUSTOM_CSS = 'css/forrest.css'
+CUSTOM_CSS = 'css/datalad.css'
 
 TYPOGRIFY = False
 

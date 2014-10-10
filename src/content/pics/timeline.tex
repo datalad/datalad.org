@@ -1,0 +1,161 @@
+%-*- mode: latex; fill-column: 70 -*-
+% ex: set sts=4 ts=4 sw=4 et tw=70:
+%&pdflatex
+\documentclass[10pt,notitlepage]{article}
+\usepackage[papersize={6.8in,4in},
+left=.1in, right=.1in, top=.1in, bottom=.1in]{geometry}
+\renewcommand*{\familydefault}{\sfdefault}%the whole document will be sans serif
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{pgfgantt}
+
+\newcommand{\pcitep}[2]{\pname{#1}~\citep{#2}}
+\newcommand{\ie}[0]{\emph{i.e.},\ }
+\newcommand{\eg}[0]{\emph{e.g.},\ }
+\newcommand{\etc}[0]{\emph{etc.}}
+
+%\input{common}
+%\documentclass[11pt]{nih}
+%
+% ================================= BEGINNING =========================
+%
+\begin{document}
+
+
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\renewcommand\sfdefault{phv}
+%% \renewcommand\mddefault{mc}
+%% \renewcommand\bfdefault{bc}
+%% \setganttlinklabel{s-s}{}%START-TO-START}
+%% \setganttlinklabel{f-s}{}%FINISH-TO-START}
+%% \setganttlinklabel{f-f}{}%FINISH-TO-FINISH}
+\begin{figure}[h]
+%\sffamily
+\begin{center}
+\vspace{-1.5em}
+\begin{ganttchart}[
+canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+hgrid style/.style={draw=black!5, line width=.75pt},
+vgrid={*1{draw=black!5, line width=.75pt}},
+%today=7,
+today rule/.style={
+  draw=black!64,
+  dash pattern=on 3.5pt off 4.5pt,
+  line width=1.5pt
+},
+today label font=\small\bfseries,
+title/.style={draw=none, fill=none},
+title label font=\bfseries\footnotesize,
+title label node/.append style={below=7pt},
+include title in canvas=false,
+bar label font=\mdseries\small\color{black!70},
+bar label node/.append style={left=0.2cm},
+bar/.append style={draw=none, fill=barblue}, %black!63},
+bar incomplete/.append style={fill=black!63},
+bar progress label font=\mdseries\footnotesize\color{black!70},
+group incomplete/.append style={fill=groupblue},
+group left shift=0,
+group right shift=0,
+group height=0.2,
+group peaks tip position=0,
+group label node/.append style={left=.2cm},
+group progress label font=\bfseries\small,
+milestone label font=\bfseries\small\color{black!70},
+milestone label node/.append style={left=.2cm},
+link/.style={-latex, line width=1.5pt, linkred},
+link label font=\scriptsize\bfseries,
+link label node/.append style={below left=-2pt and 0pt},
+x unit=8.3mm,
+y unit title=0.6cm,
+y unit chart=0.35cm,
+]{1}{12}
+%\gantttitle[
+%title label node/.append style={below left=7pt and -3pt}
+%]{YEAR:\quad}{0}
+%\gantttitlelist[
+%  canvas/.style={draw=none},
+%%  title/.append style={fill=blue!20, rounded corners=2mm}
+%  ]{1,...,3}{4} \\
+\gantttitle[
+title label node/.append style={below left=7pt and -3pt}
+]{PROJECT YEAR QUARTERS:\quad}{0}
+\gantttitlelist{1,...,12}{1} \\ \\
+
+\ganttgroup[progress=95]{Git-annex middleware}{1}{7} \\
+\ganttbar[name=ga-plugins]{Git-annex downloaders plug-in API}{1}{1} \\
+\ganttbar[name=ga-config]{Centralized configuration}{2}{3} \\
+\ganttbar[name=ga-tarball]{Referencing tarball contents}{3}{5} \\
+\ganttbar[name=ga-cost]{Improved cost management}{4}{6} \\
+
+\ganttgroup[progress=10]{datalad crawl}{1}{7} \\
+\ganttbar[name=cr-rf]{Refactoring/Modularization}{1}{2} \\
+\ganttbar[name=cr-meta]{Generation of meta-information}{2}{2} \\
+\ganttbar[name=cr-auth]{Centralized authentication management}{3}{4} \\
+\ganttbar[name=cr-misc]{Enhancements (branches, publishing, \etc)}{2}{6} \\
+
+\ganttgroup[progress=0, progress label text=\relax]{Federation of datasets}{2}{10} \\
+\ganttbar[name=p-openfmri]{OpenfMRI}{2}{2}
+\ganttbar[name=p-openfmri-xnat]{}{3}{4} \\
+\ganttbar[name=p-xnat]{XNAT, HCP}{3}{3} \ganttbar[name=p-xnat2]{}{4}{6} \\
+%\ganttlink[link]{p-xnat}{p-openfmri-xnat}
+\ganttbar[name=p-nitrc]{NITRC}{4}{5} \\
+% \ganttlink[link type=f-s]{p-xnat}{p-nitrc}
+\ganttbar[name=dg-crcns]{CRCNS.org}{3}{4} \\
+\ganttbar[name=p-coins]{COINS}{4}{5} \\
+\ganttbar[name=p-indi]{INDI (FCP, \etc)}{5}{9} \\
+\ganttbar[name=p-coins]{N-CANDA}{6}{8} \\
+
+\ganttgroup[progress=0, progress label text=\relax]{DataLad data distribution}{1}{12} \\
+\ganttbar[name=dg-basic]{Basic functionality}{1}{3}\\
+\ganttbar[name=dg-web-public1]{Web-interface}{3}{5}
+\ganttbar[name=dg-web-local]{}{6}{9}\\
+\ganttbar[name=dg-debian]{Debian APT repository}{7}{8}\\
+\ganttbar[name=dg-publish]{Publishing}{8}{10}\\
+%\ganttgroup[]{Milestones}{1}{12}\\
+
+%\ganttmilestone[name=mi-datagit-live]{Initial public release of datagit.org}{6}\\
+\ganttmilestone[name=mi-datagit-live]{Public releases}{6}
+\ganttmilestone[name=mi-datagit-local]{}{9}
+\ganttmilestone[name=mi-datagit-final]{}{11}\\
+
+\ganttmilestone[name=surv1]{Data re-use/sharing surveys}{3}
+\ganttmilestone[name=surv2]{}{10}
+%\\
+%\ganttmilestone[name=conf1]{Conference presence (booths)}{1}
+%\ganttmilestone[name=conf2]{}{2}\\
+
+%\ganttlink[link]{dg-web-public1}{mi-datagit-live}
+%\ganttlink[link type=s-s]{WBS1A}{WBS1B}
+%\ganttlink[link type=f-s]{WBS1B}{WBS1C}
+%\ganttlink[
+%link type=f-f,
+%link label node/.append style=left
+%]{WBS1C}{WBS1D}
+\end{ganttchart}
+\end{center}
+\vspace{-1.5em}
+\label{fig:timeline}
+\end{figure}
+
+% \caption{Timeline of the project. Activity duration indicators show periods
+%   of necessary developments leading to a first public release. Further stabilization efforts
+%   and feature additions will happen throughout the entire project duration
+%   depending on development progress of other sub-projects. For the first two
+%   groups,   \%-complete represents our assessment of the set of currently available
+%   features that are required for the proposed work.}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% fill-column: 79
+%%% TeX-master: t
+%%% TeX-PDF-mode: t
+%%% whizzy-viewers: (("-pdf" "okular") ("-dvi" "xdvi") ("-ps" "gv"))
+%%% End:
+
+% LocalWords:  versioning SDK reproducibility

@@ -1,0 +1,50 @@
+# Split decoding figure into pieces
+
+%file datalad-openfmri-demo.svg
+# %options previews
+
+# Disable ALL layers
+layers style=display:none
+
+# Enable "group" layers
+layer label:re=^g_.* style=display:inline
+
+# Establish initial figure with openfmri and user
+layer label=openfmri style=display:inline
+layer label=bg_hosting style=display:inline
+layer label=bg_user style=display:inline
+%save 0-openfmri
+
+# Show the distribution layer
+layer label=bg_distribution style=display:inline
+%save 0_5-distribution
+
+# CRAWL!
+layer label=distrib_datahandle style=display:inline
+layer label=inter_1_crawl style=display:inline
+%save 1-datahandle
+
+# INIT
+layer label=distrib_datahandles style=display:inline
+layer label=inter_2_init style=display:inline
+%save 2-datahandles
+
+# INSTALL
+layer label=user_installation style=display:inline
+layer label=inter_3_install style=display:inline
+%save 3-user-install
+
+# ADD
+layer label=inter_4_add style=display:inline
+%save 4-user-add
+
+# PUBLISH
+layer label=inter_5_publish style=display:inline
+layer label=bg_producer style=display:inline
+layer label=deriv_datahandle style=display:inline
+layer label=public_server style=display:inline
+%save 5-user-publish
+
+# ALL
+layer label=file-relations style=display:inline
+%save 6-all
