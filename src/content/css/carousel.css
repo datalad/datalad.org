@@ -10,6 +10,8 @@
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  color: #303030;
+  text-shadow: rgba(255,255,255,0.5);
 }
 
 /* Declare heights because of positioning of img element */
@@ -24,7 +26,10 @@
   min-width: 536px;
   height: 400px;
 }
-
+/* We use white veil, so make indicators dark */
+.carousel-indicators li {
+  border: 1px solid #000;
+}
 
 
 /* MARKETING CONTENT
