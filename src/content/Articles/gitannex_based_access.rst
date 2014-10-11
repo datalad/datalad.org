@@ -8,9 +8,16 @@ Working with big data without losing track
 :slug: gitannex_based_access
 
 .. note::
-   
+
    Borrowed from the http://studyforrest.org as a good use-case for
    demonstrating reasoning for use of git-annex by data providers.
+   You can already fetch entire studyforrest dataset using git-annex
+   directly.  Here is e.g. a sample list of command to fetch all
+   extracted into CSV timeseries::
+
+	   git clone http://psydata.ovgu.de/forrest_gump/.git studyforrest
+	   cd studyforrest
+	   git annex get sub*/BOLD/task001_run*/*timeseries*.csv.gz
 
 
 Data sharing can be very simple: just put a few files on a web-server.

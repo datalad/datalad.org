@@ -52,12 +52,19 @@ depending on development progress of other sub-projects. For the first
 two groups, %-complete represents our assessment of the set of
 currently available features that are required for the proposed work.
 
-Sub-projects
-============
+Ongoing and future work
+=======================
 
-datalad crawl
--------------
-
+is happening in the open on http://github.com/datalad.  Please use
+http://github.com/datalad/datalad.org to report problems with this
+website, or suggest improvements to it via issues or pull
+requests. http://github.com/datalad/datalad repository hosts the code
+for the main software portion of the project.  Its `issues page`_ has
+convenience tags to group them.  We will post some reports and notes
+about the progress of the project on this website's Articles page with
+tag `development <development_tag>`_.
 
 .. _Git-annex: http://git-annex.branchable.com
 .. _GitHub: http://github.com
+.. _`issues page`: http://github.com/datalad/datalad/issues
+.. _development_tag: /tag/development.html

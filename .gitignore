@@ -1,6 +1,7 @@
 bower_components
 node_modules
 *.swp
+*.pid
 xtk
 src/content/data
 src/cache

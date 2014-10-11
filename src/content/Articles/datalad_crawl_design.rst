@@ -1,9 +1,11 @@
 DataLad crawl design
-====================
+********************
 
-:Menulabel: design_crawl
-:slug: design_crawl
-:status: hidden
+:date: 2014-10-10 01:00
+:slug: datalad_crawl_design
+:tags: development, crawl
+:author: Yaroslav Halchenko
+:summary: Outline of the use-cases and possible specifications for the redesign of datalad crawl command
 
 Thoughts about redesign, well actually "design" since originally there
 were none, of datalad crawl.
@@ -70,27 +72,28 @@ a part of this provider -- only download from the web::
 We need to separate options for crawling (recursion etc) and deciding
 what to download/annex.
 
-Q: should we just specify xpath's for information to get extracted
-   from a response corresponding to a matching url?  just any crawled page?
+- Q: should we just specify xpath's for information to get extracted
+  from a response corresponding to a matching url?  just any crawled page?
 
-Q: allow to use xpath syntax for better control of what to recurse/include?
+- Q: allow to use xpath syntax for better control of what to recurse/include?
 
-Q: authentication -- we should here relate to the Hostings
-!: scrapy's Spider provides start_requests() which could be used to
-   initiate the connection, e.g. to authenticate and then use that connection.
-   Authentication detail must not be a part of the configuration, BUT
-   it must know HOW authentication should be achieved.  In many cases could
-   be a regular netrc-style support (so username/password).
+- Q: authentication -- we should here relate to the Hostings
 
-   Those authenticators should later be reused by "download clients"
+  - A: scrapy's Spider provides start_requests() which could be used
+    to initiate the connection, e.g. to authenticate and then use that
+    connection.  Authentication detail must not be a part of the
+    configuration, BUT it must know HOW authentication should be
+    achieved.  In many cases could be a regular netrc-style support
+    (so username/password).
+  - Those authenticators should later be reused by "download clients"
 
-Q: we might need to worry/test virtually about every possible associated
-   to http downloads scenario, e.g. support proxy (with authentication).
-   May be we could just switch to aria2 and allow to specify access options?
+- Q: we might need to worry/test virtually about every possible
+  associated to http downloads scenario, e.g. support proxy (with
+  authentication).  May be we could just switch to aria2 and allow to
+  specify access options?
 
-Q: may be (a new provider?) allow to use a scrapy spider's output to
-   harvest the table of links which need to be fetched
-
+- Q: may be (a new provider?) allow to use a scrapy spider's output to
+  harvest the table of links which need to be fetched
 
 
 Use cases to keep in mind
@@ -143,7 +146,7 @@ could be assembled as a set of "filters"::
     filename = README.txt
     content_e = generate_readme(link, filename)  # those should be obtained/provided while crawling
 
-or
+or::
 
     [generator:fetch_license]
     filename = LICENSE.txt
@@ -167,16 +170,15 @@ help of filtering::
               generate_some_more_files_if_you_like
 
 
-Q: should we may be 'git merge --no-commit' and then apply the
-   filters???
+- Q: should we may be 'git merge --no-commit' and then apply the filters???
 
-   probably not since there could be conflicts if similarly named file
-   is present in target branch (e.g. generated) and was present
-   (moved/renamed via filters) in the original branch.
+  probably not since there could be conflicts if similarly named file
+  is present in target branch (e.g. generated) and was present
+  (moved/renamed via filters) in the original branch.
 
-Q: but merging of branches is way too cool and better establishes the
-   'timeline' and dependencies...
-   So merge should be done "manually" by doing (there must be cleaner way)::
+- Q: but merging of branches is way too cool and better establishes
+  the 'timeline' and dependencies...  So merge should be done
+  "manually" by doing (there must be cleaner way)::
 
      git merge -s ours --no-commit
      git rm -r *
@@ -187,16 +189,16 @@ Q: but merging of branches is way too cool and better establishes the
      # - add those File's to git/git-annex
      git commit
 
-   but what if a filter (e.g. cmd) requires current state of files from
-   different branches?...  all possible conflict problems could be
-   mitigated by storing content in branches under some directories,
-   then manipulating upon "merge" and renaming before actually 'git merging'
+  but what if a filter (e.g. cmd) requires current state of files from
+  different branches?...  all possible conflict problems could be
+  mitigated by storing content in branches under some directories,
+  then manipulating upon "merge" and renaming before actually 'git merging'
 
 
-Q: what about filters per incoming branch???  we could options for
-   filters specification
-   (e.g. extract_models[branches=incoming_data_http]) or allow
-   only regular 2-edge merge at a time but multiple times...
+- Q: what about filters per incoming branch???  we could options for
+  filters specification
+  (e.g. extract_models[branches=incoming_data_http]) or allow only
+  regular 2-edge merge at a time but multiple times...
 
 
 XNAT, COINS, ...
@@ -240,9 +242,12 @@ other Git repo but now injecting some files into git-annex (while
 possibly even pointing for the load to e.g. original SVN repo).
 
 Tricky:
+
 - branches and merges -- would be really tricky and so far not
   envisioned how
+
 - "updates" should correspond to commits in original repository
+
 - all the commit information should be extracted/provided for the
   commit here
 
@@ -288,17 +293,17 @@ Special kind of a beast: while keeping the original archive under
 git-annex obtained from any other provider (e.g. 'Web'), we extract
 the load (possibly with some filtering/selection):
 
-  Q: how to deal with extract from archives -- extraction should
-     better be queued to extract multiple files from the archive at
-     once.  But ATM it would not happen since all those URIs will
-     simply be requested by simple wget/curl calls by git-annex file
-     at a time.
-  A: upon such a first call, check if there is .../extracted_key/key/, if
-     there is -- use.  If not -- extract and then use. use = hardlink
-     into the target file.
-     Upon completion of `datalad get` (or some other command) verify
-     that all `/extracted/` are removed (and/or provide setting -- may
-     be we could/should just keep those around)
+- Q: how to deal with extract from archives -- extraction should
+  better be queued to extract multiple files from the archive at once.
+  But ATM it would not happen since all those URIs will simply be
+  requested by simple wget/curl calls by git-annex file at a time.
+
+  - A: upon such a first call, check if there is .../extracted_key/key/, if
+    there is -- use.  If not -- extract and then use. use = hardlink
+    into the target file.
+    Upon completion of `datalad get` (or some other command) verify
+    that all `/extracted/` are removed (and/or provide setting -- may
+    be we could/should just keep those around)
 
 
 Config Examples:
@@ -330,6 +335,7 @@ Tricky point(s):
 - the same file might be available from multiple archives.
   So we would need to keep track from previous updates, from which
   archive files could be fetched.
+
   - how to remove if archive is no longer avail?
     probably some fsck should take care about checking if archives
     are still avail, and if not -- remove the url
@@ -337,19 +343,19 @@ Tricky point(s):
 - keep track which files came from the archive, so we could later
   remove them happen if archive misses the file now.
 
-Q: allow for 'relaxed' handling?
-   If tarballs are not versioned at all, but we would like to create
-   overall (? or just per files) 'relaxed' git-annex?
+- Q: allow for 'relaxed' handling?
+  If tarballs are not versioned at all, but we would like to create
+  overall (? or just per files) 'relaxed' git-annex?
 
-   Probably no complication if URIs will be based (natively) on the
-   fast or relaxed keys.  Sure thing things would fail if archive was
-   changed and lacks the file.
+  Probably no complication if URIs will be based (natively) on the
+  fast or relaxed keys.  Sure thing things would fail if archive was
+  changed and lacks the file.
 
-Q: hm -- what about MD5SUM checking? e.g. if archive was posted with
-   the MD5SUMs file
+- Q: hm -- what about MD5SUM checking? e.g. if archive was posted with
+  the MD5SUMs file
 
-   I guess some kind of additional filter which could be attached
-   somehow?
+  I guess some kind of additional filter which could be attached
+  somehow?
 
 
 Move/Rename/Delete
@@ -436,32 +442,33 @@ develop nice tags.
 
 Ideas:
 
-- a tag given a set of filename regexps
+- a tag given a set of filename regexps::
 
       [tag:anatomicals]
       files = .*\_anat\.nii\.gz
       tag = modality=anatomy
 
-   or just
+  or just::
 
       [tag:anatomicals]
       files = .*\_anat\.nii\.gz
       tag = anatomy
 
-   if it is just a tag (anatomy) without a field
+  if it is just a tag (anatomy) without a field
 
- - (full)filename regexp with groups defining possibly multiple
-   tag/value pairs
+- (full)filename regexp with groups defining possibly multiple
+  tag/value pairs::
 
-      [tag:modality]
-      files = .*\_(?P<modality>\S*)\.nii\.gz
-      translate = anat: T1     #  might need some translation dictionary?
-                  dwi: DTI
+       [tag:modality]
+       files = .*\_(?P<modality>\S*)\.nii\.gz
+       translate = anat: T1     #  might need some translation dictionary?
+                   dwi: DTI
 
+.. note:
 
-Notes:
-- metadata cane be added only to files under git-annex control so those
-  directly committed
+    metadata cane be added only to files under git-annex control so those
+    directly committed
+
 
 Design thoughts
 ===============
@@ -469,21 +476,23 @@ Design thoughts
 Data providers should provide a unified interface
 
 DataProvider
-~~~~~~~~~~~~
+------------
 
 Common Parameters
-- add_to_git  - what files to commit to git directly (should we leverage
-   git-annex largefiles option somehow?)
-- ignore      - what files to ignore
 
+- add_to_git  - what files to commit to git directly (should we leverage
+  git-annex largefiles option somehow?)
+- ignore      - what files to ignore
 - get_items(version=None) - return a list of Files
 - get_item_by_name
 - get_item_by_md5
+
   - should those be additional interfaces?
   - what if multiple items fulfill (content is the same, e.g. empty, names differ,
     we better get the most appropriate in the name or don't give a damn?)
   - what if a collision????
 - get_item_by_sha256
+
   - e.g. natively provided by 'Branch' provider for annexed files
     (what to do about git committed ones -- compute/keep info?)
 - get_versions(min_version=None)
@@ -525,10 +534,11 @@ what would be saved as a file.  Should know about itself... and origins!
           Q: Those might need to be not just URIs but some classes associated
           with original Hosting's, e.g. for the cases of authentication etc?
           or we would associate with a Hosting based on the URI?
-  # combination of known fields should be stored/used to detect changes
-  # Different data providers might rely on a different subset of below
-  # to see if there was a change.  We should probably assume some
-  # "correspondence"
+
+  - combination of known fields should be stored/used to detect changes
+  - Different data providers might rely on a different subset of below
+    to see if there was a change.  We should probably assume some
+    "correspondence"
 - key   # was thinking about Branch as DataProvider -- those must be reused
 - md5
 - sha256
@@ -578,6 +588,7 @@ Ideas to not forget
   - Q: should all DataProvider's be able to serve as primary and complimentary?
   - most probably we should allow for an option to 'fail' or issue a
     warning in some cases
+
     - secondary provider doesn't carry a requested load/file
     - secondary provider provides some files not provided by the primary
       data provider
