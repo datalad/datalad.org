@@ -3,10 +3,10 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'DataLad Team'
-SITENAME = u'datalad.org'
+SITENAME = u'DataLad'
 SITESUBTITLE = u'A scientific data distribution'
-SITEURL = ''
-# SITELOGO = 'static/datalad_logo.png'
+SITEURL = 'http://datalad.org'
+#SITELOGO = 'static/datalad_logo.png'
 # HIDE_SITENAME = True
 
 TIMEZONE = 'America/New_York'
