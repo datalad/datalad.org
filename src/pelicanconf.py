@@ -75,8 +75,8 @@ DISQUS_SITENAME = 'datalad'
 
 GOOGLE_ANALYTICS = "UA-55535442-1"
 
-#TWITTER_USERNAME = 'datalad'
-#TWITTER_WIDGET_ID = '435327568237965312'
+TWITTER_USERNAME = 'datalad'
+TWITTER_WIDGET_ID = '520757717850263552'
 
 # Tell Pelican to change the path to 'static/custom.css' in the output dir
 #EXTRA_PATH_METADATA = {
