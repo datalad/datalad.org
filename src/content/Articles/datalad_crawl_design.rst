@@ -1,7 +1,8 @@
 DataLad crawl design
 ********************
 
-:date: 2014-10-10 01:00
+:date: 2014-09-16 15:11
+:updated: 2014-10-10 01:00
 :slug: datalad_crawl_design
 :tags: development, crawl
 :author: Yaroslav Halchenko
