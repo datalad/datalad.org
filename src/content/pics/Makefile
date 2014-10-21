@@ -9,7 +9,7 @@ PICS_IGNORE ?= "XXX"
 #	| grep -v -e $(PICS_IGNORE) \
 #	| grep -v -e neuropy_history_tuned \
 # )
-PICS=datalad-openfmri-demo_sw.png timeline.png
+PICS=datalad-openfmri-demo_sw.png timeline2.png
 
 PICS_CONVERTED =
 

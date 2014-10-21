@@ -42,7 +42,7 @@ monitoring and update service.
 Timeline
 ========
 
-.. figure:: {filename}/pics/timeline.png
+.. figure:: {filename}/pics/timeline2.png
    :alt: Perspective timeline and major for major sub-projects of DataLad project.
 
 Activity duration indicators show periods of necessary developments

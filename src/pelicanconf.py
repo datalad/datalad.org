@@ -5,8 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = u'DataLad Team'
 SITENAME = u'DataLad'
 SITESUBTITLE = u'A scientific data distribution'
-SITEURL = 'http://datalad.org'
-#SITELOGO = 'static/datalad_logo.png'
+SITEURL = ''
+#SITELOGO = 'pics/favicon-250x250.png'
+#static/datalad_logo.png'
 # HIDE_SITENAME = True
 
 TIMEZONE = 'America/New_York'
@@ -39,10 +40,9 @@ GITHUB_SKIP_FORK = True
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = False
+RELATIVE_URLS = True
 
-FAVICON = 'content/pics/favicon_16x16.png'
+FAVICON = 'pics/favicon-16x16.png'
 
 BOOTSTRAP_NAVBAR_INVERSE = False
 #BOOTSTRAP_THEME = 'united'
