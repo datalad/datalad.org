@@ -23,11 +23,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="261.53543"
-     inkscape:cy="260.98317"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="-3.8821485"
+     inkscape:cy="220.57707"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer21"
+     inkscape:current-layer="layer11"
      showgrid="false"
      units="mm"
      showguides="false"
@@ -1040,7 +1040,15 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="bg_white"
-     style="display:inline" />
+     style="display:inline">
+    <rect
+       style="opacity:1;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3699"
+       width="567.70575"
+       height="483.86307"
+       x="-1.0101526"
+       y="-0.85747093" />
+  </g>
   <g
      style="display:inline"
      transform="translate(0.53125,-568.66109)"
@@ -1484,7 +1492,7 @@
            sodipodi:cy="757.82477"
            sodipodi:rx="0.42216235"
            sodipodi:ry="0.44854748"
-           d="m 384.11497,757.82477 a 0.42216235,0.44854748 0 1 1 -0.84432,0 0.42216235,0.44854748 0 1 1 0.84432,0 z"
+           d="m 384.11497,757.82477 c 0,0.24772 -0.18901,0.44855 -0.42216,0.44855 -0.23315,0 -0.42216,-0.20083 -0.42216,-0.44855 0,-0.24773 0.18901,-0.44855 0.42216,-0.44855 0.23315,0 0.42216,0.20082 0.42216,0.44855 z"
            transform="translate(-16.304388,58.478639)"
            inkscape:export-filename="D:\svg_images\server2.jpg.png"
            inkscape:export-xdpi="90"
@@ -3910,7 +3918,7 @@
              style="font-size:12px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:none;stroke:#008000;stroke-opacity:1;font-family:DejaVu Serif;-inkscape-font-specification:DejaVu Serif Bold">1</tspan></text>
         <path
            transform="matrix(0.19680911,0.61151233,-0.66144665,0.21287999,385.59305,290.29209)"
-           d="m 106.06602,520.89111 a 15.152288,12.626906 0 1 1 -30.304582,0 15.152288,12.626906 0 1 1 30.304582,0 z"
+           d="m 106.06602,520.89111 c 0,6.97365 -6.783915,12.62691 -15.152293,12.62691 -8.368378,0 -15.152289,-5.65326 -15.152289,-12.62691 0,-6.97364 6.783911,-12.6269 15.152289,-12.6269 8.368378,0 15.152293,5.65326 15.152293,12.6269 z"
            sodipodi:ry="12.626906"
            sodipodi:rx="15.152288"
            sodipodi:cy="520.89111"

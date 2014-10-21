@@ -8,6 +8,8 @@ layers style=display:none
 
 # Enable "group" layers
 layer label:re=^g_.* style=display:inline
+# Enable background layer
+layer label=bg_white style=display:inline
 
 # Establish initial figure with openfmri and user
 layer label=openfmri style=display:inline
