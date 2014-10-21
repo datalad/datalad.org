@@ -30,7 +30,9 @@ LINKS =  (
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/datalad'),
-          ('github', 'http://github.com/datalad'),)
+          ('github', 'http://github.com/datalad'),
+          ('google+', 'https://plus.google.com/102227583349569690568'),
+          )
 
 GITHUB_USER = 'DataLad'
 GITHUB_SKIP_FORK = True
@@ -40,7 +42,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = False
 
-#FAVICON = '../pics/favicon.png'
+FAVICON = 'content/pics/favicon_16x16.png'
 
 BOOTSTRAP_NAVBAR_INVERSE = False
 #BOOTSTRAP_THEME = 'united'
