@@ -44,7 +44,7 @@ Acknowledgments
              (<a href="http://haxbylab.dartmouth.edu/ppl/yarik.html">Halchenko</a>/<a
              href="http://www.psychoinformatics.de">Hanke</a>),
              co-funded by the US National
-             Science Foundation (<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1429999" target="_blank">NSF 1429999</a>) and BMBF.</p>
+             Science Foundation (<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1429999" target="_blank">NSF 1429999</a>) and the German Federal Ministry of Education and Research (BMBF 01GQ1411).</p>
           </div><!-- /.col-sm-6 -->
           <div class="col-sm-6">
             <img src="/pics/nsf_logo.gif" width="100px" height="100px" alt="NSF logo">
