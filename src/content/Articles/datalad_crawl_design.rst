@@ -110,6 +110,12 @@ Use cases to keep in mind
     a set of rules on how to determine version, i.e. on which files
     This way we could have both referenced in the same repository.
 
+- versioning via "archive" directories
+  e.g. s3://hcp-openaccess/500subject/992774/  is also available under
+  s3://hcp-openaccess/archive/q3/992774/   so it would be nice to establish
+  may be ad-hoc versioning based on knowledge of particular provider
+  layout etc
+
 
 Amazon S3
 ~~~~~~~~~
