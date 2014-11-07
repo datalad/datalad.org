@@ -631,10 +631,19 @@ Some cool related tools
 =======================
 
 https://github.com/scrapy/scrapely
-  Pure Python (no DOM, lxml, etc) scraping of pages, "training" the
-  scraper given a sample.  May be could be handy???
+  Pure Python (no DOM, lxml, etc) scraping of pages (just scraping --
+  extracting, not crawling), "training" the scraper given a sample.
+  May be could be handy???
+
 https://github.com/scrapy/slybot
   Brings together scrapy + scrapely to provide json-specs for
   spiders/items/etc
   Might be worth at least adopting spiders specs...?
-  Has a neat slybot/validation/schemas.json  which validates the schematic 
+  Has a neat slybot/validation/schemas.json  which validates the
+  schematic.
+  It was absorbed into portia project, although some minor number of
+  bugfixes still flows into slybot as well
+
+http://github.com/scrapinghub/portia
+  Web-UI scraper which uses slybot to generate scrapy spiders while
+  navigating websites
