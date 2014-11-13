@@ -1,7 +1,7 @@
 WWW_DIR = generated
 WWW_UPLOAD_HOST=datalad.org
 WWW_UPLOAD_PATH=/home/www/datalad.org/www/
-RSYNC_OPTS_UP = -rzlhv --delete --copy-links
+RSYNC_OPTS_UP = -rzlhv --delete --copy-links --exclude=_files
 
 all: html
 
