@@ -4,12 +4,12 @@ all:: pics
 # PICS_IGNORE must contain a rule for grep
 PICS_IGNORE ?= "XXX"
 # For every .svg we must have a pdf
-#PICS=$(shell find . -iname \*svg \
-#	| sed -e 's/svg/pdf/g' -e 's/\([^\]\)\([ \t:]\)/\1\\\\\2/g' \
-#	| grep -v -e $(PICS_IGNORE) \
-#	| grep -v -e neuropy_history_tuned \
-# )
-PICS=datalad-openfmri-demo_sw.png timeline2.png borrowed/git-annex-logo.pdf
+PICS=$(shell /usr/bin/find *_tuned -iname \*svg \
+	| sed -e 's/svg/pdf/g' -e 's/\([^\]\)\([ \t:]\)/\1\\\\\2/g' \
+	| grep -v -e $(PICS_IGNORE) \
+	| grep -v -e neuropy_history_tuned \
+)
+PICS+=datalad-openfmri-demo_sw.png timeline2.png borrowed/git-annex-logo.pdf
 
 PICS_CONVERTED =
 
@@ -23,7 +23,7 @@ pics: $(PICS) $(SVGIS)
 %_tuned:: %.svgtune %.svg
 	@echo "Splitting SVG using $<"
 # Use gqview to prevew svgs -- quite nice
-	@../../../tools/svgtune/svgtune $<
+	@svgtune $<
 # Touch it to adjust the timestamp so make does not think that we are
 # out of date later on
 	@touch "$@"
