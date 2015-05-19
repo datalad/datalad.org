@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="240"
+   height="270"
+   id="svg3146"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="datalad-logo2.svg">
+  <defs
+     id="defs3148">
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:menu-tooltip="Darken the edges with an inner blur"
+       inkscape:menu="Shadows and Glows"
+       id="filter3894"
+       inkscape:label="Darken edges">
+      <feFlood
+         id="feFlood3896"
+         result="flood"
+         flood-color="rgb(0,0,0)"
+         flood-opacity="0.3" />
+      <feComposite
+         id="feComposite3898"
+         result="composite1"
+         operator="in"
+         in2="SourceGraphic"
+         in="flood" />
+      <feGaussianBlur
+         id="feGaussianBlur3900"
+         result="blur"
+         stdDeviation="2" />
+      <feOffset
+         id="feOffset3902"
+         result="offset"
+         dy="2"
+         dx="2" />
+      <feComposite
+         id="feComposite3904"
+         result="fbSourceGraphic"
+         operator="over"
+         in2="offset"
+         in="SourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix3924"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphicAlpha" />
+      <feGaussianBlur
+         in="fbSourceGraphic"
+         result="result8"
+         stdDeviation="4"
+         id="feGaussianBlur3926" />
+      <feOffset
+         result="result11"
+         dy="4"
+         dx="4"
+         id="feOffset3928" />
+      <feComposite
+         operator="in"
+         in="fbSourceGraphic"
+         result="result6"
+         in2="result11"
+         id="feComposite3930" />
+      <feFlood
+         flood-color="rgb(0,0,0)"
+         flood-opacity="1"
+         in="result6"
+         result="result10"
+         id="feFlood3932" />
+      <feBlend
+         result="result12"
+         in="result6"
+         mode="normal"
+         in2="result10"
+         id="feBlend3934" />
+      <feComposite
+         operator="in"
+         result="fbSourceGraphic"
+         in2="fbSourceGraphic"
+         id="feComposite3936" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix4162" />
+      <feGaussianBlur
+         id="feGaussianBlur4164"
+         result="result6"
+         stdDeviation="1.5"
+         in="fbSourceGraphic" />
+      <feComposite
+         id="feComposite4166"
+         in2="result6"
+         operator="atop"
+         in="fbSourceGraphic"
+         result="result8" />
+      <feComposite
+         id="feComposite4168"
+         in2="fbSourceGraphicAlpha"
+         in="result8"
+         operator="atop"
+         result="result9" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="-64.756261"
+     inkscape:cy="267.66934"
+     inkscape:document-units="px"
+     inkscape:current-layer="g10266"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3151">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-810.71429,-565.93361)">
+    <g
+       id="g10266"
+       transform="translate(0,-10.72509)">
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#d70a53;fill-opacity:1;stroke:none;stroke-width:25;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3894);enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+         d="m 858.21428,583.43361 0,12.5 0,160 0,12.5 12.5,0 120.00001,0 0,-25 -107.50001,0 0,-135 87.5,0 c 8.14923,0 15.45751,0.21294 21.59371,1.75 6.0677,1.51987 11.64831,4.52323 15.65631,8.53125 4.008,4.00801 7.0114,9.55734 8.5312,15.625 1.5371,6.13626 1.7188,13.44452 1.7188,21.59375 l 0,80 c 0,8.14923 -0.1817,15.45747 -1.7188,21.59375 -1.5198,6.06766 -4.5232,11.64824 -8.5312,15.65625 -4.008,4.00801 -9.58861,6.98013 -15.65631,8.5 -6.1362,1.53706 -13.44448,1.75 -21.59371,1.75 l -127.5,0 0,-175.03125 -25,0 0,187.53125 0,12.5 12.5,0 140,0 c 8.37576,0 17.79401,-0.0218 27.68751,-2.5 9.96211,-2.49537 19.57311,-7.41682 27.25001,-15.09375 7.6769,-7.67693 12.5984,-17.2879 15.0937,-27.25 2.4782,-9.8935 2.4688,-19.28048 2.4688,-27.65625 l 0,-80 c 0,-8.37577 0.01,-17.76275 -2.4688,-27.65625 -2.4919,-9.94846 -7.4036,-19.54705 -15.0625,-27.21875 l -0.031,-0.0312 c -7.6769,-7.67693 -17.2879,-12.59838 -27.25001,-15.09375 -9.8935,-2.4782 -19.3117,-2.5 -27.68746,-2.5 l -100,0 -12.5,0 z"
+         id="path4116"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/tmp/xyz5.png"
+         inkscape:export-xdpi="100"
+         inkscape:export-ydpi="100" />
+      <text
+         id="text10720"
+         y="837.64941"
+         x="814.36591"
+         style="font-size:41.72594833px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;display:inline;enable-background:new;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+         xml:space="preserve"
+         sodipodi:linespacing="125%"><tspan
+           id="tspan10722"
+           y="837.64941"
+           x="814.36591"
+           sodipodi:role="line"
+           style="font-size:31px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#060606;fill-opacity:0.67058824;font-family:Arial;-inkscape-font-specification:Arial">http://datalad.org</tspan></text>
+    </g>
+  </g>
+</svg>

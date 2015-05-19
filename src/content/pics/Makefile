@@ -9,7 +9,7 @@ PICS=$(shell /usr/bin/find *_tuned -iname \*svg \
 	| grep -v -e $(PICS_IGNORE) \
 	| grep -v -e neuropy_history_tuned \
 )
-PICS+=datalad-openfmri-demo_sw.png timeline2.png borrowed/git-annex-logo.pdf
+PICS+=datalad-logo2.pdf datalad-openfmri-demo_sw.png timeline2.png borrowed/git-annex-logo.pdf
 
 PICS_CONVERTED =
 
