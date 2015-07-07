@@ -13,25 +13,49 @@ contain any data, but rather a lot of empty files and/or broken
 symlinks.  Some data sharing projects which we are going to cover
 contain thousands and even millions of files (e.g. HCP500 release S3
 bucket contained over 5 million files).  Originally, we had a very
-nice experience with ZoL (ZFS on Linux, http://zfsonlinux.org) on
-computational clusters we have used.  Its volume management, data
+nice experience with [ZoL (ZFS on Linux)](http://zfsonlinux.org) on
+computational clusters we administer/use.  Its volume management, data
 integrity checking, and various features (snapshotting, etc) are very
-appealing and served us well.  So ZFS was a logical choice to deploy
-on our DataLad development/storage server(s).  But unfortunately,
-during development we ran into complete system stalls (which thanks to
-ZoL developers were promptly resolved), and overall **very** slow
-performance (even with SSD L2ARC caches and relatively large RAM on
-those boxes).  So it became important to investigate if we are indeed
-hitting the limits of contemporary conventional filesystem designs
-while dealing with large number of files, or just getting bound by
-ZoL.
+appealing and served us well before.  So ZFS was a logical choice to
+deploy for our DataLad development/storage server(s).  But
+unfortunately, during development we ran into complete system stalls
+(which thanks to ZoL developers were promptly resolved), and overall
+**very** slow performance (even with SSD L2ARC caches and relatively
+large RAM on those boxes).  So it became important to investigate if
+we were indeed hitting the limits of contemporary conventional
+file-system designs while dealing with large number of files, or just
+getting bound by ZoL.
+
+#### System setup
+
+All the benchmarks were ran on a recently purchased server
+
+- CPU: Intel(R) Xeon(R) CPU E5-1607 v2 @ 3.00GHz (quad core)
+- RAM: 64GB (registered)
+- OS: Debian jessie (8.1) amd64 build, with NeuroDebian and ZoL
+  repositories enabled
+- Kernel: 3.16.7-ckt9-3~deb8u1 (Debian: 3.16.0-4-amd64)
+- ZoL/ZFS module: 0.6.4-15-7fec46
+- BTRFS tools: originally 3.17 (as in jessie) but then tested a single setup
+  initiated with 4.0 tools (backport coming from NeuroDebian repository)
+- Drives: 6 Seagate Constellation ES.3 (ST4000NM0033-9ZM170, fw SN04)
+  on an LSI SAS3008 HBA
+
+#### Scripts
 
 [test_fs.py](https://github.com/datalad/benchmarking/blob/master/test_fs.py)
 script was created to initiate a range of prototypical filesystem
 setups, with software raid/MD (redundancy), LVM (volume management)
 and various file systems (EXT4, XFS, ZFS, RaiserFS, BTRFS) in various
-configurations.  Below we present results of the analysis, which in
-its entirety is available as
+configurations.  We tested typical operations in the life-time of a
+git/annex repository -- creation (only for larger repositories test),
+du, chmod, git clone, git annex get, git annex (in)direct, tar etc --
+full list is available in results tables below.
+
+### Results
+
+Below we present results of the analysis of collected timings, which
+in its entirety is available as
 [IPython notebook](https://github.com/datalad/benchmarking/blob/master/test_fs_analysis.ipynb)
 with all the necessary data in the repository if you would like to
 have an alternative analysis or visualization done since presentation
