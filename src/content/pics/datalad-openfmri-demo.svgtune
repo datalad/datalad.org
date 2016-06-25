@@ -47,6 +47,23 @@ layer label=deriv_datahandle style=display:inline
 layer label=public_server style=display:inline
 %save 5-user-publish
 
+# LINKS
+# Hide away the installation steps
+layer label:re=^inter_.* style=display:none
+
+layer label=file-relations style=display:inline
+layer label=data style=display:inline
+layer label=git style=display:none
+%save 5_5-data-connections
+
+layer label=data style=display:none
+layer label=git style=display:inline
+layer label=file-relations-mask style=display:inline
+%save 5_6-git-connections
+
 # ALL
 layer label=file-relations style=display:inline
+layer label=data style=display:inline
+layer label=git style=display:inline
+layer label=file-relations-mask style=display:none
 %save 6-all
