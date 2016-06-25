@@ -1,12 +1,7 @@
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-  height: 400px;
-  margin-bottom: 60px;
-  margin-top: -20px;
-}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -14,23 +9,17 @@
   text-shadow: rgba(255,255,255,0.5);
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 400px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 536px;
-  height: 400px;
-}
-/* We use white veil, so make indicators dark */
-.carousel-indicators li {
-  border: 1px solid #000;
+.owl-carousel .owl-item img {
+	max-width: 1072px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
+/* We use white veil, so make indicators dark */
+/*.carousel-indicators li {
+  border: 1px solid #000;
+}*/
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -39,6 +28,7 @@
 .marketing {
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 15px;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -115,6 +105,6 @@
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 20px;
   }
 }
