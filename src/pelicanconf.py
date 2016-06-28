@@ -28,7 +28,7 @@ TRANSLATION_FEED_ATOM = None
 LINKS =  (
           ('NeuroDebian', 'http://neuro.debian.net'),
           ('PyMVPA', 'http://www.pymvpa.org'),
-          ('studyforrest.org', 'studyforrest.org'),
+          ('studyforrest.org', 'http://www.studyforrest.org'),
           )
 
 # Social widget
