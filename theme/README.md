@@ -9,13 +9,8 @@
 
 Optional variables are available for this theme :
 
-*  `ADDRESS` : Your postal address. Accepts HTML.
-*  `MAIL` : Your email address.
-*  `PHONE` : Your phone number.
 *  `TWITTER_USER` : 'Pierre_Paul', should be the url following http://twitter.com/
 *  `GOOGLEPLUS_USER` : '110831175850960549188', should be the url following http://plus.google.com/ when viewing your profile.
-*  `LINKEDIN_USER` : 'pierre-paul-lefebvre/2/9b7/aa' #Again, should be the URL following http://linkedin.com/ when viewing your profile.
-*  `FACEBOOK_USER` : 'pierrepaul.lefebvre', if set in your profile, your profile can be accessed with a simple url like : https://facebook.com/pierrepaul.lefebvre
 *  `ABOUT_TEXT` : Any text set here will show up on the bottom right of the page.
 *  `ABOUT_IMAGE` : Image to show at the bottom right of the page.
 *  `ABOUT_LINK` : Will add a link under the ABOUT_TEXT page 
