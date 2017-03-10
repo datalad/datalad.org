@@ -15,13 +15,6 @@
 										<ul class="tags">
 											{% if article.category %}
 											<li><a class="button" href="{{ article.category.url }}">{{ article.category|capitalize }}</a></li>
-											<!-- Add Translation Function -->
-											{% if article.translations %}
-											    {% for translation in article.translations %}
-											        <li><a href="{{ SITEURL }}/{{ translation.url }}"> <img src="{{ SITEURL }}/{{ translation.lang }}_flag.png"></a></li>
-											    {% endfor %}
-											{% endif %}
-											<!-- End Translation Function -->
 											{% endif %}
 											{% for tag in article.tags %}
 												<li><a class="button button-alt" href="{{ tag.url }}">{{ tag|capitalize }}</a></li>
@@ -34,7 +27,6 @@
 									<h2>{{ article.title }}</h2>
 									{{ article.content }}
 								</article>
-								{% include 'disqus_script.html' %}
 						</div>
 					</div>
 				</div>
