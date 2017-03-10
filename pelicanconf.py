@@ -17,7 +17,7 @@ TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
 LOCALE = u'en_US.UTF-8'
 
-THEME = '../themes/pelican-bootstrap3'
+THEME = 'themes/pelican-bootstrap3'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
