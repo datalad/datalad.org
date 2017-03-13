@@ -222,23 +222,6 @@
 		overflow: hidden;
 	}
 
-	#header-wrapper
-	{
-		padding: 2em 0 0 0;
-		overflow: hidden;
-	}
-
-		#header-wrapper:before
-		{
-			height: 8em;
-		}
-	
-		#header-wrapper:after
-		{
-			height: 12em;
-			top: -2.5em;
-		}
-
 	#footer-wrapper
 	{
 		padding: 0 25px 0 25px;
@@ -250,30 +233,6 @@
 		{
 			height: 3em;
 		}
-	
-/*********************************************************************************/
-/* Intro                                                                         */
-/*********************************************************************************/
-
-	#intro
-	{
-		padding: 0 25px 0 25px;
-	}
-	
-		#intro section
-		{
-			position: relative;
-			border-top:	solid 1px #dfdfdf;
-			padding: 2.5em 0 0 0;
-			margin: 0;
-		}
-
-		#intro section.first
-		{
-			border-top: 0;
-			padding-top: 0;
-		}
-
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
@@ -299,32 +258,6 @@
 	{
 		display: none;
 	}
-
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
-
-	#banner
-	{
-		margin: 0 0 2.5em 0;
-	}
-	
-		#banner header
-		{
-			padding: 1.5em 1em 1.5em 1em;
-		}
-		
-		#banner h2
-		{
-			font-size: 1.5em;
-			line-height: 1.5em;
-			margin: 0 0 0.25em 0;
-		}
-		
-		#banner .byline
-		{
-			font-size: 1.2em;
-		}
 
 /*********************************************************************************/
 /* Copyright                                                                     */

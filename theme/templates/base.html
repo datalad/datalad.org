@@ -22,25 +22,17 @@
 </head>
 
 <body class="no-sidebar">
-  <div id="header-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="12u">
-          <section id="header">
-            <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
-            <nav id="nav">
-              <ul>
-              {% for title, link in MENUITEMS %}
-                <li><a href="{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
-              {% endfor %}
-              </ul>
-            </nav>
-          </section>
-          {% block banner %}{% endblock %}
-        </div>
-      </div>
-    </div>
-  </div>
+  <header>
+    <a href="{{ SITEURL }}/"><img src='/theme/img/datalad_logo.png' alt='DataLad Logo' /></a>
+    <nav id="nav">
+      <ul>
+      {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
+      {% endfor %}
+      </ul>
+    </nav>
+    {% block banner %}{% endblock %}
+  </header>
 
   <div id="main-wrapper">
     <div class="container">

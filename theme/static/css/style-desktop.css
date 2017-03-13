@@ -31,11 +31,6 @@
 		padding-bottom: 0.5em;
 	}
 	
-	header
-	{
-		margin: 0 0 1.5em 0;
-	}
-	
 	footer
 	{
 		margin: 2.25em 0 0 0;
@@ -150,22 +145,6 @@
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
-	#header-wrapper
-	{
-		padding: 1em 0 1em 0;
-	}
-
-		#header-wrapper:before
-		{
-			height: 10em;
-		}
-	
-		#header-wrapper:after
-		{
-			height: 20em;
-			top: -2.5em;
-		}
-	
 	#main-wrapper
 	{
 		padding: 6em 0 6em 0;
@@ -199,24 +178,6 @@
 		#footer-wrapper .row
 		{
 			padding-bottom: 2em;
-		}
-
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#header
-	{
-		text-align: center;
-	}
-	
-		#header h1
-		{
-			color: #252122;
-			font-weight: 900;
-			font-size: 2.5em;
-			letter-spacing: -0.035em;
-			margin: 0 0 1.5em 0;
 		}
 
 /*********************************************************************************/
@@ -341,51 +302,6 @@
 				border-bottom-color: rgba(34,30,31,0.98);
 			}
 
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
-
-	#banner
-	{
-		position: relative;
-        padding: 8em 0;
-        margin: 4em 0 0 0;
-	}
-	
-		#banner header
-		{
-			border-radius: 5px;
-			position: absolute;
-			left: 0;
-			top: 0;
-			padding: 4em;
-			left: 50%;
-			top: 50%;
-
-			/*
-				To vertically center this we need to set a width/height for the header
-				overlay, then set a negative left/top margin set to half its width/height.
-			*/
-			
-			width: 50em;
-			height: 13em;
-			
-			margin-left: -25em;
-			margin-top: -6.5em;
-		}
-		
-			#banner header h2
-			{
-				font-size: 3em;
-				margin: 0 0 0.65em 0;
-				/*line-height: 1.1em;*/
-			}
-
-			#banner header .byline
-			{
-				font-size: 1.75em;
-			}
-			
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
