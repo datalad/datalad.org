@@ -93,46 +93,6 @@ nav {
 		border-left: 5px solid #ddd;
 	}
 
-	.major
-	{
-		position: relative;
-		text-align: center;
-		border-top: solid 1px #ccc;
-		top: 1em;
-	}
-
-		.major h2
-		{
-			background: #fff;
-			position: relative;
-			top: -0.65em;
-			display: inline;
-			margin: 0;
-			padding: 0 1em 0 1em;
-		}
-
-	.byline
-	{
-		display: block;
-		font-style: italic;
-	}
-
-	form
-	{
-	}
-
-		form input,
-		form select,
-		form textarea
-		{
-			-webkit-appearance: none;
-		}
-
-	br.clear
-	{
-		clear: both;
-	}
-
 	p, ul, ol, dl, table
 	{
 		margin-bottom: 2em;
@@ -154,12 +114,6 @@ nav {
 		article:last-child
 		{
 			margin-bottom: 0;
-		}
-
-	/* Actions */
-
-		.actions
-		{
 		}
 
 	/* Box */
@@ -287,79 +241,6 @@ nav {
 			.icon64-9	{ background-position:	-512px 0px;		}
 			.icon64-10	{ background-position:	-576px 0px;		}
 
-	/* Image */
-
-		.image
-		{
-			display: inline-block;
-			outline: 0;
-		}
-
-			.image img
-			{
-				display: block;
-				width: 100%;
-			}
-
-		.image-centered
-		{
-			display: block;
-			margin: 0 0 2em 0;
-		}
-
-			.image-centered img
-			{
-				margin: 0 auto;
-				width: auto;
-			}
-
-		.image-full
-		{
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
-
-		.image-left
-		{
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-
-        /* figure */
-                .floatright, .align-right {
-                    float: right;
-                }
-
-                .floatleft, .align-left {
-                    float: left;
-                }
-
-                .floatcenter, .align-center {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-                figure.floatright, .align-right {
-                    margin-left: 4px;
-                }
-
-                figure.floatleft, .align-left {
-                    margin-right: 4px;
-                }
-
-                figure.floatcenter, .align-center {
-                    margin-bottom: 11px;
-                }
-
-	/* Is-* */
-
-		.is-post
-		{
-		}
-
 	/* List */
 
 		ul.contact
@@ -396,10 +277,6 @@ nav {
 				{
 					top: 0;
 				}
-
-		ul.dates
-		{
-		}
 
 			ul.dates li
 			{
@@ -463,14 +340,6 @@ nav {
 					top: 0;
 				}
 
-		ul.default
-		{
-		}
-
-		ul.divided
-		{
-		}
-
 			ul.divided li
 			{
 				border-top: solid 1px #ddd;
@@ -482,10 +351,6 @@ nav {
 				border-top: 0;
 				padding-top: 0;
 			}
-
-		ul.links
-		{
-		}
 
 		ul.social
 		{
@@ -510,16 +375,8 @@ nav {
 				margin-left: 0;
 			}
 
-			ul.social li.facebook				{ background: #3c5a98; }
-				ul.social li.facebook:hover		{ background: #4c6aa8; }
 			ul.social li.twitter				{ background: #2daae4; }
 				ul.social li.twitter:hover		{ background: #3dbaf4; }
-			ul.social li.dribbble				{ background: #c4376b; }
-				ul.social li.dribbble:hover		{ background: #d4477b; }
-			ul.social li.linkedin				{ background: #006599; }
-				ul.social li.linkedin:hover		{ background: #1075a9; }
-			ul.social li.tumblr					{ background: #2b4661; }
-				ul.social li.tumblr:hover		{ background: #3b5671; }
 			ul.social li.googleplus				{ background: #da2713; }
 				ul.social li.googleplus:hover	{ background: #ea3723; }
 
@@ -602,15 +459,6 @@ nav {
 			opacity: 0.1;
 		}
 
-		#main-wrapper .major
-		{
-		}
-
-			#main-wrapper .major h2
-			{
-				background: #f7f7f7 url('images/bg02.png');
-			}
-
 	#footer-wrapper
 	{
 		position: relative;
@@ -673,15 +521,6 @@ nav {
 			border-top-color: #353434;
 			border-top-color: rgba(255,255,255,0.05);
 		}
-
-/*********************************************************************************/
-/* Intro                                                                         */
-/*********************************************************************************/
-
-	#intro
-	{
-		text-align: center;
-	}
 
 /*********************************************************************************/
 /* Copyright                                                                     */

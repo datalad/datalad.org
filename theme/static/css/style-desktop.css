@@ -25,12 +25,6 @@
 		font-size: 1.35em;
 	}
 
-	.byline
-	{
-		margin: 0.5em 0 0 0;
-		padding-bottom: 0.5em;
-	}
-	
 	footer
 	{
 		margin: 2.25em 0 0 0;
@@ -38,10 +32,6 @@
 	
 	/* Actions */
 
-		.actions
-		{
-		}
-		
 			.actions .button
 			{
 				margin-right: 0.75em;
@@ -246,130 +236,6 @@
 				background: #d52349;
 				color: #fff !important;
 				font-weight: 700;
-			}
-			
-	.dropotron
-	{
-		border-radius: 5px;
-		background-color: #252122;
-		background-color: rgba(34,30,31,0.98);
-		padding: 1.25em 1.5em 1.25em 1.5em;
-		font-style: italic;
-		min-width: 13em;
-		box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.5);
-		text-align: left;
-	}
-	
-		.dropotron a,
-		.dropotron span
-		{
-			color: #aaa;
-			text-decoration: none;
-			-moz-transition: color .25s ease-in-out;
-			-webkit-transition: color .25s ease-in-out;
-			-o-transition: color .25s ease-in-out;
-			-ms-transition: color .25s ease-in-out;
-			transition: color .25s ease-in-out;
-		}
-		
-		.dropotron li
-		{
-			padding: 0.25em 0 0.25em 0;
-		}
-
-			.dropotron li:hover > a,
-			.dropotron li:hover >span
-			{
-				color: #fff;
-			}
-
-		.dropotron-level-0
-		{
-			margin-top: 2em;
-			margin-left: -0.51em;
-		}
-		
-			.dropotron-level-0:before
-			{
-				content: '';
-				display: block;
-				position: absolute;
-				left: 20px;
-				top: -10px;
-				border-left: solid 10px transparent;
-				border-right: solid 10px transparent;
-				border-bottom: solid 10px #252122;
-				border-bottom-color: rgba(34,30,31,0.98);
-			}
-
-/*********************************************************************************/
-/* Footer                                                                        */
-/*********************************************************************************/
-
-	#footer
-	{
-	}
-
-/*********************************************************************************/
-/* Main                                                                          */
-/*********************************************************************************/
-
-	#main
-	{
-	}
-
-/*********************************************************************************/
-/* Intro                                                                         */
-/*********************************************************************************/
-
-	#intro
-	{
-		padding: 3em 0 0 0;
-	}
-	
-		#intro section
-		{
-			padding: 2em 0 2em 0;
-		}
-
-		#intro h2
-		{
-			font-size: 1.75em;
-		}
-		
-		#intro p
-		{
-			font-size: 1.25em;
-			margin: 0;
-		}
-	
-		#intro .middle
-		{
-			box-shadow:	16px 0px 0px 0px #fff,
-						17px 0px 0px 0px #ccc, 
-						
-						-16px 0px 0px 0px #fff, 
-						-17px 0px 0px 0px #ccc, 
-						
-						-16px -45px 0px 0px #fff, 
-						16px -45px 0px 0px #fff, 
-
-						-16px 45px 0px 0px #fff, 
-						16px 45px 0px 0px #fff, 
-
-						-16px 0px 45px 0px rgba(0,0,0,0.15),
-						16px 0px 45px 0px rgba(0,0,0,0.15);
-		}
-		
-		#intro .actions
-		{
-			padding: 5em 0 0 0;
-		}
-		
-			#intro .actions .button
-			{
-				width: 12em;
-				margin: 0 0.5em 0 0.5em;
 			}
 
 /*********************************************************************************/
