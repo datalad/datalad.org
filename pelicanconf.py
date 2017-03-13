@@ -56,7 +56,13 @@ TYPOGRIFY = False
 
 STATIC_PATHS = ['images', 'pics', 'css', 'js'] # , 'data']
 
-#MENUITEMS = [('First', 'crzy URL')]
+MENUITEMS = [ ('About', 'about.html'),
+              ('Development', 'development.html'),
+              ('Articles', 'category/articles.html'),
+              ('Installation', 'https://github.com/datalad/datalad#installation'),
+              ('Datasets', 'http://datasets.datalad.org'),
+              ('Docs', 'http://docs.datalad.org'),
+]
 CODE_DIR = 'downloads/code'
 NOTEBOOK_DIR = 'downloads/notebooks'
 
