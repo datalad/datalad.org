@@ -348,7 +348,8 @@
 	#banner
 	{
 		position: relative;
-		margin-top: 1em;
+        padding: 8em 0;
+        margin: 4em 0 0 0;
 	}
 	
 		#banner header

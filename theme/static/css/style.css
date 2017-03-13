@@ -553,8 +553,12 @@
 
 	#banner
 	{
+        background: #CCE8F4 url(/theme/images/pic01.jpg);
+        background-position: center center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        text-align: center;
 	}
-
 		#banner a
 		{
 			text-decoration: none;
