@@ -1,45 +1,28 @@
-	<!-- Footer Wrapper -->
-			<div id="footer-wrapper">
-				<!-- Footer -->
-					<section id="footer" class="container">
-						<div class="row">
-							<div class="4u">
-								<section>
-									<header>
-										<h2>Blogroll</h2>
-									</header>
-									<ul class="divided">
-										{% for name, link in LINKS %}
-											<li><a href="{{ link }}">{{ name }}</a></li>
-										{% endfor %}
-									</ul>
-								</section>
-							</div>
-							<div class="4u">
-								<section>
-									<header>
-										<h2>Social</h2>
-									</header>
-									<ul class="social">
-										<li class="twitter"><a href="http://twitter.com/{{ TWITTER_USER }}" class="icon48 icon48-2">Twitter</a></li>
-										<li class="googleplus"><a href="https://plus.google.com/{{ GOOGLEPLUS_USER }}" class="icon48 icon48-6">Google+</a></li>
-									</ul>
-								</section>
-							</div>
-						</div>
-						{% if COPYRIGHT is defined and SHOW_COPYRIGHT != False %}
-						<div class="row">
-							<div class="12u">
-								<!-- Copyright -->
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; {{ COPYRIGHT }}	</li>
-											<li>Images: <a href="http://facebook.com/DreametryDoodle">Dreametry Doodle</a> + <a href="http://iconify.it">Iconify.it</a></li>
-											<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-							</div>
-						</div>
-						{% endif %}
-					</section>
-			</div>
+<footer>
+  <section>
+    <header>
+      <h2>Blogroll</h2>
+    </header>
+    <ul class="divided">
+    {% for name, link in LINKS %}
+      <li><a href="{{ link }}">{{ name }}</a></li>
+    {% endfor %}
+    </ul>
+  </section>
+  <section>
+    <header>
+      <h2>Social</h2>
+    </header>
+    <ul class="social">
+      <li class="twitter"><a href="http://twitter.com/{{ TWITTER_USER }}" class="icon48 icon48-2">Twitter</a></li>
+      <li class="googleplus"><a href="https://plus.google.com/{{ GOOGLEPLUS_USER }}" class="icon48 icon48-6">Google+</a></li>
+    </ul>
+  </section>
+  <div id="copyright">
+    <ul class="links">
+      <li>&copy; {{ COPYRIGHT }}</li>
+      <li>Images: <a href="http://facebook.com/DreametryDoodle">Dreametry Doodle</a> + <a href="http://iconify.it">Iconify.it</a></li>
+      <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </div>
+</footer>

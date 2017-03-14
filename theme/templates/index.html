@@ -8,19 +8,7 @@
 {% endblock banner %}
 
 {% block content %}
-<div class="row">
-  <div class="12u">
-    <section>
-      <div>
-        <div class="row">
-          <div class="12u skel-cell-mainContent">
-            <article class="box is-post">
-              {% if page %} {{ page.content }} {% endif %}
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
+<article class="box is-post">
+  {% if page %} {{ page.content }} {% endif %}
+</article>
 {% endblock content %}

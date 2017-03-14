@@ -25,11 +25,6 @@
 		font-size: 1.35em;
 	}
 
-	footer
-	{
-		margin: 2.25em 0 0 0;
-	}
-	
 	/* Actions */
 
 			.actions .button
@@ -94,11 +89,6 @@
 			}
 
 	/* List */
-
-		ul.links
-		{
-		}
-
 			ul.links li
 			{
 				display: inline-block;
@@ -132,57 +122,8 @@
 		}
 
 /*********************************************************************************/
-/* Wrappers                                                                      */
-/*********************************************************************************/
-
-	#main-wrapper
-	{
-		padding: 6em 0 6em 0;
-	}
-
-		#main-wrapper:after
-		{
-			height: 5em;
-		}
-	
-	#footer-wrapper
-	{
-		padding: 6em 0 6em 0;
-	}
-
-		#footer-wrapper:before
-		{
-			height: 5em;
-		}
-
-		#footer-wrapper header
-		{
-			margin: 0 0 3em 0;
-		}
-		
-			#footer-wrapper header h2
-			{
-				font-size: 1.75em;
-			}
-			
-		#footer-wrapper .row
-		{
-			padding-bottom: 2em;
-		}
-
-/*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
-		
-	#copyright
-	{
-		margin: 3em 0 2em 0;
-	}
-	
-		#copyright .links
-		{
-			padding: 0.85em 2.25em 0.85em 2.25em;
-		}
 
 pre {
 	border-radius: 0.5em;

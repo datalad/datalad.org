@@ -16,7 +16,6 @@
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic" rel="stylesheet" />
-  <link rel="stylesheet" href="/theme/css/skel-noscript.css" />
   <link rel="stylesheet" href="/theme/css/style.css" />
   <link rel="stylesheet" href="/theme/css/style-desktop.css" />
 </head>
@@ -34,12 +33,12 @@
     {% block banner %}{% endblock %}
   </header>
 
-  <div id="main-wrapper">
-    <div class="container">
-      {% block content %}{% endblock %}
+  <main>
+    <div id='content'>
+    {% block content %}{% endblock %}
     </div>
-  </div>
+  </main>
 
-{% include 'includes/footer.html' %}
+  {% include "includes/footer.html" %}
 </body>
 </html>
