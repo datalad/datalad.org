@@ -153,75 +153,6 @@ footer li:first-child {
 				width: auto;
 			}
 
-	/* Button */
-
-		.button
-		{
-			display: inline-block;
-			text-decoration: none;
-			cursor: pointer;
-			border: 0;
-			border-radius: 5px;
-			background: #d70a53;
-			color: #fff !important;
-			font-weight: 700;
-			outline: 0;
-			-moz-transition: background-color .25s ease-in-out;
-			-webkit-transition: background-color .25s ease-in-out;
-			-o-transition: background-color .25s ease-in-out;
-			-ms-transition: background-color .25s ease-in-out;
-			transition: background-color .25s ease-in-out;
-		}
-
-			.button:hover
-			{
-				background: #e53359;
-			}
-
-			.button:active
-			{
-				background: #c51349;
-			}
-
-			.button-alt
-			{
-				background: #252122;
-			}
-
-				.button-alt:hover
-				{
-					background: #353132;
-				}
-
-				.button-alt:active
-				{
-					background: #151112;
-				}
-
-			.button-icon
-			{
-				line-height: 32px;
-				padding-left: 1em !important;
-			}
-
-				.button-icon:before
-				{
-					content: '';
-					display: block;
-					float: left;
-					width: 32px;
-					height: 32px;
-					background: url('images/icons32.png');
-					margin-right: 0.45em;
-					opacity: 0.25;
-				}
-
-				.button-icon-1:before	{ background-position: 0px 0px;		}
-				.button-icon-2:before	{ background-position: -32px 0px;	}
-				.button-icon-3:before	{ background-position: -64px 0px;	}
-				.button-icon-4:before	{ background-position: -96px 0px;	}
-				.button-icon-5:before	{ background-position: -128px 0px;	}
-
 	/* Icon */
 
 		.icon48
@@ -367,16 +298,6 @@ article .date {
 	font-size: 1em;
 	text-align:center;
 	margin-right: 2em;
-}
-
-article .post-infos {
-  float: right;
-	overflow: hidden;
-}
-
-article .post-infos .tags li {
-	float: left;
-	margin: 0 0.25em;
 }
 
 article em {
