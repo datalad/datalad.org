@@ -1,7 +1,7 @@
 About this Project
 ******************
 :save_as: about.html
-:url: about.html
+:url: /about.html
 
 This project aims to adapt the model of open-source software (OSS)
 distributions to address the technical limitations of today\'s
