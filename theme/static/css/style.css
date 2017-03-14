@@ -1,5 +1,24 @@
 body {
+  color: #5d5d5d;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
   margin: 0;
+}
+
+strong, b {
+  color: #312a2c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #312a2c;
+}
+
+a {
+  color: #d70a53;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
 }
 
 header {
@@ -119,72 +138,6 @@ footer li:first-child {
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
-
-	body
-	{
-		font-family: 'Source Sans Pro';
-		font-weight: 300;
-		color: #5d5d5d;
-	}
-
-	strong, b
-	{
-		color: #252122;
-		font-weight: 700;
-	}
-
-	h1, h2, h3, h4, h5, h6
-	{
-		color: #252122;
-		font-weight: 700;
-	}
-
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
-		{
-			color: inherit;
-			text-decoration: none;
-		}
-
-	a
-	{
-		color: #d70a53;
-		text-decoration: underline;
-	}
-
-		a:hover
-		{
-			text-decoration: none;
-		}
-
-	blockquote {
-		font-style: italic;
-		margin: 0 0 1em 15px;
-		padding-left: 10px;
-		border-left: 5px solid #ddd;
-	}
-
-	p, ul, ol, dl, table
-	{
-		margin-bottom: 2em;
-	}
-
-	section,
-	article
-	{
-		margin-bottom: 2.5em;
-	}
-
-		section > :last-child,
-		article > :last-child
-		{
-			margin-bottom: 0;
-		}
-
-		section:last-child,
-		article:last-child
-		{
-			margin-bottom: 0;
-		}
 
 	/* Box */
 
@@ -313,67 +266,6 @@ footer li:first-child {
 
 	/* List */
 
-			ul.dates li
-			{
-				position: relative;
-				border-top: solid 1px #ddd;
-				padding: 1.3em 0 1.3em 6.75em;
-			}
-
-			ul.dates .date
-			{
-				display: block;
-				position: absolute;
-				left: 0;
-				top: 1.3em;
-				background-color: #d70a53;
-				height: 3.5em;
-				text-align: center;
-				color: #fff;
-				line-height: 1em;
-				border-top-left-radius: 5px;
-				border-bottom-left-radius: 5px;
-				padding: 0.5em 0.75em 0 1em;
-			}
-
-				ul.dates .date:after
-				{
-					content: '';
-					position: absolute;
-					bottom: 0;
-					right: -1.2em;
-					border-left: solid 1.25em #d70a53;
-					border-top: solid 1.8em transparent;
-					border-bottom: solid 1.8em transparent;
-				}
-
-				ul.dates .date strong
-				{
-					display: block;
-					font-size: 1.75em;
-					padding-top: 0.15em;
-				}
-
-			ul.dates h3
-			{
-				font-size: 1.1em;
-			}
-
-			ul.dates p
-			{
-				margin: 0;
-			}
-
-			ul.dates li:first-child
-			{
-				border-top: 0;
-				padding-top: 0;
-			}
-
-				ul.dates li:first-child .date
-				{
-					top: 0;
-				}
 
 		ul.social
 		{

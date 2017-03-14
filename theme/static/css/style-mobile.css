@@ -8,13 +8,6 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body
-	{
-		line-height: 1.75em;
-		font-size: 11pt;
-		letter-spacing: 0;
-	}
-
 	h2, h3, h4, h5, h6
 	{
 		font-size: 1.25em;
@@ -23,13 +16,6 @@
 	header
 	{
 		margin: 0 0 1em 0;
-	}
-
-	section,
-	article
-	{
-		clear: both;
-		margin: 1.5em 0 1.5em 0 !important;
 	}
 
 	/* Box */
