@@ -40,30 +40,6 @@
 			}
 
 
-	/* Is-* */
-		
-			.is-post header
-			{
-				padding-top: 1em;
-				margin: 0 0 2em 0;
-			}
-		
-			.is-post h2
-			{
-				padding:0.5em 0;
-				font-size: 2.5em;
-				letter-spacing: -0.015em;
-			}
-			.is-post p {
-				margin:1em 0;
-			}
-			
-			.is-post .byline
-			{
-				margin-top: 1.25em;
-				font-size: 1.25em;
-			}
-
 	/* List */
 			ul.links li
 			{
@@ -89,13 +65,6 @@
 			{
 				margin-left: 0.75em;
 			}
-
-	/* Pennant */
-
-		.pennant
-		{
-			margin: 0 0 4em 0;
-		}
 
 /*********************************************************************************/
 /* Copyright                                                                     */

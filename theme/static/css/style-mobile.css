@@ -39,23 +39,6 @@
 				margin: 0 0.75em 0.75em 0;
 			}
 
-	/* Pennant */
-
-		.pennant
-		{
-			width: 7em;
-			padding: 1em 0 0.25em 0;
-			margin: 0 0 2.5em 0;
-		}
-
-			.pennant:after
-			{
-				bottom: -1.48em;
-				border-left-width: 3.5em;
-				border-right-width: 3.5em;
-				border-top-width: 1.5em;
-			}
-
 /*********************************************************************************/
 /* Mobile UI                                                                     */
 /*********************************************************************************/

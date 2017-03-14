@@ -12,19 +12,3 @@
 		{
 			margin: 0 0 0.25em 0.75em;
 		}
-
-	.pennant
-	{
-		width: 8em;
-		padding: 1.25em 0 0.25em 0;
-		margin: 0 0 4em 0;
-	}
-
-		.pennant:after
-		{
-			bottom: -1.98em;
-			border-left-width: 4em;
-			border-right-width: 4em;
-			border-top-width: 2em;
-		}
-

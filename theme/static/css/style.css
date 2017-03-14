@@ -126,6 +126,26 @@ footer li:first-child {
   padding: 0.85em 2.25em;
 }
 
+article header {
+  text-align: unset;
+  padding-top: 1em;
+  margin: 0 0 2em 0;
+}
+article header h2 {
+  margin: 0;
+  padding-bottom: 0;
+}
+article header .date {
+  font-size: 1em;
+}
+article h2 {
+  font-size: 2.5em;
+  letter-spacing: -0.015em;
+  padding: 0.5em 0;
+}
+article p {
+  margin: 1em 0;
+}
 
 /* ************************************************************************** */
 
@@ -231,55 +251,6 @@ footer li:first-child {
 				list-style-type: square;
 			}
 
-	/* Pennant */
-
-		.pennant
-		{
-			position: relative;
-			display: inline-block;
-			background-color: #d70a53;
-			width: 9em;
-			padding: 1.5em 0 0.5em 0;
-			border-top-left-radius: 5px;
-			border-top-right-radius: 5px;
-		}
-
-			.pennant:after
-			{
-				content: '';
-				position: absolute;
-				bottom: -1.98em;
-				left: 0;
-				border-top: solid 2em #d70a53;
-				border-left: solid 4.5em transparent;
-				border-right: solid 4.5em transparent;
-			}
-
-			.pennant span
-			{
-				display: block;
-				margin: 0 auto;
-			}
-
-			.pennant-alt
-			{
-				background-color: #252122;
-			}
-
-				.pennant-alt:after
-				{
-					border-top-color: #252122;
-				}
-
-			.pennant-alt2
-			{
-				background-color: #827a7c;
-			}
-
-				.pennant-alt2:after
-				{
-					border-top-color: #827a7c;
-				}
 
 
 /*********************************************************************************/
@@ -289,15 +260,6 @@ footer li:first-child {
 .img-copy {
 	float:right;
 	margin-right:2em;
-}
-
-article .date {
-	color: white;
-	float:left;
-	font-weight: bold;
-	font-size: 1em;
-	text-align:center;
-	margin-right: 2em;
 }
 
 article em {

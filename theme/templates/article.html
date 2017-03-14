@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<article class="box is-post">
+<article class="box">
   {% if article.picture is defined %}
   <div class="image image-full"><img src="{{ SITEURL }}/{{ article.picture }}"/><a href="{{ article.picturecopyrights }}" class="img-copy">{{ article.picturecopyrights }}</a></div>
   {% endif %}
 
-  <div class="pennant pennant-alt date">{{ article.date|strftime('%Y-%m-%d') }}</div>
-  <h2>{{ article.title }}</h2>
+  <header>
+    <h2>{{ article.title }}</h2>
+    <div class="date">{{ article.date|strftime('%Y-%m-%d') }}</div>
+  </header>
   {{ article.content }}
 </article>
 {% endblock %}
