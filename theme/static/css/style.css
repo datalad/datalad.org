@@ -3,10 +3,34 @@ header {
 }
 header img {
   max-height: 20vh;
+  vertical-align: bottom;
 }
 
 nav {
+  font-weight: 500;
   margin: 2em 0;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  border: #fff 1px solid;
+  border-radius: 0.3em;
+  color: #5d5d5d;
+  margin: 0 0.35em;
+  padding: 0.8em 1.3em;
+  text-decoration: none;
+  transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+}
+nav a:hover {
+  background: #f3f3f3;
+  border-color: #eee;
+}
+nav a.active {
+  background: #d70a53;
+  border-color: #d70a53;
+  color: #fff;
 }
 
 #banner {
