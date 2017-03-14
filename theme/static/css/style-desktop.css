@@ -25,21 +25,6 @@
 				margin-right: 0.75em;
 			}
 
-	/* Box */
-
-		.box
-		{
-			padding: 2.75em 1.75em 2.75em 1.75em;
-		}
-		
-			.box .image-full
-			{
-				left: 1.75em;
-				top: 1.75em;
-				margin: -4.5em 0 4.25em -3.5em;
-			}
-
-
 	/* List */
 			ul.links li
 			{

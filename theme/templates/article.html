@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<article class="box">
-  {% if article.picture is defined %}
-  <div class="image image-full"><img src="{{ SITEURL }}/{{ article.picture }}"/><a href="{{ article.picturecopyrights }}" class="img-copy">{{ article.picturecopyrights }}</a></div>
-  {% endif %}
-
+<article>
   <header>
     <h2>{{ article.title }}</h2>
     <div class="date">{{ article.date|strftime('%Y-%m-%d') }}</div>
