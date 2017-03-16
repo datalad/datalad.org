@@ -8,23 +8,6 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	h2
-	{
-		font-size: 1.5em;
-	}
-	
-	h3
-	{
-		font-size: 1.35em;
-	}
-
-	/* Actions */
-
-			.actions .button
-			{
-				margin-right: 0.75em;
-			}
-
 	/* List */
 			ul.links li
 			{
@@ -50,14 +33,3 @@
 			{
 				margin-left: 0.75em;
 			}
-
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
-
-pre {
-	border-radius: 0.5em;
-	background-color: #f3f3f3;
-	font-family: Inconsolata, Monaco, monospace;
-	padding: 1em;
-}

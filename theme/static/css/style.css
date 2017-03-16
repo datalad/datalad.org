@@ -21,6 +21,13 @@ a:hover {
   text-decoration: none;
 }
 
+pre {
+  border-radius: 0.5em;
+  background-color: #f3f3f3;
+  font-family: Inconsolata, Monaco, monospace;
+  padding: 1em;
+}
+
 header {
   text-align: center;
 }
@@ -145,7 +152,6 @@ article header h2 {
 article header .date {
   font-size: 1em;
 }
-
 article h2 {
   font-size: 2.5em;
   letter-spacing: -0.015em;
@@ -247,16 +253,3 @@ article p {
 
 
 
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
-
-.img-copy {
-	float:right;
-	margin-right:2em;
-}
-
-article em {
-  font-style: italic;
-  font-weight: bold;
-}
