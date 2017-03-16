@@ -1,28 +1,26 @@
 <footer>
-  <section>
-    <header>
-      <h2>Blogroll</h2>
-    </header>
-    <ul class="divided">
-    {% for name, link in LINKS %}
-      <li><a href="{{ link }}">{{ name }}</a></li>
-    {% endfor %}
-    </ul>
-  </section>
-  <section>
-    <header>
-      <h2>Social</h2>
-    </header>
-    <ul class="social">
-      <li class="twitter"><a href="http://twitter.com/{{ TWITTER_USER }}" class="icon48 icon48-2">Twitter</a></li>
-      <li class="googleplus"><a href="https://plus.google.com/{{ GOOGLEPLUS_USER }}" class="icon48 icon48-6">Google+</a></li>
-    </ul>
-  </section>
+  <div id="footer_content">
+    <div>
+      <h2>From the Makers of</h2>
+      <ul>
+      {% for name, link in LINKS %}
+        <li><a href="{{ link }}">{{ name }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2>Social Love</h2>
+      <ul class="social">
+        <li class="twitter"><a href="http://twitter.com/{{ TWITTER_USER }}" class="icon48 icon48-2">Twitter</a></li>
+        <li class="googleplus"><a href="https://plus.google.com/{{ GOOGLEPLUS_USER }}" class="icon48 icon48-6">Google+</a></li>
+      </ul>
+    </div>
+  </div>
   <div id="copyright">
-    <ul class="links">
-      <li>&copy; {{ COPYRIGHT }}</li>
-      <li>Images: <a href="http://facebook.com/DreametryDoodle">Dreametry Doodle</a> + <a href="http://iconify.it">Iconify.it</a></li>
-      <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    </ul>
+    <small>
+      content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
+      <span class='break'>—</span> ©2015–2017 {{ AUTHOR }} <span class='break'>—</span>
+      unless <a rel="license" href='/copyright.html'>indicated otherwise</a>
+    </small>
   </div>
 </footer>
