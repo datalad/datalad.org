@@ -23,11 +23,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="277.02852"
-     inkscape:cy="273.50532"
+     inkscape:zoom="1.979899"
+     inkscape:cx="321.93426"
+     inkscape:cy="198.93718"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="g3818"
      showgrid="false"
      units="mm"
      showguides="false"
@@ -3579,7 +3579,7 @@
      inkscape:label="g_interactions"
      id="layer5"
      inkscape:groupmode="layer"
-     style="display:inline">
+     style="display:none">
     <g
        transform="translate(18.461059,0.29516602)"
        id="g15957">
@@ -3704,32 +3704,37 @@
            id="g13769"
            transform="translate(-32.571428,-76.857143)"
            style="display:inline">
-          <use
-             height="496.06299"
-             width="531.49603"
-             transform="matrix(1.588439,0,0,0.85,63.958457,65.015028)"
-             id="use10750"
-             xlink:href="#rect10746"
-             y="0"
-             x="0" />
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#008000;fill-opacity:1;stroke:none"
-             x="361.36047"
-             y="442.65927"
-             id="text6809-0-2"
-             sodipodi:linespacing="125%"><tspan
-               sodipodi:role="line"
-               x="361.36047"
-               y="442.65927"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#008000"
-               id="tspan7660">datalad publish --to=github</tspan><tspan
-               sodipodi:role="line"
-               x="361.36047"
-               y="455.15927"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#008000"
-               id="tspan5109">datalad publish --to=labserver --with-data=*filt*</tspan></text>
+          <g
+             id="g5068"
+             transform="translate(34.285714,0)">
+            <use
+               x="0"
+               y="0"
+               xlink:href="#rect10746"
+               id="use10750"
+               transform="matrix(1.1016626,0,0,0.85,153.94294,65.015028)"
+               width="531.49603"
+               height="496.06299" />
+            <text
+               sodipodi:linespacing="125%"
+               id="text6809-0-2"
+               y="448.65927"
+               x="373.36047"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#008000;fill-opacity:1;stroke:none"
+               xml:space="preserve"><tspan
+                 id="tspan5109"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#008000"
+                 y="448.65927"
+                 x="373.36047"
+                 sodipodi:role="line">datalad publish --to=github</tspan></text>
+          </g>
         </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="path5077"
+           d="M 400.76476,392.37656 C 579.53367,432.68454 507.00469,236.41284 506.69716,166.44257"
+           style="display:inline;fill:none;stroke:#008000;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DotSsFQ);marker-end:url(#Arrow1MendGZFA)"
+           sodipodi:nodetypes="cc" />
       </g>
     </g>
     <g
@@ -3788,7 +3793,7 @@
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#008000"
                y="444.65927"
                x="195.56989"
-               sodipodi:role="line">datalad install bold_filt.nii.gz</tspan></text>
+               sodipodi:role="line">datalad add bold_filt.nii.gz</tspan></text>
         </g>
       </g>
     </g>
@@ -3840,7 +3845,7 @@
         </g>
         <g
            id="g13763"
-           transform="translate(0.571429,-90.428568)"
+           transform="translate(8.571429,-90.428568)"
            style="display:inline">
           <rect
              y="433.43353"
@@ -3860,7 +3865,7 @@
                id="tspan6811-29"
                x="195.56989"
                y="444.65927"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#008000">datalad install -d . -r data \</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Semi-Condensed';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#008000">datalad install -d . -g \</tspan><tspan
                sodipodi:role="line"
                x="195.56989"
                y="457.15927"
@@ -4021,12 +4026,12 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="file-relations"
-     style="display:inline">
+     style="display:none">
     <g
        inkscape:groupmode="layer"
        id="layer9"
        inkscape:label="git"
-       style="display:none">
+       style="display:inline">
       <g
          inkscape:groupmode="layer"
          id="layer7"
@@ -4082,7 +4087,7 @@
        inkscape:groupmode="layer"
        id="layer8"
        inkscape:label="data"
-       style="display:none">
+       style="display:inline">
       <path
          transform="translate(0.53125,-12.361992)"
          sodipodi:nodetypes="csc"
