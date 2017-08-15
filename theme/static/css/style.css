@@ -86,7 +86,7 @@ nav a.active {
 }
 
 main {
-  background: #f7f7f7 url('images/bg02.png');
+  background: #f7f7f7 url('/theme/img/bg02.png');
   padding: 6em 0;
 }
 #content {
