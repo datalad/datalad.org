@@ -35,16 +35,7 @@ MENUITEMS = [ ('About', '/about.html'),
               ('Datasets', 'http://datasets.datalad.org'),
               ('Docs', 'http://docs.datalad.org'),
 ]
-LINKS =  ( ('NeuroDebian', 'http://neuro.debian.net'),
-           ('PyMVPA', 'http://www.pymvpa.org'),
-           ('studyforrest.org', 'http://www.studyforrest.org'),
-         )
 
-# Social widget
-SOCIAL = (('twitter', 'http://twitter.com/datalad'),
-          ('github', 'http://github.com/datalad'),
-          ('google+', 'https://plus.google.com/102227583349569690568'),
-          )
 DEFAULT_PAGINATION = 10
 
 #
