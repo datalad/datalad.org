@@ -25,7 +25,7 @@
   <meta name="application-name" content="DataLad">
   <meta name="theme-color" content="#efefef">
 
-  <link rel="stylesheet" href="/theme/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
 
   <link rel="license" hreflang="en" href="/copyright.html" />
 </head>
@@ -42,14 +42,14 @@
 </nav>
 
 <header>
-    {% block banner %}{% endblock %}
-  </header>
+  {% block banner %}{% endblock %}
+</header>
 
-  <main>
-    <div id='content'>
-    {% block content %}{% endblock %}
-    </div>
-  </main>
+<main>
+  <div id='content'>
+  {% block content %}{% endblock %}
+  </div>
+</main>
 
 <footer>
   <ul class='footer-links'>
