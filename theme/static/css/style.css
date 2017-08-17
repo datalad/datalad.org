@@ -1,3 +1,8 @@
+/* This file is (generally) organized according to SMACSS */
+
+/*
+ *  Base
+ */
 @font-face { /* License: OFL 1.1 */
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -23,6 +28,17 @@
        url('/theme/fonts/source-sans-pro-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
+a {
+  color: #ffa200;
+  font-weight: 500;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+
 body {
   color: #5d5d5d;
   font-family: 'Source Sans Pro';
@@ -30,7 +46,7 @@ body {
   margin: 0;
 }
 
-strong, b {
+strong {
   color: #312a2c;
 }
 
@@ -38,77 +54,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #312a2c;
 }
 
-a {
-  color: #d70a53;
-  text-decoration: underline;
-}
-a:hover {
-  text-decoration: none;
-}
-
-pre {
-  border-radius: 0.5em;
-  background-color: #f3f3f3;
-  font-family: Inconsolata, Monaco, monospace;
-  padding: 1em;
+/*
+ *  Layout
+ */
+#content {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 header {
   text-align: center;
 }
-header img {
-  max-height: 20vh;
-  vertical-align: bottom;
-}
 
 nav {
-  background: #eee;
-  border-bottom: 2px solid #ccc;
   display: flex;
-  font-size: 17px;
   justify-content: center;
-  min-height: 50px;
+  height: 50px;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-nav .logo {
-  line-height: 0;
-  margin-right: 1.3em;
-  padding: 7px 0;
+/*
+ *  Modules
+ */
+main {
+  background: #f7f7f7 url('/theme/img/bg02.png');
+  padding: 6em 0;
 }
-
-nav ul {
-  padding: 0;
-  text-align: right;
-}
-nav li {
-  display: inline-block;
-}
-nav li a {
-  border-bottom: 3px solid transparent;
-  border-top:    3px solid transparent;
-  color: #555;
-  font-weight: 700;
-  margin: 0.8em 1.35em;
-  padding: 0 0.3em;
-  text-decoration: none;
-  transition: 0.35s;
-}
-nav li a:hover {
-  border-bottom: 3px solid #ffa200;
-}
-nav li a.active {
-  animation: borderFadeIn 0.35s;
-  border-bottom: 3px solid #ffa200;
-  border-top:    3px solid #ffa200;
-}
-@keyframes borderFadeIn {
-  from { border-top: 3px solid rgba(255,162,0,0.0); }
-  to   { border-top: 3px solid rgba(255,162,0,1.0); }
-}
-
 
 #banner {
   background: #000 url(/theme/img/banner.jpg);
@@ -129,43 +102,93 @@ nav li a.active {
   color: #ffa200;
 }
 
-
-main {
-  background: #f7f7f7 url('/theme/img/bg02.png');
-  padding: 6em 0;
-}
-#content {
-  margin: 0 auto;
-  width: 1200px;
-}
-
 footer {
   background-color: #f5f5f5;
   border-top: 1px solid #e7e7e7;
   padding: 1.5em 0 1em 0;
   text-align: center;
 }
+footer ul {
+  padding: 0;
+}
+footer li {
+  display: inline;
+  padding: 0 2rem;
+}
+footer svg {
+  height: 6rem;
+  transition: transform 0.2s linear;
+}
+footer svg:hover {
+  transform: translateY(-0.2em);
+}
 footer p {
   color: #777;
   margin: 0;
 }
 
-.footer-links {
+nav {
+  background: #eee;
+  border-bottom: 2px solid #ccc;
+  font-size: 17px;
+}
+nav .logo {
+  line-height: 0;
+  margin-right: 1.3em;
+  padding: 7px 0;
+}
+nav ul {
   padding: 0;
+  text-align: right;
 }
-.footer-links li {
-  display: inline;
-  padding: 0 2rem;
+nav li {
+  display: inline-block;
 }
-.footer-links svg {
-  height: 6rem;
-  transition: transform 0.2s linear;
+nav li a {
+  border-bottom: 3px solid transparent;
+  border-top:    3px solid transparent;
+  color: #555;
+  font-weight: 700;
+  margin: 0.8em 1.35em;
+  padding: 0 0.3em;
+  text-decoration: none;
+  transition: 0.35s;
 }
-.footer-links svg:hover {
-  transform: translateY(-0.2em);
+nav li a:hover {
+  border-bottom: 3px solid #ffa200;
 }
 
+/*
+ *  State
+ */
+nav li a.active {
+  animation: borderFadeIn 0.35s;
+  border-bottom: 3px solid #ffa200;
+  border-top:    3px solid #ffa200;
+}
+@keyframes borderFadeIn {
+  from { border-top: 3px solid rgba(255,162,0,0.0); }
+  to   { border-top: 3px solid rgba(255,162,0,1.0); }
+}
 
+/*
+ *  Page Specific
+ */
+
+
+
+
+header img {
+  max-height: 20vh;
+  vertical-align: bottom;
+}
+
+pre {
+  border-radius: 0.5em;
+  background-color: #f3f3f3;
+  font-family: Inconsolata, Monaco, monospace;
+  padding: 1em;
+}
 
 article {
   background: #fff;
@@ -173,7 +196,6 @@ article {
   line-height: 2.3em;
   padding: 2.75em 2em;
 }
-
 article header {
   text-align: unset;
   padding-top: 1em;
