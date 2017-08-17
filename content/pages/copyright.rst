@@ -36,6 +36,19 @@ Notes:
 ----
 
 Files:
+  img/banner.jpg
+Copyright:
+  2006, Matt Britt
+License:
+  `Creative Commons Attribution 2.5 Generic`_
+Source:
+  https://commons.wikimedia.org/wiki/File:Internet_map_4096.png
+
+.. _Creative Commons Attribution 2.5 Generic: https://creativecommons.org/licenses/by/2.5/deed.en
+
+----
+
+Files:
   img/logo/\*
 Copyright:
   Belongs to their respective owners
