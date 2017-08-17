@@ -92,3 +92,14 @@ Copyright:
   2017, Alex Waite
 License:
   `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
+
+----
+
+Files:
+  theme/fonts/source-sans-pro-\*
+Copyright:
+  2010, 2012, 2014 Adobe Systems Incorporated
+License:
+  `SIL OFL 1.1`_
+
+.. _SIL OFL 1.1: http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
