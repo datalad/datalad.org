@@ -124,9 +124,6 @@ footer p {
   color: #777;
   margin: 0;
 }
-footer svg {
-  height: 6rem;
-}
 
 .footer-links {
   padding: 0;
@@ -135,6 +132,15 @@ footer svg {
   display: inline;
   padding: 0 2rem;
 }
+.footer-links svg {
+  height: 6rem;
+  transition: transform 0.2s linear;
+}
+.footer-links svg:hover {
+  transform: translateY(-0.2em);
+}
+
+
 
 article {
   background: #fff;
