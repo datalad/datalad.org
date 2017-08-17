@@ -86,23 +86,24 @@ nav li a.active {
 
 
 #banner {
-  background: #CCE8F4 url(/theme/images/pic01.jpg);
+  background: #cce8f4 url(/theme/img/banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  padding: 8em 4em;
+  background-size: cover;
+  padding: 12em 6em;
 }
 #banner p {
-  background-color: rgba(34,30,31,0.98);
-  border-radius: 0.2em;
-  color: #d70a53;
-  font-size: 3em;
+  color: #fff;
+  font-size: 3.3em;
   font-weight: 700;
-  line-height: 0.9;
-  margin: 0 auto;
-  padding: 2em;
-  width: 16em;
+  line-height: 0.95;
+  padding: 0;
+  text-shadow: 2px 2px 5px #221E1F;
 }
+#banner .mustard {
+  color: #ffa200;
+}
+
 
 main {
   background: #f7f7f7 url('/theme/img/bg02.png');
