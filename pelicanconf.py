@@ -9,7 +9,7 @@ AUTHOR = u'DataLad Team'
 SITENAME = u'DataLad'
 SITEURL = ''
 
-TIMEZONE = 'America/New_York'
+TIMEZONE = 'Europe/Berlin'
 DEFAULT_LANG = u'en'
 LOCALE = u'en_US.UTF-8'
 
