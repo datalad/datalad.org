@@ -86,7 +86,7 @@ nav li a.active {
 
 
 #banner {
-  background: #cce8f4 url(/theme/img/banner.jpg);
+  background: #000 url(/theme/img/banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
