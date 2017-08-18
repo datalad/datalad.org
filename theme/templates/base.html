@@ -28,7 +28,7 @@
 <body class="no-sidebar">
 
 <nav id="nav">
-  <a class="logo" href="{{ SITEURL }}/"><img src='/theme/img/logo/datalad_nav_wide.png' alt='DataLad Logo' /></a>
+  <a class="logo" href="/"><img src='/theme/img/logo/datalad_nav_wide.png' alt='DataLad Logo' /></a>
   <ul>
   {% for title, link in MENUITEMS %}
     <li><a href="{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
