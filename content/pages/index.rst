@@ -2,7 +2,8 @@ datalad
 *******
 :template: index
 :save_as: index.html
-:url: index.html
+:url: /index.html
+
 
 DataLad aims to provide access to scientific data available from various
 sources (e.g. lab or consortium web-sites such as `Human connectome
