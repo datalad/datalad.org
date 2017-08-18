@@ -177,18 +177,18 @@ nav li a.active {
  *  Page Specific
  */
 
-
-
-
-header img {
-  max-height: 20vh;
-  vertical-align: bottom;
+/* about */
+#ack {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
-
-pre {
-  border-radius: 0.5em;
-  background-color: #f3f3f3;
-  font-family: Inconsolata, Monaco, monospace;
-  padding: 1em;
+#ack div { margin: 0 2em; }
+#ack img {
+  display: block;
+  margin: 0 auto;
 }
+#ack img:first-of-type { margin-bottom: 4em; }
+#ack_funding { flex-grow: 330; }
+#ack_hosting { flex-grow: 445; }
 
