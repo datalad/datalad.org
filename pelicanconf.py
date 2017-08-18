@@ -28,8 +28,7 @@ RELATIVE_URLS = True
 # Configure the site
 #
 STATIC_PATHS = ['images', 'pics', 'css', 'js', 'img']
-MENUITEMS = [ ('Home', '/index.html'),
-              ('About', '/about.html'),
+MENUITEMS = [ ('About', '/about.html'),
               ('Development', '/development.html'),
               ('Articles', '/category/articles.html'),
               ('Installation', 'https://github.com/datalad/datalad#installation'),

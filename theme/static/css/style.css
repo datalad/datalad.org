@@ -131,68 +131,58 @@ footer p {
 }
 
 nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+nav {
   background: #eee;
   border-bottom: 2px solid #ccc;
   font-size: 18px;
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 nav .logo {
-  display: block;
-  line-height: 0;
-  margin: 0 auto;
-  max-width: 400px;
-  width: 80vw;
+  height: 4em;
+  margin: 0.5em 1.3em;
 }
-nav .logo img {
-  display: none; /* non-index pages on landscape mobile have the logo hidden */
-  width: 100%;
-}
-@media screen and (min-height: 400px) {
-  nav .logo img { display: unset; }
-}
+nav .logo img { height: 100%; }
 nav ul {
   columns: 2; -moz-columns: 2; -webkit-columns: 2;
   column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
   column-rule: 1px dotted #999; -moz-column-rule: 1px dotted #999; -webkit-column-rule: 1px dotted #999;
   list-style-type: none;
-  margin: 0;
-  padding: 1em 0 0 0;
-  text-align: left;
+  margin: 0.5em 0;
+  padding: 0;
 }
-nav li:nth-of-type(-n+4) { text-align: right; }
+nav li:nth-of-type(-n+3) { text-align: right; }
 nav li a {
   border-bottom: 3px solid transparent;
   color: #555;
   font-weight: 700;
-  padding: 0 0.3em;
+  padding: 0 0.3em 0 0;
   text-decoration: none;
 }
+nav li:nth-of-type(-n+3) a { padding: 0 0 0 0.3em; }
 @media screen and (min-width: 768px) {
   nav {
-    display: flex;
     justify-content: center;
-    height: 50px;
-    padding: 0;
+    padding: 0.3em;
     position: fixed;
     top: 0;
-    width: 100%;
   }
   nav .logo {
-    margin: 0 1.3em 0 0;
-    padding: 5px 0;
-    width: 91px;
+    height: 2em;
+    margin: 0 1.3em;
   }
-  nav .logo img { display: unset; }
-  nav ul {
-    columns: auto; -moz-columns: auto; -webkit-columns: auto;
-    padding: 13px 0;
-    text-align: inherit;
-  }
+  nav ul { columns: auto; -moz-columns: auto; -webkit-columns: auto; }
   nav li { display: inline-block; }
-  nav li:nth-of-type(-n+4) { text-align: inherit; }
+  nav li:nth-of-type(-n+3) { text-align: inherit; }
   nav li a {
     border-top: 3px solid transparent;
-    margin: 0.8em 1.35em;
+    margin: 0.8em 1.3em;
+    padding: 0 0.3em;
     transition: border-color 0.35s;
   }
   nav li a:hover { border-bottom: 3px solid #ffa200; }
