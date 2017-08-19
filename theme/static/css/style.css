@@ -81,22 +81,34 @@ article {
 }
 
 #banner {
-  background: #000 url(/theme/img/banner.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 12em 6em;
+  background: #333;
+  padding: 1.8em;
 }
 #banner p {
   color: #fff;
-  font-size: 3.3em;
+  font-size: 2em;
   font-weight: 700;
-  line-height: 0.95;
+  line-height: 1.1em;
+  margin: 0 auto;
+  max-width: 25ch;
   padding: 0;
   text-align: center;
-  text-shadow: 2px 2px 5px #221E1F;
+  text-shadow: 0 0 2em #aaa;
 }
 #banner .mustard { color: #ffa200; }
+@media screen and (min-width: 768px) {
+  #banner {
+    background: #000 url(/theme/img/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12em 6em;
+  }
+  #banner p {
+    font-size: 3.3em;
+    text-shadow: 2px 2px 5px #221E1F;
+  }
+}
 
 footer {
   background-color: #f5f5f5;
