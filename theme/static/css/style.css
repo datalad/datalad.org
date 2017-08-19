@@ -69,7 +69,7 @@ h3 { font-size: 2.0em; }
 article {
   background: #fff;
   line-height: 2.3em;
-  padding: 2.75em 2em;
+  padding: 1em 2em;
 }
 @media screen and (min-width: 768px) {
   article {
