@@ -9,6 +9,51 @@
 
 {% block content %}
 <article>
-  {% if page %} {{ page.content }} {% endif %}
+  <p>DataLad aims to provide access to scientific data available from various
+     sources (e.g. lab or consortium websites such as
+     <a href="http://humanconnectome.org">Human connectome</a>;
+     data sharing portals such as <a href="http://openfmri.org">OpenFMRI</a>
+     and <a href="http://crcns.org">CRCNS</a>) through a single
+     convenient interface and integrated with your software package managers
+     (such as APT in Debian). Although initially targeting neuroimaging and
+     neuroscience data in general, it is not limited by the domain and we
+     welcome a wide range of contributions.</p>
 </article>
+
+<div class="cards_wrap">
+  <div class="card">
+    <h2>Acquire</h2>
+    <p>This is a <strong>one-of-a-kind resource</strong> for studying high-level cognition in
+    the human brain under complex, natural stimulation. However, the
+    versatility of the provided data, for some individuals almost ten hours of
+    fMRI data alone, enables studies far beyond this main focus. This covers a
+    vast range from studies of low-level signal properties and brain
+    structure, over sensory integration and attentional processes, to
+    computational modeling of representational spaces and brain area
+    interactions. Take a look the <a class="reference external" href="http://studyforrest.org/publications.html">Publications Page</a> to get inspired.</p>
+  </div>
+  <div class="card">
+    <h2>Share</h2>
+    <p>The <em>studyforrest</em> project provides <strong>ideal reference datasets</strong> for brain
+    imaging. It's a comprehensive, modular, multi-modal, real-world dataset
+    — making it an optimal choice when benchmarking algorithms or comparing
+    implementations across projects.</p>
+    <p>Liberally licensed (<a class="reference external" href="http://opendatacommons.org/licenses/pddl/1.0/">PDDL</a>) and hosted across many
+    <a class="reference external" href="http://studyforrest.org/access.html">different services</a> (S3, rsync, OpenfMRI,
+    etc) with fine-grained access options, the <em>studyforrest</em> dataset is
+    easily accessible and is ready to be integrated into your CI
+    infrastructure.</p>
+  </div>
+  <div class="card">
+    <h2>Extend</h2>
+    <p>Not keen on brain research? This project still has something to offer to
+    you! For example, our ongoing effort to analyze the <strong>structure of the
+    movie "Forrest Gump"</strong> and annotate its properties continues to expand the
+    breadth of topics that can be explored. Check out the <a class="reference external" href="http://studyforrest.org/data.html">Data Page</a> to see what is already in store.</p>
+    <p>What we're most interested in, we admit, is that which we cannot
+    anticipate. So please, invent applications and <strong>explore ideas you have</strong>
+    that we aren't even aware of — yet.... and do tell us about them!</p>
+  </div>
+</div>
+
 {% endblock content %}

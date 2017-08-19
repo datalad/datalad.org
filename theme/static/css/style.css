@@ -236,3 +236,26 @@ nav li a.active {
 #ack_funding { flex-grow: 330; }
 #ack_hosting { flex-grow: 445; }
 
+/* index */
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2em 0;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-width: 1px 0 2px 0;
+  box-shadow: 0 1px 1em #ccc;
+  margin: 1em;
+  max-width: 280px;
+  padding: 2em;
+}
+.card h2 {
+  margin: 0;
+}
+.card p {
+  margin: 0;
+  padding: 2em 0 0 0;
+}
