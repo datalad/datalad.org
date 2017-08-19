@@ -41,6 +41,9 @@ body {
   font-weight: 300;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  body { margin-top: 2em; }
+}
 
 strong { color: #312a2c; }
 
@@ -138,7 +141,7 @@ footer p {
 @media screen and (min-width: 768px) {
   main {
     background: #f7f7f7 url('/theme/img/bg.png');
-    padding: 6em 0;
+    padding: 4em 0 3em 0;
   }
 }
 
