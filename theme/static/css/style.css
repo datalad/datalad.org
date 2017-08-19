@@ -156,10 +156,10 @@ nav {
   background: #eee;
   border-bottom: 2px solid #ccc;
   font-size: 18px;
-  padding: 0.5em 0;
+  padding: 1.3em 0;
 }
 nav .logo {
-  height: 4em;
+  height: 6em;
   margin: 0.5em 1.3em;
 }
 nav .logo img { height: 100%; }
@@ -168,7 +168,7 @@ nav ul {
   column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
   column-rule: 1px dotted #999; -moz-column-rule: 1px dotted #999; -webkit-column-rule: 1px dotted #999;
   list-style-type: none;
-  margin: 0.5em 0;
+  margin: 1em 0 0.5em 0;
   padding: 0;
 }
 nav li:nth-of-type(-n+3) { text-align: right; }
@@ -191,7 +191,10 @@ nav li:nth-of-type(-n+3) a { padding: 0 0 0 0.3em; }
     height: 2em;
     margin: 0 1.3em;
   }
-  nav ul { columns: auto; -moz-columns: auto; -webkit-columns: auto; }
+  nav ul {
+    columns: auto; -moz-columns: auto; -webkit-columns: auto;
+    margin: 0.5em 0;
+  }
   nav li { display: inline-block; }
   nav li:nth-of-type(-n+3) { text-align: inherit; }
   nav li a {
