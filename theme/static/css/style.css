@@ -137,7 +137,7 @@ footer p {
 
 @media screen and (min-width: 768px) {
   main {
-    background: #f7f7f7 url('/theme/img/bg02.png');
+    background: #f7f7f7 url('/theme/img/bg.png');
     padding: 6em 0;
   }
 }
