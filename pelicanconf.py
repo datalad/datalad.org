@@ -17,7 +17,7 @@ LOCALE = u'en_US.UTF-8'
 # Configure Pelican a bit
 #
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['summary', 'liquid_tags.notebook']
+PLUGINS = []
 
 THEME = 'theme/'
 
