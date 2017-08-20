@@ -82,7 +82,7 @@ article {
     border-bottom: solid 1px #ddd;
     border-radius: 0.2em;
     line-height: 2.3em;
-    padding: 2.75em 2em;
+    padding: 2em;
   }
 }
 
@@ -119,10 +119,12 @@ article {
 footer {
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
-  padding: 1.5em 0 0 0;
   text-align: center;
 }
-footer ul { padding: 0; }
+footer ul {
+  margin: 2em 0;
+  padding: 0;
+}
 footer li {
   display: inline;
   padding: 0 2rem;
@@ -141,6 +143,7 @@ footer p {
   padding: 1em;
 }
 
+main { padding: 0 0 3em 0; }
 @media screen and (min-width: 768px) {
   main {
     background: #f7f7f7 url('/theme/img/bg.png');
@@ -161,8 +164,8 @@ nav {
   padding: 1.3em 0;
 }
 nav .logo {
-  height: 6em;
   margin: 0.5em 1.3em;
+  max-height: 6em;
 }
 nav .logo img { height: 100%; }
 nav ul {
