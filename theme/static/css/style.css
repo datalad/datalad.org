@@ -41,9 +41,6 @@ body {
   font-weight: 300;
   margin: 0;
 }
-@media screen and (min-width: 768px) {
-  body { margin-top: 2em; }
-}
 
 strong { color: #312a2c; }
 
@@ -148,7 +145,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100%;
 }
 nav {
   background: #eee;
@@ -181,12 +177,10 @@ nav li:nth-of-type(-n+3) a { padding: 0 0 0 0.3em; }
 @media screen and (min-width: 768px) {
   nav {
     justify-content: center;
-    padding: 0.3em;
-    position: fixed;
-    top: 0;
+    padding: 0.5em;
   }
   nav .logo {
-    height: 2em;
+    height: 4em;
     margin: 0 1.3em;
   }
   nav ul {
