@@ -140,7 +140,7 @@ footer p {
   border-top: 1px solid #ddd;
   color: #777;
   margin: 0;
-  padding: 1em;
+  padding: 0.5em 1em;
 }
 
 main { padding: 0 0 3em 0; }
@@ -172,8 +172,9 @@ nav ul {
   columns: 2; -moz-columns: 2; -webkit-columns: 2;
   column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
   column-rule: 1px dotted #999; -moz-column-rule: 1px dotted #999; -webkit-column-rule: 1px dotted #999;
+  line-height: 1.6em;
   list-style-type: none;
-  margin: 1em 0 0.5em 0;
+  margin: 1.3rem 0 0.5rem 0;
   padding: 0;
 }
 nav li:nth-of-type(-n+3) { text-align: right; }
