@@ -233,19 +233,16 @@ nav li a.active {
  */
 
 /* about */
-#ack {
+#ack, #makers {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-#ack div { margin: 0 2em; }
-#ack img {
-  display: block;
-  margin: 0 auto;
-}
-#ack img:first-of-type { margin-bottom: 4em; }
-#ack_funding { flex-grow: 330; }
-#ack_hosting { flex-grow: 445; }
+#ack a, #makers a { margin: 1em; }
+#ack img, #makers img { max-width: 100%; }
+#ack a { max-width: 300px; }
+#makers a { max-width: 410px; }
 
 /* index */
 .cards_wrap {
