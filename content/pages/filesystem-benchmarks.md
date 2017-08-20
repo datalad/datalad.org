@@ -1,9 +1,6 @@
 Title: git-annex-centric benchmark of the filesystems
 date: 2015-07-06 21:15
 slug: test_fs_analysis
-tags: development
-author: Yaroslav Halchenko
-comments: true
 
 ### Problem statement
 

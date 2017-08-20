@@ -30,9 +30,9 @@ RELATIVE_URLS = True
 STATIC_PATHS = ['images', 'pics', 'css', 'js', 'img']
 MENUITEMS = [ ('About', '/about.html'),
               ('Development', '/development.html'),
-              ('Articles', '/category/articles.html'),
-              ('Installation', 'https://github.com/datalad/datalad#installation'),
-              ('Datasets', 'http://datasets.datalad.org'),
+              ('Articles', '/articles.html'),
+              ('Get DataLad', '/get_datalad.html'),
+              ('Datasets', '/datasets.html'),
               ('Docs', 'http://docs.datalad.org'),
 ]
 
