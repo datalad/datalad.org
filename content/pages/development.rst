@@ -23,3 +23,7 @@ The documentation is found in the source tree in the `docs subfolder
 
 If you would like to help with the website or have suggestions, you can find the
 code and issue tracker at http://github.com/datalad/datalad.org.
+
+Want to get in contact with us? `Twitter <https://twitter.com/datalad>`_ and
+`GitHub <https://github.com/datalad/datalad>`_ are best, but we also have a team
+email account at `team@datalad.org <mailto:team@datalad.org>`_.
