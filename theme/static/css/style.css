@@ -155,7 +155,7 @@ nav {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 nav {
   background: #eee;
@@ -248,7 +248,7 @@ nav li a.active {
 #cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .card {
   background: #fff;
