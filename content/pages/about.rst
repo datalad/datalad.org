@@ -1,5 +1,5 @@
-About
-*****
+Why DataLad?
+************
 :save_as: about.html
 :url: /about.html
 
@@ -12,14 +12,14 @@ While version control systems are a de-facto standard for open source software
 development, a similar level of tooling and culture is not present in the open
 data community.
 
-DataLad builds of off `git-annex`_ and extends it with an intuitive
+DataLad builds off of `git-annex`_ and extends it with an intuitive
 command-line-interface. It enables users to operate on data using familiar
 concepts, such as files and directories, while transparently managing data
 access and authorization with underlying hosting providers.
 
 A powerful and complete Python API is also provided to enable authors of
 data-centric applications to bring versioning and the fearless acquisition of
-data into their CI (continuous integration) workflows.
+data into continuous integration workflows.
 
 From the Makers of
 ==================
