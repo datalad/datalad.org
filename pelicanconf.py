@@ -21,8 +21,10 @@ PLUGINS = []
 
 THEME = 'theme/'
 
+CATEGORY_FEED_ATOM = None
 FEED_ALL_ATOM = None
-RELATIVE_URLS = True
+
+RELATIVE_URLS = False
 
 #
 # Configure the site
@@ -35,13 +37,3 @@ MENUITEMS = [ ('About', '/about.html'),
               ('Datasets', '/datasets.html'),
               ('Docs', 'http://docs.datalad.org'),
 ]
-
-DEFAULT_PAGINATION = 10
-
-#
-# Analytics and Social media
-#
-ADDTHIS_PROFILE = 'ra-54357285299eeaa8'
-ADDTHIS_DATA_TRACK_ADDRESSBAR = False
-
-GOOGLE_ANALYTICS = "UA-55535442-1"
