@@ -20,7 +20,6 @@ ifeq ($(DEBUG), 1)
 endif
 
 all:
-	$(MAKE) -C content/pics/
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '
