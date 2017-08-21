@@ -53,6 +53,13 @@ body {
 
 main { flex: 1; }
 
+nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 #content {
   margin: 0 auto;
   max-width: 960px;
@@ -143,12 +150,6 @@ main {
   }
 }
 
-nav {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 nav {
   background: #eee;
   border-bottom: 2px solid #ccc;
