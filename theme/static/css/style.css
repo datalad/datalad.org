@@ -247,16 +247,19 @@ nav li a.active {
 #makers a { max-width: 410px; }
 
 /* index */
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 .card {
   background: #fff;
-  margin: 0 1em;
   padding: 1em;
 }
-.card h2 { margin-top: 0; }
 @media screen and (min-width: 768px) {
   .card {
     border: 1px solid #eee;
-    padding: 2em;
+    max-width: calc(50% - 2px - 6em);
+    padding: 1em 2em;
   }
-  .card + .card { margin-top: 3em; }
 }

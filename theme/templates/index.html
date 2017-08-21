@@ -8,27 +8,36 @@
 {% endblock banner %}
 
 {% block content %}
-  <div class='card'>
-    <p>DataLad aims to provide access to scientific data available from various
-       sources (e.g. lab or consortium websites such as
-       <a href="http://humanconnectome.org">Human connectome</a>;
-       data sharing portals such as <a href="http://openfmri.org">OpenFMRI</a>
-       and <a href="http://crcns.org">CRCNS</a>) through a single
-       convenient interface and integrated with your software package managers
-       (such as APT in Debian). Although initially targeting neuroimaging and
-       neuroscience data in general, it is not limited by the domain and we
-       welcome a wide range of contributions.</p>
-  </div>
+  <div id='cards'>
+    <div class='card'>
+      <h2>What is DataLad?</h2>
+      <p>DataLad is an <strong>open source</strong> utility that brings the core
+         concepts of version control systems to data — allowing
+         <strong>versioning, branching, publishing, and merging</strong> with
+         ease throughout the data lifecycle.</p>
 
-  <div class='card'>
-    <h2>Getting Started</h2>
-    <p>DataLad is easy to use whether you're new to data-wrangling or a seasoned
-       data portal operator. The following pages are tailored to match the
-       skills, vocabulary, and workflows of each of these audiences.</p>
-    <ul>
-      <li><a href=''>Everyone</a></li>
-      <li><a href=''>Neuroscientists</a></li>
-    </ul>
+      <p>Leveraging git-annex and taking git's concept of decentralization a step
+         further, DataLad's "data handles" enable the selective acquisition of
+         files and, when configured, across mirrors and a variety of transport
+         methods (HTTP, FTP, rsync, torrents, and more).</p>
+
+      <p>The DataLad project also operates a crawler that regularly indexes
+         datasets from popular data portals such as
+         <a href="http://openfmri.org">OpenFMRI</a> and
+         <a href="http://crcns.org">CRCNS</a>, making them trivial to acquire
+         and work with using datalad.</p>
+    </div>
+
+    <div class='card'>
+      <h2>Getting Started</h2>
+      <p>DataLad is easy to use whether you're new to data-wrangling or a
+         seasoned data portal operator. The following pages are tailored to
+         match the skills, vocabulary, and workflows of each of these audiences.</p>
+      <ul>
+        <li><a href=''>Everyone</a></li>
+        <li><a href=''>Neuroscientists</a></li>
+      </ul>
+    </div>
   </div>
 
 {% endblock content %}
