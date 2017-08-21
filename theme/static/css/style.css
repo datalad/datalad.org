@@ -36,7 +36,7 @@ a {
 a:hover { text-decoration: none; }
 
 body {
-  color: #5d5d5d;
+  color: #505050;
   font-family: 'Source Sans Pro';
   font-weight: 300;
   margin: 0;
@@ -78,7 +78,7 @@ article {
 }
 @media screen and (min-width: 768px) {
   article {
-    border-bottom: solid 1px #ddd;
+    border: 1px solid #eee;
     border-radius: 0.2em;
     line-height: 2.3em;
     padding: 2em;
@@ -255,7 +255,7 @@ nav li a.active {
 .card h2 { margin-top: 0; }
 @media screen and (min-width: 768px) {
   .card {
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     padding: 2em;
   }
   .card + .card { margin-top: 3em; }
