@@ -30,8 +30,10 @@
 <nav id="nav">
   <a class="logo" href="/"><img src='/theme/img/logo/datalad_nav_wide.png' alt='DataLad Logo' /></a>
   <ul>
-  {% for title, link in MENUITEMS %}
-    <li><a href="{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
+  {% for title, link, target in MENUITEMS %}
+    {% if page and page.url == link %}{% set link_class = "class='active'" %}{% endif %}
+    {% if target %}{% set link_target = "target='" ~ target ~ "' rel='noopener noreferrer'" %}{% endif %}
+    <li><a href="{{ link }}" {{ link_class }} {{ link_target }}>{{ title }}</a></li>
   {% endfor %}
   </ul>
 </nav>

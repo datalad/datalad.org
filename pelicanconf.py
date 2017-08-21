@@ -30,10 +30,10 @@ RELATIVE_URLS = False
 # Configure the site
 #
 STATIC_PATHS = ['images', 'pics', 'css', 'js', 'img']
-MENUITEMS = [ ('About', '/about.html'),
-              ('Development', '/development.html'),
-              ('Articles', '/articles.html'),
-              ('Get DataLad', '/get_datalad.html'),
-              ('Datasets', '/datasets.html'),
-              ('Docs', 'http://docs.datalad.org'),
+MENUITEMS = [ ('About', '/about.html', None),
+              ('Development', '/development.html', None),
+              ('Articles', '/articles.html', None),
+              ('Get DataLad', '/get_datalad.html', None),
+              ('Datasets', '/datasets.html', None),
+              ('Docs', 'http://docs.datalad.org', '_blank'),
 ]
