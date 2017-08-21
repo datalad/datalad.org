@@ -6,14 +6,6 @@
 @font-face { /* License: OFL 1.1 */
   font-family: 'Source Sans Pro';
   font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'),
-       url('/theme/fonts/source-sans-pro-v10-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/theme/fonts/source-sans-pro-v10-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face { /* License: OFL 1.1 */
-  font-family: 'Source Sans Pro';
-  font-style: normal;
   font-weight: 400;
   src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
        url('/theme/fonts/source-sans-pro-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -36,9 +28,8 @@ a {
 a:hover { text-decoration: none; }
 
 body {
-  color: #505050;
+  color: #707070;
   font-family: 'Source Sans Pro';
-  font-weight: 300;
   margin: 0;
 }
 
@@ -141,6 +132,7 @@ footer p {
 }
 
 main {
+  letter-spacing: 0.5px;
   line-height: 2.3em;
   padding: 0 0 3em 0;
 }
