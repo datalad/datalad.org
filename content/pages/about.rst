@@ -3,23 +3,23 @@ About
 :save_as: about.html
 :url: /about.html
 
-DataLad adapts the model of open-source software distributions to address the
-technical limitations of today's data-sharing to create all the necessary
-components of a "data distribution". The key concepts are:
+When publishing data, merely providing file access is insufficient for a simple
+reason: data are not static. Released data often (and should!) continue to
+evolve; file formats can change, bugs will be fixed, new data are added, and
+derived data needs to be integrated.
 
-1. Leverage — but do not replace — independent, existing, and future data
-   hosting solutions to form a federated platform for data-sharing.
-2. Employ software for data tracking and deployment logistics specialized for
-   large data (git-annex_) built atop git_, the most capable distributed version
-   control system (dVCS) available today, to enable efficient data access at any
-   level of granularity (from single files to entire collections of datasets).
+While version control systems are a de-facto standard for open source software
+development, a similar level of tooling and culture is not present in the open
+data community.
 
-DataLad provides access to data available from a variety of sources (e.g.
-lab or consortium web-sites such as http://humanconnectome.org; data sharing
-portals such as http://openfmri.org and http://crcns.org) through a single
-interface. It enables users to operate on data using familiar concepts, such as
-files and directories, while transparently managing data access and
-authorization with underlying hosting providers.
+DataLad builds of off `git-annex`_ and extends it with an intuitive
+command-line-interface. It enables users to operate on data using familiar
+concepts, such as files and directories, while transparently managing data
+access and authorization with underlying hosting providers.
+
+A powerful and complete Python API is also provided to enable authors of
+data-centric applications to bring versioning and the fearless acquisition of
+data into their CI (continuous integration) workflows.
 
 From the Makers of
 ==================
