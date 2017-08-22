@@ -1,4 +1,4 @@
-datalad
+DataLad
 *******
 :template: index
 :save_as: index.html

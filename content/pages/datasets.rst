@@ -3,10 +3,10 @@ Datasets
 :save_as: datasets.html
 :url: /datasets.html
 
-Datalad can track any data files that are published on the web. It is able
+DataLad can track any data files that are published on the web. It is able
 to monitor and incorporate modifications made to such data sources over time,
 and to publish entire distributions of datasets created by this automated
-process. The datalad team maintains data trackers for a number of public data
+process. The DataLad team maintains data trackers for a number of public data
 portals. The generated datasets are available at http://datasets.datalad.org
 
 At present, this website offers uniform access to over 9TB of scientific
