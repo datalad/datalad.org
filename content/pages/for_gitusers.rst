@@ -1,4 +1,4 @@
-Git users
+Git Users
 *********
 :save_as: for/gitusers.html
 :url: /for/gitusers.html
@@ -20,19 +20,18 @@ To better illustrate the different scopes, the following table provides an
 overview of the features that are contributed by each software technology
 layer.
 
-================================================   =============  ===============   ==============
-Feature                                             Git            Git-annex         DataLad
-================================================   =============  ===============   ==============
-Version control (text, code)                       |tup|          |tup| can mix     |tup| can mix
-Version control (binary data)                      (not advised)  |tup|             |tup|
-Auto-crawling available resources                                 |tup| RSS feeds   |tup| flexible
-Unified dataset handling                                                            |tup|
-- recursive operation on datasets                                                   |tup|
-- seamless operation across datasets boundaries                                     |tup|
-- meta-data support                                               |tup| per-file    |tup|
-- meta-data aggregation                                                             |tup| flexible
-Unified authentication interface                                                    |tup|
-================================================   =============  ===============   ==============
+================================================  =============  ===============  ==============
+Feature                                            Git            Git-annex       DataLad
+================================================  =============  ===============  ==============
+Version control (text, code)                      |tup|          |tup| can mix    |tup| can mix
+Version control (binary data)                     (not advised)  |tup|            |tup|
+Auto-crawling available resources                                |tup| RSS feeds  |tup| flexible
+Unified dataset handling                                                          |tup|
+- recursive operation on datasets                                                 |tup|
+- seamless operation across datasets boundaries                                   |tup|
+- meta-data support                                              |tup| per-file   |tup|
+- meta-data aggregation                                                           |tup| flexible
+Unified authentication interface                                                  |tup|
+================================================  =============  ===============  ==============
 
 .. |tup| unicode:: U+2713 .. check mark
-   :trim:

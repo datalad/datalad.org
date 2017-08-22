@@ -48,6 +48,32 @@ pre {
   padding: 1em;
 }
 
+table {
+  border-bottom: 1px solid #e7e7e7;
+  border-spacing: 0;
+  line-height: 1.1em;
+  width: 100%;
+}
+thead {
+  background: #555;
+  border-bottom: 3px solid #ccc;
+  color: #fff;
+}
+td, th { padding: 0.5em 1em; }
+td + td { border-left: 1px solid #e7e7e7; }
+th + th { border-left: 1px solid #888; }
+tr {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  padding: 0.5em;
+}
+tr:nth-of-type(even) { background: #f4f4f4; }
+tr:nth-of-type(even) td + td { border-left: 1px solid #e0e0e0; }
+table ul { margin: 0; }
+@media screen and (min-width: 768px) {
+  table { line-height: unset; }
+}
+
 tt {
   border: 1px solid #ddd;
   color: #e74c3c;
