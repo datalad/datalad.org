@@ -23,15 +23,17 @@ layer.
 ================================================  =============  ===============  ==============
 Feature                                            Git            Git-annex       DataLad
 ================================================  =============  ===============  ==============
-Version control (text, code)                      |tup|          |tup| can mix    |tup| can mix
-Version control (binary data)                     (not advised)  |tup|            |tup|
-Auto-crawling available resources                                |tup| RSS feeds  |tup| flexible
-Unified dataset handling                                                          |tup|
-- recursive operation on datasets                                                 |tup|
-- seamless operation across datasets boundaries                                   |tup|
-- meta-data support                                              |tup| per-file   |tup|
-- meta-data aggregation                                                           |tup| flexible
-Unified authentication interface                                                  |tup|
+Version control (text, code)                      |chk|          |chk|            |chk|
+Version control (binary data)                     (not advised)  |chk|            |chk|
+Auto-crawling available resources                                |chk| RSS feeds  |chk| flexible
+Unified dataset handling                                                          |chk|
+- recursive operation on datasets                                                 |chk|
+- seamless operation across datasets boundaries                                   |chk|
+- meta-data support                                              |chk| per-file   |chk|
+- meta-data aggregation                                                           |chk| flexible
+Unified authentication interface                                                  |chk|
 ================================================  =============  ===============  ==============
 
-.. |tup| unicode:: U+2713 .. check mark
+.. |chk| raw:: html
+
+   <i class="icon-ok"></i>

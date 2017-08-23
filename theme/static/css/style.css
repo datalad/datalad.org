@@ -343,3 +343,5 @@ nav li a.active {
   margin-right: 0.5em;
   vertical-align: bottom;
 }
+/* for/gitusers.html */
+table .icon-ok { color: #009c24; }
