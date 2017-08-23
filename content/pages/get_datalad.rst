@@ -5,7 +5,7 @@ Get DataLad
 
 Binaries are provided for for Debian and Ubuntu (see below). For all other
 systems, DataLad can easily be installed via pip_. To automatically install
-DataLad and its software dependencies type::
+DataLad and its software dependencies type ::
 
   pip install datalad
 
@@ -42,7 +42,7 @@ OS X
 ----
 
 A simple way to install packages on OS X is via the homebrew_ package manager.
-Git-annex is installed by the command::
+Git-annex is installed by the command ::
 
   brew install git-annex
 
