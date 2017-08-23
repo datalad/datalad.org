@@ -31,18 +31,6 @@
       "src": "fontawesome"
     },
     {
-      "uid": "de2fc7a5c986ab8c622f63455d7cf814",
-      "css": "upload-cloud",
-      "code": 61678,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "f5999a012fc3752386635ec02a858447",
-      "css": "download-cloud",
-      "code": 61677,
-      "src": "fontawesome"
-    },
-    {
       "uid": "c9b928dc82d7d77033644fcf59dca3b3",
       "css": "flashlight",
       "code": 59393,
@@ -64,6 +52,12 @@
       "uid": "9a76bc135eac17d2c8b8ad4a5774fc87",
       "css": "download",
       "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4a74a0f87d4089efe7aba1825bff4193",
+      "css": "copyright",
+      "code": 61945,
       "src": "fontawesome"
     }
   ]
