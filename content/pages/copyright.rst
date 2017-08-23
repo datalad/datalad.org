@@ -103,3 +103,26 @@ License:
   `SIL OFL 1.1`_
 
 .. _SIL OFL 1.1: http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
+
+----
+
+Files:
+  theme/fonts/fontello\*
+Copyright:
+  `Font Awesome`_, `Entypo`_
+License:
+  `SIL OFL 1.1`_
+
+.. _Font Awesome: http://fontawesome.io/
+.. _Entypo: http://www.entypo.com/
+
+----
+
+Files:
+  theme/css/fontello.css
+Copyright:
+  `Fontello`_
+License:
+  `MIT`_
+
+.. _Fontello: http://fontello.com/
