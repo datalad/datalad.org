@@ -8,5 +8,4 @@ Thoughts?
 
 .. raw:: html
 
-     <asciinema-player src="/asciicast/test.json" cols="80" rows="24"></asciinema-player>
-
+     <asciinema-player src="/asciicast/seamless_nested_repos.json" cols="80" rows="24" data-preload=1></asciinema-player>

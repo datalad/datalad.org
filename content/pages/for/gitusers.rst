@@ -1,24 +1,25 @@
-Git Users
-*********
+DataLad features for Git and git-annex users
+********************************************
+:template: asciinema
 :save_as: for/gitusers.html
 :url: /for/gitusers.html
 
-Although it is possible, and intended, to use DataLad without ever invoking git
-or git-annex commands directly, it is useful to appreciate that DataLad is
-build atop very flexible and powerful tools. Knowing the basics of git and
-git-annex in addition to DataLad helps to not only make better use of
-DataLad but also to enable more advanced and more efficient data management
-scenarios. DataLad makes use of lower-level configuration and data structures
-as much as possible. Consequently, it is possible to manipulate DataLad
-datasets with low-level tools if needed. By design, DataLad datasets are
-compatible with tools and services designed to work with plain Git repositories,
-such as the popular GitHub_ platform.
+DataLad is built off of Git and git-annex, and if you are familiar with these
+tools, you should feel at home with DataLad too. DataLad aims to be a unifying
+top-level layer that makes working for Git and git-annex easier, without
+getting in the way of power-users.
 
-.. _github: https://github.com
+DataLad's most unique feature, compared to Git and git-annex is its ability to
+seamlessly work with an entire tree of nested repositories (i.e. Git submodules).
+This is best explained in a brief demo:
 
-To better illustrate the different scopes, the following table provides an
-overview of the features that are contributed by each software technology
-layer.
+.. raw:: html
+
+    <asciinema-player src="/asciicast/seamless_nested_repos.json" cols="80" rows="24"></asciinema-player>
+
+
+To better illustrate the what features are contributed by which tonology layer,
+please see the following table.
 
 ================================================  =============  ===============  ==============
 Feature                                            Git            Git-annex       DataLad
