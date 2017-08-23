@@ -280,11 +280,20 @@ nav li a.active {
 }
 .card {
   background: #fff;
+  margin: 1em 0;
   padding: 1em 2em;
 }
+.card h2 { margin: 0; }
 @media screen and (min-width: 768px) {
   .card {
     border: 1px solid #eee;
-    max-width: calc(50% - 2px - 6em);
+    border-top: 3px solid #999;
+    width: calc(50% - 2px - 6em);
   }
+}
+
+.card [class^="icon-"]:before, .card [class*=" icon-"]:before {
+  color: #ffa200;
+  margin-right: 0.5em;
+  vertical-align: bottom;
 }
