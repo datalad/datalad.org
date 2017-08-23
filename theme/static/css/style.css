@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -122,7 +122,7 @@ tr:nth-of-type(even) { background: #f4f4f4; }
 tr:nth-of-type(even) td + td { border-left: 1px solid #e0e0e0; }
 table ul { margin: 0; }
 @media screen and (min-width: 768px) {
-  table { line-height: unset; }
+  table { line-height: inherit; }
 }
 
 tt {
@@ -208,9 +208,6 @@ main {
     background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0MDAnIGhlaWdodD0nNDAwJyB2aWV3Qm94PScwIDAgNDAwIDQwMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBpZD0nYmx1ZXN0cmlwZScgcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgeD0nMCcgeT0nMCcgd2lkdGg9JzQnIGhlaWdodD0nNCcgdmlld0JveD0nMCAwIDQgNCcgPgoJCQk8bGluZSB4MT0nLTEnIHkxPSctMScgeDI9JzQnIHkyPSc0JyBzdHJva2U9JyNlMGUwZTAnIHN0cm9rZS13aWR0aD0nMScvPgoJCQk8bGluZSB4MT0nMycgeTE9Jy0xJyB4Mj0nNScgeTI9JzEnIHN0cm9rZT0nI2UwZTBlMCcgc3Ryb2tlLXdpZHRoPScxJy8+CgkJCTxsaW5lIHgxPSctMScgeTE9JzMnIHgyPScxJyB5Mj0nNScgc3Ryb2tlPScjZTBlMGUwJyBzdHJva2Utd2lkdGg9JzEnLz4KCQk8L3BhdHRlcm4+IAoJCTxmaWx0ZXIgaWQ9J2Z1enonIHg9JzAnIHk9JzAnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J3R1cmJ1bGVuY2UnIGJhc2VGcmVxdWVuY3k9Jy41JyBudW1PY3RhdmVzPScyJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+CgkJCTxmZUNvbnZvbHZlTWF0cml4IG9yZGVyPSczLDMnIGtlcm5lbE1hdHJpeD0nMCwtLjI1LDAsLS4yNSwyLC0uMjUsMCwtLjI1LDAnLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYmx1ZXN0cmlwZSknLz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNmdXp6KScgb3BhY2l0eT0nMC4xNicvPgo8L3N2Zz4=);
     padding: 2em 0;
   }
-}
-@media screen and (min-width: 1000px) {
-  main { padding 3em 0; }
 }
 
 nav {
@@ -339,10 +336,10 @@ nav li a.active {
 }
 .card {
   background: #fff;
-  margin: 1em 0;
+  margin: 1em 0 0 0;
   padding: 1em 2em;
 }
-.card [class^="icon-"]:before, .card [class*=" icon-"]:before {
+.card [class^="icon-"]:before {
   color: #ffa200;
   margin-right: 0.5em;
   vertical-align: bottom;
@@ -352,6 +349,7 @@ nav li a.active {
   .card {
     border: 1px solid #eee;
     border-top: 3px solid #999;
+    margin: 1em 0;
     width: calc(50% - 2px - 6em);
   }
 }
@@ -362,15 +360,10 @@ nav li a.active {
     display: flex;
     justify-content: center;
   }
-  .download p {
-    margin: 0 0 1em 0;
-    transform: perspective(1px) translateZ(0);
-    transition: transform 0.3s;
-  }
-  .download p:hover { transform: scale(1.1); }
+  .download p { margin: 0 0 1em 0; }
   .download a {
     background: #ffa200;
-    border: 2px solid #d37e07;
+    border: 2px solid #de942c;
     border-radius: 2em;
     box-shadow: 0 3px 10px #bbb;
     color: #fff;
@@ -378,5 +371,7 @@ nav li a.active {
     font-size: 1.6em;
     padding: 0.5em 4em;
     text-decoration: none;
+    transition: transform 0.3s;
   }
+  .download a:hover { transform: scale(1.1); }
 }
