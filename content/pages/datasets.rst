@@ -12,9 +12,9 @@ portals. The generated datasets are available at http://datasets.datalad.org
 At present, this website offers uniform access to over 9TB of scientific
 dataset. This includes data from:
 
-- OpenFMRI
-- NeuroVault
-- International Neuroimaging Data-sharing Initiative (INDI)
-- Healthy Brain Network Serial Scanning Initiative (HBN-SSI)
-- Data sharing for Collaborative Research in Computational Neuroscience (CRCNS.org)
+- `OpenFMRI <https://openfmri.org>`_
+- `NeuroVault <https://neurovault.org>`_
+- `International Neuroimaging Data-sharing Initiative (INDI) <http://fcon_1000.projects.nitrc.org>`_
+- `Healthy Brain Network Serial Scanning Initiative (HBN-SSI) <http://fcon_1000.projects.nitrc.org/indi/hbn_ssi/>`_
+- `Data sharing for Collaborative Research in Computational Neuroscience (CRCNS.org) <http://crcns.org>`_
 - several individual research labs
