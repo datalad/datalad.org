@@ -59,6 +59,12 @@
       "css": "copyright",
       "code": 61945,
       "src": "fontawesome"
+    },
+    {
+      "uid": "6fe95ffc3c807e62647d4f814a96e0d7",
+      "css": "sitemap",
+      "code": 61672,
+      "src": "fontawesome"
     }
   ]
 }
