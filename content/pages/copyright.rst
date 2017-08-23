@@ -96,6 +96,22 @@ License:
 ----
 
 Files:
+  theme/asciinema/\*
+Copyright:
+  2011-2017 Marcin Kulik
+License:
+  `GPL3`_
+Note:
+  And the release included here (2.4.1) is and awkward mix of copyrights (GPL3,
+  BSD, BSD-like, latent "All rights reserved") from many different copyright
+  holders. The next release has relicensed the project to ASLv2 and removed the
+  unintended "All rights reserved".
+
+.. _GPL3: https://www.gnu.org/licenses/gpl-3.0.en.html
+
+----
+
+Files:
   theme/fonts/source-sans-pro-\*
 Copyright:
   2010, 2012, 2014 Adobe Systems Incorporated
