@@ -355,3 +355,28 @@ nav li a.active {
     width: calc(50% - 2px - 6em);
   }
 }
+
+.download { display: none; }
+@media screen and (min-width: 768px) {
+  .download {
+    display: flex;
+    justify-content: center;
+  }
+  .download p {
+    margin: 0 0 1em 0;
+    transform: perspective(1px) translateZ(0);
+    transition: transform 0.3s;
+  }
+  .download p:hover { transform: scale(1.1); }
+  .download a {
+    background: #ffa200;
+    border: 2px solid #d37e07;
+    border-radius: 2em;
+    box-shadow: 0 3px 10px #bbb;
+    color: #fff;
+    display: block;
+    font-size: 1.6em;
+    padding: 0.5em 4em;
+    text-decoration: none;
+  }
+}
