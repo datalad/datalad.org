@@ -175,12 +175,12 @@ footer {
   text-align: center;
 }
 footer ul.social-links {
-  margin: 2em 0;
+  margin: 0;
   padding: 0;
 }
 footer .social-links li {
   display: inline-block;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 footer .social-links a {
   display: inline-block;
@@ -199,14 +199,17 @@ footer p {
 main {
   letter-spacing: 0.5px;
   line-height: 2.3em;
-  padding: 0 0 3em 0;
+  padding: 0 0 2em 0;
 }
 @media screen and (min-width: 768px) {
   main {
     background-color: #fff;
     background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0MDAnIGhlaWdodD0nNDAwJyB2aWV3Qm94PScwIDAgNDAwIDQwMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBpZD0nYmx1ZXN0cmlwZScgcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgeD0nMCcgeT0nMCcgd2lkdGg9JzQnIGhlaWdodD0nNCcgdmlld0JveD0nMCAwIDQgNCcgPgoJCQk8bGluZSB4MT0nLTEnIHkxPSctMScgeDI9JzQnIHkyPSc0JyBzdHJva2U9JyNlMGUwZTAnIHN0cm9rZS13aWR0aD0nMScvPgoJCQk8bGluZSB4MT0nMycgeTE9Jy0xJyB4Mj0nNScgeTI9JzEnIHN0cm9rZT0nI2UwZTBlMCcgc3Ryb2tlLXdpZHRoPScxJy8+CgkJCTxsaW5lIHgxPSctMScgeTE9JzMnIHgyPScxJyB5Mj0nNScgc3Ryb2tlPScjZTBlMGUwJyBzdHJva2Utd2lkdGg9JzEnLz4KCQk8L3BhdHRlcm4+IAoJCTxmaWx0ZXIgaWQ9J2Z1enonIHg9JzAnIHk9JzAnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J3R1cmJ1bGVuY2UnIGJhc2VGcmVxdWVuY3k9Jy41JyBudW1PY3RhdmVzPScyJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+CgkJCTxmZUNvbnZvbHZlTWF0cml4IG9yZGVyPSczLDMnIGtlcm5lbE1hdHJpeD0nMCwtLjI1LDAsLS4yNSwyLC0uMjUsMCwtLjI1LDAnLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYmx1ZXN0cmlwZSknLz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNmdXp6KScgb3BhY2l0eT0nMC4xNicvPgo8L3N2Zz4=);
-    padding: 4em 0 3em 0;
+    padding: 2em 0;
   }
+}
+@media screen and (min-width: 1000px) {
+  main { padding 3em 0; }
 }
 
 nav {
@@ -298,12 +301,12 @@ nav li a.active {
 /* index */
 #banner {
   background: #333;
-  text-align: center;
   padding: 1.8em;
+  text-align: center;
 }
 #banner p {
   color: #fff;
-  font-size: 3em;
+  font-size: 1.7em;
   line-height: 1.1em;
   margin: 0 auto;
   padding: 0;
@@ -316,8 +319,14 @@ nav li a.active {
     padding: 4em 6em;
   }
   #banner p {
+    font-size: 2em;
+    max-width: 35ch;
     text-shadow: 2px 2px 5px #221E1F;
-    max-width: 25ch;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #banner p {
+    font-size: 3em;
   }
 }
 
