@@ -34,8 +34,11 @@
   <ul>
   {% for title, link, target in MENUITEMS %}
     {% if page and page.url == link %}{% set link_class = "class='active'" %}{% endif %}
-    {% if target %}{% set link_target = "target='" ~ target ~ "' rel='noopener noreferrer'" %}{% endif %}
-    <li><a href="{{ link }}" {{ link_class }} {{ link_target }}>{{ title }}</a></li>
+    {% if target %}
+      {% set link_target = "target='" ~ target ~ "' rel='noopener noreferrer'" %}
+      {% set link_icon = "<i class='icon-link-ext'></i>" %}
+    {% endif %}
+    <li><a href="{{ link }}" {{ link_class }} {{ link_target }}>{{ title }} {{ link_icon }}</a></li>
   {% endfor %}
   </ul>
 </nav>
