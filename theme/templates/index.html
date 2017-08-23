@@ -2,8 +2,12 @@
 
 {% block banner %}
 <section id="banner">
-  <p>Managing the <span class='mustard'>data lifecycle,</span>
-     from beginning to end.</p>
+  <p>Providing a data portal and a versioning system for everyone, DataLad lets
+     you have your data and control it too.</p>.
+<!--
+  <p>Featureful, solid, and easy to use, DataLad gives you control with data.</p>.
+  <p>Versioning, branching, publishing, and merging <span class='mustard'>throughout the data lifecycle</span> with ease.</p>
+-->
 </section>
 {% endblock banner %}
 
@@ -48,22 +52,8 @@
       <p></p>
     </div>
 
-
     <div class='card'>
-      <h2>What is DataLad?</h2>
-      <p>DataLad is an <strong>open source</strong> utility that brings the core
-         concepts of version control systems to data — allowing
-         <strong>versioning, branching, publishing, and merging</strong> with
-         ease throughout the data lifecycle.</p>
-
-      <p>Leveraging <a href="https://git-annex.branchable.com">git-annex</a> and
-         taking <a href="https://git-scm.com">git</a>'s concept of decentralization
-         a step further, DataLad's "data handles" enable the selective acquisition
-         of files and, when configured, across mirrors and a variety of transport
-         methods (HTTP, FTP, rsync, BitTorrent, and more).
-         Learn more on <a href="/for/gitusers.html">how DataLad relates to Git
-         and git-annex</a>.</p>
-
+      <h2 class="icon-cw">Data Portal</h2>
       <p>The DataLad project also operates a crawler that regularly indexes
          datasets from scientific data portals such as
          <a href="http://openfmri.org">OpenFMRI</a> and
@@ -72,13 +62,5 @@
          <!-- better link would be to some description of the underlying tech-->
          Take a look at the <a href="/datasets.html">available data</a>.</p>
     </div>
-
-    <div class='card'>
-      <h2>Getting Started</h2>
-      <p>DataLad covers all aspects of working with data: <strong>discovery, consumption,
-         curation of original or derived data, and publication</strong>. The following pages
-         illustrate how DataLad aids anyone working with data.</p>
-    </div>
   </div>
-
 {% endblock content %}
