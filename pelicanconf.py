@@ -29,7 +29,7 @@ RELATIVE_URLS = False
 #
 # Configure the site
 #
-STATIC_PATHS = ['images', 'pics', 'css', 'js', 'img']
+STATIC_PATHS = ['asciicast', 'css', 'js', 'img']
 MENUITEMS = [ ('About', '/about.html', None),
               ('Get DataLad', '/get_datalad.html', None),
               ('Features', '/features.html', None),
