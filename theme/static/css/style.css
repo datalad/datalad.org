@@ -65,6 +65,11 @@
 .icon-github:before { content: '\f09b'; }
 .icon-copyright:before { content: '\f1f9'; }
 
+/* set standard colors for some icons */
+.icon-github  { color: #111010; }
+.icon-ok      { color: #009c24; }
+.icon-twitter { color: #4da7de; }
+
 a {
   color: #ffa200;
   font-weight: 500;
@@ -184,9 +189,6 @@ footer .social-links a {
   transition: transform 0.2s linear;
 }
 footer .social-links a:hover { transform: translateY(-0.3rem); }
-footer .social-links a.icon-twitter { color: #4da7de; }
-footer .social-links a.icon-github { color: #111010; }
-
 footer p {
   border-top: 1px solid #ddd;
   color: #777;
@@ -329,6 +331,11 @@ nav li a.active {
   margin: 1em 0;
   padding: 1em 2em;
 }
+.card [class^="icon-"]:before, .card [class*=" icon-"]:before {
+  color: #ffa200;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+}
 .card h2 { margin: 0; }
 @media screen and (min-width: 768px) {
   .card {
@@ -337,11 +344,3 @@ nav li a.active {
     width: calc(50% - 2px - 6em);
   }
 }
-
-.card [class^="icon-"]:before, .card [class*=" icon-"]:before {
-  color: #ffa200;
-  margin-right: 0.5em;
-  vertical-align: bottom;
-}
-/* for/gitusers.html */
-table .icon-ok { color: #009c24; }
