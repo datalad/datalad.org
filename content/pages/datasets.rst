@@ -7,10 +7,10 @@ DataLad can track any data files that are published on the web. It is able
 to monitor and incorporate modifications made to such data sources over time,
 and to publish entire distributions of datasets created by this automated
 process. The DataLad team maintains data trackers for a number of public data
-portals. The generated datasets are available at http://datasets.datalad.org
+portals. The generated datasets are available at http://datasets.datalad.org\.
 
-At present, this website offers uniform access to over 9TB of scientific
-dataset. This includes data from:
+At present, this website offers uniform access to over 10TB of scientific
+data. This includes datasets from
 
 - `OpenFMRI <https://openfmri.org>`_
 - `NeuroVault <https://neurovault.org>`_
