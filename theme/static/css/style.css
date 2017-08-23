@@ -20,6 +20,51 @@
        url('/theme/fonts/source-sans-pro-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+@font-face { /* License: OFL 1.1 */
+  font-family: 'fontello';
+  src: url('/theme/fonts/fontello.woff2?50367493') format('woff2'),
+       url('/theme/fonts/fontello.woff?50367493') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-ok:before { content: '\e800'; }
+.icon-flashlight:before { content: '\e801'; }
+.icon-cw:before { content: '\e802'; }
+.icon-signal:before { content: '\e803'; }
+.icon-download:before { content: '\e804'; }
+.icon-link-ext:before { content: '\f08e'; }
+.icon-twitter:before { content: '\f099'; }
+.icon-github:before { content: '\f09b'; }
+.icon-download-cloud:before { content: '\f0ed'; }
+
 a {
   color: #ffa200;
   font-weight: 500;
