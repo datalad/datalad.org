@@ -1,5 +1,5 @@
-DataLad for reproducibile science
-*********************************
+DataLad for reproducible science
+********************************
 :template: asciinema
 :save_as: for/reproducibility.html
 :url: /for/reproducibility.html
@@ -13,7 +13,14 @@ capture exactly how analysis code was executed in order to produce the results.
 Altogether, DataLad can automatically capture an extensive provenance record,
 with enough information in it to be able to rerun an analysis.
 
-The following demo shows the complete setup, execution, and replication of a
+Here is a quick demo of how DataLad captures how results are derived from input
+data. See further down for a more in-depth demo of a full analysis.
+
+.. raw:: html
+
+    <asciinema-player src="/asciicast/simple_provenance_tracking.json" cols="80" rows="24"></asciinema-player>
+
+The next demo shows the complete setup, execution, and replication of a
 brain imaging analysis on real data, in just five minutes. You'll see, how little
 has to be done to automatically yield a reproducible outcome. You'll also see
 how DataLad helps to maintain strict separation of inputs and outputs to clearly
@@ -22,4 +29,3 @@ identify what needs to be archived alongside a publication.
 .. raw:: html
 
     <asciinema-player src="/asciicast/reproducible_analysis.json" cols="80" rows="24"></asciinema-player>
-
