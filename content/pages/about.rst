@@ -12,8 +12,8 @@ While version control systems are a de-facto standard for open source software
 development, a similar level of tooling and culture is not present in the open
 data community.
 
-DataLad builds off of `git-annex`_ and extends it with an intuitive
-command-line-interface. It enables users to operate on data using familiar
+DataLad builds on top of `git-annex`_ and extends it with an intuitive
+command-line interface. It enables users to operate on data using familiar
 concepts, such as files and directories, while transparently managing data
 access and authorization with underlying hosting providers.
 
