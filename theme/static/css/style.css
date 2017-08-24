@@ -297,6 +297,24 @@ nav li a.active {
 #ack a { max-width: 300px; }
 #makers a { max-width: 410px; }
 
+/* features */
+asciinema-player + .dl-cast-script {
+  display: flex;
+  justify-content: center;
+}
+asciinema-player + .dl-cast-script { margin-top: -15px; }
+.dl-cast-script a {
+  background: #555;
+  border: 2px solid #777;
+  border-radius: 0 0 5px 5px;
+  color: #ddd;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
 /* index */
 #banner {
   background: #333;
