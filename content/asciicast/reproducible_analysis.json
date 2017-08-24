@@ -14194,7 +14194,7 @@
     ],
     [
       0.000321,
-      "Author: Datalad Demo <demo@datalad.org>\r\nDate:   Wed Aug 23 15:50:36 2017 +0200\r\n\r\n    [DATALAD RUNCMD] bash -e code/brain_extraction.sh inputs/...\r\n    \r\n    === Do not change lines below ===\r\n    {\r\n     \"pwd\": \".\",\r\n     \"cmd\": [\r\n      \"bash\",\r\n      \"-e\",\r\n      \"code/brain_extraction.sh\",\r\n      \"inputs/ds000001/sub-01/anat/sub-01_T1w.nii.gz\",\r\n      \"inputs/ds000002/sub-01/anat/sub-01_T1w.nii.gz\"\r\n     ],\r\n     \"exit\": 0\r\n    }\r\n    ^^^ Do not change lines above ^^^\r\n\r\n"
+      "Author: DataLad Demo <demo@datalad.org>\r\nDate:   Wed Aug 23 15:50:36 2017 +0200\r\n\r\n    [DATALAD RUNCMD] bash -e code/brain_extraction.sh inputs/...\r\n    \r\n    === Do not change lines below ===\r\n    {\r\n     \"pwd\": \".\",\r\n     \"cmd\": [\r\n      \"bash\",\r\n      \"-e\",\r\n      \"code/brain_extraction.sh\",\r\n      \"inputs/ds000001/sub-01/anat/sub-01_T1w.nii.gz\",\r\n      \"inputs/ds000002/sub-01/anat/sub-01_T1w.nii.gz\"\r\n     ],\r\n     \"exit\": 0\r\n    }\r\n    ^^^ Do not change lines above ^^^\r\n\r\n"
     ],
     [
       0.00023,

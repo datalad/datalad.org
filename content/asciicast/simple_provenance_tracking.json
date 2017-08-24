@@ -6595,7 +6595,7 @@
     ],
     [
       0.005637,
-      "\u001b[33mcommit d5e47ddaa6311f233cb0630a7a4c11e453a3ed7e\u001b[m\r\nAuthor: Datalad Demo <demo@datalad.org>\r\nDate:   Wed Aug 23 13:41:01 2017 +0200\r\n\r\n    [DATALAD RUNCMD] convert -extract 1522x1522+1470+1470 sou...\r\n    \r\n    === Do not change lines below ===\r\n    {\r\n     \"pwd\": \".\",\r\n     \"cmd\": [\r\n      \"convert\",\r\n      \"-extract\",\r\n      \"1522x1522+1470+1470\",\r\n"
+      "\u001b[33mcommit d5e47ddaa6311f233cb0630a7a4c11e453a3ed7e\u001b[m\r\nAuthor: DataLad Demo <demo@datalad.org>\r\nDate:   Wed Aug 23 13:41:01 2017 +0200\r\n\r\n    [DATALAD RUNCMD] convert -extract 1522x1522+1470+1470 sou...\r\n    \r\n    === Do not change lines below ===\r\n    {\r\n     \"pwd\": \".\",\r\n     \"cmd\": [\r\n      \"convert\",\r\n      \"-extract\",\r\n      \"1522x1522+1470+1470\",\r\n"
     ],
     [
       0.000116,
