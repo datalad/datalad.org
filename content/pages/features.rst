@@ -4,11 +4,11 @@ Features
 :save_as: features.html
 :url: /features.html
 
-- `For Data Discovery <#data-discovery>`_
-- `For Data Consumption <#for-data-consumers>`_
-- `For Data Sharing <#data-sharing>`_
+- `Data Discovery <#data-discovery>`_
+- `Data Consumption <#for-data-consumers>`_
+- `Data Sharing <#data-sharing>`_
 - `For Git Users <#for-git-and-git-annex-users>`_
-- `For Reproducible Science <#reproducible-science>`_
+- `Reproducible Science <#reproducible-science>`_
 - `Automation and Control of Data Acquisition <#automation-and-control-of-data-acquisition>`_
 
 Data Discovery
