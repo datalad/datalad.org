@@ -345,6 +345,16 @@ nav li a.active {
   vertical-align: bottom;
 }
 .card h2 { margin: 0; }
+.card h2 a {
+  border-bottom: 3px solid transparent;
+  color: #404040;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border 0.1s;
+}
+.card h2 a:hover {
+  border-bottom: 3px solid #ffa200;
+}
 @media screen and (min-width: 768px) {
   .card {
     border: 1px solid #eee;
