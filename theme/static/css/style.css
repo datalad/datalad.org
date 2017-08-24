@@ -341,8 +341,7 @@ nav li a.active {
 }
 .card [class^="icon-"]:before {
   color: #ffa200;
-  margin-right: 0.5em;
-  vertical-align: bottom;
+  margin-right: 0.4em;
 }
 .card h2 { margin: 0; }
 .card h2 a {
@@ -383,5 +382,5 @@ nav li a.active {
     text-decoration: none;
     transition: transform 0.3s;
   }
-  .download a:hover { transform: scale(1.1); }
+  .download a:hover { transform: scale(1.05); }
 }
