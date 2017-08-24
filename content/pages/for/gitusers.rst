@@ -18,7 +18,7 @@ This is best explained in a brief demo:
     <asciinema-player src="/asciicast/seamless_nested_repos.json" cols="80" rows="24"></asciinema-player>
 
 
-To better illustrate the what features are contributed by which tonology layer,
+To better illustrate the what features are contributed by which technology layer,
 please see the following table.
 
 ================================================  =============  ===============  ==============
