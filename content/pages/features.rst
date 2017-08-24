@@ -117,3 +117,30 @@ what needs to be archived alongside a publication.
 
     <asciinema-player src="/asciicast/reproducible_analysis.json" cols="80" rows="24"></asciinema-player>
     <div class='dl-cast-script'><a href="/asciicast/reproducible_analysis.sh">Download this demo's script</a></div>
+
+
+Automation and Control of Data Acquisition
+##########################################
+
+In MRI research, data typically comes in a set of DICOM files which need to be
+first converted to data format convenient for visualization and analysis, typically
+NIfTI.  One step forward is to convert data into
+`BIDS (Brain Imaging Data Structure) <http://bids.neuroimaging.io>`__. One of the
+available tools to assist with such conversions is
+`HeuDiConv (Heuristic DICOM Converter) <https://github.com/nipy/heudiconv/>`__,
+which also has an option to place converted data and pre-generated templates under
+DataLad control.  This makes it immediately possible to distribute collected
+data across processing infrastructure, track provenance of derived data, while also
+updating datasets with more of freshly acquired data while relying on git powerful
+merge mechanisms. Whenever ready for public sharing, data will be one
+`datalad publish` call away, while easily restricting public release to only data
+files which do not carry any possibly subject identifying information (e.g.,
+non-defaced high-resolution anatomicals).
+
+.. raw:: html
+
+    <asciinema-player src="/asciicast/heudiconv_dicom_to_bids.json" cols="80" rows="24"></asciinema-player>
+    <div class='dl-cast-script'><a href="/asciicast/heudiconv_dicom_to_bids.sh">Download this demo's script</a></div>
+    <!-- For whenever someone with more CSS foo makes it nice
+     <div class='dl-cast-script'><a href="/asciicast/heudiconv_dicom_to_bids.cmds">List of invoked commands with timing</a></div>
+    -->
