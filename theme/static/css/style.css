@@ -321,6 +321,7 @@ asciinema-player + .dl-cast-script { margin-top: -12px; }
   position: absolute;
   top: 0;
   transition: transform 0.4s;
+  z-index: -1;
 }
 .dl-cast-script a:hover { transform: translateY(10px); }
 .dl-cast-script a:hover:before { transform: translateY(-10px); }
