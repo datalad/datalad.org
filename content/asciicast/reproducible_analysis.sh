@@ -46,15 +46,15 @@ cat << EOT > code/brain_extraction.sh
 . /etc/fsl/5.0/fsl.sh
 
 # obtain all inputs
-datalad get \$@
+datalad get $@
 # perform brain extraction
 count=1
-for nifti in \$@; do
-  subdir="sub-\$(printf 000 \$count)"
-  mkdir -p \$subdir
-  echo "Processing \$nifti"
-  bet \$nifti \$subdir/anat -m
-  count=\$((count + 1)) 
+for nifti in $@; do
+  subdir="sub-$(printf 000 $count)"
+  mkdir -p $subdir
+  echo "Processing $nifti"
+  bet $nifti $subdir/anat -m
+  count=$((count + 1))
 done
 EOT
 
