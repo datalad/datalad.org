@@ -65,6 +65,12 @@
       "css": "sitemap",
       "code": 61672,
       "src": "fontawesome"
+    },
+    {
+      "uid": "815503841e980c848f55e0271deacead",
+      "css": "link",
+      "code": 59397,
+      "src": "entypo"
     }
   ]
 }

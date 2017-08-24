@@ -17,7 +17,7 @@ LOCALE = u'en_US.UTF-8'
 # Configure Pelican a bit
 #
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = [ 'better_tables' ]
+PLUGINS = [ 'better_tables', 'headerid' ]
 
 THEME = 'theme/'
 
@@ -25,6 +25,8 @@ CATEGORY_FEED_ATOM = None
 FEED_ALL_ATOM = None
 
 RELATIVE_URLS = False
+
+HEADERID_LINK_CHAR = '<span class="icon-link"></span>'
 
 #
 # Configure the site

@@ -60,6 +60,7 @@
 .icon-cw:before { content: '\e802'; }
 .icon-signal:before { content: '\e803'; }
 .icon-download:before { content: '\e804'; }
+.icon-link:before { content: '\e805'; }
 .icon-link-ext:before { content: '\f08e'; }
 .icon-twitter:before { content: '\f099'; }
 .icon-github:before { content: '\f09b'; }
@@ -195,6 +196,18 @@ footer p {
   color: #777;
   margin: 0;
   padding: 0.5em 1em;
+}
+
+.headerlink {
+  font-size: 0.6em;
+  margin-left: 0.2em;
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity 0.1s;
+  vertical-align: middle;
+}
+h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink {
+  opacity: 1.0;
 }
 
 main {
