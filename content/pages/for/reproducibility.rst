@@ -7,11 +7,11 @@ DataLad for Reproducible Science
 DataLad is an ideal tool for conducting reproducible science. It can track and
 `obtain shared data </for/dataconsumers.html>`__ and `publish results
 </for/datasharing.html>`__. Importantly, it jointly manages both analysis input
-data and the associated analysis code as a complete representation of the
-critical elements required to reproduce an analysis. Furthermore, DataLad is
-able to capture the exact commands used to produce the results.
+data and the associated analysis code --- critical to reproduce any analysis.
+Lastly, DataLad is able to temporally capture the exact commands used to
+produce the results.
 
-Altogether, DataLad can automatically capture an extensive provenance record,
+All together, DataLad can automatically create an extensive provenance record,
 with all the information necessary to rerun an analysis from beginning to end
 and demonstrate reproducibility.
 
@@ -24,9 +24,9 @@ data. Scroll further down for a more in-depth demo of a full analysis.
 
 The next demo shows the complete setup, execution, and replication of a brain
 imaging analysis on real data — in just five minutes. You'll see how easy it is
-to automatically yield a reproducible outcome. You'll also see how DataLad helps
-to maintain a strict separation of inputs and outputs to clearly identify what
-needs to be archived alongside a publication.
+to automatically yield a reproducible outcome. It also demonstrates how DataLad
+helps to maintain a strict separation of inputs and outputs to clearly identify
+what needs to be archived alongside a publication.
 
 .. raw:: html
 
