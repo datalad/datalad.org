@@ -80,7 +80,7 @@ Unified authentication interface                                                
    <i class="icon-ok"></i>
 
 Reproducible Science
-====================
+####################
 
 DataLad is an ideal tool for conducting reproducible science. It can track and
 `obtain shared data </for/dataconsumers.html>`__ and `publish results
