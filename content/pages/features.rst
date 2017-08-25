@@ -56,17 +56,17 @@ Data Sharing
 Sharing data, code, and results is a key element of the scientific process.
 Sharing comes in many flavors, for example:
 
-1) sharing with yourself, and be sure that the copy on your laptop matches what
-   you have been working with on your workstation;
-2) sharing with colleagues, and make sure they all know when data changed and
-   results have to be recomputed; and
+1) sharing with yourself, and having certainty that the copy on your laptop
+   matches what you have been working with on your workstation;
+2) sharing with colleagues, and making sure they all know when data changed and
+   which results have to be recomputed; and
 3) sharing with the world, to make sure that your work has maximum impact.
 
 DataLad aids many types of sharing efforts. It supports synchronization of
 multiple instances of a dataset belonging to a single person. It provides
 on-demand updates of datasets shared with local or remote collaborators. It
-offers a large variety of publications methods, ranging from a (cloud) server,
-to services, such as, GitHub, DropBox, or box.com.
+offers a wide variety of publications methods, ranging from a (cloud) server,
+to services such as GitHub, DropBox, or box.com.
 
 The following demo shows...
 
