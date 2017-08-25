@@ -318,7 +318,7 @@ asciinema-player + .dl-cast-script {
   display: flex;
   justify-content: center;
 }
-asciinema-player + .dl-cast-script { margin-top: -12px; }
+asciinema-player + .dl-cast-script { margin-top: -13px; }
 .dl-cast-script a {
   background: #555;
   color: #ddd;
