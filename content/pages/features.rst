@@ -25,6 +25,15 @@ provides all the necessary functionality to automatically index and search any
 data it was made aware of — whether it's one's personal data, the data of an
 entire lab, all the data of an institution, or a complete public data portal.
 
+The following demo shows how one can quickly find desired datasets,
+install them, and selectively obtain necessary files across multiple datasets.
+
+.. raw:: html
+
+    <asciinema-player src="/asciicast/basic_search.json" cols="80" rows="24"></asciinema-player>
+    <div class='dl-cast-script'><a href="/asciicast/basic_search.sh">Download this demo's script</a></div>
+
+
 For Data Consumers
 ##################
 
