@@ -81,7 +81,7 @@ a:hover { text-decoration: none; }
 
 body {
   color: #707070;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
 }
 
