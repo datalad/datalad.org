@@ -26,7 +26,7 @@ FEED_ALL_ATOM = None
 
 RELATIVE_URLS = False
 
-HEADERID_LINK_CHAR = '<span class="icon-link"></span>'
+HEADERID_LINK_CHAR = '&#xe805;'
 
 #
 # Configure the site

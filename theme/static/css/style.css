@@ -199,13 +199,16 @@ footer p {
 }
 
 .headerlink {
+  font-family: "fontello";
   font-size: 0.6em;
-  margin-left: 0.2em;
+  margin-left: 0.4em;
   opacity: 0;
+  speak: none;
   text-decoration: none;
-  transition: opacity 0.1s;
+  transition: color 0.2s, opacity 0.2s;
   vertical-align: middle;
 }
+.headerlink:hover { color: #ffc052; }
 h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink {
   opacity: 1.0;
 }
