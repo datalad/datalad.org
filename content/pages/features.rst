@@ -31,7 +31,7 @@ install them, and selectively obtain necessary files across multiple datasets.
 .. raw:: html
 
     <asciinema-player src="/asciicast/basic_search.json" cols="80" rows="24"></asciinema-player>
-    <div class='dl-cast-script'><a href="/asciicast/basic_search.sh">Download this demo's script</a></div>
+    <div class='dl-cast-script'><a href="/asciicast/basic_search.sh">Get the script for this demo</a></div>
 
 
 For Data Consumers
@@ -59,7 +59,7 @@ and code posted on a textbook's companion website.
 .. raw:: html
 
     <asciinema-player src="/asciicast/track_data_from_webpage.json" cols="80" rows="24"></asciinema-player>
-    <div class='dl-cast-script'><a href="/asciicast/track_data_from_webpage.sh">Download this demo's script</a></div>
+    <div class='dl-cast-script'><a href="/asciicast/track_data_from_webpage.sh">Get the script for this demo</a></div>
 
 Data Sharing
 ############
@@ -97,7 +97,7 @@ This is best explained in a brief demo:
 .. raw:: html
 
     <asciinema-player src="/asciicast/seamless_nested_repos.json" cols="80" rows="24"></asciinema-player>
-    <div class='dl-cast-script'><a href="/asciicast/seamless_nested_repos.sh">Download this demo's script</a></div>
+    <div class='dl-cast-script'><a href="/asciicast/seamless_nested_repos.sh">Get the script for this demo</a></div>
 
 The following table helps to illustrate which features are contributed by which
 technology layer.
@@ -140,7 +140,7 @@ data. Scroll further down for a more in-depth demo of a full analysis.
 .. raw:: html
 
     <asciinema-player src="/asciicast/simple_provenance_tracking.json" cols="80" rows="24"></asciinema-player>
-    <div class='dl-cast-script'><a href="/asciicast/simple_provenance_tracking.sh">Download this demo's script</a></div>
+    <div class='dl-cast-script'><a href="/asciicast/simple_provenance_tracking.sh">Get the script for this demo</a></div>
 
 The next demo shows the complete setup, execution, and replication of a brain
 imaging analysis on real data — in just five minutes. You'll see how easy it is
@@ -151,7 +151,7 @@ what needs to be archived alongside a publication.
 .. raw:: html
 
     <asciinema-player src="/asciicast/reproducible_analysis.json" cols="80" rows="24"></asciinema-player>
-    <div class='dl-cast-script'><a href="/asciicast/reproducible_analysis.sh">Download this demo's script</a></div>
+    <div class='dl-cast-script'><a href="/asciicast/reproducible_analysis.sh">Get the script for this demo</a></div>
 
 Automation and Control of Data Acquisition
 ##########################################
@@ -176,4 +176,4 @@ data files which do not carry any possibly subject identifying information
 .. raw:: html
 
     <asciinema-player src="/asciicast/heudiconv_dicom_to_bids.json" cols="80" rows="24"></asciinema-player>
-    <div class='dl-cast-script'><a href="/asciicast/heudiconv_dicom_to_bids.sh">Download this demo's script</a></div>
+    <div class='dl-cast-script'><a href="/asciicast/heudiconv_dicom_to_bids.sh">Get the script for this demo</a></div>

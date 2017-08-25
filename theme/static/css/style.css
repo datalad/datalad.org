@@ -321,26 +321,15 @@ asciinema-player + .dl-cast-script {
 asciinema-player + .dl-cast-script { margin-top: -13px; }
 .dl-cast-script a {
   background: #555;
+  border-bottom: 0.25em solid transparent;
   color: #ddd;
   font-size: 1.1em;
   line-height: 1.1em;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em 0.25em 1em;
   text-decoration: none;
-  transition: transform 0.4s;
+  transition: 0.3s;
 }
-.dl-cast-script a:before {
-  border-color: transparent transparent #555 transparent;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  content: '';
-  left: calc(50% - 10px);
-  position: absolute;
-  top: 0;
-  transition: transform 0.4s;
-  z-index: -1;
-}
-.dl-cast-script a:hover { transform: translateY(10px); }
-.dl-cast-script a:hover:before { transform: translateY(-10px); }
+.dl-cast-script a:hover { border-bottom: 0.25em solid #ffa200; }
 
 /* index */
 #banner {
