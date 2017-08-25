@@ -14,7 +14,14 @@ Features
 Data Discovery
 ##############
 
-Hakuna Mah'data
+With growing quantities and variety of data it get's progressively harder to
+determine whether and where particular data are available. DataLad aids data
+discovery through a built-in, extensible system for automated meta data
+extraction and homogenization. Being a tool for decentralized data management,
+it does not require a central service to perform meta data queries. Instead,
+any DataLad installation provides all necessary functionality to automatically
+index and search any data it was made aware of: one's personal data, data of an
+entire lab, all data of an institution, or a complete data portal.
 
 For Data Consumers
 ##################
