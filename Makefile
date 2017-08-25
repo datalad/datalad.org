@@ -10,7 +10,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 SSH_HOST=kumo.ovgu.de
 SSH_PORT=22
-SSH_USER=root
+SSH_USER=
 SSH_TARGET_DIR=/srv/datalad.org/
 RSYNC_OPTS = -rzlhv --delete --copy-links --exclude=_files
 
@@ -73,11 +73,11 @@ publish:
 	if test -d $(BASEDIR)/static; then rsync -r $(BASEDIR)/static/ $(OUTPUTDIR)/; fi
 
 ssh_upload: publish
-	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
-	ssh $(SSH_USER)@$(SSH_HOST) -p $(SSH_PORT) chmod -R a+rX $(SSH_TARGET_DIR)
+	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)$(SSH_HOST):$(SSH_TARGET_DIR)
+	ssh $(SSH_USER)$(SSH_HOST) -p $(SSH_PORT) chmod -R a+rX $(SSH_TARGET_DIR)
 
 rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" $(RSYNC_OPTS) $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
-	ssh $(SSH_USER)@$(SSH_HOST) -p $(SSH_PORT) chmod -R a+rX $(SSH_TARGET_DIR)
+	rsync -e "ssh -p $(SSH_PORT)" $(RSYNC_OPTS) $(OUTPUTDIR)/ $(SSH_USER)$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
+	ssh $(SSH_USER)$(SSH_HOST) -p $(SSH_PORT) chmod -R a+rX $(SSH_TARGET_DIR)
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload
