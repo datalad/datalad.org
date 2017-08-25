@@ -79,9 +79,6 @@ on-demand updates of datasets shared with local or remote collaborators. It
 offers a wide variety of publications methods, ranging from a (cloud) server,
 to services such as GitHub, DropBox, or box.com.
 
-The following demo shows...
-
-
 For Git and git-annex Users
 ###########################
 
