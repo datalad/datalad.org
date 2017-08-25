@@ -14,14 +14,16 @@ Features
 Data Discovery
 ##############
 
-With growing quantities and variety of data it get's progressively harder to
-determine whether and where particular data are available. DataLad aids data
-discovery through a built-in, extensible system for automated meta data
-extraction and homogenization. Being a tool for decentralized data management,
-it does not require a central service to perform meta data queries. Instead,
-any DataLad installation provides all necessary functionality to automatically
-index and search any data it was made aware of: one's personal data, data of an
-entire lab, all data of an institution, or a complete data portal.
+With the growing quantities and variety of data, it is getting progressively
+harder to determine whether and where given data are available. DataLad
+aids data discovery through a built-in, extensible system for automated metadata
+extraction and homogenization.
+
+Being a tool for decentralized data management, DataLad does not require a
+central service to perform metadata queries. Instead, any DataLad installation
+provides all the necessary functionality to automatically index and search any
+data it was made aware of — whether it's one's personal data, the data of an
+entire lab, all the data of an institution, or a complete public data portal.
 
 For Data Consumers
 ##################
