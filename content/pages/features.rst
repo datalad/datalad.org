@@ -14,7 +14,20 @@ Features
 Data Discovery
 ##############
 
-Hakuna Mah'data
+DataLad allows to aggregate data from a
+`variety of datasets meta-data formats
+<http://docs.datalad.org/en/latest/metadata.html>`__
+to make datasets
+trivially **F**\indable and easily **A**\ccessible (see
+`FAIR principles <https://www.force11.org/group/fairgroup/fairprinciples>`__).
+
+The following demo shows how one can quickly find needed datasets,
+install them and selectively get necessary files across multiple datasets.
+
+.. raw:: html
+
+    <asciinema-player src="/asciicast/basic_search.json" cols="80" rows="24"></asciinema-player>
+    <div class='dl-cast-script'><a href="/asciicast/basic_search.sh">Download this demo's script</a></div>
 
 For Data Consumers
 ##################
