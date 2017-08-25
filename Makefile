@@ -8,10 +8,10 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-SSH_HOST=falkor.datalad.org
+SSH_HOST=kumo.ovgu.de
 SSH_PORT=22
 SSH_USER=root
-SSH_TARGET_DIR=/srv/datalad.org/www/
+SSH_TARGET_DIR=/srv/datalad.org/
 RSYNC_OPTS = -rzlhv --delete --copy-links --exclude=_files
 
 DEBUG ?= 0
