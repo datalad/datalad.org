@@ -108,8 +108,8 @@ Auto-crawling available resources                                |chk| RSS feeds
 Unified dataset handling                                                          |chk|
 - recursive operation on datasets                                                 |chk|
 - seamless operation across datasets boundaries                                   |chk|
-- meta-data support                                              |chk| per-file   |chk|
-- meta-data aggregation                                                           |chk| flexible
+- metadata support                                               |chk| per-file   |chk|
+- metadata aggregation                                                            |chk| flexible
 Unified authentication interface                                                  |chk|
 ================================================  =============  ===============  ==============
 
