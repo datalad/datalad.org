@@ -9,7 +9,7 @@ DataLad and its software dependencies type ::
 
   pip install datalad
 
-.. _pip: https://pip.pypa.io
+.. _pip: https://pip.pypa.io/en/stable/
 
 In addition, it is necessary to have a recent version of git-annex_ installed,
 which is not set up automatically by using the pip method.
@@ -49,5 +49,5 @@ git-annex is installed by the command ::
 Once git-annex is available, DataLad can be installed via ``pip`` as described
 above. ``pip`` comes with Python distributions, such as anaconda_.
 
-.. _homebrew: http://brew.sh
+.. _homebrew: https://brew.sh
 .. _anaconda: https://www.continuum.io/downloads

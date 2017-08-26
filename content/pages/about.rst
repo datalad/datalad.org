@@ -28,7 +28,7 @@ From the Makers of
 
     <div id="makers">
       <a href="http://neuro.debian.net"><img src="/img/logo/neurodebian.png" alt="NeuroDebian logo"></a>
-      <a href="http://pymvpa.org"><img src="/img/logo/pymvpa.png" alt="PyMVPA logo"></a>
+      <a href="http://www.pymvpa.org"><img src="/img/logo/pymvpa.png" alt="PyMVPA logo"></a>
       <a href="http://studyforrest.org"><img src="/img/logo/studyforrest.png" alt="Studyforrest logo"></a>
     </div>
 
