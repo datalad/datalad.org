@@ -25,8 +25,10 @@ provides all the necessary functionality to automatically index and search any
 data it was made aware of — whether it's one's personal data, the data of an
 entire lab, all the data of an institution, or a complete public data portal.
 
-The following demo shows how one can quickly find desired datasets,
-install them, and selectively obtain necessary files across multiple datasets.
+The following demo shows how one can quickly
+`find <http://docs.datalad.org/en/latest/generated/man/datalad-search.html>`__ desired datasets,
+`install <http://docs.datalad.org/en/latest/generated/man/datalad-install.html>`_
+them, and selectively obtain necessary files across multiple datasets.
 
 .. raw:: html
 
@@ -165,8 +167,9 @@ collected data across processing infrastructure, track provenance of derived
 data, and also updating datasets with more of freshly acquired data while
 relying on git's powerful merge mechanisms.
 
-Whenever the data are ready for public sharing, it is a `datalad publish` away,
-while also allowing to to easily control and restrict the public release to only
+Whenever the data are ready for public sharing, it is a
+`datalad publish <http://docs.datalad.org/en/latest/generated/man/datalad-publish.html>`_
+away, while also allowing to to easily control and restrict the public release to only
 data files which do not carry any possibly subject identifying information
 (e.g., non-defaced high-resolution anatomicals).
 

@@ -13,15 +13,17 @@
   </div>
   <div id='cards'>
     <div class='card'>
-      <h2 class="icon-flashlight"><a href='/features.html#data-discovery'>Discover Data</a></h2>
+      <h2 class="icon-flashlight"><a href='/features.html#data-discovery'>Discover</a></h2>
       <p>DataLad has built-in support for <strong>metadata</strong> extraction
       and <strong>search</strong>. With only a few steps, you can search through
-      a large collection of readily available datasets and immediately download
+      <a href="/datasets.html">a large collection of readily available datasets</a>
+	  (from <a href="http://openfmri.org">OpenFMRI</a>,
+            <a href="http://crcns.org">CRCNS</a>, etc.) and immediately download
       them. <a href="/features.html#data-discovery">See more...</a></p>
     </div>
 
     <div class='card'>
-      <h2 class="icon-download"><a href='/features.html#for-data-consumers'>Consume Data</a></h2>
+      <h2 class="icon-download"><a href='/features.html#for-data-consumers'>Consume</a></h2>
       <p>DataLad offers direct <strong>access to individual files</strong>
       &mdash; great when you only need a few files from some large datasets for
       an analysis. Files in a dataset can be distributed across
@@ -32,7 +34,7 @@
     </div>
 
     <div class='card'>
-      <h2 class="icon-signal"><a href='/features.html#data-sharing'>Publish Data</a></h2>
+      <h2 class="icon-signal"><a href='/features.html#data-sharing'>Publish</a></h2>
       <p>DataLad supports sharing datasets with the <strong>public or just some
       colleagues</strong> on platforms that you are using already &mdash;
       <strong>no need for a central service</strong>. You have complete freedom
@@ -42,7 +44,7 @@
     </div>
 
     <div class='card'>
-      <h2 class="icon-cw"><a href='/features.html#reproducible-science'>Reproducibility</a></h2>
+      <h2 class="icon-cw"><a href='/features.html#reproducible-science'>Reproduce</a></h2>
       <p>DataLad provides <strong>joint management of analysis code <em>and</em> data</strong>.
       This enables you to comprehensively track the exact state of any analysis inputs that
       produced your results &mdash; across the entire lifetime of a project, and across
@@ -50,16 +52,10 @@
       <a href="/features.html#reproducible-science">See more...</a></p>
       <p></p>
     </div>
-
-    <div class='card'>
-      <h2 class="icon-sitemap"><a href='/datasets.html'>Data Portal</a></h2>
-      <p>The DataLad project operates a crawler that regularly indexes
-         datasets from scientific data portals such as
-         <a href="http://openfmri.org">OpenFMRI</a> and
-         <a href="http://crcns.org">CRCNS</a>, making them trivial to acquire
-         and work with using DataLad.
-         <!-- better link would be to some description of the underlying tech-->
-         Take a look at the <a href="/datasets.html">available datasets</a>.</p>
-    </div>
   </div>
+
+  <div class='download'>
+    <p><a href='/features.html'>Explore more features</a></p>
+  </div>
+
 {% endblock content %}
