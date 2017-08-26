@@ -121,8 +121,8 @@ Reproducible Science
 ####################
 
 DataLad is an ideal tool for conducting reproducible science. It can track and
-`obtain shared data </for/dataconsumers.html>`__ and `publish results
-</for/datasharing.html>`__. Importantly, it jointly manages both analysis input
+`obtain shared data <#for-data-consumers>`__ and `publish results
+<#data-sharing>`__. Importantly, it jointly manages both analysis input
 data and the associated analysis code --- critical to reproduce any analysis.
 Lastly, DataLad is able to temporally capture the exact commands used to
 produce the results.
