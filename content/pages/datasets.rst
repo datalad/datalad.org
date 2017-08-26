@@ -7,25 +7,24 @@ DataLad can track any data files that are published on the web. It is able
 to monitor and incorporate modifications made to such data sources over time,
 and to `publish </features.html#data-sharing>`_ entire distributions of datasets created by this
 `automated process </features.html#for-data-consumers>`_.
+
 The DataLad team maintains `data trackers
 <https://github.com/datalad/datalad/tree/master/datalad/crawler/pipelines>`__
-for a number of public data portals.
-
-Such automatically generated and some manually created and curated
-datasets were then collated into a
+for a number of public data portals. Such automatically generated and some manually created and curated
+datasets are then collated into a
 `DataLad superdataset <http://docs.datalad.org/en/latest/glossary.html#superdataset>`_.
-Generated superdataset was then published in its entirety
-publicly at http://datasets.datalad.org, thus establishing the "official" DataLad
+The generated superdataset was then published in its entirety
+publicly at http://datasets.datalad.org, thus establishing the official DataLad
 data distribution (datalad resource identifier `/// <http://datasets.datalad.org>`__).  Note that to download data
 for some of those datasets (e.g. `///crcns <http://datasets.datalad.org/?dir=/crcns>`_),
-you might still need to provide authentication credentials, but otherwise access to them is
-completely uniform regardless of the data origin.  DataLad has also aggregated
-datasets' `metadata <http://docs.datalad.org/en/latest/metadata.html>`_
+it might be necessary to provide authentication credentials, but otherwise access to them is
+completely uniform regardless of the data origin.  DataLad also aggregates
+datasets' `metadata <http://docs.datalad.org/en/latest/metadata.html>`_ ,
 allowing for efficient `search </features.html#data-discovery>`_.
 
 At present, our official distribution offers uniform access to over
-10TB of scientific data. Here is a sample of dataset sources with their DataLad
-resource identifiers you could pass to `datalad install
+10TB of scientific data.  This includes following datasets, listed with their DataLad
+resource identifiers for use with `datalad install
 <http://docs.datalad.org/en/latest/generated/man/datalad-install.html>`_
 command:
 
