@@ -10,6 +10,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 SSH_HOST=kumo.ovgu.de
 SSH_PORT=22
+# Provide user with the trailing @, e.g. "joe@"
 SSH_USER=
 SSH_TARGET_DIR=/srv/datalad.org/
 RSYNC_OPTS = -rzlhv --delete --copy-links --exclude=_files
