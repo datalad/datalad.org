@@ -193,10 +193,11 @@ footer .social-links a {
 footer .social-links a:hover { transform: translateY(-0.3rem); }
 footer p {
   border-top: 1px solid #ddd;
-  color: #777;
+  color: #666;
   margin: 0;
   padding: 0.5em 1em;
 }
+footer p a { color: #666; }
 
 .headerlink {
   font-family: "fontello";
