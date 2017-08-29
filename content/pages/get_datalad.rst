@@ -3,7 +3,7 @@ Get DataLad
 :save_as: get_datalad.html
 :url: /get_datalad.html
 
-Binaries are provided for for Debian and Ubuntu (see below). For all other
+Binaries are provided for Debian and Ubuntu (see below). For all other
 systems, DataLad can easily be installed via pip_. To automatically install
 DataLad and its software dependencies type ::
 
