@@ -21,7 +21,7 @@ available via the DataLad resource identifier `///
 <http://datasets.datalad.org>`__. Some of these datasets (e.g. `///crcns
 <http://datasets.datalad.org/?dir=/crcns>`_) require authentication credentials,
 but — other than the supplying of those credentials — access to all resources is
-completely uniform regardless of the data origin. DataLad also aggregates all
+completely uniform regardless of the data's origin. DataLad also aggregates all
 relevant `metadata <http://docs.datalad.org/en/latest/metadata.html>`_ for these
 datasets — so they can be discovered using DataLad's `search
 </features.html#data-discovery>`_.
