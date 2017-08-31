@@ -73,11 +73,13 @@
 .icon-twitter { color: #4da7de; }
 
 a {
+  border-bottom: 1px solid currentColor;
   color: #ffa200;
   font-weight: 500;
-  text-decoration: underline;
+  text-decoration: none;
+  transition: border 0.2s;
 }
-a:hover { text-decoration: none; }
+a:hover { border-bottom-color: transparent; }
 
 body {
   color: #707070;
@@ -185,9 +187,9 @@ footer .social-links li {
   padding: 0 1rem;
 }
 footer .social-links a {
+  border-color: transparent;
   display: inline-block;
   font-size: 8em;
-  text-decoration: none;
   transition: transform 0.2s linear;
 }
 footer .social-links a:hover { transform: translateY(-0.3rem); }
@@ -209,7 +211,6 @@ footer span.break { display: block; }
   margin-left: 0.4em;
   opacity: 0;
   speak: none;
-  text-decoration: none;
   transition: color 0.2s, opacity 0.2s;
   vertical-align: middle;
 }
@@ -237,11 +238,12 @@ nav {
   font-size: 21px;
   padding: 1.3rem 0;
 }
-nav .logo {
+nav a.logo {
+  border-color: transparent;
   margin: 0.5rem 1.3rem;
   max-height: 6em;
 }
-nav .logo img { height: 100%; }
+nav a.logo img { height: 100%; }
 nav ul {
   columns: 2; -moz-columns: 2; -webkit-columns: 2;
   column-gap: 2rem; -moz-column-gap: 2rem; -webkit-column-gap: 2rem;
@@ -256,7 +258,6 @@ nav li a {
   border-bottom: 3px solid transparent;
   color: #444;
   padding: 0 0.3em 0 0;
-  text-decoration: none;
 }
 nav li:nth-of-type(-n+3) a { padding: 0 0 0 0.3em; }
 nav [class^="icon-"] { font-size: 0.8em; }
@@ -265,7 +266,7 @@ nav [class^="icon-"] { font-size: 0.8em; }
     justify-content: center;
     padding: 0.5rem;
   }
-  nav .logo {
+  nav a.logo {
     height: 4em;
     margin: 0 1.1em;
   }
@@ -331,7 +332,6 @@ asciinema-player + .dl-cast-script { margin-top: -13px; }
   font-size: 1.1em;
   line-height: 1.1em;
   padding: 0.5em 1em 0.25em 1em;
-  text-decoration: none;
   transition: 0.3s;
 }
 .dl-cast-script a:hover { border-bottom: 0.25em solid #ffa200; }
@@ -387,8 +387,7 @@ asciinema-player + .dl-cast-script { margin-top: -13px; }
   border-bottom: 3px solid transparent;
   color: #404040;
   font-weight: 700;
-  text-decoration: none;
-  transition: border 0.1s;
+  transition: border 0.2s;
 }
 .card h2 a:hover {
   border-bottom: 3px solid #ffa200;
@@ -418,7 +417,6 @@ asciinema-player + .dl-cast-script { margin-top: -13px; }
     display: block;
     font-size: 1.6em;
     padding: 0.5em 4em;
-    text-decoration: none;
     transition: transform 0.3s;
   }
   .download a:hover { transform: scale(1.05); }
