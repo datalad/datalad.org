@@ -20,13 +20,11 @@ export GIT_PAGER=cat
 # level super-dataset (a pure git repository) under ~/datalad:
 datalad search raiders neuroimaging
 
-Not supported in scripts
 # "search" searches within current dataset (unless -d option is used),
 # and if it is outside of any it would offer to search within the
 # ~/datalad we have just installed
 datalad search raiders neuroimaging
 
-Not supported in scripts
 # To avoid interactive question, you can specify to search within
 # that dataset by using -d /// . And now let's specialize the search
 # to not only list the dataset location, but also report the fields
