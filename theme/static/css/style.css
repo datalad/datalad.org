@@ -198,6 +198,10 @@ footer p {
   padding: 0.5em 1em;
 }
 footer p a { color: #666; }
+footer span.break { display: block; }
+@media screen and (min-width: 768px) {
+  footer span.break { display: inline; }
+}
 
 .headerlink {
   font-family: "fontello";
