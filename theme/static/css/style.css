@@ -419,5 +419,5 @@ asciinema-player + .dl-cast-script { margin-top: -13px; }
     padding: 0.5em 4em;
     transition: transform 0.3s;
   }
-  .download a:hover { transform: scale(1.05); }
+  .download a:hover { transform: scale(1.03); }
 }
