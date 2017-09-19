@@ -22,8 +22,8 @@
 
 @font-face { /* License: OFL 1.1 */
   font-family: 'fontello';
-  src: url('/theme/fonts/fontello.woff2?50367493') format('woff2'),
-       url('/theme/fonts/fontello.woff?50367493') format('woff');
+  src: url('/theme/fonts/fontello.woff2?19189898') format('woff2'),
+       url('/theme/fonts/fontello.woff?19189898') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -61,6 +61,7 @@
 .icon-signal:before { content: '\e803'; }
 .icon-download:before { content: '\e804'; }
 .icon-link:before { content: '\e805'; }
+.icon-group:before { content: '\e806'; }
 .icon-link-ext:before { content: '\f08e'; }
 .icon-twitter:before { content: '\f099'; }
 .icon-github:before { content: '\f09b'; }
