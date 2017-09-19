@@ -10,7 +10,7 @@ This page loosely follows `Debian's copyright file syntax`_.
 Files:
   \*
 Copyright:
-  2014–2017, Alex Waite, Michael Hanke, and Yarik Yaroslav.
+  2014–2017, Alex Waite, Michael Hanke, and Yarik Yaroslav
 License:
   `Attribution-ShareAlike 4.0 International (CC-BY-SA)`_
 
@@ -83,6 +83,18 @@ Notes:
 ----
 
 Files:
+  theme/css/style.css
+
+Copyright:
+   2015, Pierre Paul Lefebvre; 2017 Alex Waite, 2017 `Fontello`_
+License:
+  `Creative Commons Attribution 3.0 Unported`_, `MIT`_
+
+.. _Fontello: http://fontello.com
+
+----
+
+Files:
   theme/asciinema/\*
 Copyright:
   2011-2017 Marcin Kulik
@@ -94,6 +106,20 @@ License:
 ----
 
 Files:
+  theme/fonts/fontello\*
+Copyright:
+  `Font Awesome`_, `Entypo`_, `Elusive`_, `Modern Pictograms`_
+License:
+  `SIL OFL 1.1`_
+
+.. _Font Awesome: http://fontawesome.io
+.. _Entypo: http://www.entypo.com
+.. _Elusive: https://github.com/reduxframework/elusive-iconfont
+.. _Modern Pictograms: http://thedesignoffice.org/project/modern-pictograms
+
+----
+
+Files:
   theme/fonts/source-sans-pro-\*
 Copyright:
   2010, 2012, 2014 Adobe Systems Incorporated
@@ -101,26 +127,3 @@ License:
   `SIL OFL 1.1`_
 
 .. _SIL OFL 1.1: http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
-
-----
-
-Files:
-  theme/fonts/fontello\*
-Copyright:
-  `Font Awesome`_, `Entypo`_
-License:
-  `SIL OFL 1.1`_
-
-.. _Font Awesome: http://fontawesome.io/
-.. _Entypo: http://www.entypo.com/
-
-----
-
-Files:
-  theme/css/fontello.css
-Copyright:
-  `Fontello`_
-License:
-  `MIT`_
-
-.. _Fontello: http://fontello.com/
