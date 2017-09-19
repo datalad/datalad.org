@@ -315,7 +315,10 @@ nav li a.active {
   justify-content: space-around;
   align-items: center;
 }
-#ack a, #makers a { margin: 1em; }
+#ack a, #makers a {
+  border-color: transparent;
+  margin: 1em;
+}
 #ack img, #makers img { max-width: 100%; }
 #ack a { max-width: 300px; }
 #makers a { max-width: 410px; }
