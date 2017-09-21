@@ -22,8 +22,12 @@ SITEMAP = { 'format': 'xml' }
 
 THEME = 'theme/'
 
-CATEGORY_FEED_ATOM = None
+# Disable all feed generation
 FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 RELATIVE_URLS = False
 
