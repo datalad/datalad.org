@@ -17,7 +17,8 @@ LOCALE = u'en_US.UTF-8'
 # Configure Pelican a bit
 #
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = [ 'better_tables', 'headerid' ]
+PLUGINS = [ 'better_tables', 'headerid', 'sitemap' ]
+SITEMAP = { 'format': 'xml' }
 
 THEME = 'theme/'
 
