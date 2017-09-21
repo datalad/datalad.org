@@ -29,8 +29,6 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-RELATIVE_URLS = False
-
 HEADERID_LINK_CHAR = '&#xe805;'
 
 #
@@ -44,3 +42,7 @@ MENUITEMS = [ ('About', '/about.html', None),
               ('Development', '/development.html', None),
               ('Docs', 'http://docs.datalad.org', '_blank'),
 ]
+DEFAULT_PAGINATION = False
+
+# We prefer document-relative URLs
+RELATIVE_URLS = True
