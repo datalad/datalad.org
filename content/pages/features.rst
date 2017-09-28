@@ -6,7 +6,7 @@ Features
 
 - `Data Discovery <#data-discovery>`__
 - `Data Consumption <#for-data-consumers>`__
-- `Data Sharing <#data-sharing>`__
+- `Data Publication <#data-publication>`__
 - `For Git Users <#for-git-and-git-annex-users>`__
 - `Reproducible Science <#reproducible-science>`__
 - `Automation and Control of Data Acquisition <#automation-and-control-of-data-acquisition>`__
@@ -61,11 +61,11 @@ and code posted on a textbook's companion website.
     <asciinema-player src="/asciicast/track_data_from_webpage.json" cols="80" rows="24"></asciinema-player>
     <div class='dl-cast-script'><a href="/asciicast/track_data_from_webpage.sh">Get the script for this demo</a></div>
 
-Data Sharing
-############
+Data Publication
+################
 
-Sharing data, code, and results is a key element of the scientific process.
-Sharing comes in many flavors, for example:
+Publishing or sharing data, code, and results is a key element of the
+scientific process.  Sharing comes in many flavors, for example:
 
 1) sharing with yourself, and having certainty that the copy on your laptop
    matches what you have been working with on your workstation;
