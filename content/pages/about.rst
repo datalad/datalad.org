@@ -21,6 +21,25 @@ A powerful and complete Python API is also provided to enable authors of
 data-centric applications to bring versioning and the fearless acquisition of
 data into continuous integration workflows.
 
+Contributors
+============
+
+The following people have contributed to DataLad (in alphabetical order).
+
+- Gergana Alteva
+- Horea Christian
+- Jason Gors
+- Yaroslav Halchenko
+- Michael Hanke
+- Christian Olaf Häusler
+- Benjamin Poldrack
+- Debanjum Singh Solanky
+- Alex Waite
+
+More information on the DataLad development community is available on
+`GitHub <https://github.com/datalad/datalad/graphs/contributors>`__.
+
+
 From the Makers of
 ==================
 
