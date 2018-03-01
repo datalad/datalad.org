@@ -20,5 +20,5 @@ install them, and selectively obtain necessary files across multiple datasets.
 
 .. raw:: html
 
-    <asciinema-player src="/asciicast/basic_search.json" cols="80" rows="24"></asciinema-player>
+    <asciinema-player src="/asciicast/basic_search.json" cols="80" rows="24" poster="npt:87"></asciinema-player>
     <div class='dl-cast-script'><a href="/asciicast/basic_search.sh">Get the script for this demo</a></div>

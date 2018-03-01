@@ -25,5 +25,5 @@ and code posted on a textbook's companion website.
 
 .. raw:: html
 
-    <asciinema-player src="/asciicast/track_data_from_webpage.json" cols="80" rows="24"></asciinema-player>
+    <asciinema-player src="/asciicast/track_data_from_webpage.json" cols="80" rows="24" poster="npt:123"></asciinema-player>
     <div class='dl-cast-script'><a href="/asciicast/track_data_from_webpage.sh">Get the script for this demo</a></div>

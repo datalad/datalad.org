@@ -15,7 +15,7 @@ This is best explained in a brief demo:
 
 .. raw:: html
 
-    <asciinema-player src="/asciicast/seamless_nested_repos.json" cols="80" rows="24"></asciinema-player>
+    <asciinema-player src="/asciicast/seamless_nested_repos.json" cols="80" rows="24" poster="npt:104"></asciinema-player>
     <div class='dl-cast-script'><a href="/asciicast/seamless_nested_repos.sh">Get the script for this demo</a></div>
 
 The following table helps to illustrate which features are contributed by which

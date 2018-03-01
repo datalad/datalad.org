@@ -25,7 +25,7 @@ synchronization between the machines of a single person.
 
 .. raw:: html
 
-    <asciinema-player src="/asciicast/boxcom.json" cols="80" rows="24"></asciinema-player>
+    <asciinema-player src="/asciicast/boxcom.json" cols="80" rows="24" poster="npt:75"></asciinema-player>
     <div class='dl-cast-script'><a href="/asciicast/boxcom.sh">Get the script for this demo</a></div>
 
 Most cloud storage services are not ideal for data sharing with the general public,
@@ -37,5 +37,5 @@ obtain all data files from a different web server.
 
 .. raw:: html
 
-    <asciinema-player src="/asciicast/publish_on_github.json" cols="80" rows="24"></asciinema-player>
+    <asciinema-player src="/asciicast/publish_on_github.json" cols="80" rows="24" poster="npt:91"></asciinema-player>
     <div class='dl-cast-script'><a href="/asciicast/publish_on_github.sh">Get the script for this demo</a></div>
