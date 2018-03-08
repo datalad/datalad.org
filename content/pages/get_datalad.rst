@@ -3,9 +3,9 @@ Get DataLad
 :save_as: get_datalad.html
 :url: /get_datalad.html
 
-Binaries are provided for Debian and Ubuntu (see below). For all other
-systems, DataLad can easily be installed via pip_. To automatically install
-DataLad and its software dependencies type ::
+When there isn't anything more convenient (see below), DataLad can easily be
+installed via pip_. To automatically install DataLad and its software
+dependencies type ::
 
   pip install datalad
 
@@ -16,16 +16,14 @@ which is not set up automatically by using the pip method.
 
 .. _git-annex: http://git-annex.branchable.com
 
-Advanced users can chose from several installation schemes (e.g.
-``publish``, ``metadata``, ``tests`` or ``crawl``)::
+DataLad can be installed without admin privileges.  ``pip`` supports
+installation into a user's home directory with ``--user``.  Git-annex can be
+deployed by extracting pre-built binaries from a tarball (that also includes an
+up-to-date Git installation).  `Obtain the tarball
+<https://downloads.kitenet.net/git-annex/linux/current/>`_, extract it, and set
+the ``PATH`` environment variable to include the root of the extracted
+tarball. Another option might be a singularity container (see below).
 
-  pip install datalad[SCHEME]
-
-where ``SCHEME`` could be
-
-- ``crawl`` to also install `scrapy` which is used in some crawling constructs
-- ``tests`` to also install dependencies used by unit-tests battery of the DataLad
-- ``full`` to install all dependencies
 
 (Neuro)Debian, Ubuntu, and similar systems
 ------------------------------------------
@@ -51,3 +49,29 @@ above. ``pip`` comes with Python distributions, such as anaconda_.
 
 .. _homebrew: https://brew.sh
 .. _anaconda: https://www.continuum.io/downloads
+
+
+HPC environments or any system with singularity installed
+---------------------------------------------------------
+
+If you want to use DataLad in a high-performance computing (HPC) environment,
+such as a computer cluster, or a similar multi-user machine, where you don't have
+admin privileges, chances are that `Singularity <http://singularity.lbl.gov>`_
+is installed. Even if it isn't installed, singularity helps you make a `solid
+case <http://singularity.lbl.gov/install-request>`_ why your admin might want
+to install it.
+
+On any system with Singularity installed, you can pull a container with a full
+installation of DataLad (~300 MB) straight from `Singularity Hub`_. The
+following command pulls the latest container for the DataLad development version
+(check on `Singularity Hub`_ for alternative container variants)::
+
+  singularity pull shub://datalad/datalad:fullmaster
+
+This will produce an executable image file. You can rename this image to
+``datalad``, and put the directory it is located in into your ``PATH``
+environment variable.  From there on, you will have a ``datalad`` command in
+the command line that transparently executes all DataLad functionality in the
+container.
+
+.. _Singularity Hub: https://singularity-hub.org/collections/667
