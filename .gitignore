@@ -1,0 +1,5 @@
+*.swp
+*.pid
+*.pyc
+output/
+pelican-plugins/
