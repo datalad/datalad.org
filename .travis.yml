@@ -1,0 +1,16 @@
+language: python
+python:
+- 3.6
+cache:
+- apt
+env:
+  global:
+  - secure: nDsOt8V0dmawb44i2/CJoTE2zb1hk9mFnf9jD9/aKLdOZpsnZBZVCjPjl8EmhFF3T36/+hc2jl3lDjY4MMoRmRrD7LQKVN/mnOxgg2uwUVlo9E6FVx6IBuw+iebIu7vHxmK0eNIjCGl6iq+Ns5zeP+qaz+Nuh6uDzc+iiSUig5LwSgI89pb4hg3gvFU6dCAJKHiNd2BmawQhhHqhuacjOBmh1k5e/c3ufjw5xyIlxkd77lSe+9DSkaTE6ISHLj6s26yXp1cqT0XwfRoGOA62rsq3N/T3UMpw8l1ytFW5MFv/bfKZZqhRvMkIYXHMBZG32x+V6r/hb4YxfgWxKHBQWV36Mei09I7aUR3Q4grL/KvwozSrKbNk276h5bSPpDQctWcHGMaoT218TQ6lCDqHNcRhnMKwtapTJ+6Dg0KE4U6hupseltc3nn5o9gMwMxwtOnLkTsteHG7QuecWNbCEIV4mkdkUNZ7xo662fsREKCa9Y9zypc4WbjH8GI5lihVogZId7ypWCFn1EVCBmS3JZPRvIbjO7q6LVz9enOt+WbaqXuq/4xwBkwQKUTH7eKRgJtkmIjRJ+39a90oxw6qxqVAwTbRLykIq4Fn0XmKPGcKwA3xVBXZl32hfO7+bWC2b1bGYBE9UnM90W9f+vs6ASoehrjD8ltGF1cLV5UwFB3I=
+  - secure: Z+nLaN8YU/EyH4awYb/PQyDb4z3sw5lVTJV0L6M5JY/JxOZJn6vThDmQ9bW4S4aeXVc8lt4dLcDL3yECJ+jAljTNGYNsP24fl/2w5ZRdmETPgkb4Z17Y0GULZtBw9TBjT7ohebXsxja5VNebWrXDG88eH/7a9w4n+K1RP2TA0XU=
+install:
+- travis_retry pip install pelican
+- travis_retry pip install beautifulsoup4
+script:
+- make clean
+- make DEBUG=1 RELATIVE=1 html
+- if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash travis_deploy.sh; fi
