@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="DataLad Team" />
+
+  <title>DataLad &ndash; Reproducible Science</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/manifest.json?v=1">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#444444">
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="DataLad">
+  <meta name="application-name" content="DataLad">
+  <meta name="theme-color" content="#efefef">
+
+  <link rel="stylesheet" href="/theme/css/style.css" />
+
+  <link rel="license" hreflang="en" href="/copyright.html" />
+
+  <link rel="stylesheet" href="/theme/asciinema/asciinema-player.css" />
+  <script src="/theme/asciinema/asciinema-player.js"></script>
+</head>
+
+<body>
+
+<nav id="nav">
+  <a class="logo" href="/"><img src='/theme/img/logo/datalad_nav_wide.png' alt='DataLad Logo' /></a>
+  <ul>
+    <li><a href="/about.html"  >About </a></li>
+    <li><a href="/get_datalad.html"  >Get DataLad </a></li>
+    <li><a href="/features.html"  >Features </a></li>
+    <li><a href="/datasets.html"  >Datasets </a></li>
+    <li><a href="/development.html"  >Development </a></li>
+    <li><a href="http://docs.datalad.org"  target='_blank' rel='noopener noreferrer'>Docs <i class='icon-link-ext'></i></a></li>
+  </ul>
+</nav>
+
+<header>
+</header>
+
+<main>
+  <div id='content'>
+<article>
+  <header>
+    <h1>Reproducible Science</h1>
+  </header>
+  <div>
+    <p>DataLad is an ideal tool for conducting reproducible science. It can track and
+<a class="reference external" href="#for-data-consumers">obtain shared data</a> and <a class="reference external" href="#data-sharing">publish results</a>. Importantly, it jointly manages both analysis input
+data and the associated analysis code --- critical to reproduce any analysis.
+Lastly, DataLad is able to temporally capture the exact commands used to
+produce the results.</p>
+<p>All together, DataLad can automatically create an extensive provenance record,
+with all the information necessary to rerun an analysis from beginning to end
+and demonstrate reproducibility.</p>
+<p>Here is a quick demo of how DataLad captures the results derived from input
+data. Scroll further down for a more in-depth demo of a full analysis.</p>
+<asciinema-player cols="80" poster="npt:94" rows="24" src="/asciicast/simple_provenance_tracking.json"></asciinema-player>
+<div class="dl-cast-script"><a href="/asciicast/simple_provenance_tracking.sh">Get the script for this demo</a></div><p>The next demo shows the complete setup, execution, and replication of a brain
+imaging analysis on real data — in just five minutes. You'll see how easy it is
+to automatically yield a reproducible outcome. It also demonstrates how DataLad
+helps to maintain a strict separation of inputs and outputs to clearly identify
+what needs to be archived alongside a publication.</p>
+<asciinema-player cols="80" poster="npt:210" rows="24" src="/asciicast/reproducible_analysis.json"></asciinema-player>
+<div class="dl-cast-script"><a href="/asciicast/reproducible_analysis.sh">Get the script for this demo</a></div>
+  </div>
+</article>
+  </div>
+</main>
+
+<footer>
+  <ul class='social-links'>
+    <li>
+      <a class='icon-github' href='https://github.com/datalad' aria-label='DataLad @ GitHub'></a>
+    </li>
+    <li>
+      <a class='icon-twitter' href='https://twitter.com/datalad' aria-label='DataLad @ Twitter'></a>
+    </li>
+  </ul>
+
+  <p><small>
+    content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
+    <span class='break'>—</span> <i class="icon-copyright"></i>2015–2017 DataLad Team <span class='break'>—</span>
+    unless <a rel="license" href='/copyright.html'>indicated otherwise</a>
+  </small></p>
+</footer>
+</body>
+</html>
