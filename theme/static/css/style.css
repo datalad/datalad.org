@@ -100,9 +100,11 @@ pre {
   border: 1px solid #ddd;
   color: #444;
   line-height: 1em;
+  overflow-x: scroll;
   padding: 1em;
 }
 
+.table-scrollable { overflow-x: scroll; }
 table {
   border-bottom: 1px solid #e7e7e7;
   border-spacing: 0;
@@ -319,7 +321,7 @@ nav li a.active {
   border-color: transparent;
   margin: 1em;
 }
-#ack img, #makers img { max-width: 100%; }
+#ack img, #makers img, img.no-overflow { max-width: 100%; }
 #ack a { max-width: 300px; }
 #makers a { max-width: 410px; }
 
