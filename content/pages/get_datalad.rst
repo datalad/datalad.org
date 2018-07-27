@@ -38,7 +38,6 @@ package) ::
 
 OS X
 ----
-
 A common way to install packages on OS X is via the homebrew_ package manager.
 git-annex can be installed using  the command ::
 
@@ -50,10 +49,8 @@ above. ``pip`` comes with Python distributions, such as anaconda_.
 .. _homebrew: https://brew.sh
 .. _anaconda: https://www.continuum.io/downloads
 
-
 HPC environments or any system with singularity installed
 ---------------------------------------------------------
-
 If you want to use DataLad on a high-performance computing (HPC) environment,
 such as a computer cluster or a similar multi-user machine, where you don't
 have admin privileges, chances are that `Singularity
