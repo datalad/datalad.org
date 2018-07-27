@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>git-annex-centric benchmark of the filesystems</title>
+  <title>git-annex-centric benchmark of the file-systems</title>
   <meta name="save_as" content="test_fs_analysis.html" />
   <meta name="url" content="test_fs_analysis.html" />
 </head>
@@ -31,11 +31,11 @@
 <ul>
   <li>CPU: Intel(R) Xeon(R) CPU E5-1607 v2 @ 3.00GHz (quad core)</li>
   <li>RAM: 64GB (registered)</li>
-  <li>OS: Debian jessie (8.1) amd64 build, with NeuroDebian and ZoL
+  <li>OS: Debian Jessie (8.1) amd64 build, with NeuroDebian and ZoL
       repositories enabled</li>
   <li>Kernel: 3.16.7-ckt9-3~deb8u1 (Debian: 3.16.0-4-amd64)</li>
   <li>ZoL/ZFS module: 0.6.4-15-7fec46</li>
-  <li>BTRFS tools: originally 3.17 (as in jessie) but then tested a single setup
+  <li>Btrfs tools: originally 3.17 (as in Jessie) but then tested a single setup
       initiated with 4.0 tools (backport coming from NeuroDebian repository)</li>
   <li>Drives: 6 Seagate Constellation ES.3 (ST4000NM0033-9ZM170, fw SN04)
       on an LSI SAS3008 HBA</li>
@@ -43,9 +43,9 @@
 
 <h3>Scripts</h3>
 <p><a href="https://github.com/datalad/benchmarking/blob/master/test_fs.py">test_fs.py</a>
-  script was created to initiate a range of prototypical filesystem setups,
+  script was created to initiate a range of prototypical file-system setups,
   with software raid/MD (redundancy), LVM (volume management) and various file
-  systems (EXT4, XFS, ZFS, RaiserFS, BTRFS) in various configurations. We tested
+  systems (EXT4, XFS, ZFS, ReiserFS, Btrfs) in various configurations. We tested
   typical operations in the life-time of a git/annex repository &mdash; creation
   (only for larger repositories test), du, chmod, git clone, git annex get, git
   annex (in)direct, tar etc &mdash; full list is available in results tables
@@ -60,17 +60,17 @@
    alternative analysis or visualization done since presentation here is quite
    messy.</p>
 <p><strong>Overall verdict is</strong>: <em>we are going for Software Raid
-   (RAID6) + LVM (scalability) + BTRFS (performance)</em> as our setup with
+   (RAID6) + LVM (scalability) + Btrfs (performance)</em> as our setup with
    robust volume management (snapper tool providing snapshots management) and
-   good performance (with tolerable impact from enabled compression). BTRFS
+   good performance (with tolerable impact from enabled compression). Btrfs
    exhibited robust performance across a wide range of meta-information
-   utilization, while RaiserFS &mdash; the next contender &mdash; failed to
+   utilization, while ReiserFS &mdash; the next contender &mdash; failed to
    scale (although it may have behaved better with some tune up/options &mdash;
    we didn't explore). ZoL/ZFS quickly became way too slow to be even properly
    tested and thus was not considered for our case. Additional features of
-   BTRFS, such as COW (copy-on-write) can already be utilized by git-annex
-   so providing BTRFS additional bonus points in our decision. The choice of
-   compression (lzo vs zlib) for BTRFS did not have a clear winner, and impact
+   Btrfs, such as COW (copy-on-write) can already be utilized by git-annex
+   so providing Btrfs additional bonus points in our decision. The choice of
+   compression (lzo vs zlib) for Btrfs did not have a clear winner, and impact
    from compression was not completely detrimental (although went up to ~30% on
    <code>git clone</code> operation overall impact due to compression).</p>
 <p><strong>Disclaimer</strong> YMMV. We have tested file-systems on quite an
@@ -80,16 +80,14 @@
    benchmarked commands (e.g., chmod, du) were meta-information access heavy,
    so even if large data files were stored we would expect similar performance
    in those cases.</p>
-<p><strong>Hint</strong> If you would like to see larger plots, just open images
-   on separate pages so they would become zoomable in your browser.</p>
 
 <h2 id="small-repositories-test">Small repositories test</h2>
 <p>Initial test consisted of creating relatively small repositories each
    containing 100 files in 20 directories added to git-annex. Multiple
    rounds (without removing previously created test
    directories/repositories) were ran, thus slowly growing impact on the
-   filesystem. ZFS filesystem setups ran only 10 rounds of such tests,
-   while 100 times for other filesystems.</p>
+   file-system. ZFS file-system setups ran only 10 rounds of such tests,
+   while 100 times for other file-systems.</p>
 <p>Following results present timings on the first 10 rounds across file
    systems on "cold" runs of the commands.  Ratings/timing table presents
    overall rating (0 &mdash; is the best, estimated as a median among
@@ -107,7 +105,7 @@ Got 19 reports
 Got 2850 entries total
 </pre>
 
-<h3>Gross-rating/timing for each filesystem/per each command</h3>
+<h3>Gross-rating/timing for each file-system/per each command</h3>
 <div class='table-scrollable'>
 <table>
   <thead>
@@ -144,7 +142,7 @@ Got 2850 entries total
   </thead>
   <tbody>
     <tr>
-      <th>BTRFS_LVM_MD_raid6</th>
+      <th>Btrfs_LVM_MD_raid6</th>
       <td>6</td>
       <td>6/0.78</td>
       <td>6/0.85</td>
@@ -159,7 +157,7 @@ Got 2850 entries total
       <td>4/0.59</td>
     </tr>
     <tr>
-      <th>BTRFS_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
+      <th>Btrfs_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
       <td>3</td>
       <td>4/0.73</td>
       <td>3/0.70</td>
@@ -174,7 +172,7 @@ Got 2850 entries total
       <td>0/0.51</td>
     </tr>
     <tr>
-      <th>BTRFS_MD_raid6</th>
+      <th>Btrfs_MD_raid6</th>
       <td>5</td>
       <td>5/0.74</td>
       <td>5/0.79</td>
@@ -189,7 +187,7 @@ Got 2850 entries total
       <td>3/0.57</td>
     </tr>
     <tr>
-      <th>BTRFS_sda_-mraid6</th>
+      <th>Btrfs_sda_-mraid6</th>
       <td>4</td>
       <td>3/0.73</td>
       <td>4/0.72</td>
@@ -430,7 +428,7 @@ Got 2850 entries total
 summary_plots(df, 'warm')
 </pre>
 
-<h3>Gross-rating/timing for each filesystem/per each command</h3>
+<h3>Gross-rating/timing for each file-system/per each command</h3>
 <div class='table-scrollable'>
 <table>
   <thead>
@@ -453,148 +451,148 @@ summary_plots(df, 'warm')
   </thead>
   <tbody>
     <tr>
-      <th>BTRFS_LVM_MD_raid6</th>
-      <td>  4.0</td>
-      <td>   8/0.07</td>
-      <td>   3/0.14</td>
-      <td>   5/0.05</td>
-      <td>  3/0.04</td>
+      <th>Btrfs_LVM_MD_raid6</th>
+      <td>4.0</td>
+      <td>8/0.07</td>
+      <td>3/0.14</td>
+      <td>5/0.05</td>
+      <td>3/0.04</td>
     </tr>
     <tr>
-      <th>BTRFS_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
-      <td>  6.0</td>
-      <td>   7/0.07</td>
-      <td>   2/0.14</td>
-      <td>   6/0.05</td>
-      <td>  6/0.04</td>
+      <th>Btrfs_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
+      <td>6.0</td>
+      <td>7/0.07</td>
+      <td>2/0.14</td>
+      <td>6/0.05</td>
+      <td>6/0.04</td>
     </tr>
     <tr>
-      <th>BTRFS_MD_raid6</th>
-      <td>  4.0</td>
-      <td>   5/0.06</td>
-      <td>   0/0.12</td>
-      <td>   3/0.05</td>
-      <td>  8/0.04</td>
+      <th>Btrfs_MD_raid6</th>
+      <td>4.0</td>
+      <td>5/0.06</td>
+      <td>0/0.12</td>
+      <td>3/0.05</td>
+      <td>8/0.04</td>
     </tr>
     <tr>
-      <th>BTRFS_sda_-mraid6</th>
-      <td>  3.5</td>
-      <td>   6/0.07</td>
-      <td>   1/0.13</td>
-      <td>   7/0.05</td>
-      <td>  0/0.03</td>
+      <th>Btrfs_sda_-mraid6</th>
+      <td>3.5</td>
+      <td>6/0.07</td>
+      <td>1/0.13</td>
+      <td>7/0.05</td>
+      <td>0/0.03</td>
     </tr>
     <tr>
       <th>EXT4_LVM_MD_raid6</th>
-      <td> 11.5</td>
-      <td>   9/0.08</td>
-      <td>  11/0.31</td>
-      <td>  12/0.08</td>
-      <td> 14/0.05</td>
+      <td>11.5</td>
+      <td>9/0.08</td>
+      <td>11/0.31</td>
+      <td>12/0.08</td>
+      <td>14/0.05</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6</th>
-      <td> 12.5</td>
-      <td>  12/0.08</td>
-      <td>   7/0.29</td>
-      <td>  13/0.08</td>
-      <td> 13/0.05</td>
+      <td>12.5</td>
+      <td>12/0.08</td>
+      <td>7/0.29</td>
+      <td>13/0.08</td>
+      <td>13/0.05</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=128_-Estripe_width=512</th>
-      <td> 10.0</td>
-      <td>  10/0.08</td>
-      <td>  10/0.31</td>
-      <td>  11/0.08</td>
-      <td>  9/0.04</td>
+      <td>10.0</td>
+      <td>10/0.08</td>
+      <td>10/0.31</td>
+      <td>11/0.08</td>
+      <td>9/0.04</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=32_-Estripe_width=128</th>
-      <td> 12.0</td>
-      <td>  11/0.08</td>
-      <td>  13/0.35</td>
-      <td>  14/0.08</td>
-      <td> 11/0.05</td>
+      <td>12.0</td>
+      <td>11/0.08</td>
+      <td>13/0.35</td>
+      <td>14/0.08</td>
+      <td>11/0.05</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=4_-Estripe_width=16</th>
-      <td>  9.5</td>
-      <td>  14/0.08</td>
-      <td>   5/0.26</td>
-      <td>   9/0.08</td>
-      <td> 10/0.05</td>
+      <td>9.5</td>
+      <td>14/0.08</td>
+      <td>5/0.26</td>
+      <td>9/0.08</td>
+      <td>10/0.05</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=512_-Estripe_width=2048</th>
-      <td> 12.0</td>
-      <td>  13/0.08</td>
-      <td>  12/0.34</td>
-      <td>  10/0.08</td>
-      <td> 12/0.05</td>
+      <td>12.0</td>
+      <td>13/0.08</td>
+      <td>12/0.34</td>
+      <td>10/0.08</td>
+      <td>12/0.05</td>
     </tr>
     <tr>
       <th>ReiserFS_LVM_MD_raid6</th>
-      <td>  1.5</td>
-      <td>   0/0.05</td>
-      <td>   9/0.30</td>
-      <td>   1/0.05</td>
-      <td>  2/0.04</td>
+      <td>1.5</td>
+      <td>0/0.05</td>
+      <td>9/0.30</td>
+      <td>1/0.05</td>
+      <td>2/0.04</td>
     </tr>
     <tr>
       <th>ReiserFS_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
-      <td>  2.0</td>
-      <td>   3/0.06</td>
-      <td>   4/0.17</td>
-      <td>   0/0.04</td>
-      <td>  1/0.03</td>
+      <td>2.0</td>
+      <td>3/0.06</td>
+      <td>4/0.17</td>
+      <td>0/0.04</td>
+      <td>1/0.03</td>
     </tr>
     <tr>
       <th>ReiserFS_MD_raid6</th>
-      <td>  4.0</td>
-      <td>   4/0.06</td>
-      <td>  14/0.42</td>
-      <td>   2/0.05</td>
-      <td>  4/0.04</td>
+      <td>4.0</td>
+      <td>4/0.06</td>
+      <td>14/0.42</td>
+      <td>2/0.05</td>
+      <td>4/0.04</td>
     </tr>
     <tr>
       <th>XFS_LVM_MD_raid6</th>
-      <td>  4.5</td>
-      <td>   2/0.06</td>
-      <td>   6/0.27</td>
-      <td>   4/0.05</td>
-      <td>  5/0.04</td>
+      <td>4.5</td>
+      <td>2/0.06</td>
+      <td>6/0.27</td>
+      <td>4/0.05</td>
+      <td>5/0.04</td>
     </tr>
     <tr>
       <th>XFS_MD_raid6</th>
-      <td>  7.5</td>
-      <td>   1/0.05</td>
-      <td>   8/0.29</td>
-      <td>   8/0.06</td>
-      <td>  7/0.04</td>
+      <td>7.5</td>
+      <td>1/0.05</td>
+      <td>8/0.29</td>
+      <td>8/0.06</td>
+      <td>7/0.04</td>
     </tr>
     <tr>
       <th>ZFS_layout=raid10_ashift=12_compression=on_sync=standard</th>
-      <td> 17.0</td>
-      <td> 17/11.71</td>
-      <td> 17/21.08</td>
-      <td> 17/11.09</td>
-      <td> 17/0.28</td>
+      <td>17.0</td>
+      <td>17/11.71</td>
+      <td>17/21.08</td>
+      <td>17/11.09</td>
+      <td>17/0.28</td>
     </tr>
     <tr>
       <th>ZFS_layout=raid6_ashift=12_compression=on_sync=standard</th>
-      <td> 16.0</td>
-      <td>  16/7.74</td>
-      <td> 16/16.75</td>
-      <td>  16/7.85</td>
-      <td> 16/0.21</td>
+      <td>16.0</td>
+      <td>16/7.74</td>
+      <td>16/16.75</td>
+      <td>16/7.85</td>
+      <td>16/0.21</td>
     </tr>
     <tr>
       <th>ZFS_layout=raid6_compression=on_sync=standard</th>
-      <td> 15.0</td>
-      <td>  15/7.36</td>
-      <td> 15/13.83</td>
-      <td>  15/7.03</td>
-      <td> 15/0.18</td>
+      <td>15.0</td>
+      <td>15/7.36</td>
+      <td>15/13.83</td>
+      <td>15/7.03</td>
+      <td>15/0.18</td>
     </tr>
   </tbody>
 </table>
@@ -604,9 +602,9 @@ summary_plots(df, 'warm')
 <a href='/img/graph_2.png'><img src='/img/graph_2.png' class='no-overflow' /></a>
 
 <p>In both of the above reports (cold and warm) on small repositories we can
-   see that ZFS performs quite poorely (and also becomes slower with higher FS
+   see that ZFS performs quite poorly (and also becomes slower with higher FS
    utilization on many commands) but still on the same order as XFS and EXT4,
-   while BTRFS and RaiserFS perform much smoother with RaiserFS being the most
+   while Btrfs and ReiserFS perform much smoother with ReiserFS being the most
    efficient.</p>
 <p>Following plots shows all 100 rounds:</p>
 <p>In&nbsp;[14]:</p>
@@ -620,7 +618,7 @@ Got 19 reports
 Got 24450 entries total
 </pre>
 
-<h3>Gross-rating/timing for each filesystem/per each command</h3>
+<h3>Gross-rating/timing for each file-system/per each command</h3>
 <div class='table-scrollable'>
 <table>
   <thead>
@@ -657,274 +655,274 @@ Got 24450 entries total
   </thead>
   <tbody>
     <tr>
-      <th>BTRFS_LVM_MD_raid6</th>
-      <td>  6</td>
-      <td>   5/0.84</td>
-      <td>   6/0.95</td>
-      <td> 12/0.19</td>
-      <td>   6/0.45</td>
-      <td>  6/0.69</td>
-      <td>  4/10.99</td>
-      <td>   5/8.87</td>
-      <td> 13/1.19</td>
-      <td>   6/1.13</td>
-      <td> 12/1.51</td>
-      <td>   3/0.58</td>
+      <th>Btrfs_LVM_MD_raid6</th>
+      <td>6</td>
+      <td>5/0.84</td>
+      <td>6/0.95</td>
+      <td>12/0.19</td>
+      <td>6/0.45</td>
+      <td>6/0.69</td>
+      <td>4/10.99</td>
+      <td>5/8.87</td>
+      <td>13/1.19</td>
+      <td>6/1.13</td>
+      <td>12/1.51</td>
+      <td>3/0.58</td>
     </tr>
     <tr>
-      <th>BTRFS_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
-      <td>  4</td>
-      <td>   4/0.79</td>
-      <td>   4/0.76</td>
-      <td>  2/0.12</td>
-      <td>   3/0.27</td>
-      <td>  4/0.57</td>
-      <td>  3/10.45</td>
-      <td>   3/8.59</td>
-      <td> 10/0.92</td>
-      <td>   4/0.94</td>
-      <td> 10/1.23</td>
-      <td>   0/0.54</td>
+      <th>Btrfs_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
+      <td>4</td>
+      <td>4/0.79</td>
+      <td>4/0.76</td>
+      <td>2/0.12</td>
+      <td>3/0.27</td>
+      <td>4/0.57</td>
+      <td>3/10.45</td>
+      <td>3/8.59</td>
+      <td>10/0.92</td>
+      <td>4/0.94</td>
+      <td>10/1.23</td>
+      <td>0/0.54</td>
     </tr>
     <tr>
-      <th>BTRFS_MD_raid6</th>
-      <td>  5</td>
-      <td>   6/0.84</td>
-      <td>   5/0.91</td>
-      <td> 11/0.18</td>
-      <td>   5/0.44</td>
-      <td>  5/0.69</td>
-      <td>  5/11.00</td>
-      <td>   4/8.84</td>
-      <td> 11/1.18</td>
-      <td>   5/1.09</td>
-      <td> 11/1.50</td>
-      <td>   2/0.58</td>
+      <th>Btrfs_MD_raid6</th>
+      <td>5</td>
+      <td>6/0.84</td>
+      <td>5/0.91</td>
+      <td>11/0.18</td>
+      <td>5/0.44</td>
+      <td>5/0.69</td>
+      <td>5/11.00</td>
+      <td>4/8.84</td>
+      <td>11/1.18</td>
+      <td>5/1.09</td>
+      <td>11/1.50</td>
+      <td>2/0.58</td>
     </tr>
     <tr>
-      <th>BTRFS_sda_-mraid6</th>
-      <td>  4</td>
-      <td>   3/0.74</td>
-      <td>   3/0.73</td>
-      <td>  4/0.14</td>
-      <td>   4/0.28</td>
-      <td>  3/0.52</td>
-      <td>  6/11.55</td>
-      <td>  6/10.84</td>
-      <td>  9/0.82</td>
-      <td>   3/0.91</td>
-      <td>  9/1.18</td>
-      <td>   1/0.55</td>
+      <th>Btrfs_sda_-mraid6</th>
+      <td>4</td>
+      <td>3/0.74</td>
+      <td>3/0.73</td>
+      <td>4/0.14</td>
+      <td>4/0.28</td>
+      <td>3/0.52</td>
+      <td>6/11.55</td>
+      <td>6/10.84</td>
+      <td>9/0.82</td>
+      <td>3/0.91</td>
+      <td>9/1.18</td>
+      <td>1/0.55</td>
     </tr>
     <tr>
       <th>EXT4_LVM_MD_raid6</th>
-      <td> 10</td>
-      <td>  10/3.64</td>
-      <td> 10/11.99</td>
-      <td>  5/0.14</td>
-      <td>  10/2.26</td>
-      <td> 12/2.80</td>
-      <td>  8/33.39</td>
-      <td> 10/27.15</td>
-      <td>  4/0.65</td>
-      <td>  10/3.89</td>
-      <td>  3/0.84</td>
-      <td>  11/0.94</td>
+      <td>10</td>
+      <td>10/3.64</td>
+      <td>10/11.99</td>
+      <td>5/0.14</td>
+      <td>10/2.26</td>
+      <td>12/2.80</td>
+      <td>8/33.39</td>
+      <td>10/27.15</td>
+      <td>4/0.65</td>
+      <td>10/3.89</td>
+      <td>3/0.84</td>
+      <td>11/0.94</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6</th>
-      <td>  8</td>
-      <td>   9/3.27</td>
-      <td>  9/10.35</td>
-      <td>  1/0.12</td>
-      <td>   9/2.05</td>
-      <td>  8/1.94</td>
-      <td>  7/32.69</td>
-      <td>  9/25.78</td>
-      <td>  3/0.62</td>
-      <td>   9/3.51</td>
-      <td>  4/0.85</td>
-      <td>   8/0.85</td>
+      <td>8</td>
+      <td>9/3.27</td>
+      <td>9/10.35</td>
+      <td>1/0.12</td>
+      <td>9/2.05</td>
+      <td>8/1.94</td>
+      <td>7/32.69</td>
+      <td>9/25.78</td>
+      <td>3/0.62</td>
+      <td>9/3.51</td>
+      <td>4/0.85</td>
+      <td>8/0.85</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=128_-Estripe_width=512</th>
-      <td> 11</td>
-      <td>  11/3.66</td>
-      <td> 11/12.28</td>
-      <td>  3/0.14</td>
-      <td>  13/2.91</td>
-      <td> 11/2.71</td>
-      <td>  9/35.04</td>
-      <td> 11/27.37</td>
-      <td>  5/0.66</td>
-      <td>  11/3.97</td>
-      <td>  5/0.94</td>
-      <td>   9/0.87</td>
+      <td>11</td>
+      <td>11/3.66</td>
+      <td>11/12.28</td>
+      <td>3/0.14</td>
+      <td>13/2.91</td>
+      <td>11/2.71</td>
+      <td>9/35.04</td>
+      <td>11/27.37</td>
+      <td>5/0.66</td>
+      <td>11/3.97</td>
+      <td>5/0.94</td>
+      <td>9/0.87</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=32_-Estripe_width=128</th>
-      <td> 14</td>
-      <td>  14/4.66</td>
-      <td> 14/15.62</td>
-      <td> 10/0.15</td>
-      <td>  14/3.28</td>
-      <td> 15/3.09</td>
-      <td> 13/37.86</td>
-      <td> 14/28.71</td>
-      <td>  8/0.80</td>
-      <td>  14/5.24</td>
-      <td>  8/1.16</td>
-      <td>  12/0.96</td>
+      <td>14</td>
+      <td>14/4.66</td>
+      <td>14/15.62</td>
+      <td>10/0.15</td>
+      <td>14/3.28</td>
+      <td>15/3.09</td>
+      <td>13/37.86</td>
+      <td>14/28.71</td>
+      <td>8/0.80</td>
+      <td>14/5.24</td>
+      <td>8/1.16</td>
+      <td>12/0.96</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=4_-Estripe_width=16</th>
-      <td> 12</td>
-      <td>  13/4.40</td>
-      <td> 13/14.64</td>
-      <td>  6/0.15</td>
-      <td>  12/2.84</td>
-      <td> 14/3.06</td>
-      <td> 12/37.51</td>
-      <td> 13/28.21</td>
-      <td>  7/0.76</td>
-      <td>  13/4.76</td>
-      <td>  7/1.11</td>
-      <td>  10/0.92</td>
+      <td>12</td>
+      <td>13/4.40</td>
+      <td>13/14.64</td>
+      <td>6/0.15</td>
+      <td>12/2.84</td>
+      <td>14/3.06</td>
+      <td>12/37.51</td>
+      <td>13/28.21</td>
+      <td>7/0.76</td>
+      <td>13/4.76</td>
+      <td>7/1.11</td>
+      <td>10/0.92</td>
     </tr>
     <tr>
       <th>EXT4_MD_raid6_-Estride=512_-Estripe_width=2048</th>
-      <td> 11</td>
-      <td>  12/3.75</td>
-      <td> 12/12.64</td>
-      <td>  9/0.15</td>
-      <td>  11/2.45</td>
-      <td> 13/2.81</td>
-      <td> 10/35.94</td>
-      <td> 12/27.76</td>
-      <td>  6/0.70</td>
-      <td>  12/4.17</td>
-      <td>  6/0.97</td>
-      <td>   7/0.84</td>
+      <td>11</td>
+      <td>12/3.75</td>
+      <td>12/12.64</td>
+      <td>9/0.15</td>
+      <td>11/2.45</td>
+      <td>13/2.81</td>
+      <td>10/35.94</td>
+      <td>12/27.76</td>
+      <td>6/0.70</td>
+      <td>12/4.17</td>
+      <td>6/0.97</td>
+      <td>7/0.84</td>
     </tr>
     <tr>
       <th>ReiserFS_LVM_MD_raid6</th>
-      <td>  2</td>
-      <td>   0/0.13</td>
-      <td>   2/0.47</td>
-      <td>  7/0.15</td>
-      <td>   2/0.09</td>
-      <td>  1/0.23</td>
-      <td>   2/9.96</td>
-      <td>   1/7.73</td>
-      <td>  2/0.14</td>
-      <td>   0/0.42</td>
-      <td>  2/0.78</td>
-      <td>   5/0.65</td>
+      <td>2</td>
+      <td>0/0.13</td>
+      <td>2/0.47</td>
+      <td>7/0.15</td>
+      <td>2/0.09</td>
+      <td>1/0.23</td>
+      <td>2/9.96</td>
+      <td>1/7.73</td>
+      <td>2/0.14</td>
+      <td>0/0.42</td>
+      <td>2/0.78</td>
+      <td>5/0.65</td>
     </tr>
     <tr>
       <th>ReiserFS_LVM_raid6_sda+sdb+sdc+sdd+sde+sdf</th>
-      <td>  0</td>
-      <td>   2/0.13</td>
-      <td>   0/0.43</td>
-      <td>  0/0.10</td>
-      <td>   0/0.09</td>
-      <td>  0/0.22</td>
-      <td>   0/9.77</td>
-      <td>   0/7.60</td>
-      <td>  0/0.13</td>
-      <td>   1/0.43</td>
-      <td>  0/0.58</td>
-      <td>   4/0.62</td>
+      <td>0</td>
+      <td>2/0.13</td>
+      <td>0/0.43</td>
+      <td>0/0.10</td>
+      <td>0/0.09</td>
+      <td>0/0.22</td>
+      <td>0/9.77</td>
+      <td>0/7.60</td>
+      <td>0/0.13</td>
+      <td>1/0.43</td>
+      <td>0/0.58</td>
+      <td>4/0.62</td>
     </tr>
     <tr>
       <th>ReiserFS_MD_raid6</th>
-      <td>  1</td>
-      <td>   1/0.13</td>
-      <td>   1/0.44</td>
-      <td>  8/0.15</td>
-      <td>   1/0.09</td>
-      <td>  2/0.23</td>
-      <td>   1/9.94</td>
-      <td>   2/7.74</td>
-      <td>  1/0.14</td>
-      <td>   2/0.43</td>
-      <td>  1/0.74</td>
-      <td>   6/0.65</td>
+      <td>1</td>
+      <td>1/0.13</td>
+      <td>1/0.44</td>
+      <td>8/0.15</td>
+      <td>1/0.09</td>
+      <td>2/0.23</td>
+      <td>1/9.94</td>
+      <td>2/7.74</td>
+      <td>1/0.14</td>
+      <td>2/0.43</td>
+      <td>1/0.74</td>
+      <td>6/0.65</td>
     </tr>
     <tr>
       <th>XFS_LVM_MD_raid6</th>
-      <td> 13</td>
-      <td>   7/2.37</td>
-      <td>   7/8.02</td>
-      <td> 13/0.26</td>
-      <td>   8/0.61</td>
-      <td> 16/3.93</td>
-      <td> 16/48.10</td>
-      <td>  8/22.02</td>
-      <td> 17/2.29</td>
-      <td>   7/2.21</td>
-      <td> 17/3.90</td>
-      <td>  14/1.25</td>
+      <td>13</td>
+      <td>7/2.37</td>
+      <td>7/8.02</td>
+      <td>13/0.26</td>
+      <td>8/0.61</td>
+      <td>16/3.93</td>
+      <td>16/48.10</td>
+      <td>8/22.02</td>
+      <td>17/2.29</td>
+      <td>7/2.21</td>
+      <td>17/3.90</td>
+      <td>14/1.25</td>
     </tr>
     <tr>
       <th>XFS_MD_raid6</th>
-      <td> 13</td>
-      <td>   8/2.44</td>
-      <td>   8/8.03</td>
-      <td> 14/0.26</td>
-      <td>   7/0.60</td>
-      <td> 17/3.93</td>
-      <td> 17/48.71</td>
-      <td>  7/21.86</td>
-      <td> 16/2.27</td>
-      <td>   8/2.30</td>
-      <td> 16/3.84</td>
-      <td>  13/1.15</td>
+      <td>13</td>
+      <td>8/2.44</td>
+      <td>8/8.03</td>
+      <td>14/0.26</td>
+      <td>7/0.60</td>
+      <td>17/3.93</td>
+      <td>17/48.71</td>
+      <td>7/21.86</td>
+      <td>16/2.27</td>
+      <td>8/2.30</td>
+      <td>16/3.84</td>
+      <td>13/1.15</td>
     </tr>
     <tr>
       <th>ZFS_layout=raid10_ashift=12_compression=on_sync=standard</th>
-      <td> 15</td>
-      <td> 17/15.97</td>
-      <td> 17/24.75</td>
-      <td> 15/0.27</td>
-      <td> 17/14.48</td>
-      <td> 10/2.41</td>
-      <td> 15/40.41</td>
-      <td> 17/38.07</td>
-      <td> 15/1.23</td>
-      <td> 17/25.08</td>
-      <td> 15/3.44</td>
-      <td>  15/9.94</td>
+      <td>15</td>
+      <td>17/15.97</td>
+      <td>17/24.75</td>
+      <td>15/0.27</td>
+      <td>17/14.48</td>
+      <td>10/2.41</td>
+      <td>15/40.41</td>
+      <td>17/38.07</td>
+      <td>15/1.23</td>
+      <td>17/25.08</td>
+      <td>15/3.44</td>
+      <td>15/9.94</td>
     </tr>
     <tr>
       <th>ZFS_layout=raid6_ashift=12_compression=on_sync=standard</th>
-      <td> 16</td>
-      <td> 16/10.44</td>
-      <td> 16/19.59</td>
-      <td> 17/0.45</td>
-      <td>  16/9.91</td>
-      <td>  9/2.08</td>
-      <td> 11/36.31</td>
-      <td> 16/36.11</td>
-      <td> 14/1.22</td>
-      <td> 16/18.03</td>
-      <td> 14/3.25</td>
-      <td> 16/11.71</td>
+      <td>16</td>
+      <td>16/10.44</td>
+      <td>16/19.59</td>
+      <td>17/0.45</td>
+      <td>16/9.91</td>
+      <td>9/2.08</td>
+      <td>11/36.31</td>
+      <td>16/36.11</td>
+      <td>14/1.22</td>
+      <td>16/18.03</td>
+      <td>14/3.25</td>
+      <td>16/11.71</td>
     </tr>
     <tr>
       <th>ZFS_layout=raid6_compression=on_sync=standard</th>
-      <td> 15</td>
-      <td>  15/9.96</td>
-      <td> 15/16.24</td>
-      <td> 16/0.42</td>
-      <td>  15/7.83</td>
-      <td>  7/1.69</td>
-      <td> 14/38.64</td>
-      <td> 15/30.65</td>
-      <td> 12/1.18</td>
-      <td> 15/13.87</td>
-      <td> 13/2.97</td>
-      <td> 17/14.04</td>
+      <td>15</td>
+      <td>15/9.96</td>
+      <td>15/16.24</td>
+      <td>16/0.42</td>
+      <td>15/7.83</td>
+      <td>7/1.69</td>
+      <td>14/38.64</td>
+      <td>15/30.65</td>
+      <td>12/1.18</td>
+      <td>15/13.87</td>
+      <td>13/2.97</td>
+      <td>17/14.04</td>
     </tr>
   </tbody>
 </table>
@@ -937,10 +935,10 @@ Got 24450 entries total
 <p>For this test we have decided to get closer to typical middle size
    repositories with 1000 files in each of the 100 directories (thus 100,000
    original files per repository) and run 10 rounds. Unfortunately ZFS runs were
-   taking waay to long (sample single round took more than 24h) so they were
+   taking way to long (sample single round took more than 24h) so they were
    interrupted.</p>
-<p>Suprisingly <em>RaiserFS performance detremented quite significantly</em>,
-   bringing BTRFS into the winners. Effect from the choice of compression
+<p>Surprisingly <em>ReiserFS performance detremented quite significantly</em>,
+   bringing Btrfs into the winners. Effect from the choice of compression
    (lzo vs zlib) wasn't clearly pronounced so we decided to go with lzo.</p>
 
 <p>In&nbsp;[15]:</p>
@@ -954,7 +952,7 @@ Got 7 reports
 Got 1540 entries total
 </pre>
 
-<h3>Gross-rating/timing for each filesystem/per each command</h3>
+<h3>Gross-rating/timing for each file-system/per each command</h3>
 <div class='table-scrollable'>
 <table>
   <thead>
@@ -999,137 +997,137 @@ Got 1540 entries total
   </thead>
   <tbody>
     <tr>
-      <th>BTRFS_LVM_MD_raid6</th>
-      <td> 2</td>
-      <td>  3/989.77</td>
-      <td> 1/148.13</td>
-      <td> 2/171.24</td>
-      <td> 6/7.31</td>
-      <td>  2/73.81</td>
-      <td>  2/737.68</td>
-      <td>  2/747.67</td>
-      <td> 4/130.42</td>
-      <td>  2/134.84</td>
-      <td> 2/112.36</td>
-      <td> 2/151.61</td>
-      <td>  2/53.61</td>
-      <td> 2/179.59</td>
-      <td> 3/241.57</td>
-      <td> 0/24.78</td>
+      <th>Btrfs_LVM_MD_raid6</th>
+      <td>2</td>
+      <td>3/989.77</td>
+      <td>1/148.13</td>
+      <td>2/171.24</td>
+      <td>6/7.31</td>
+      <td>2/73.81</td>
+      <td>2/737.68</td>
+      <td>2/747.67</td>
+      <td>4/130.42</td>
+      <td>2/134.84</td>
+      <td>2/112.36</td>
+      <td>2/151.61</td>
+      <td>2/53.61</td>
+      <td>2/179.59</td>
+      <td>3/241.57</td>
+      <td>0/24.78</td>
     </tr>
     <tr>
-      <th>BTRFS_LVM_MD_raid6_compress=lzo</th>
-      <td> 4</td>
-      <td>  0/984.39</td>
-      <td> 4/174.24</td>
-      <td> 5/217.06</td>
-      <td> 4/6.61</td>
-      <td>  3/99.37</td>
-      <td>  4/767.62</td>
-      <td>  3/781.16</td>
-      <td> 5/130.89</td>
-      <td>  4/145.35</td>
-      <td> 4/133.41</td>
-      <td> 4/166.22</td>
-      <td>  4/69.79</td>
-      <td> 5/218.48</td>
-      <td> 4/263.55</td>
-      <td> 3/25.84</td>
+      <th>Btrfs_LVM_MD_raid6_compress=lzo</th>
+      <td>4</td>
+      <td>0/984.39</td>
+      <td>4/174.24</td>
+      <td>5/217.06</td>
+      <td>4/6.61</td>
+      <td>3/99.37</td>
+      <td>4/767.62</td>
+      <td>3/781.16</td>
+      <td>5/130.89</td>
+      <td>4/145.35</td>
+      <td>4/133.41</td>
+      <td>4/166.22</td>
+      <td>4/69.79</td>
+      <td>5/218.48</td>
+      <td>4/263.55</td>
+      <td>3/25.84</td>
     </tr>
     <tr>
-      <th>BTRFS_LVM_MD_raid6_compress=zlib</th>
-      <td> 3</td>
-      <td> 5/1005.41</td>
-      <td> 3/171.68</td>
-      <td> 3/203.35</td>
-      <td> 3/5.64</td>
-      <td> 5/110.36</td>
-      <td>  3/754.58</td>
-      <td>  4/782.21</td>
-      <td> 3/129.41</td>
-      <td>  3/143.20</td>
-      <td> 3/129.58</td>
-      <td> 3/161.01</td>
-      <td>  3/67.79</td>
-      <td> 3/203.25</td>
-      <td> 5/266.14</td>
-      <td> 4/26.00</td>
+      <th>Btrfs_LVM_MD_raid6_compress=zlib</th>
+      <td>3</td>
+      <td>5/1005.41</td>
+      <td>3/171.68</td>
+      <td>3/203.35</td>
+      <td>3/5.64</td>
+      <td>5/110.36</td>
+      <td>3/754.58</td>
+      <td>4/782.21</td>
+      <td>3/129.41</td>
+      <td>3/143.20</td>
+      <td>3/129.58</td>
+      <td>3/161.01</td>
+      <td>3/67.79</td>
+      <td>3/203.25</td>
+      <td>5/266.14</td>
+      <td>4/26.00</td>
     </tr>
     <tr>
-      <th>BTRFS_sda_-mraid6</th>
-      <td> 0</td>
-      <td>  4/995.82</td>
-      <td> 0/147.76</td>
-      <td> 0/133.56</td>
-      <td> 1/3.71</td>
-      <td>  0/59.82</td>
-      <td>  0/676.95</td>
-      <td>  0/707.02</td>
-      <td> 1/107.48</td>
-      <td>  0/129.57</td>
-      <td> 0/102.28</td>
-      <td> 0/150.60</td>
-      <td>  0/46.16</td>
-      <td> 0/112.55</td>
-      <td> 0/150.98</td>
-      <td> 1/25.26</td>
+      <th>Btrfs_sda_-mraid6</th>
+      <td>0</td>
+      <td>4/995.82</td>
+      <td>0/147.76</td>
+      <td>0/133.56</td>
+      <td>1/3.71</td>
+      <td>0/59.82</td>
+      <td>0/676.95</td>
+      <td>0/707.02</td>
+      <td>1/107.48</td>
+      <td>0/129.57</td>
+      <td>0/102.28</td>
+      <td>0/150.60</td>
+      <td>0/46.16</td>
+      <td>0/112.55</td>
+      <td>0/150.98</td>
+      <td>1/25.26</td>
     </tr>
     <tr>
-      <th>BTRFS_sda_-mraid6_compress=lzo</th>
-      <td> 1</td>
-      <td>  2/988.97</td>
-      <td> 2/153.09</td>
-      <td> 1/137.83</td>
-      <td> 0/3.68</td>
-      <td>  1/60.24</td>
-      <td>  1/697.89</td>
-      <td>  1/726.68</td>
-      <td> 2/113.59</td>
-      <td>  1/131.69</td>
-      <td> 1/104.67</td>
-      <td> 1/151.36</td>
-      <td>  1/49.65</td>
-      <td> 1/116.30</td>
-      <td> 1/161.57</td>
-      <td> 2/25.36</td>
+      <th>Btrfs_sda_-mraid6_compress=lzo</th>
+      <td>1</td>
+      <td>2/988.97</td>
+      <td>2/153.09</td>
+      <td>1/137.83</td>
+      <td>0/3.68</td>
+      <td>1/60.24</td>
+      <td>1/697.89</td>
+      <td>1/726.68</td>
+      <td>2/113.59</td>
+      <td>1/131.69</td>
+      <td>1/104.67</td>
+      <td>1/151.36</td>
+      <td>1/49.65</td>
+      <td>1/116.30</td>
+      <td>1/161.57</td>
+      <td>2/25.36</td>
     </tr>
     <tr>
-      <th>BTRFSv4_LVM_MD_raid6_compress=lzo</th>
-      <td> 5</td>
-      <td>  1/985.17</td>
-      <td> 5/175.95</td>
-      <td> 4/209.24</td>
-      <td> 5/6.90</td>
-      <td> 4/105.76</td>
-      <td>  5/770.36</td>
-      <td>  5/793.40</td>
-      <td> 6/131.05</td>
-      <td>  5/145.72</td>
-      <td> 5/137.28</td>
-      <td> 5/166.84</td>
-      <td>  5/70.68</td>
-      <td> 4/214.00</td>
-      <td> 6/267.73</td>
-      <td> 5/26.08</td>
+      <th>Btrfsv4_LVM_MD_raid6_compress=lzo</th>
+      <td>5</td>
+      <td>1/985.17</td>
+      <td>5/175.95</td>
+      <td>4/209.24</td>
+      <td>5/6.90</td>
+      <td>4/105.76</td>
+      <td>5/770.36</td>
+      <td>5/793.40</td>
+      <td>6/131.05</td>
+      <td>5/145.72</td>
+      <td>5/137.28</td>
+      <td>5/166.84</td>
+      <td>5/70.68</td>
+      <td>4/214.00</td>
+      <td>6/267.73</td>
+      <td>5/26.08</td>
     </tr>
     <tr>
       <th>ReiserFS_LVM_MD_raid6</th>
-      <td> 6</td>
-      <td> 6/3815.34</td>
-      <td> 6/179.49</td>
-      <td> 6/302.80</td>
-      <td> 2/4.37</td>
-      <td> 6/156.06</td>
-      <td> 6/3519.49</td>
-      <td> 6/3741.88</td>
-      <td>  0/96.61</td>
-      <td> 6/1493.27</td>
-      <td> 6/232.94</td>
-      <td> 6/919.61</td>
-      <td> 6/303.28</td>
-      <td> 6/388.45</td>
-      <td> 2/178.23</td>
-      <td> 6/49.54</td>
+      <td>6</td>
+      <td>6/3815.34</td>
+      <td>6/179.49</td>
+      <td>6/302.80</td>
+      <td>2/4.37</td>
+      <td>6/156.06</td>
+      <td>6/3519.49</td>
+      <td>6/3741.88</td>
+      <td>0/96.61</td>
+      <td>6/1493.27</td>
+      <td>6/232.94</td>
+      <td>6/919.61</td>
+      <td>6/303.28</td>
+      <td>6/388.45</td>
+      <td>2/178.23</td>
+      <td>6/49.54</td>
     </tr>
   </tbody>
 </table>
@@ -1143,7 +1141,7 @@ Got 1540 entries total
 summary_plots(df, 'warm')
 </pre>
 
-<h3>Gross-rating/timing for each filesystem/per each command</h3>
+<h3>Gross-rating/timing for each file-system/per each command</h3>
 <div class='table-scrollable'>
 <table>
   <thead>
@@ -1172,81 +1170,81 @@ summary_plots(df, 'warm')
   </thead>
   <tbody>
     <tr>
-      <th>BTRFS_LVM_MD_raid6</th>
-      <td> 1</td>
-      <td> 2/2.21</td>
-      <td> 0/5.05</td>
-      <td> 0/0.97</td>
-      <td> 4/0.01</td>
-      <td> 1/2.45</td>
-      <td> 2/0.01</td>
-      <td>   0/2.23</td>
+      <th>Btrfs_LVM_MD_raid6</th>
+      <td>1</td>
+      <td>2/2.21</td>
+      <td>0/5.05</td>
+      <td>0/0.97</td>
+      <td>4/0.01</td>
+      <td>1/2.45</td>
+      <td>2/0.01</td>
+      <td>0/2.23</td>
     </tr>
     <tr>
-      <th>BTRFS_LVM_MD_raid6_compress=lzo</th>
-      <td> 3</td>
-      <td> 3/2.22</td>
-      <td> 3/5.36</td>
-      <td> 3/0.99</td>
-      <td> 5/0.01</td>
-      <td> 3/2.48</td>
-      <td> 0/0.01</td>
-      <td>   1/2.24</td>
+      <th>Btrfs_LVM_MD_raid6_compress=lzo</th>
+      <td>3</td>
+      <td>3/2.22</td>
+      <td>3/5.36</td>
+      <td>3/0.99</td>
+      <td>5/0.01</td>
+      <td>3/2.48</td>
+      <td>0/0.01</td>
+      <td>1/2.24</td>
     </tr>
     <tr>
-      <th>BTRFS_LVM_MD_raid6_compress=zlib</th>
-      <td> 3</td>
-      <td> 1/2.21</td>
-      <td> 5/6.40</td>
-      <td> 1/0.97</td>
-      <td> 1/0.01</td>
-      <td> 4/2.49</td>
-      <td> 3/0.01</td>
-      <td>   4/2.49</td>
+      <th>Btrfs_LVM_MD_raid6_compress=zlib</th>
+      <td>3</td>
+      <td>1/2.21</td>
+      <td>5/6.40</td>
+      <td>1/0.97</td>
+      <td>1/0.01</td>
+      <td>4/2.49</td>
+      <td>3/0.01</td>
+      <td>4/2.49</td>
     </tr>
     <tr>
-      <th>BTRFS_sda_-mraid6</th>
-      <td> 3</td>
-      <td> 6/2.27</td>
-      <td> 1/5.14</td>
-      <td> 5/1.00</td>
-      <td> 3/0.01</td>
-      <td> 5/2.49</td>
-      <td> 1/0.01</td>
-      <td>   2/2.26</td>
+      <th>Btrfs_sda_-mraid6</th>
+      <td>3</td>
+      <td>6/2.27</td>
+      <td>1/5.14</td>
+      <td>5/1.00</td>
+      <td>3/0.01</td>
+      <td>5/2.49</td>
+      <td>1/0.01</td>
+      <td>2/2.26</td>
     </tr>
     <tr>
-      <th>BTRFS_sda_-mraid6_compress=lzo</th>
-      <td> 4</td>
-      <td> 5/2.25</td>
-      <td> 2/5.18</td>
-      <td> 4/0.99</td>
-      <td> 0/0.01</td>
-      <td> 6/2.50</td>
-      <td> 6/0.01</td>
-      <td>   3/2.35</td>
+      <th>Btrfs_sda_-mraid6_compress=lzo</th>
+      <td>4</td>
+      <td>5/2.25</td>
+      <td>2/5.18</td>
+      <td>4/0.99</td>
+      <td>0/0.01</td>
+      <td>6/2.50</td>
+      <td>6/0.01</td>
+      <td>3/2.35</td>
     </tr>
     <tr>
-      <th>BTRFSv4_LVM_MD_raid6_compress=lzo</th>
-      <td> 4</td>
-      <td> 4/2.24</td>
-      <td> 4/5.95</td>
-      <td> 2/0.97</td>
-      <td> 2/0.01</td>
-      <td> 2/2.48</td>
-      <td> 4/0.01</td>
-      <td>   5/2.71</td>
+      <th>Btrfsv4_LVM_MD_raid6_compress=lzo</th>
+      <td>4</td>
+      <td>4/2.24</td>
+      <td>4/5.95</td>
+      <td>2/0.97</td>
+      <td>2/0.01</td>
+      <td>2/2.48</td>
+      <td>4/0.01</td>
+      <td>5/2.71</td>
     </tr>
     <tr>
       <th>ReiserFS_LVM_MD_raid6</th>
-      <td> 6</td>
-      <td> 0/1.78</td>
-      <td> 6/8.52</td>
-      <td> 6/1.03</td>
-      <td> 6/0.02</td>
-      <td> 0/2.08</td>
-      <td> 5/0.01</td>
-      <td> 6/250.94</td>
+      <td>6</td>
+      <td>0/1.78</td>
+      <td>6/8.52</td>
+      <td>6/1.03</td>
+      <td>6/0.02</td>
+      <td>0/2.08</td>
+      <td>5/0.01</td>
+      <td>6/250.94</td>
     </tr>
   </tbody>
 </table>
