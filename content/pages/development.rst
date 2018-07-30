@@ -15,7 +15,8 @@ with our code and development process. You should also make sure to read the
 `contributing document <https://github.com/datalad/datalad/blob/master/CONTRIBUTING.md>`_
 to make sure you follow DataLad's coding style and conventions.
 
-We also maintain a `benchmarking dashboard <http://datalad.github.io/datalad/>`_
+We've written a post about `benchmarking git-annex across file-systems <test_fs_analysis.html>`_,
+and also maintain a `benchmarking dashboard <http://datalad.github.io/datalad/>`_
 that tracks the performance of various DataLad operations.
 
 The documentation is found in the source tree in the `docs subfolder
