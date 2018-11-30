@@ -48,41 +48,41 @@
     <h1>Just two commands to get started</h1>
   </header>
   <div>
-    <p>DataLad can do many things, but one does not need to know everything about it
-in order to make use of it. An <a class="reference external" href="http://docs.datalad.org/projects/revolution">extension package</a> equips DataLad with a a set of
+    <p>DataLad can do many things, but one does not need to know every feature in order
+to make good use of it. An <a class="reference external" href="http://docs.datalad.org/projects/revolution">extension package</a> equips DataLad with a set of
 just <em>two</em> commands that cover the most common scenarios for turning one's own
 data from a pile of files into a structured dataset that tracks the evolution
 of its content. This makes the life of novice users easier, but even Git pros
-might feel tempted to get a little lazy ... just sometimes. The extension is
-available for installation on Linux/Mac/Windows from <a class="reference external" href="https://github.com/datalad/datalad-revolution">GitHub</a>, and here is what it does.</p>
-<div class="section" id="rev-create-make-a-new-dataset">
-<h2>1. <cite>rev-create</cite> (make a new dataset)<a class="headerlink" href="#rev-create-make-a-new-dataset" title="Permalink to this headline"></a></h2>
-<p>This command creates a new dataset. It is best run in an empty directory, or
-a name for the new dataset is given, and a fresh directory will be created. To
+might feel tempted to get a little lazy... just sometimes. The extension is
+available for installation on Linux/Mac/Windows from <a class="reference external" href="https://github.com/datalad/datalad-revolution">GitHub</a>.</p>
+<div class="section" id="rev-create-create-a-new-dataset">
+<h2>1. <cite>rev-create</cite> (create a new dataset)<a class="headerlink" href="#rev-create-create-a-new-dataset" title="Permalink to this headline"></a></h2>
+<p>This command creates a new dataset. It can be run in an empty directory or,
+if a name for a new dataset is given, a new directory will be created. To
 create a new dataset called "myproject" run:</p>
 <blockquote>
 <tt class="docutils literal">datalad <span class="pre">rev-create</span> myproject</tt></blockquote>
 <p>Datasets can be created anywhere and for any purpose. One can also create
-datasets inside other datasets to link them together, for example, input data and
-results, or several studies that are part of a bigger project.</p>
+datasets within other datasets to link them together. For example: input data
+and results, or several studies that are part of a larger project.</p>
 </div>
 <div class="section" id="rev-save-record-dataset-state">
 <h2>2. <cite>rev-save</cite> (record dataset state)<a class="headerlink" href="#rev-save-record-dataset-state" title="Permalink to this headline"></a></h2>
-<p>This THE command. Whenever there was any change in a dataset (e.g. files/datasets
-were added, modified or removed) just run</p>
+<p>This <em>THE</em> command. Whenever there was any change in a dataset (e.g.
+files/datasets were added, modified, or removed) just run</p>
 <blockquote>
 <tt class="docutils literal">datalad <span class="pre">rev-save</span></tt></blockquote>
-<p>in the dataset to record the new state. Each such record can be used to restore
-a previous state (sometimes things go wrong and time-travel becomes really
-useful!), or even to compare changes between states. These are already advanced
-scenarios, but just running <tt class="docutils literal"><span class="pre">rev-save</span></tt> whenever some milestone was reached
-is all that is needed to make them possible.</p>
-<p>It is extremely useful to leave notes for one's future self that help understand
-why a change was made. A <em>message</em> option can be used to annotate a record
+<p>in the dataset to record the new state. Each such record can be used to compare
+changes over time or to restore to a previous state (sometimes things go wrong
+and time-travel becomes a very useful trick). These are already advanced
+scenarios, but just running <tt class="docutils literal"><span class="pre">rev-save</span></tt> whenever some milestone is reached  is
+all that is needed in order to make them possible.</p>
+<p>It is extremely useful to leave notes for one's future self, to help explain
+why a change was made. The <em>message</em> option can be used to annotate a record
 with such information.</p>
 <blockquote>
 <tt class="docutils literal">datalad <span class="pre">rev-save</span> <span class="pre">--message</span> "Computed final results for paper submission"</tt></blockquote>
-<p>These two commands are all that is needed to start managing own data with
+<p>These two commands are all that is needed to start managing your own data with
 DataLad. Check out other <a class="reference external" href="../features">demos</a> and the <a class="reference external" href="http://docs.datalad.org">full documentation</a> to learn what more DataLad has to offer.</p>
 </div>
 
