@@ -3,7 +3,7 @@ Get DataLad
 :save_as: get_datalad.html
 :url: /get_datalad.html
 
-When there isn't anything more convenient (see below), DataLad can easily be
+When there isn't anything more convenient (see below), DataLad is most easily
 installed via pip_. To automatically install DataLad and its software
 dependencies type ::
 
@@ -11,8 +11,9 @@ dependencies type ::
 
 .. _pip: https://pip.pypa.io/en/stable/
 
-In addition, it is necessary to have a recent version of git-annex_ installed,
-which is not set up automatically when using the pip method.
+There is one additional dependency — git-annex_ — that is not installed
+automatically when using pip. Be sure to have a recent version of git-annex
+installed on your system.
 
 .. _git-annex: http://git-annex.branchable.com
 
@@ -22,8 +23,7 @@ pre-built binaries from a tarball (that also includes an up-to-date Git
 installation). `Obtain the tarball
 <https://downloads.kitenet.net/git-annex/linux/current/>`_, extract it, and set
 the ``PATH`` environment variable to include the root of the extracted tarball.
-If this sounds complicated, then a better option might be a singularity
-container (see below).
+If this sounds complicated, then one of the options below might be a better fit.
 
 (Neuro)Debian, Ubuntu, and similar systems
 ------------------------------------------
@@ -39,7 +39,7 @@ package) ::
 OS X
 ----
 A common way to install packages on OS X is via the homebrew_ package manager.
-git-annex can be installed using  the command ::
+git-annex can be installed using the command ::
 
   brew install git-annex
 
@@ -54,7 +54,7 @@ HPC environments or any system with singularity installed
 If you want to use DataLad on a high-performance computing (HPC) environment,
 such as a computer cluster or a similar multi-user machine, where you don't
 have admin privileges, chances are that `Singularity
-<http://singularity.lbl.gov>`_ is already installed. And  if it isn't installed,
+<http://singularity.lbl.gov>`_ is already installed. And if it isn't installed,
 the singularity website has a page dedicated to helping you make a `solid case
 <http://singularity.lbl.gov/install-request>`_ to help convince your admin why
 they *really* want to install it.
