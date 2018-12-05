@@ -48,21 +48,21 @@
     <h1>Get DataLad</h1>
   </header>
   <div>
-    <p>When there isn't anything more convenient (see below), DataLad can easily be
+    <p>When there isn't anything more convenient (see below), DataLad is most easily
 installed via <a class="reference external" href="https://pip.pypa.io/en/stable/">pip</a>. To automatically install DataLad and its software
 dependencies type</p>
 <pre class="literal-block">
 pip install datalad
 </pre>
-<p>In addition, it is necessary to have a recent version of <a class="reference external" href="http://git-annex.branchable.com">git-annex</a> installed,
-which is not set up automatically when using the pip method.</p>
+<p>There is one additional dependency — <a class="reference external" href="http://git-annex.branchable.com">git-annex</a> — that is not installed
+automatically when using pip. Be sure to have a recent version of git-annex
+installed on your system.</p>
 <p>DataLad can be installed without admin privileges, into your home directory,
 using <tt class="docutils literal">pip</tt>'s <tt class="docutils literal"><span class="pre">--user</span></tt> option. Git-annex can be deployed by extracting
 pre-built binaries from a tarball (that also includes an up-to-date Git
 installation). <a class="reference external" href="https://downloads.kitenet.net/git-annex/linux/current/">Obtain the tarball</a>, extract it, and set
 the <tt class="docutils literal">PATH</tt> environment variable to include the root of the extracted tarball.
-If this sounds complicated, then a better option might be a singularity
-container (see below).</p>
+If this sounds complicated, then one of the options below might be a better fit.</p>
 <div class="section" id="neuro-debian-ubuntu-and-similar-systems">
 <h2>(Neuro)Debian, Ubuntu, and similar systems<a class="headerlink" href="#neuro-debian-ubuntu-and-similar-systems" title="Permalink to this headline"></a></h2>
 <p>For Debian-based operating systems, the most convenient installation method
@@ -76,7 +76,7 @@ sudo apt-get install datalad
 <div class="section" id="os-x">
 <h2>OS X<a class="headerlink" href="#os-x" title="Permalink to this headline"></a></h2>
 <p>A common way to install packages on OS X is via the <a class="reference external" href="https://brew.sh">homebrew</a> package manager.
-git-annex can be installed using  the command</p>
+git-annex can be installed using the command</p>
 <pre class="literal-block">
 brew install git-annex
 </pre>
@@ -87,7 +87,7 @@ above. <tt class="docutils literal">pip</tt> comes with Python distributions, su
 <h2>HPC environments or any system with singularity installed<a class="headerlink" href="#hpc-environments-or-any-system-with-singularity-installed" title="Permalink to this headline"></a></h2>
 <p>If you want to use DataLad on a high-performance computing (HPC) environment,
 such as a computer cluster or a similar multi-user machine, where you don't
-have admin privileges, chances are that <a class="reference external" href="http://singularity.lbl.gov">Singularity</a> is already installed. And  if it isn't installed,
+have admin privileges, chances are that <a class="reference external" href="http://singularity.lbl.gov">Singularity</a> is already installed. And if it isn't installed,
 the singularity website has a page dedicated to helping you make a <a class="reference external" href="http://singularity.lbl.gov/install-request">solid case</a> to help convince your admin why
 they <em>really</em> want to install it.</p>
 <p>On any system with Singularity installed, you can pull a container with a full
