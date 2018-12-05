@@ -45,3 +45,6 @@ command:
   `///labs <http://datasets.datalad.org/?dir=/labs>`__
 - and many more ... — `/// <http://datasets.datalad.org>`__
 
+The `OpenNeuro <https://openneuro.org>`_ portal publishes hosted data as
+DataLad datasets on GitHub. The entire collection can be found at:
+https://github.com/OpenNeuroDatasets
