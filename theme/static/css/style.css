@@ -64,6 +64,7 @@
 .icon-group:before { content: '\e806'; }
 .icon-link-ext:before { content: '\f08e'; }
 .icon-twitter:before { content: '\f099'; }
+.icon-youtube:before { content: '\f16a'; }
 .icon-github:before { content: '\f09b'; }
 .icon-copyright:before { content: '\f1f9'; }
 .icon-sitemap:before { content: '\f0e8'; }
@@ -72,6 +73,7 @@
 .icon-github  { color: #111010; }
 .icon-ok      { color: #009c24; }
 .icon-twitter { color: #4da7de; }
+.icon-youtube { color: #ff0000; }
 
 a {
   border-bottom: 1px solid currentColor;
