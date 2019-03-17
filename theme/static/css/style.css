@@ -269,10 +269,10 @@ nav [class^="icon-"] { font-size: 0.8em; }
 @media screen and (min-width: 768px) {
   nav {
     justify-content: center;
-    padding: 0.5rem;
+    padding: 1rem;
   }
   nav a.logo {
-    height: 76px;
+    height: 66px;
     margin: 0 1.4em;
   }
   nav ul {
