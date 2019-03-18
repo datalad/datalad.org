@@ -39,6 +39,7 @@ MENUITEMS = [ ('About', '/about.html', None),
               ('Get DataLad', '/get_datalad.html', None),
               ('Features', '/features.html', None),
               ('Datasets', '/datasets.html', None),
+              ('Integrations', '/integrations.html', None),
               ('Development', '/development.html', None),
               ('Docs', 'http://docs.datalad.org', '_blank'),
 ]
