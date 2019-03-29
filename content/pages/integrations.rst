@@ -12,7 +12,7 @@ services and software packages.
   <https://github.com/openneurodatasets>`__.
 
 - DataLad is a supported data provider on the `CBRAIN platform <http://cbrain.mcgill.ca>`__
-  at the `McGill Centre for Integrative Neuroscience <http://mcin.ca>`__
+  at the `McGill Centre for Integrative Neuroscience <http://mcin.ca>`__.
 
 - The DICOM conversion tool `HeuDiConv <https://github.com/nipy/heudiconv>`_ uses
   DataLad to organize and version control its output datasets.
