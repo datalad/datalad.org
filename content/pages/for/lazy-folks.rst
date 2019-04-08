@@ -30,7 +30,7 @@ and results, or several studies that are part of a larger project.
 2. `rev-save` (record dataset state)
 ====================================
 
-This *THE* command. Whenever there was any change in a dataset (e.g.
+This is *THE* command. Whenever there was any change in a dataset (e.g.
 files/datasets were added, modified, or removed) just run
 
    ``datalad rev-save``
