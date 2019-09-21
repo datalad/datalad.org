@@ -11,6 +11,12 @@ services and software packages.
   the platform as `DataLad datasets via GitHub
   <https://github.com/openneurodatasets>`__.
 
+- DataLad datasets can be hosted on `GIN <https://gin.g-node.org>`__, and any
+  data hosted on GIN can be accessed via DataLad. Moreover, the GIN service is
+  also available for `local deployment
+  <https://gin.g-node.org/G-Node/Info/wiki/InHouse>`__, offering a convenient,
+  in-house storage back-end and web UI for DataLad datasets.
+
 - DataLad is a supported data provider on the `CBRAIN platform <http://cbrain.mcgill.ca>`__
   at the `McGill Centre for Integrative Neuroscience <http://mcin.ca>`__.
 
