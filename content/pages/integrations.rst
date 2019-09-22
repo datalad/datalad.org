@@ -4,18 +4,12 @@ Integrations
 :url: /integrations.html
 
 DataLad is used as an infrastructure component or utility in a growing number of
-services and software packages.
+services and software packages:
 
 - Since June 2018, `OpenNeuro <https://openneuro.org>`__ offers a `service
   <https://github.com/openneuroorg/datalad-service>`__ to access all datasets on
   the platform as `DataLad datasets via GitHub
   <https://github.com/openneurodatasets>`__.
-
-- DataLad datasets can be hosted on `GIN <https://gin.g-node.org>`__, and any
-  data hosted on GIN can be accessed via DataLad. Moreover, the GIN service is
-  also available for `local deployment
-  <https://gin.g-node.org/G-Node/Info/wiki/InHouse>`__, offering a convenient,
-  in-house storage back-end and web UI for DataLad datasets.
 
 - DataLad is a supported data provider on the `CBRAIN platform <http://cbrain.mcgill.ca>`__
   at the `McGill Centre for Integrative Neuroscience <http://mcin.ca>`__.
@@ -30,4 +24,13 @@ services and software packages.
 - There is an ongoing collaboration with the `brainlife.io <https://brainlife.io>`__
   platform to create a unique marketplace that aids discoverability and re-use of
   publicly available datasets.
+
+DataLad can be used with existing many existing Git and git-annex
+hosting portals:
+
+- DataLad datasets can be hosted on `GIN <https://gin.g-node.org>`__, and any
+  data hosted on GIN can be accessed via DataLad. Moreover, the GIN service is
+  also available for `local deployment
+  <https://gin.g-node.org/G-Node/Info/wiki/InHouse>`__, offering a convenient,
+  in-house storage back-end and web UI for DataLad datasets.
 
