@@ -34,3 +34,6 @@ hosting portals:
   <https://gin.g-node.org/G-Node/Info/wiki/InHouse>`__, offering a convenient,
   in-house storage back-end and web UI for DataLad datasets.
 
+- DataLad datasets could be hosted (without git-annex'ed data) on **any**
+  Git hosting portal such as `GitHub <https://github.com>`_ and
+  `GitLab <http://gitlab.com>`_.
