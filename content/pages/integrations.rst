@@ -25,8 +25,8 @@ services and software packages:
   platform to create a unique marketplace that aids discoverability and re-use of
   publicly available datasets.
 
-DataLad can publish datasets and/or just contained in them data to
-many existing portals:
+DataLad and its datasets are compatible with a number of existing portals and
+storage solutions:
 
 - DataLad datasets can be hosted on `GIN <https://gin.g-node.org>`__, and any
   data hosted on GIN can be accessed via DataLad. Moreover, the GIN service is
