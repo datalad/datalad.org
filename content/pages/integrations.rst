@@ -25,8 +25,8 @@ services and software packages:
   platform to create a unique marketplace that aids discoverability and re-use of
   publicly available datasets.
 
-DataLad can be used with existing many existing Git and git-annex
-hosting portals:
+DataLad can publish datasets and/or just contained in them data to
+many existing portals:
 
 - DataLad datasets can be hosted on `GIN <https://gin.g-node.org>`__, and any
   data hosted on GIN can be accessed via DataLad. Moreover, the GIN service is
@@ -37,3 +37,8 @@ hosting portals:
 - DataLad datasets could be hosted (without git-annex'ed data) on **any**
   Git hosting portal such as `GitHub <https://github.com>`_ and
   `GitLab <http://gitlab.com>`_.
+
+- DataLad datasets can be "linked" to a wide range of data hosting
+  portals (e.g., AWS S3 and Glacier, Box.com and `many others
+  <https://git-annex.branchable.com/special_remotes/>`__) to offload
+  data online.
