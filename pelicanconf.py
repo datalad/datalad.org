@@ -41,7 +41,8 @@ MENUITEMS = [ ('About', '/about.html', None),
               ('Datasets', '/datasets.html', None),
               ('Integrations', '/integrations.html', None),
               ('Development', '/development.html', None),
-              ('Docs', 'http://docs.datalad.org', '_blank'),
+              ('User Handbook', 'http://handbook.datalad.org', '_blank'),
+              ('Developer Docs', 'http://docs.datalad.org', '_blank'),
 ]
 DEFAULT_PAGINATION = False
 
