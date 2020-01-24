@@ -34,7 +34,7 @@ HEADERID_LINK_CHAR = '&#xe805;'
 #
 # Configure the site
 #
-STATIC_PATHS = ['asciicast', 'css', 'js', 'img']
+STATIC_PATHS = ['asciicast', 'css', 'js', 'img', 'badges']
 MENUITEMS = [ ('About', '/about.html', None),
               ('Get DataLad', '/get_datalad.html', None),
               ('Features', '/features.html', None),
