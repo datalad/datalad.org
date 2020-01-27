@@ -21,9 +21,11 @@ services and software packages:
   builds on DataLad to manage data capture, management, and analysis workflows
   for neuroimaging research.
 
-- There is an ongoing collaboration with the `brainlife.io <https://brainlife.io>`__
-  platform to create a unique marketplace that aids discoverability and re-use of
-  publicly available datasets.
+- There is an ongoing collaboration with the `brainlife.io
+  <https://brainlife.io>`__ platform to create a unique marketplace that aids
+  discoverability and re-use of publicly available datasets. Hundreds of
+  DataLad datasets are discoverable and immediately usable via the `BrainLife
+  dataset search <https://brainlife.io/datasets>`_.
 
 DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
