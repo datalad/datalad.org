@@ -1,59 +1,60 @@
 #!/bin/bash
 # This script was converted using cast2script from:
-# docs/casts/seamless_nested_repos.sh
+# /home/mih/hacking/datalad/git/docs/casts/seamless_nested_repos.sh
 set -e -u
 export GIT_PAGER=cat
 
-# DataLad provides seamless management of nested Git repositories...
+# DataLad makes a tree of nested Git repositories feel like a big
+# monorepo...
 
-# Let's create a dataset
+# Let's create a root dataset
 datalad create demo
 cd demo
 
-# A DataLad dataset is just a Git repo with some initial configuration
+# Any DataLad dataset is just a Git repo with some initial
+# configuration
 git log --oneline
 
-# We can generate nested datasets, by telling DataLad to register a
-# new dataset in a parent dataset
+# We can nest datasets, by telling DataLad to register a new dataset
+# in a parent dataset
 datalad create -d . sub1
 
-# A subdataset is nothing more than regular Git submodule
+# A subdataset is a regular Git submodule
 git submodule
 
-# Of course subdatasets can be nested
+# Datasets can be nested arbitrarily deep
 datalad create -d . sub1/justadir/sub2
 
 # Unlike Git, DataLad automatically takes care of committing all
 # changes associated with the added subdataset up to the given
 # parent dataset
-git status
+datalad status
 
 # Let's create some content in the deepest subdataset
 mkdir sub1/justadir/sub2/anotherdir
 touch sub1/justadir/sub2/anotherdir/afile
 
-# Git can only tell us that something underneath the top-most
-# subdataset was modified
+# Git only reports changes within a repository, in the case the
+# whole subdataset
 git status
 
-# DataLad saves us from further investigation
-datalad diff -r
+# DataLad considers the entire tree
+datalad status -r
 
 # Like Git, it can report individual untracked files, but also across
 # repository boundaries
-datalad diff -r --report-untracked all
+datalad status -r --untracked all
 
 # Adding this new content with Git or git-annex would be an exercise
 git add sub1/justadir/sub2/anotherdir/afile || true
 
-# DataLad does not require users to determine the correct repository
-# in the tree
-datalad add -d . sub1/justadir/sub2/anotherdir/afile
+# Again, DataLad does not require users to determine the correct
+# repository
+datalad save -d . sub1/justadir/sub2/anotherdir/afile
 
-# Again, all associated changes in the entire dataset tree, up to
-# the given parent dataset, were committed
-git status
+# All associated changes in the entire dataset tree were committed
+datalad status
 
 # DataLad's 'diff' is able to report the changes from these related
 # commits throughout the repository tree
-datalad diff --revision @~1 -r
+datalad diff -r -f @~1
