@@ -6,7 +6,8 @@ Integrations
 DataLad is used as an infrastructure component or utility in a growing number of
 services and software packages:
 
-- Since June 2018, `OpenNeuro <https://openneuro.org>`__ offers a `service
+- The `OpenNeuro <https://openneuro.org>`__ data portal uses DataLad for
+  logistics, and provides a `service
   <https://github.com/openneuroorg/datalad-service>`__ to access all datasets on
   the platform as `DataLad datasets via GitHub
   <https://github.com/openneurodatasets>`__.
@@ -27,6 +28,17 @@ services and software packages:
   DataLad datasets are discoverable and immediately usable via the `BrainLife
   dataset search <https://brainlife.io/datasets>`_.
 
+- In its SGA3 funding period, the `Human Brain Project
+  <https://www.humanbrainproject.eu>`__ is supporting developments to establish
+  interoperability between DataLad and its `EBRAINS <https://ebrains.eu>`__
+  infrastructure.
+
+- The `Virtual Brain Cloud consortium <https://virtualbraincloud-2020.eu>`__
+  supports the development of `FAIR
+  <https://www.go-fair.org/fair-principles>`__ DataLad-based processing
+  workflows and software adaptors for interoperability with its cloud
+  infrastructure for biomedical research and clinical decision-making.
+
 DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
 
@@ -36,7 +48,12 @@ storage solutions:
   <https://gin.g-node.org/G-Node/Info/wiki/InHouse>`__, offering a convenient,
   in-house storage back-end and web UI for DataLad datasets.
 
-- DataLad datasets could be hosted (without git-annex'ed data) on **any**
+- With the `datalad-osf extension package
+  <https://github.com/datalad/datalad-osf>`__, DataLad datasets, with all
+  data file content and version history, can be hosted on the Open Science
+  Framework (`example study <https://osf.io/gfrme>`__).
+
+- DataLad datasets can be hosted (without git-annex'ed data) on **any**
   Git hosting portal such as `GitHub <https://github.com>`_ and
   `GitLab <http://gitlab.com>`_.
 
