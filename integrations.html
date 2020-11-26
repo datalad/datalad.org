@@ -53,7 +53,8 @@
     <p>DataLad is used as an infrastructure component or utility in a growing number of
 services and software packages:</p>
 <ul class="simple">
-<li>Since June 2018, <a class="reference external" href="https://openneuro.org">OpenNeuro</a> offers a <a class="reference external" href="https://github.com/openneuroorg/datalad-service">service</a> to access all datasets on
+<li>The <a class="reference external" href="https://openneuro.org">OpenNeuro</a> data portal uses DataLad for
+logistics, and provides a <a class="reference external" href="https://github.com/openneuroorg/datalad-service">service</a> to access all datasets on
 the platform as <a class="reference external" href="https://github.com/openneurodatasets">DataLad datasets via GitHub</a>.</li>
 <li>DataLad is a supported data provider on the <a class="reference external" href="http://cbrain.mcgill.ca">CBRAIN platform</a>
 at the <a class="reference external" href="http://mcin.ca">McGill Centre for Integrative Neuroscience</a>.</li>
@@ -66,6 +67,13 @@ for neuroimaging research.</li>
 discoverability and re-use of publicly available datasets. Hundreds of
 DataLad datasets are discoverable and immediately usable via the <a class="reference external" href="https://brainlife.io/datasets">BrainLife
 dataset search</a>.</li>
+<li>In its SGA3 funding period, the <a class="reference external" href="https://www.humanbrainproject.eu">Human Brain Project</a> is supporting developments to establish
+interoperability between DataLad and its <a class="reference external" href="https://ebrains.eu">EBRAINS</a>
+infrastructure.</li>
+<li>The <a class="reference external" href="https://virtualbraincloud-2020.eu">Virtual Brain Cloud consortium</a>
+supports the development of <a class="reference external" href="https://www.go-fair.org/fair-principles">FAIR</a> DataLad-based processing
+workflows and software adaptors for interoperability with its cloud
+infrastructure for biomedical research and clinical decision-making.</li>
 </ul>
 <p>DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:</p>
@@ -74,7 +82,10 @@ storage solutions:</p>
 data hosted on GIN can be accessed via DataLad. Moreover, the GIN service is
 also available for <a class="reference external" href="https://gin.g-node.org/G-Node/Info/wiki/InHouse">local deployment</a>, offering a convenient,
 in-house storage back-end and web UI for DataLad datasets.</li>
-<li>DataLad datasets could be hosted (without git-annex'ed data) on <strong>any</strong>
+<li>With the <a class="reference external" href="https://github.com/datalad/datalad-osf">datalad-osf extension package</a>, DataLad datasets, with all
+data file content and version history, can be hosted on the Open Science
+Framework (<a class="reference external" href="https://osf.io/gfrme">example study</a>).</li>
+<li>DataLad datasets can be hosted (without git-annex'ed data) on <strong>any</strong>
 Git hosting portal such as <a class="reference external" href="https://github.com">GitHub</a> and
 <a class="reference external" href="http://gitlab.com">GitLab</a>.</li>
 <li>DataLad datasets can be "linked" to a wide range of data hosting
