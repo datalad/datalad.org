@@ -1,0 +1,41 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Setup pelican
+        shell: bash
+        run: |
+          pip install pelican beautifulsoup4
+
+      - name: Build
+        run: |
+          make clean
+          make DEBUG=1 RELATIVE=1 html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          enable_jekyll: false
+          publish_dir: ./output
+          cname: www.datalad.org
+          user_name: 'AutoBuild'
+          user_email: 'blackhole@datalad.org'
+          commit_message: ${{ github.event.head_commit.message }}
