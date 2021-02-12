@@ -7,8 +7,7 @@ DataLad is used as an infrastructure component or utility in a growing number of
 services and software packages:
 
 - The `OpenNeuro <https://openneuro.org>`__ data portal uses DataLad for
-  logistics, and provides a `service
-  <https://github.com/openneuroorg/datalad-service>`__ to access all datasets on
+  logistics, and provides a service to access all datasets on
   the platform as `DataLad datasets via GitHub
   <https://github.com/openneurodatasets>`__.
 
@@ -54,7 +53,8 @@ DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
 
 - DataLad datasets can be hosted on `GIN <https://gin.g-node.org>`__, and any
-  data hosted on GIN can be accessed via DataLad. Moreover, the GIN service is
+  data hosted on GIN can be `accessed via DataLad
+  <http://handbook.datalad.org/r.html?GIN>`__. Moreover, the GIN service is
   also available for `local deployment
   <https://gin.g-node.org/G-Node/Info/wiki/InHouse>`__, offering a convenient,
   in-house storage back-end and web UI for DataLad datasets.
@@ -63,6 +63,11 @@ storage solutions:
   <https://github.com/datalad/datalad-osf>`__, DataLad datasets, with all
   data file content and version history, can be hosted on the Open Science
   Framework (`example study <https://osf.io/gfrme>`__).
+
+- The `datalad-ukbiobank extension package
+  <https://github.com/datalad/datalad-ukbiobank>`__ represents `UK Biobank
+  <https://www.ukbiobank.ac.uk>`__ data as extensible DataLad datasets that can
+  monitor future updates.
 
 - DataLad datasets can be hosted (without git-annex'ed data) on **any**
   Git hosting portal such as `GitHub <https://github.com>`_ and
