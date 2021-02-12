@@ -36,10 +36,10 @@ HEADERID_LINK_CHAR = '&#xe805;'
 #
 STATIC_PATHS = ['asciicast', 'css', 'js', 'img', 'badges']
 MENUITEMS = [ ('About', '/about.html', None),
-              ('Get DataLad', '/get_datalad.html', None),
-              ('Features', '/features.html', None),
-              ('Datasets', '/datasets.html', None),
               ('Integrations', '/integrations.html', None),
+              ('Get DataLad', 'http://handbook.datalad.org/r.html?install', '_blank'),
+              ('Features', 'http://handbook.datalad.org/r.html?about', '_blank'),
+              ('Datasets', '/datasets.html', None),
               ('Development', '/development.html', None),
               ('User Handbook', 'http://handbook.datalad.org', '_blank'),
               ('Developer Docs', 'http://docs.datalad.org', '_blank'),
