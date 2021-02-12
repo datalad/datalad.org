@@ -11,10 +11,10 @@ incorporate any modifications made to them over time — thus enabling the easy
 distributions of datasets.
 
 Using this automated process, the DataLad team maintains `data trackers
-<https://github.com/datalad/datalad/tree/master/datalad/crawler/pipelines>`__
+<https://github.com/datalad/datalad-crawler/tree/master/datalad_crawler/pipelines>`__
 for a number of popular public data portals. These datasets, some automatically
 generated and others manually created and curated, are collated into a `DataLad
-super-dataset <http://docs.datalad.org/en/latest/glossary.html#superdataset>`_
+super-dataset <http://handbook.datalad.org/glossary.html#term-datalad-superdataset>`_
 that is published publicly in its entirety at http://datasets.datalad.org\. This
 super-dataset establishes the official DataLad data distribution that is
 available via the DataLad resource identifier `///
@@ -24,7 +24,7 @@ but — other than the supplying of those credentials — access to all resource
 completely uniform regardless of the data's origin. DataLad also aggregates all
 relevant `metadata <http://docs.datalad.org/en/latest/metadata.html>`_ for these
 datasets — so they can be discovered using DataLad's `search
-</features.html#data-discovery>`_.
+</for/data-discovery.html>`_.
 
 At present, DataLad's super-dataset offers uniform access to over 10TB of
 scientific data. This includes the following datasets, listed by their DataLad
@@ -48,3 +48,11 @@ command:
 The `OpenNeuro <https://openneuro.org>`_ portal publishes hosted data as
 DataLad datasets on GitHub. The entire collection can be found at:
 https://github.com/OpenNeuroDatasets
+
+More datasets are provided in a `collection on GitHub
+<https://github.com/datalad-datasets>`__, such as the `Human Connectome
+Project's open access dataset
+<https://github.com/datalad-datasets/human-connectome-project-openaccess>`__,
+the world's `highest resolution brain scan
+<https://github.com/datalad-datasets/bmmr-t1w-250um>`__, or podcast
+collections.
