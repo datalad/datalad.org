@@ -5,9 +5,9 @@ Datasets
 
 DataLad can create DataLad datasets using any data files published on the web.
 But the one-time import of data isn't enough, which is why DataLad can `be
-automated </features.html#for-data-consumers>`_ to monitor such data sources and
+automated </for/data-consumers.html>`_ to monitor such data sources and
 incorporate any modifications made to them over time — thus enabling the easy
-`publication </features.html#data-sharing>`_ and maintenance of entire
+`publication </for/data-publication.html>`_ and maintenance of entire
 distributions of datasets.
 
 Using this automated process, the DataLad team maintains `data trackers
@@ -28,8 +28,8 @@ datasets — so they can be discovered using DataLad's `search
 
 At present, DataLad's super-dataset offers uniform access to over 10TB of
 scientific data. This includes the following datasets, listed by their DataLad
-resource identifiers for use with the `datalad install
-<http://docs.datalad.org/en/latest/generated/man/datalad-install.html>`_
+resource identifiers for use with the `datalad clone
+<http://docs.datalad.org/en/latest/generated/man/datalad-clone.html>`_
 command:
 
 - `OpenFMRI <https://openfmri.org>`_ — `///openfmri <http://datasets.datalad.org/?dir=/openfmri>`__
