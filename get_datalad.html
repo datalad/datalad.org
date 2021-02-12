@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="DataLad Team" />
+
+  <title>DataLad &ndash; Get DataLad</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/manifest.json?v=1">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#444444">
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="DataLad">
+  <meta name="application-name" content="DataLad">
+  <meta name="theme-color" content="#efefef">
+
+  <link rel="stylesheet" href="/theme/css/style.css" />
+
+  <link rel="license" hreflang="en" href="/copyright.html" />
+
+</head>
+
+<body>
+
+<nav id="nav">
+  <a class="logo" href="/"><img src='/theme/img/logo/datalad_nav_wide.png' alt='DataLad Logo' /></a>
+  <ul>
+    <li><a href="/about.html"  >About </a></li>
+    <li><a href="/integrations.html"  >Integrations </a></li>
+    <li><a href="http://handbook.datalad.org/r.html?install"  target='_blank' rel='noopener noreferrer'>Get DataLad <i class='icon-link-ext'></i></a></li>
+    <li><a href="http://handbook.datalad.org/r.html?about"  target='_blank' rel='noopener noreferrer'>Features <i class='icon-link-ext'></i></a></li>
+    <li><a href="/datasets.html"  >Datasets </a></li>
+    <li><a href="/development.html"  >Development </a></li>
+    <li><a href="http://handbook.datalad.org"  target='_blank' rel='noopener noreferrer'>User Handbook <i class='icon-link-ext'></i></a></li>
+    <li><a href="http://docs.datalad.org"  target='_blank' rel='noopener noreferrer'>Developer Docs <i class='icon-link-ext'></i></a></li>
+  </ul>
+</nav>
+
+<header>
+</header>
+
+<main>
+  <div id='content'>
+<article>
+  <header>
+    <h1>Get DataLad</h1>
+  </header>
+  <div>
+    <p>When there isn't anything more convenient (see below), DataLad is most easily
+installed via <a class="reference external" href="https://pip.pypa.io/en/stable/">pip</a>. To automatically install DataLad and its software
+dependencies type</p>
+<pre class="literal-block">
+pip install datalad
+</pre>
+<p>There is one additional dependency — <a class="reference external" href="http://git-annex.branchable.com">git-annex</a> — that is not installed
+automatically when using pip. Be sure to have a recent version of git-annex
+installed on your system.</p>
+<p>DataLad can be installed without admin privileges, into your home directory,
+using <tt class="docutils literal">pip</tt>'s <tt class="docutils literal"><span class="pre">--user</span></tt> option. Git-annex can be deployed by extracting
+pre-built binaries from a tarball (that also includes an up-to-date Git
+installation). <a class="reference external" href="https://downloads.kitenet.net/git-annex/linux/current/">Obtain the tarball</a>, extract it, and set
+the <tt class="docutils literal">PATH</tt> environment variable to include the root of the extracted tarball.
+If this sounds complicated, then one of the options below might be a better fit.</p>
+<div class="section" id="neuro-debian-ubuntu-and-similar-systems">
+<h2>(Neuro)Debian, Ubuntu, and similar systems<a class="headerlink" href="#neuro-debian-ubuntu-and-similar-systems" title="Permalink to this headline"></a></h2>
+<p>For Debian-based operating systems, the most convenient installation method
+is to enable the <a class="reference external" href="http://neuro.debian.net">NeuroDebian</a> repository. The following command installs DataLad
+and all of its software dependencies (including the git-annex-standalone
+package)</p>
+<pre class="literal-block">
+sudo apt-get install datalad
+</pre>
+</div>
+<div class="section" id="os-x">
+<h2>OS X<a class="headerlink" href="#os-x" title="Permalink to this headline"></a></h2>
+<p>A common way to install packages on OS X is via the <a class="reference external" href="https://brew.sh">homebrew</a> package manager.
+git-annex can be installed using the command</p>
+<pre class="literal-block">
+brew install git-annex
+</pre>
+<p>Once git-annex is available, DataLad can be installed via <tt class="docutils literal">pip</tt> as described
+above. <tt class="docutils literal">pip</tt> comes with Python distributions, such as <a class="reference external" href="https://www.continuum.io/downloads">anaconda</a>.</p>
+</div>
+<div class="section" id="hpc-environments-or-any-system-with-singularity-installed">
+<h2>HPC environments or any system with singularity installed<a class="headerlink" href="#hpc-environments-or-any-system-with-singularity-installed" title="Permalink to this headline"></a></h2>
+<p>If you want to use DataLad on a high-performance computing (HPC) environment,
+such as a computer cluster or a similar multi-user machine, where you don't
+have admin privileges, chances are that <a class="reference external" href="http://singularity.lbl.gov">Singularity</a> is already installed. And if it isn't installed,
+the singularity website has a page dedicated to helping you make a <a class="reference external" href="http://singularity.lbl.gov/install-request">solid case</a> to help convince your admin why
+they <em>really</em> want to install it.</p>
+<p>On any system with Singularity installed, you can pull a container with a full
+installation of DataLad (~300 MB) straight from <a class="reference external" href="https://singularity-hub.org/collections/667">Singularity Hub</a>. The
+following command pulls the latest container for the DataLad development version
+(check on <a class="reference external" href="https://singularity-hub.org/collections/667">Singularity Hub</a> for alternative container variants)</p>
+<pre class="literal-block">
+singularity pull shub://datalad/datalad:fullmaster
+</pre>
+<p>This will produce an executable image file. You can rename this image to
+<tt class="docutils literal">datalad</tt> and put the directory it is located in into your <tt class="docutils literal">PATH</tt>
+environment variable. From there on, you will have a <tt class="docutils literal">datalad</tt> command
+available from the command line that transparently executes all DataLad
+functionality through the container.</p>
+</div>
+
+  </div>
+</article>
+  </div>
+</main>
+
+<footer>
+  <ul class='social-links'>
+    <li>
+      <a class='icon-github' href='https://github.com/datalad' aria-label='DataLad @ GitHub'></a>
+    </li>
+    <li>
+      <a class='icon-twitter' href='https://twitter.com/datalad' aria-label='DataLad @ Twitter'></a>
+    </li>
+    <li>
+      <a class='icon-youtube' href='http://youtube.datalad.org' aria-label='DataLad @ YouTube'></a>
+    </li>
+  </ul>
+
+  <p><small>
+    content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
+    <span class='break'>—</span> <i class="icon-copyright"></i>2015–2017 DataLad Team <span class='break'>—</span>
+    unless <a rel="license" href='/copyright.html'>indicated otherwise</a>
+  </small></p>
+</footer>
+</body>
+</html>
