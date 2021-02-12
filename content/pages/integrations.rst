@@ -39,6 +39,17 @@ services and software packages:
   workflows and software adaptors for interoperability with its cloud
   infrastructure for biomedical research and clinical decision-making.
 
+- The proposed `NFDI-Neuro consortium <https://nfdi-neuro.de/>`__ to establish
+  a national research data infrastructure for neurosciences in Germany builds
+  on a DataLad-based technical backbone, the `NFDI-Neuro Common Infrastructure
+  (COIN) <https://doi.org/10.1515/nf-2020-0036>`__.
+
+- The `DFG collaborative research center (CRC) 1451 on “Key Mechanisms of Motor
+  Control in Health and Disease”
+  <https://www.dfg.de/en/service/press/press_releases/2020/press_release_no_49/index.html>`__
+  at the University of Cologne (and its partners) uses DataLad as key technology
+  for its information management needs.
+
 DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
 
