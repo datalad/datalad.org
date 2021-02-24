@@ -49,6 +49,11 @@ services and software packages:
   at the University of Cologne (and its partners) uses DataLad as key technology
   for its information management needs.
 
+- DataLad is the data management back-end of the remote monitoring platform
+  `JTrack <https://arxiv.org/abs/2101.10091>`__ for collecting data from a
+  large number of wearable devices for the purpose of developing digital
+  biomarkers for neurological and psychiatric diseases.
+
 DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
 
