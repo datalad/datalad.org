@@ -39,15 +39,14 @@ package) ::
 OS X
 ----
 A common way to install packages on OS X is via the homebrew_ package manager.
-git-annex can be installed using the command ::
+Datalad can be installed via homebrew using the command ::
 
-  brew install git-annex
+  brew install datalad
 
-Once git-annex is available, DataLad can be installed via ``pip`` as described
-above. ``pip`` comes with Python distributions, such as anaconda_.
+This installs git-annex as dependency and Datalad via ``pip``. Alternately, DataLad can be installed via ``pip``
+as described above, after git-annex has been installed via ``brew``.
 
 .. _homebrew: https://brew.sh
-.. _anaconda: https://www.continuum.io/downloads
 
 HPC environments or any system with singularity installed
 ---------------------------------------------------------
