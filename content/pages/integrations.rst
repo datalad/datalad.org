@@ -54,6 +54,22 @@ services and software packages:
   large number of wearable devices for the purpose of developing digital
   biomarkers for neurological and psychiatric diseases.
 
+- `ReproNim <http://repronim.org>`__ (NIH P41 center) uses and contributes to
+  DataLad and its extensions for a number of its projects, such as
+  `ReproMan <http://reproman.repronim.org>`__,
+  `ReproNim/containers <https://github.com/ReproNim/containers/>`__,
+  `TestKraken <https://github.com/ReproNim/testkraken/>`__, etc.
+
+- `TemplateFlow <http://templateflow.github.io/>`__ uses
+  DataLad for organization, management, and contributions of teamplates.
+
+- `The Canadian Open Neuroscience Platform (CONP) <https://conp.ca>`__ relies
+  on DataLad for all data logistics and management of contributions:
+  `conp-dataset <https://github.com/CONP-PCNO/conp-dataset>`__.
+
+- `BRAIN Initiative archive for cellular neurophysiology data (DANDI) <https://dandiarchive.org/>`__
+  provides DataLad datasets for all data in the archive: `dandisets <https://github.com/dandi/dandisets>`__.
+
 DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
 
