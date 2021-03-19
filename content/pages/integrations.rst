@@ -3,12 +3,11 @@ Integrations
 :save_as: integrations.html
 :url: /integrations.html
 
-Hanke, M., Pestilli, F., Wagner, A., Markiewicz, C., Poline, J. & Halchenko, Y. (2021). In defense of decentralized research data management. Neuroforum, 27(1), 17-25. https://doi.org/10.1515/nf-2020-0037
-
-reviews how varying requirements of independent scientific stakeholders can be
-addressed by a scalable and uniform dRDM (decentralized research data management) solution
-such as DataLad, which is used as an infrastructure component or utility in a growing number of
-services and software packages:
+The paper "`In defense of decentralized research data management
+<https://doi.org/10.1515/nf-2020-0037>`__" (dRDM) reviews how requirements
+different scientific stakeholders can be addressed by a scalable and uniform
+dRDM solution, such as DataLad, which is used as an infrastructure component or
+utility in a growing number of services and software packages:
 
 - The `OpenNeuro <https://openneuro.org>`__ data portal uses DataLad for
   logistics, and provides a service to access all datasets on
