@@ -73,6 +73,9 @@ utility in a growing number of services and software packages:
 - `BRAIN Initiative archive for cellular neurophysiology data (DANDI) <https://dandiarchive.org/>`__
   provides DataLad datasets for all data in the archive: `dandisets <https://github.com/dandi/dandisets>`__.
 
+- The `Courtois NeuroMod <https://www.cneuromod.ca>`__ project on neuronal
+  modelling uses DataLad for data management and access.
+
 DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
 
