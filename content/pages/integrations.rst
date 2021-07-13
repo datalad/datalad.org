@@ -12,7 +12,7 @@ utility in a growing number of services and software packages:
 - The `OpenNeuro <https://openneuro.org>`__ data portal uses DataLad for
   logistics, and provides a service to access all datasets on
   the platform as `DataLad datasets via GitHub
-  <https://github.com/openneurodatasets>`__.
+  <https://github.com/openneurodatasets>`__. (see `Markiewicz et al., 2021 <openneuro paper>`_)
 
 - DataLad is a supported data provider on the `CBRAIN platform <http://cbrain.mcgill.ca>`__
   at the `McGill Centre for Integrative Neuroscience <http://mcin.ca>`__.
@@ -76,6 +76,39 @@ utility in a growing number of services and software packages:
 - The `Courtois NeuroMod <https://www.cneuromod.ca>`__ project on neuronal
   modelling uses DataLad for data management and access.
 
+Select publications describing the DataLad system and its use in specific contexts:
+
+- Halchenko, Y. O., Meyer, K., Poldrack, B., Solanky, D. S., Wagner, A. S.,
+  Gors, J., ... & Hanke, M. (2021). `DataLad: distributed system for joint management
+  of code, data, and their relationship <https://doi.org/10.21105/joss.03262>`__.
+  Journal of Open Source Software, 6(63), 3262.
+
+    Provides a general overview of the system.
+
+- Gautheron, L., Rochat, N., & Cristia, A. (2021).
+  `Managing, storing, and sharing long-form recordings and their annotations
+  <https://doi.org/10.31234/osf.io/w8trm>`__. PsyArXiv.
+
+    Includes an investigation of DataLad's development process and its features
+    regarding the suitability as a basis for a specialized RDM for sensitive
+    dayling recordings of speech in children.
+
+- Hanke, M., Pestilli, F., Wagner, A. S., Markiewicz, C. J., Poline, J. B., &
+  Halchenko, Y. O. (2021). `In defense of decentralized research data
+  management <https://doi.org/10.1515/nf-2020-0037>`__. Neuroforum, 27(1), 17-25.
+
+    Illustrates the use of a decentralized RDM solution like DataLad in four
+    scenarios: one laboratory or researcher, a research institute, a domain
+    data archive or computing platform, and a collaborative multisite consortium
+
+- Markiewicz, C. J., Gorgolewski, K. J., Feingold, F., Blair, R.,
+  Halchenko, Y. O., Miller, E., ... & Poldrack, R. (2021).
+  `OpenNeuro: An open resource for sharing of neuroimaging data <openneuro paper>`_.
+  bioRxiv.
+
+    Describes how the OpenNeuro data portal employes DataLad as a backend and
+    user-facing tool.
+
 DataLad and its datasets are compatible with a number of existing portals and
 storage solutions:
 
@@ -104,3 +137,6 @@ storage solutions:
   portals (e.g., AWS S3 and Glacier, Box.com and `many others
   <https://git-annex.branchable.com/special_remotes/>`__) to offload
   data online.
+
+
+.. _OpenNeuro paper: https://doi.org/10.1101/2021.06.28.450168
