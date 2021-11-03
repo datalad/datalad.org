@@ -2,3 +2,4 @@
 *.pid
 *.pyc
 output/
+.DS_Store
