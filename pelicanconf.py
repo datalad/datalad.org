@@ -32,8 +32,9 @@ FEED_ALL_ATOM = None
 #
 # Configure the site
 #
-MENUITEMS = (('integrations', '#integrate'),
-             ('resources', '#resources'),
+MENUITEMS = (
+    ('resources', '#resources'),
+    ('use cases', '#integrate'),
 )
 STATIC_PATHS = ['img/', 'static/']
 EXTRA_PATH_METADATA = {
