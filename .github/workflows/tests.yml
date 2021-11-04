@@ -1,7 +1,7 @@
-name: github pages
+name: run tests
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
@@ -34,14 +34,3 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@master
         with:
           root: output/
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          enable_jekyll: false
-          publish_dir: ./output
-          cname: www.psychoinformatics.de
-          user_name: 'AutoBuild'
-          user_email: 'blackhole@psychoinformatics.de'
-          commit_message: ${{ github.event.head_commit.message }}
