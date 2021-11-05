@@ -26,12 +26,12 @@
 <body>
   <main>
     <!-- Navigation bar -->
-    <input class="menu-burger" type="checkbox" id="burger" name="burger" value="showing"><label for="burger"></label>
-    <nav class='card'>
+    <input type="checkbox" id="burger" name="burger" value="showing"><label for="burger" id="burger_label"></label>
+    <nav class='card' id="navbar">
       <a class="logo" href="{{ SITEURL }}"><img src="/img/logo/logo_solo.svg" alt="DataLad Logo"/></a>
       <ul class="menu-items">
         {% for title, link in MENUITEMS %}
-        <li><a href="{{ SITEURL }}/{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
+        <li><a onclick="closeMenu()" href="{{ SITEURL }}/{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
         {% endfor %}
       </ul>
       <ul class="menu-icons">

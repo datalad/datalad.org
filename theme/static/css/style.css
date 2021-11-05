@@ -183,6 +183,9 @@ section > h3:first-child, div.section > h3:first-child {
  * Layout *
  **********/
 
+html {
+  scroll-behavior: smooth;
+}
 article {
   margin: 0 6vw;
 }
@@ -313,6 +316,10 @@ nav.card li a {
   transition: display 0.3s;
   display: none;
 }
+nav.card li a:hover {
+  color: #af7714;
+}
+
 input[type=checkbox] {
   display:none;
 }
@@ -339,6 +346,10 @@ input[type=checkbox]:checked ~ nav.card ul li a {
 input[type=checkbox]:checked ~ nav.card {
   height: 10em;
   opacity: 0.95;
+}
+
+input[type=checkbox]:hover + label:before {
+  color: #af7714;
 }
 
 
@@ -386,7 +397,7 @@ svg.hero-svg {
 }
 .hero img {
   height: auto;
-  width: 90%;
+  width: 100%;
 }
 .hero-image {
   flex: 1 1 50%;
@@ -408,6 +419,7 @@ svg.hero-svg {
 .hero-body p {
   font-family: 'Maven Pro', sans-serif;
   font-size: 2em;
+  letter-spacing: 2px;
   margin-top: 0em;
   margin-bottom: 1.5em;
   padding: 0;
@@ -425,12 +437,12 @@ svg.hero-svg {
 }
 @media screen and (min-width: 1000px) {
   .hero-body {
-    transform: translateY(-4em);
+    transform: translateY(-3em);
   }
 }
 @media screen and (min-width: 1400px) {
   .hero-body {
-    transform: translateY(-5em);
+    transform: translateY(-4em);
   }
 }
 
@@ -474,6 +486,9 @@ svg.hero-svg {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.info-card h1 {
+  text-align: center;
+}
 .info-card img {
   height: auto;
   width: 75%;
@@ -486,6 +501,9 @@ svg.hero-svg {
   flex: 1 1 50%;
   margin: auto;
   text-align: justify;
+}
+.card-text ul {
+  text-align: left;
 }
 .card-img {
   flex: 1 1 50%;
