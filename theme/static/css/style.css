@@ -557,8 +557,11 @@ svg.hero-svg {
 .card-text.use-datalad {
   flex: 1 1 40%;
   margin: auto;
-  text-align: justify;
+  text-align: center;
   /* border: 1px solid black; */
+}
+.card-text.use-datalad p {
+  text-align: left;
 }
 .card-img.use-datalad {
   flex: 1 1 60%;
