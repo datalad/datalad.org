@@ -112,20 +112,3 @@ var app = new Vue({
       this.tag_options_available = this.tag_options;
     }
 });
-
-
-// Add observer to check when typewriter element scrolls into view and add/remove animation class
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const console = entry.target.querySelector('.typewriter-text');
-    // At intersection, add animation class and return
-    if (entry.isIntersecting) {
-      console.classList.add('typing');
-      return;
-    }
-    // Not intersecting: remove class
-    console.classList.remove('typing');
-  });
-});
-// Tell observer to track the correct element
-observer.observe(document.querySelector('.card-img.use-datalad'));
