@@ -325,6 +325,12 @@
       "css": "menu",
       "code": 61641,
       "src": "fontawesome"
+    },
+    {
+      "uid": "2d6150442079cbda7df64522dc24f482",
+      "css": "down-dir",
+      "code": 59412,
+      "src": "fontawesome"
     }
   ]
 }
