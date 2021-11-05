@@ -424,6 +424,9 @@ svg.hero-svg {
   margin-bottom: 1.5em;
   padding: 0;
 }
+.hero-body .button {
+  border: 3px solid var(--datalad-yellow);
+}
 @media screen and (min-width: 768px) {
   .hero-image {
     flex: 2 1 0%;
@@ -458,6 +461,7 @@ svg.hero-svg {
 }
 .overview-vid iframe {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-bottom: 1em;
 }
 .overview-buttons {
   width: 55%;
@@ -467,7 +471,8 @@ svg.hero-svg {
   margin:auto;
 }
 .overview-buttons .button {
-  margin-top: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
   line-height: 1em;
   padding: 12px 24px;
 }
