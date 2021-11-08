@@ -8,6 +8,7 @@
     "logo": "github.svg",
     "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitHub and GitLab.",
     "tags": [
+      "integration",
       "version control",
       "project management"
     ]
@@ -21,6 +22,7 @@
     "logo": "gitlab.svg",
     "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitHub and GitLab.",
     "tags": [
+      "integration",
       "version control",
       "project management"
     ]
@@ -34,6 +36,7 @@
     "logo": "git_annex.svg",
     "description": "",
     "tags": [
+      "integration",
       "version control"
     ]
   },
@@ -46,6 +49,7 @@
     "logo": "git.svg",
     "description": "",
     "tags": [
+      "integration",
       "version control"
     ]
   },
@@ -359,6 +363,7 @@
    "logo": "osf.png",
    "description": "With the datalad-osf extension package, DataLad datasets can be hosted on the Open Science Framework.",
    "tags": [
+    "extension",
     "data discovery",
     "open data",
     "data management"
@@ -387,6 +392,7 @@
    "logo": "ukbiobank.png",
    "description": "The datalad-ukbiobank extension package represents UK Biobank data as extensible DataLad datasets.",
    "tags": [
+    "extension",
      "genetics",
      "data discovery",
      "data hosting",

@@ -85,6 +85,7 @@
 .icon-book:before { content: '\e811'; }
 .icon-cancel:before { content: '\e812'; }
 .icon-cancel-circled:before { content: '\e813'; }
+.icon-down-dir:before { content: '\e814'; }
 .icon-google-scholar:before { content: '\e900'; }
 .icon-research-gate:before { content: '\e902'; }
 .icon-orcid:before { content: '\e906'; }
@@ -153,10 +154,6 @@ h6 { font-size: 1.1em; }
 
 p {
   margin: 2em 0;
-}
-
-form input {
-  border: 1px solid #ced4da;
 }
 
 article h1 {
@@ -589,7 +586,7 @@ svg.hero-svg {
   white-space: nowrap;
   opacity: 0;
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   width: calc(0.6em * var(--n));
   border-right: .15em solid orange;
@@ -658,27 +655,70 @@ svg.hero-svg {
 /*
  *  Integrations / extensions
  */
-.filter-options {
-  flex: 1 1 100%;
-  break-after: always;
-  margin: 2em;
-  text-align: center;
-}
 .selected-tags {
   flex: 1 1 100%;
   break-after: always;
   margin: 2em;
   text-align: center;
 }
-.integrations input, .integrations select {
+.integrations input {
   color: var(--datalad-grey);
-  font-size: 22px;
+  font-size: 20px;
   font-family: inherit;
   text-align: center;
 }
-.integrations input {
+.integrations input[type=text] {
   width: 300px;
+  margin-bottom: 1em;
+
 }
+.integrations input[type=radio] {
+  display: none
+}
+.integrations input[type=radio] + label{
+  border: 1px solid var(--datalad-grey);
+  background-color: white;
+  color: var(--datalad-grey);
+  border-radius: 6px;
+  padding: 16px;
+  margin: 0px 0px;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.integrations input[type=radio]:hover + label{
+  background-color: var(--datalad-grey);
+  color: white;
+}
+.integrations input[type=radio]:checked + label{
+  border: 3px solid var(--datalad-yellow);
+}
+.integrations .filter-options {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: inherit auto;
+  justify-content: center;
+  text-align: center;
+  break-after: always;
+}
+.tag-anchor {
+  border: 1px solid black;
+  padding: 5.5px;
+  width: 50px;
+  margin:0;
+  border-radius: 6px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tag-anchor span.icon-down-dir {
+  padding:0;
+  margin: 0;
+}
+
+
+
 .integrations {
   align-items: flex-start;
   /* background: repeating-linear-gradient(180deg, #fff 0px, #f6f6f6 498px, #fff 500px, #fff calc(500px + 6em)); */
@@ -835,18 +875,13 @@ svg.hero-svg {
     margin-left: 1em;
   }
 }
-.tag-anchor {
-  border: 1px solid black;
-  padding: 5px;
-  width:50px;
-  margin:0;
-  border-radius: 6px;
-  position: relative;
-}
+
 .tag-button {
   border: 1px solid var(--datalad-grey);
+  border: 1px solid #8a8b8c;
   background-color: white;
-  color: var(--datalad-grey);
+  /* color: var(--datalad-grey); */
+  color: #8a8b8c;
   padding: 2px 8px;
   border-radius: 12px;
   margin:0;
@@ -861,7 +896,7 @@ svg.hero-svg {
   color: white;
 }
 .tag-button a {
-  color: var(--datalad-grey);
+  color: inherit;
 }
 .tag-tooltip {
   visibility: hidden;
