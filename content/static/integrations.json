@@ -1,12 +1,12 @@
 [
   {
     "name": "GitHub",
-    "website": "",
+    "website": "https://github.com/",
     "github": "",
     "docs": "",
     "info": "",
     "logo": "github.svg",
-    "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitHub and GitLab.",
+    "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitHub.",
     "tags": [
       "integration",
       "version control",
@@ -15,12 +15,12 @@
   },
   {
     "name": "GitLab",
-    "website": "",
+    "website": "https://about.gitlab.com/",
     "github": "",
     "docs": "",
     "info": "",
     "logo": "gitlab.svg",
-    "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitHub and GitLab.",
+    "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitLab.",
     "tags": [
       "integration",
       "version control",
@@ -34,7 +34,7 @@
     "docs": "",
     "info": "",
     "logo": "git_annex.svg",
-    "description": "",
+    "description": "DataLad datasets can have an annex, and thereby all the data versioning and transport features git-annex provides",
     "tags": [
       "integration",
       "version control"
@@ -42,12 +42,12 @@
   },
   {
     "name": "git",
-    "website": "",
+    "website": "https://git-scm.com/",
     "github": "",
     "docs": "",
     "info": "",
     "logo": "git.svg",
-    "description": "",
+    "description": "DataLad datasets are Git repositories - anything compatible with Git also works for your datasets",
     "tags": [
       "integration",
       "version control"
@@ -83,7 +83,7 @@
   },
   {
     "name": "Box.com",
-    "website": "",
+    "website": "https://www.box.com/",
     "github": "",
     "docs": "",
     "info": "",
@@ -131,7 +131,7 @@
    "github": "https://github.com/nipy/heudiconv",
    "docs": "",
    "info": "",
-   "logo": "",
+   "logo": "nipy.svg",
    "description": "The DICOM conversion tool HeuDiConv uses DataLad to organize and version control its output datasets.",
    "tags": [
     "DICOM",
@@ -220,7 +220,7 @@
    "docs": "",
    "info": "",
    "logo": "crc1451.png",
-   "description": "DataLad underlies information management of the DFG collaborative research center on “Key Mechanisms of Motor Control in Health and Disease” at the University of Cologne.",
+   "description": "DataLad underlies information management of the DFG collaborative research center on 'Key Mechanisms of Motor Control in Health and Disease'",
    "tags": [
      "neuroimaging",
      "motor control",
@@ -234,7 +234,7 @@
    "docs": "https://jutrack-docs.readthedocs.io/en/latest/",
    "info": "https://arxiv.org/abs/2101.10091",
    "logo": "jutrack.png",
-   "description": "DataLad is used by this remote wearable device monitoring platform for the purpose of developing digital biomarkers for neurological and psychiatric diseases.",
+   "description": "This remote wearable device monitoring platform uses DataLad to develop digital biomarkers for neurological and psychiatric diseases.",
    "tags": [
      "wearable",
      "biomarkers",
@@ -248,7 +248,7 @@
    "docs": "",
    "info": "",
    "logo": "repronim.png",
-   "description": "ReproNim (NIH P41 center) uses and contributes to DataLad and its extensions for a number of its projects, such as ReproMan, ReproNim/containers, and more.",
+   "description": "ReproNim uses and contributes to DataLad and its extensions for multiple projects, such as ReproMan, ReproNim/containers, and more.",
    "tags": [
      "neuroimaging",
      "pipelines"
@@ -260,7 +260,7 @@
    "github": "https://github.com/templateflow",
    "docs": "https://www.templateflow.org/",
    "info": "",
-   "logo": "",
+   "logo": "templateflow.png",
    "description": "TemplateFlow uses DataLad for organization, management, and contributions of teamplates.",
    "tags": [
      "templates",
@@ -274,7 +274,7 @@
    "docs": "",
    "info": "https://github.com/CONP-PCNO/conp-dataset",
    "logo": "conp.svg",
-   "description": "The Canadian Open Neuroscience Platform (CONP) relies on DataLad for all data logistics and management of contributions: conp-dataset.",
+   "description": "The Canadian Open Neuroscience Platform (CONP) relies on DataLad for all data logistics and management of contributions",
    "tags": [
      "data discovery",
      "open data",
@@ -289,7 +289,7 @@
    "docs": "",
    "info": "https://github.com/dandi/dandisets",
    "logo": "dandi.svg",
-   "description": "BRAIN Initiative archive for cellular neurophysiology data (DANDI) provides DataLad datasets for all data in the archive: dandisets.",
+   "description": "The BRAIN Initiative archive for cellular neurophysiology data provides DataLad datasets for all its datasets (a.k.a. dandisets).",
    "tags": [
     "data discovery",
     "open data",
@@ -316,11 +316,11 @@
  {
    "name": "Datalad MetaLad",
    "website": "",
-   "github": "",
-   "docs": "",
+   "github": "https://github.com/datalad/datalad-metalad",
+   "docs": "http://docs.datalad.org/projects/metalad/en/latest/",
    "info": "",
    "logo": "",
-   "description": "",
+   "description": "This DataLad extension provides a command suite for extensive metadata handling, including extraction, aggregation, and reporting.",
    "tags": [
     "data discovery",
     "metadata",
@@ -330,11 +330,11 @@
  {
    "name": "DataLad Neuro-Imaging",
    "website": "",
-   "github": "",
-   "docs": "",
+   "github": "https://github.com/datalad/datalad-neuroimaging",
+   "docs": "http://docs.datalad.org/projects/neuroimaging/en/latest/",
    "info": "",
    "logo": "",
-   "description": "",
+   "description": "This extension enhances DataLad for working with neuroimaging data and workflows.",
    "tags": [
     "neuroimaging",
     "extension"
@@ -342,14 +342,15 @@
  },
  {
    "name": "XNAT",
-   "website": "",
-   "github": "",
-   "docs": "",
+   "website": "https://www.xnat.org/",
+   "github": "https://github.com/datalad/datalad-xnat",
+   "docs": "http://docs.datalad.org/projects/datalad-xnat/en/latest/?badge=latest",
    "info": "",
    "logo": "xnat.png",
-   "description": "",
+   "description": "The datalad-xnat extension allows you to track and update medical image acquisitions from XNAT servers",
    "tags": [
      "DICOM",
+     "medical",
     "neuroimaging",
     "extension"
    ]
@@ -372,11 +373,11 @@
  {
    "name": "DataLad Catalog",
    "website": "",
-   "github": "",
+   "github": "https://github.com/datalad/datalad-catalog",
    "docs": "",
    "info": "",
    "logo": "",
-   "description": "",
+   "description": "An extension to generate standalone web-based data catalogs from DataLad-extracted metadata",
    "tags": [
      "metadata",
      "catalog",
@@ -398,5 +399,48 @@
      "data hosting",
      "neuroimaging"
    ]
- }
+ },
+ {
+  "name": "Bitbucket",
+  "website": "https://bitbucket.org/product",
+  "github": "",
+  "docs": "",
+  "info": "",
+  "logo": "bitbucket.svg",
+  "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as Bitbucket.",
+  "tags": [
+    "integration",
+    "version control",
+    "project management"
+  ]
+},
+{
+ "name": "Gitea",
+ "website": "https://gitea.io/en-us/",
+ "github": "",
+ "docs": "",
+ "info": "",
+ "logo": "gitea.svg",
+ "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as Gitea.",
+ "tags": [
+   "integration",
+   "version control",
+   "project management"
+ ]
+},
+{
+ "name": "Gogs",
+ "website": "https://gogs.io/",
+ "github": "",
+ "docs": "",
+ "info": "",
+ "logo": "gogs.png",
+ "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as Gogs.",
+ "tags": [
+   "integration",
+   "version control",
+   "project management"
+ ]
+}
+
 ]
