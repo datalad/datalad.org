@@ -1,0 +1,530 @@
+[
+  {
+    "name": "GitHub",
+    "website": "https://github.com/",
+    "github": "",
+    "docs": "",
+    "info": "",
+    "logo": "github.svg",
+    "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitHub.",
+    "tags": [
+      "integration",
+      "version control",
+      "project management"
+    ]
+  },
+  {
+    "name": "GitLab",
+    "website": "https://about.gitlab.com/",
+    "github": "",
+    "docs": "",
+    "info": "",
+    "logo": "gitlab.svg",
+    "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as GitLab.",
+    "tags": [
+      "integration",
+      "version control",
+      "project management"
+    ]
+  },
+  {
+    "name": "git annex",
+    "website": "https://git-annex.branchable.com/special_remotes/",
+    "github": "",
+    "docs": "",
+    "info": "",
+    "logo": "git_annex.svg",
+    "description": "DataLad datasets can have an annex, and thereby all the data versioning and transport features git-annex provides",
+    "tags": [
+      "integration",
+      "version control"
+    ]
+  },
+  {
+    "name": "git",
+    "website": "https://git-scm.com/",
+    "github": "",
+    "docs": "",
+    "info": "",
+    "logo": "git.svg",
+    "description": "DataLad datasets are Git repositories - anything compatible with Git also works for your datasets",
+    "tags": [
+      "integration",
+      "version control"
+    ]
+  },
+  {
+    "name": "GIN",
+    "website": "https://gin.g-node.org/",
+    "github": "",
+    "docs": "",
+    "info": "",
+    "logo": "gin.svg",
+    "description": "DataLad datasets can be hosted on GIN (locally or in the cloud), and any data hosted on GIN can be accessed via DataLad.",
+    "tags": [
+      "data hosting",
+      "cloud",
+      "data management"
+    ]
+  },
+  {
+    "name": "Amazon Web Services",
+    "website": "https://aws.amazon.com/",
+    "github": "",
+    "docs": "",
+    "info": "",
+    "logo": "aws.svg",
+    "description": "DataLad datasets can be \"linked\" to a wide range of data hosting portals, including AWS S3 and Glacier, to offload data online.",
+    "tags": [
+      "data hosting",
+      "cloud",
+      "data management"
+    ]
+  },
+  {
+    "name": "Box.com",
+    "website": "https://www.box.com/",
+    "github": "",
+    "docs": "",
+    "info": "",
+    "logo": "box.svg",
+    "description": "DataLad datasets can be \"linked\" to a wide range of data hosting portals, including Box.com, to offload data online.",
+    "tags": [
+      "data hosting",
+      "cloud",
+      "data management"
+    ]
+  },  
+ {
+   "name": "OpenNeuro",
+   "website": "https://openneuro.org/",
+   "github": "",
+   "docs": "",
+   "info": "",
+   "logo": "openneuro_box_only.svg",
+   "description": "The OpenNeuro data portal uses DataLad for logistics, and provides access to all its data as DataLad datasets via GitHub.",
+   "tags": [
+     "open data",
+     "neuroimaging",
+     "BIDS",
+     "data discovery"
+  ]
+ },
+ {
+   "name": "CBRAIN",
+   "website": "http://cbrain.ca/",
+   "github": "https://github.com/aces/cbrain",
+   "docs": "",
+   "info": "",
+   "logo": "cbrain.png",
+   "description": "DataLad is a supported data provider on the CBRAIN platform at the McGill Centre for Integrative Neuroscience.",
+   "tags": [
+    "open data",
+    "neuroimaging",
+    "cloud computing"
+   ]
+   
+ },
+ {
+   "name": "HeuDiConv",
+   "website": "",
+   "github": "https://github.com/nipy/heudiconv",
+   "docs": "",
+   "info": "",
+   "logo": "nipy.svg",
+   "description": "The DICOM conversion tool HeuDiConv uses DataLad to organize and version control its output datasets.",
+   "tags": [
+    "DICOM",
+    "conversion",
+    "neuroimaging",
+    "BIDS"
+   ]
+   
+ },
+ {
+   "name": "CBBS",
+   "website": "",
+   "github": "",
+   "docs": "http://imaging-docs.cbbs.eu/",
+   "info": "",
+   "logo": "cbbs.svg",
+   "description": "The CBBS neuroimaging platform builds on DataLad to manage data capture, management, and analysis workflows.",
+   "tags": [
+    "neuroimaging",
+    "BIDS",
+    "data management"
+   ]
+ },
+ {
+   "name": "brainlife.io",
+   "website": "https://brainlife.io/",
+   "github": "",
+   "docs": "",
+   "info": "https://brainlife.io/datasets",
+   "logo": "brainlife.svg",
+   "description": "Hundreds of DataLad datasets are discoverable and immediately usable via the BrainLife dataset search.",
+   "tags": [
+    "open data",
+    "neuroimaging",
+    "cloud computing",
+    "BIDS",
+    "data discovery"
+   ]
+ },
+ {
+   "name": "EBRAINS",
+   "website": "https://ebrains.eu/",
+   "github": "",
+   "docs": "",
+   "info": "https://www.humanbrainproject.eu/en/",
+   "logo": "ebrains.svg",
+   "description": "The Human Brain Project is establishing interoperability between DataLad and its EBRAINS infrastructure.",
+   "tags": [
+    "neuroimaging",
+    "cloud computing",
+    "data discovery"
+   ]
+ },
+ {
+   "name": "Virtual Brain Cloud",
+   "website": "https://virtualbraincloud-2020.eu/tvb-cloud-main.html",
+   "github": "",
+   "docs": "",
+   "info": "",
+   "logo": "tvb.png",
+   "description": "DataLad-based workflows and software adaptors interoperate with the Virtual Brain Cloud infrastructure for biomedical research.",
+   "tags": [
+    "neurodegeneration",
+    "cloud computing",
+    "pipelines"
+   ]
+ },
+ {
+   "name": "NFDI-Neuro",
+   "website": "https://nfdi-neuro.de/",
+   "github": "",
+   "docs": "",
+   "info": "https://www.degruyter.com/document/doi/10.1515/nf-2020-0036/html",
+   "logo": "nfdi.png",
+   "description": "The national research data infrastructure for neurosciences in Germany builds on a DataLad-based technical backbone.",
+   "tags": [
+    "neuroimaging",
+    "data management",
+    "national"
+   ]
+ },
+ {
+   "name": "CRC1451",
+   "website": "https://www.crc1451.uni-koeln.de/",
+   "github": "",
+   "docs": "",
+   "info": "",
+   "logo": "crc1451.png",
+   "description": "DataLad underlies information management of the DFG collaborative research center on 'Key Mechanisms of Motor Control in Health and Disease'",
+   "tags": [
+     "neuroimaging",
+     "motor control",
+     "data management"
+   ]
+ },
+ {
+   "name": "JTRack",
+   "website": "",
+   "github": "https://github.com/Biomarker-Development-at-INM7",
+   "docs": "https://jutrack-docs.readthedocs.io/en/latest/",
+   "info": "https://arxiv.org/abs/2101.10091",
+   "logo": "jutrack.png",
+   "description": "This remote wearable device monitoring platform uses DataLad to develop digital biomarkers for neurological and psychiatric diseases.",
+   "tags": [
+     "wearable",
+     "biomarkers",
+     "data management"
+   ]
+ },
+ {
+   "name": "ReproNim",
+   "website": "https://www.repronim.org/",
+   "github": "https://github.com/ReproNim",
+   "docs": "",
+   "info": "",
+   "logo": "repronim.png",
+   "description": "ReproNim uses and contributes to DataLad and its extensions for multiple projects, such as ReproMan, ReproNim/containers, and more.",
+   "tags": [
+     "neuroimaging",
+     "pipelines"
+   ]
+ },
+ {
+   "name": "TemplateFlow",
+   "website": "",
+   "github": "https://github.com/templateflow",
+   "docs": "https://www.templateflow.org/",
+   "info": "",
+   "logo": "templateflow.png",
+   "description": "TemplateFlow uses DataLad for organization, management, and contributions of teamplates.",
+   "tags": [
+     "templates",
+     "data management"
+   ]
+ },
+ {
+   "name": "CONP",
+   "website": "https://conp.ca/",
+   "github": "https://github.com/CONP-PCNO",
+   "docs": "",
+   "info": "https://github.com/CONP-PCNO/conp-dataset",
+   "logo": "conp.svg",
+   "description": "The Canadian Open Neuroscience Platform (CONP) relies on DataLad for all data logistics and management of contributions",
+   "tags": [
+     "data discovery",
+     "open data",
+     "neuroimaging",
+     "data management"
+   ]
+ },
+ {
+   "name": "DANDI",
+   "website": "https://gui.dandiarchive.org/#/",
+   "github": "https://github.com/dandi",
+   "docs": "",
+   "info": "https://github.com/dandi/dandisets",
+   "logo": "dandi.svg",
+   "description": "The BRAIN Initiative archive for cellular neurophysiology data provides DataLad datasets for all its datasets (a.k.a. dandisets).",
+   "tags": [
+    "data discovery",
+    "open data",
+    "neuroimaging",
+    "data management"
+   ]
+ },
+ {
+   "name": "Courtois Neuromod",
+   "website": "https://www.cneuromod.ca/",
+   "github": "",
+   "docs": "",
+   "info": "",
+   "logo": "cneuromod.svg",
+   "description": "The Courtois NeuroMod project on neuronal modelling uses DataLad for data management and access.",
+   "tags": [
+    "data discovery",
+    "open data",
+    "neuroimaging",
+    "data management"
+
+   ]
+ },
+ {
+   "name": "Datalad MetaLad",
+   "website": "",
+   "github": "https://github.com/datalad/datalad-metalad",
+   "docs": "http://docs.datalad.org/projects/metalad/en/latest/",
+   "info": "",
+   "logo": "",
+   "description": "This DataLad extension provides a command suite for extensive metadata handling, including extraction, aggregation, and reporting.",
+   "tags": [
+    "data discovery",
+    "metadata",
+    "extension"
+   ]
+ },
+ {
+   "name": "DataLad Neuro-Imaging",
+   "website": "",
+   "github": "https://github.com/datalad/datalad-neuroimaging",
+   "docs": "http://docs.datalad.org/projects/neuroimaging/en/latest/",
+   "info": "",
+   "logo": "",
+   "description": "This extension enhances DataLad for working with neuroimaging data and workflows.",
+   "tags": [
+    "neuroimaging",
+    "extension"
+   ]
+ },
+ {
+   "name": "XNAT",
+   "website": "https://www.xnat.org/",
+   "github": "https://github.com/datalad/datalad-xnat",
+   "docs": "http://docs.datalad.org/projects/datalad-xnat/en/latest/?badge=latest",
+   "info": "",
+   "logo": "xnat.png",
+   "description": "The datalad-xnat extension allows you to track and update medical image acquisitions from XNAT servers",
+   "tags": [
+     "DICOM",
+     "medical",
+    "neuroimaging",
+    "extension"
+   ]
+ },
+ {
+   "name": "OSF",
+   "website": "https://osf.io/",
+   "github": "https://github.com/datalad/datalad-osf",
+   "docs": "http://docs.datalad.org/projects/osf/en/latest/?badge=latest",
+   "info": "",
+   "logo": "osf.png",
+   "description": "With the datalad-osf extension package, DataLad datasets can be hosted on the Open Science Framework.",
+   "tags": [
+    "extension",
+    "data discovery",
+    "open data",
+    "data management"
+   ]
+ },
+ {
+   "name": "DataLad Catalog",
+   "website": "",
+   "github": "https://github.com/datalad/datalad-catalog",
+   "docs": "",
+   "info": "",
+   "logo": "",
+   "description": "An extension to generate standalone web-based data catalogs from DataLad-extracted metadata",
+   "tags": [
+     "metadata",
+     "catalog",
+     "extension"
+   ]
+ },
+ {
+   "name": "UK Biobank",
+   "website": "https://www.ukbiobank.ac.uk/",
+   "github": "https://github.com/datalad/datalad-ukbiobank",
+   "docs": "http://docs.datalad.org/projects/ukbiobank/en/latest/?badge=latest",
+   "info": "",
+   "logo": "ukbiobank.png",
+   "description": "The datalad-ukbiobank extension package represents UK Biobank data as extensible DataLad datasets.",
+   "tags": [
+    "extension",
+     "genetics",
+     "data discovery",
+     "data hosting",
+     "neuroimaging"
+   ]
+ },
+ {
+  "name": "Bitbucket",
+  "website": "https://bitbucket.org/product",
+  "github": "",
+  "docs": "",
+  "info": "",
+  "logo": "bitbucket.svg",
+  "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as Bitbucket.",
+  "tags": [
+    "integration",
+    "version control",
+    "project management"
+  ]
+},
+{
+ "name": "Gitea",
+ "website": "https://gitea.io/en-us/",
+ "github": "",
+ "docs": "",
+ "info": "",
+ "logo": "gitea.svg",
+ "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as Gitea.",
+ "tags": [
+   "integration",
+   "version control",
+   "project management"
+ ]
+},
+{
+ "name": "Gogs",
+ "website": "https://gogs.io/",
+ "github": "",
+ "docs": "",
+ "info": "",
+ "logo": "gogs.png",
+ "description": "DataLad datasets can be hosted (without the data annex) on any Git hosting portal such as Gogs.",
+ "tags": [
+   "integration",
+   "version control",
+   "project management"
+ ]
+},
+{
+  "name": "DataLad Container",
+  "website": "",
+  "github": "https://github.com/datalad/datalad-container",
+  "docs": "http://docs.datalad.org/projects/container/en/latest/",
+  "info": "",
+  "logo": "",
+  "description": "This extension enhances DataLad to work with computational containers like Docker and Singularity.",
+  "tags": [
+    "extension",
+    "container",
+    "pipelines"
+  ]
+ },
+ {
+   "name": "Gautheron et al. 2021",
+   "website": "",
+   "github": "",
+   "docs": "https://doi.org/10.31234/osf.io/w8trm",
+   "info": "",
+   "logo": "academic.svg",
+   "description": "Managing, storing, and sharing long-form recordings and their annotations, PsyArxiv.",
+   "tags": [
+     "academic",
+     "long-form recordings",
+     "data management"
+   ]
+  },
+  {
+    "name": "Hanke et al. 2021",
+    "website": "",
+    "github": "",
+    "docs": "https://doi.org/10.1515/nf-2020-0037",
+    "info": "",
+    "logo": "academic.svg",
+    "description": "In defense of decentralized research data management, NeuroForum.",
+    "tags": [
+      "academic",
+      "data management"
+    ]
+   },
+   {
+     "name": "Halchenko et al. 2021",
+     "website": "",
+     "github": "",
+     "docs": "https://doi.org/10.21105/joss.03262",
+     "info": "",
+     "logo": "academic.svg",
+     "description": "DataLad: distributed system for joint management of code, data, and their relationship, JOSS.",
+     "tags": [
+       "academic",
+       "data management"
+     ]
+    },
+    {
+      "name": "Markiewicz et al. 2021",
+      "website": "",
+      "github": "",
+      "docs": "https://doi.org/10.7554/eLife.71774",
+      "info": "",
+      "logo": "academic.svg",
+      "description": "The OpenNeuro resource for sharing of neuroscience data, eLife.",
+      "tags": [
+        "academic",
+        "data management",
+        "neuroimaging"
+      ]
+     },
+     {
+      "name": "Wagner et al. 2021",
+      "website": "",
+      "github": "",
+      "docs": "https://doi.org/10.1101/2021.10.12.464122",
+      "info": "",
+      "logo": "academic.svg",
+      "description": "FAIRly big: A framework for computationally reproducible processing of large-scale data, bioRxiv.",
+      "tags": [
+        "academic",
+        "data management",
+        "cloud computing",
+        "pipelines"
+      ]
+     }
+]
+
+

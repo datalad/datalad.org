@@ -1,0 +1,9 @@
+A quick rundown of the process to update Fontello icons:
+
+* "import" the config.json on fontello.com
+* Select needed icons. If external, drag-drop svg font onto the page
+* Download and extract into css/ and font/
+* Cleanup the CSS file a bit (spacing, and commented CSS rules)
+* Cleanup the config.json, as it will include the full SVG path for each and
+  every glyph in any imported SVG fonts you provided.
+* Update copyright.rst if needed
