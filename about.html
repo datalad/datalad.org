@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="DataLad Team" />
+
+  <title>DataLad &ndash; Why DataLad?</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/manifest.json?v=1">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#444444">
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="DataLad">
+  <meta name="application-name" content="DataLad">
+  <meta name="theme-color" content="#efefef">
+
+  <link rel="stylesheet" href="/theme/css/style.css" />
+
+  <link rel="license" hreflang="en" href="/copyright.html" />
+
+</head>
+
+<body>
+
+<nav id="nav">
+  <a class="logo" href="/"><img src='/theme/img/logo/datalad_nav_wide.png' alt='DataLad Logo' /></a>
+  <ul>
+    <li><a href="/about.html" class='active' >About </a></li>
+    <li><a href="/integrations.html"  >Integrations </a></li>
+    <li><a href="http://handbook.datalad.org/r.html?install"  target='_blank' rel='noopener noreferrer'>Get DataLad <i class='icon-link-ext'></i></a></li>
+    <li><a href="http://handbook.datalad.org/r.html?about"  target='_blank' rel='noopener noreferrer'>Features <i class='icon-link-ext'></i></a></li>
+    <li><a href="/datasets.html"  >Datasets </a></li>
+    <li><a href="/development.html"  >Development </a></li>
+    <li><a href="http://handbook.datalad.org"  target='_blank' rel='noopener noreferrer'>User Handbook <i class='icon-link-ext'></i></a></li>
+    <li><a href="http://docs.datalad.org"  target='_blank' rel='noopener noreferrer'>Developer Docs <i class='icon-link-ext'></i></a></li>
+  </ul>
+</nav>
+
+<header>
+</header>
+
+<main>
+  <div id='content'>
+<article>
+  <header>
+    <h1>Why DataLad?</h1>
+  </header>
+  <div>
+    
+<p>When publishing data, merely providing file access is insufficient for a
+   simple reason: data are not static. Data often (and should!)
+   continue to evolve; file formats can change, bugs will be fixed, new data are
+   added, and derived data needs to be integrated.</p>
+<p>While version control systems are a de-facto standard for open source
+   software development, a similar level of tooling and culture is not present
+   in the open data community.</p>
+<p>DataLad builds on top of <a href="http://git-annex.branchable.com">git-annex</a>
+   and extends it with an intuitive command-line interface. It enables users to
+   operate on data using familiar concepts, such as files and directories, while
+   transparently managing data access and authorization with underlying hosting
+   providers.</p>
+<p>A powerful and complete Python API is also provided to enable authors of
+   data-centric applications to bring versioning and the fearless acquisition of
+   data into continuous integration workflows.</p>
+<h2>Contributors</h2>
+<p>So far, more than 30 individuals have contributed to the development of DataLad.
+See an up-to-date list of them
+<a href="https://github.com/datalad/datalad/graphs/contributors">on GitHub</a>.
+In addition, there are a number of DataLad extensions packages. Some of them, and their
+contributors, can be found <a href="https://github.com/datalad">on GitHub too</a>.
+Additionally, the <a href="http://handbook.datalad.org">DataLad Handbook</a>, a versatile
+educational resource on (research) data management, has also received contribution by over
+<a href="https://github.com/datalad-handbook/book#contributors-">35 individuals</a>.</p>
+<h2>How to cite DataLad?</h2>
+<p>When referring to DataLad in a publication, please cite:</p>
+<blockquote>
+Halchenko et al., (2021). DataLad: distributed system for joint management of code, data,
+and their relationship. Journal of Open Source Software, 6(63), 3262.
+<a href="https://doi.org/10.21105/joss.03262">https://doi.org/10.21105/joss.03262</a>
+</blockquote>
+<h2>Acknowledgments</h2>
+<p>DataLad development is funded as a US-German project on collaborative research in
+computational neuroscience (CRCNS):</p>
+<ul>
+<li><em>DataLad - a decentralized system for integrated discovery, management,
+            and publication of digital objects of science</em>
+            (<a href="http://centerforopenneuroscience.org">Halchenko</a> /
+            <a href="http://www.psychoinformatics.de">Hanke</a>), co-funded by the US
+            National Science Foundation
+            (<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1912266">NSF 1912266</a>)
+            and the German Federal Ministry of Education and Research (BMBF 01GQ1905).
+        </li>
+<li><em>DataGit: converging catalogues, warehouses, and deployment
+           logistics into a federated "data distribution"</em>
+            (<a href="http://centerforopenneuroscience.org">Halchenko</a> /
+            <a href="http://www.psychoinformatics.de">Hanke</a>), co-funded by the US
+            National Science Foundation
+            (<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1429999">NSF 1429999</a>)
+            and the German Federal Ministry of Education and Research (BMBF 01GQ1411)
+        </li>
+</ul>
+<p>and additional support has been provided by</p>
+<ul>
+<li><em>Center for Reproducible Neuroimaging Computation (formerly CRNC, now <a href="http://repronim.org">ReproNim</a>)</em>
+            Kennedy, funded by the US National Institute of Biomedical Imaging and Bioengineering (NIBIB)
+            (<a href="https://projectreporter.nih.gov/project_info_details.cfm?aid=8999833&amp;map=y">NIH 1P41EB019936-01A1</a>)
+        </li>
+<li>
+            European Union’s Horizon 2020 research and innovation programme under
+            <a href="https://cordis.europa.eu/project/id/945539">grant agreement no. 945539: Human Brain Project (SGA3)</a>.
+        </li>
+<li>
+            European Union’s Horizon 2020 research and innovation programme under
+            <a href="https://cordis.europa.eu/project/id/826421">grant agreement no. 826421: Virtual Brain Cloud</a>.
+        </li>
+<li>
+            The German federal state of Saxony-Anhalt and the European Regional Development Fund (ERDF), Project: <a href="https://cbbs.eu">
+                Center for Behavioral Brain Sciences</a>.
+        </li>
+</ul>
+<div id="ack">
+<a href="https://www.nsf.gov"><img alt="NSF logo" src="/img/logo/nsf.png"/></a>
+<a href="https://www.bmbf.de"><img alt="BMBF logo" src="/img/logo/bmbf.png"/></a>
+<a href="https://www.nibib.nih.gov"><img alt="NIH NIBIB logo" src="/img/logo/nih-nibib.jpg"/></a>
+<a href="https://www.humanbrainproject.eu"><img alt="HBP logo" src="/img/logo/hbp.jpg"/></a>
+<a href="https://virtualbraincloud-2020.eu"><img alt="Virtual Brain Cloud logo" src="/img/logo/vbc.jpg"/></a>
+<a href="https://www.dartmouth.edu"><img alt="Dartmouth logo" src="/img/logo/dartmouth.png"/></a>
+<a href="http://www.fz-juelich.de/inm/inm-7/EN/Home/home_node.html" target="_blank"><img alt="Jülich Research Center Logo" src="/img/logo/fzjuelich.svg"/></a>
+<a href="http://www.medizin.hhu.de/en.html" target="_blank"><img alt="Heinrich Heine University Logo" src="/img/logo/hhu.svg"/></a>
+<a href="http://www.ovgu.de"><img alt="OvGU logo" src="/img/logo/ovgu.png"/></a>
+</div>
+<h2>DataLad is from the Makers of</h2>
+<div id="makers">
+<a href="http://neuro.debian.net"><img alt="NeuroDebian logo" src="/img/logo/neurodebian.png"/></a>
+<a href="http://www.pymvpa.org"><img alt="PyMVPA logo" src="/img/logo/pymvpa.png"/></a>
+<a href="http://studyforrest.org"><img alt="Studyforrest logo" src="/img/logo/studyforrest.png"/></a>
+</div>
+
+  </div>
+</article>
+  </div>
+</main>
+
+<footer>
+  <ul class='social-links'>
+    <li>
+      <a class='icon-github' href='https://github.com/datalad' aria-label='DataLad @ GitHub'></a>
+    </li>
+    <li>
+      <a class='icon-twitter' href='https://twitter.com/datalad' aria-label='DataLad @ Twitter'></a>
+    </li>
+    <li>
+      <a class='icon-youtube' href='http://youtube.datalad.org' aria-label='DataLad @ YouTube'></a>
+    </li>
+  </ul>
+
+  <p><small>
+    content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
+    <span class='break'>—</span> <i class="icon-copyright"></i>2015–2021 DataLad Team <span class='break'>—</span>
+    unless <a rel="license" href='/copyright.html'>indicated otherwise</a>
+  </small></p>
+</footer>
+</body>
+</html>
