@@ -441,6 +441,90 @@
    "version control",
    "project management"
  ]
-}
-
+},
+{
+  "name": "DataLad Container",
+  "website": "",
+  "github": "https://github.com/datalad/datalad-container",
+  "docs": "http://docs.datalad.org/projects/container/en/latest/",
+  "info": "",
+  "logo": "",
+  "description": "This extension enhances DataLad to work with computational containers like Docker and Singularity.",
+  "tags": [
+    "extension",
+    "container",
+    "pipelines"
+  ]
+ },
+ {
+   "name": "Gautheron et al. 2021",
+   "website": "",
+   "github": "",
+   "docs": "https://doi.org/10.31234/osf.io/w8trm",
+   "info": "",
+   "logo": "academic.svg",
+   "description": "Managing, storing, and sharing long-form recordings and their annotations, PsyArxiv.",
+   "tags": [
+     "academic",
+     "long-form recordings",
+     "data management"
+   ]
+  },
+  {
+    "name": "Hanke et al. 2021",
+    "website": "",
+    "github": "",
+    "docs": "https://doi.org/10.1515/nf-2020-0037",
+    "info": "",
+    "logo": "academic.svg",
+    "description": "In defense of decentralized research data management, NeuroForum.",
+    "tags": [
+      "academic",
+      "data management"
+    ]
+   },
+   {
+     "name": "Halchenko et al. 2021",
+     "website": "",
+     "github": "",
+     "docs": "https://doi.org/10.21105/joss.03262",
+     "info": "",
+     "logo": "academic.svg",
+     "description": "DataLad: distributed system for joint management of code, data, and their relationship, JOSS.",
+     "tags": [
+       "academic",
+       "data management"
+     ]
+    },
+    {
+      "name": "Markiewicz et al. 2021",
+      "website": "",
+      "github": "",
+      "docs": "https://doi.org/10.7554/eLife.71774",
+      "info": "",
+      "logo": "academic.svg",
+      "description": "The OpenNeuro resource for sharing of neuroscience data, eLife.",
+      "tags": [
+        "academic",
+        "data management",
+        "neuroimaging"
+      ]
+     },
+     {
+      "name": "Wagner et al. 2021",
+      "website": "",
+      "github": "",
+      "docs": "https://doi.org/10.1101/2021.10.12.464122",
+      "info": "",
+      "logo": "academic.svg",
+      "description": "FAIRly big: A framework for computationally reproducible processing of large-scale data, bioRxiv.",
+      "tags": [
+        "academic",
+        "data management",
+        "cloud computing",
+        "pipelines"
+      ]
+     }
 ]
+
+
