@@ -9,18 +9,18 @@
 
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#000000">
 
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ THEME_STATIC_DIR }}/css/style.css">
 
-  <link rel="license" hreflang="en" href="{{ SITEURL }}/copyright.html" />
+  <link rel="license" hreflang="en" href="copyright.html" />
 </head>
 
 <body>
@@ -28,10 +28,10 @@
     <!-- Navigation bar -->
     <input type="checkbox" id="burger" name="burger" value="showing"><label for="burger" id="burger_label"></label>
     <nav class='card' id="navbar">
-      <a class="logo" href="{{ SITEURL }}"><img src="/img/logo/logo_solo.svg" alt="DataLad Logo"/></a>
+      <a class="logo" href="#"><img src="img/logo/logo_solo.svg" alt="DataLad Logo"/></a>
       <ul class="menu-items">
         {% for title, link in MENUITEMS %}
-        <li><a onclick="closeMenu()" href="{{ SITEURL }}/{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
+        <li><a onclick="closeMenu()" href="{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
         {% endfor %}
       </ul>
       <ul class="menu-icons">
@@ -51,7 +51,7 @@
     <footer>
       <div class="footer-top">
         <div class="footer-left">
-          <img src="/img/logo/datalad_logo_wide_yw.svg" alt="">
+          <img src="img/logo/datalad_logo_wide_yw.svg" alt="">
         </div>
         <div class="footer-right">
           <ul class="footer-links">
@@ -81,7 +81,7 @@
       <p class="license"><small>
         content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
         <span class='break'>—</span> ©2015–2021 {{ AUTHOR }} <span class='break'>—</span>
-        unless <a rel="license" href='/copyright.html'>indicated otherwise</a>
+        unless <a rel="license" href='copyright.html'>indicated otherwise</a>
       </small></p>
     </footer>
   </main>
