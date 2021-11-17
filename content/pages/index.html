@@ -73,7 +73,7 @@
   <div class="card-text use-datalad">
     <h1>Use DataLad</h1>
     <p>
-      DataLad is packaged as a free and open source command line tool with a Python API and is compatible with
+      DataLad is a free and open source command line tool with a Python API and is compatible with
       all major operating systems. Use DataLad to:
       <ul class="main-list">
         <li><span class="icon-code"></span>&nbsp;&nbsp;<code>create</code> new datasets locally</li>
@@ -94,7 +94,7 @@
       <p style="--n:28; --d:1">datalad save <em>-m "hello world"</em></p>
       <p style="--n:26; --d:2">datalad push <em>--to location</em></p>
       <p style="--n:1; --d:3"></p><br>
-      <p style="--n:23; --d:3">datalad clone <em>--dataset</em></p>
+      <p style="--n:22; --d:3">datalad clone <em>location</em></p>
       <p style="--n:25; --d:4">datalad get <em>specific_file</em></p>
       <p style="--n:26; --d:5">datalad drop <em>specific_file</em></p>
       
@@ -153,6 +153,7 @@
       <input type="radio" name="radio_group" v-model="radio_group_value" @change="selectRadioButton()" v-bind:value="'all'" id="all"><label for="all">All</label>
       <input type="radio" name="radio_group" v-model="radio_group_value" @change="selectRadioButton()" v-bind:value="'integration'" id="integrations"><label for="integrations">Integrations</label>
       <input type="radio" name="radio_group" v-model="radio_group_value" @change="selectRadioButton()" v-bind:value="'extension'" id="extensions"><label for="extensions">Extensions</label>
+      <input type="radio" name="radio_group" v-model="radio_group_value" @change="selectRadioButton()" v-bind:value="'academic'" id="academic"><label for="academic">Academic</label>
       <span class="tag-anchor">More tags&nbsp;<span class="icon-down-dir"></span>
         <span class="tag-tooltip" v-bind:class="{ visible: popoverShow }" ref="tag_tooltip">
           <span v-if="tag_options_filtered.length == 0"><em>No tags found</em></span>
@@ -302,14 +303,19 @@
   <div class="card-text">
     <h1>Citing DataLad</h1>
     <p>
-      Please use the following citation to credit DataLad appropriately:
+      Please cite the following article when referring to DataLad in publications:
 
       <blockquote cite="https://doi.org/10.21105/joss.03262" id="citation_text">
-        <em>Halchenko et al., (2021). DataLad: distributed system for joint management of code, data, and their relationship. Journal of Open Source Software, 6(63), 3262, <a href="https://doi.org/10.21105/joss.03262">https://doi.org/10.21105/joss.03262</a></em>
+        <em>Yaroslav O. Halchenko, Kyle Meyer, Benjamin Poldrack, Debanjum Singh Solanky, Adina S. Wagner, Jason Gors, Dave MacFarlane,
+          Dorian Pustina, Vanessa Sochat, Satrajit S. Ghosh, Christian Mönch, Christopher J. Markiewicz, Laura Waite, Ilya Shlyakhter,
+          Alejandro de la Vega, Soichi Hayashi, Christian Olaf Häusler, Jean-Baptiste Poline, Tobias Kadelka, Kusti Skytén,
+          Dorota Jarecka, David Kennedy, Ted Strauss, Matt Cieslak, Peter Vavra, Horea-Ioan Ioanas, Robin Schneider, Mika Pflüger,
+          James V. Haxby, Simon B. Eickhoff, and Michael Hanke, (2021).
+          <strong>DataLad: distributed system for joint management of code, data, and their relationship.</strong> Journal of Open Source Software, 6(63), 3262, <a href="https://doi.org/10.21105/joss.03262">https://doi.org/10.21105/joss.03262</a></em>
       </blockquote>
       <a class="button-cite" onclick="copyCitation()"><span class="icon-docs"></span>&nbsp;&nbsp;Copy</a>
-      <a class="button-cite" href="/static/datalad-citation.bib" download="datalad-citation.bib"><span class="icon-quote-left"></span>&nbsp;&nbsp;BibTex</a>
-      <a class="button-cite" href="/static/datalad-citation.ris" download="datalad-citation.ris"><span class="icon-quote-left"></span>&nbsp;&nbsp;RIS</a>
+      <a class="button-cite" href="static/datalad-citation.bib" download="datalad-citation.bib"><span class="icon-quote-left"></span>&nbsp;&nbsp;BibTex</a>
+      <a class="button-cite" href="static/datalad-citation.ris" download="datalad-citation.ris"><span class="icon-quote-left"></span>&nbsp;&nbsp;RIS</a>
       
     </p>
   </div>

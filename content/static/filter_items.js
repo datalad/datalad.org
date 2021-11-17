@@ -119,6 +119,10 @@ var app = new Vue({
           this.search_tags = ['extension'];
           this.filterTags();
         }
+        else if (val == 'academic'){
+          this.search_tags = ['academic'];
+          this.filterTags();
+        }
       },
     },
     beforeMount(){
