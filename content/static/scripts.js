@@ -46,3 +46,13 @@ function closeMenu() {
     menu_checkbox.checked = false;
   }
 }
+
+function copyCitation() {
+  // https://stackoverflow.com/questions/60581285/execcommand-is-now-obsolete-whats-the-alternative
+  // https://www.sitepoint.com/clipboard-api/
+  selectText = document.getElementById("citation_text").textContent;
+  navigator.clipboard.writeText(selectText)
+    .then(() => { })
+    .catch((error) => { alert(`Copy failed! ${error}`) })
+    // this.showCopyTooltip = true;
+}

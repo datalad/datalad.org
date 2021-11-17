@@ -43,7 +43,7 @@
     </p>
   </div>
   <div class="card-img">
-    <img src="/img/version_control_stray_branch.svg" alt="DataLad version control">
+    <img src="img/version_control_stray_branch.svg" alt="DataLad version control">
   </div>
 </div>
 
@@ -53,7 +53,7 @@
 <!-- SECTION: CREATE STRUCTURE -->
 <div class="info-card">  
   <div class="card-img">
-    <img src="/img/nested_datasets_laptop.svg" alt="DataLad nested datasets">
+    <img src="img/nested_datasets_laptop.svg" alt="DataLad nested datasets">
   </div>
   <div class="card-text">
     <h1>Create structure</h1>
@@ -88,7 +88,7 @@
     <a class="button" href="https://mybinder.org/v2/gh/datalad-handbook/datalad-tutorial-binder/HEAD"><span class="icon-laptop"></span>&nbsp;&nbsp;Try DataLad in your browser</a>
   </div>
   <div class="card-img use-datalad">
-    <img src="/img/console.svg" alt="">
+    <img src="img/console.svg" alt="">
     <div class="typewriter-text">
       <p style="--n:25; --d:0">datalad create <em>my_dataset</em></p>
       <p style="--n:28; --d:1">datalad save <em>-m "hello world"</em></p>
@@ -108,7 +108,7 @@
 <!-- SECTION: COLLABORATE -->
 <div class="info-card"> 
   <div class="card-img larger">
-    <img src="/img/collaborate.svg" alt="DataLad collaboration">
+    <img src="img/collaborate.svg" alt="DataLad collaboration">
   </div> 
   <div class="card-text">
     <h1>Collaborate</h1>
@@ -139,7 +139,7 @@
     </p>
   </div>
   <div class="card-img larger">
-    <img src="/img/thirdparty.svg" alt="DataLad integrations and extensions">
+    <img src="img/thirdparty.svg" alt="DataLad integrations and extensions">
   </div>
 </div>
 
@@ -166,10 +166,10 @@
   </div>
   <div v-for="itm in tagFilteredItems" class="item">
     <div v-if="itm.logo" class="item-logo">
-      <img :src="'/img/logo/' + itm.logo" alt="">
+      <img :src="'img/logo/' + itm.logo" alt="">
     </div>
     <div v-else class="item-logo">
-      <img src="/img/logo/noname.svg" alt="">
+      <img src="img/logo/noname.svg" alt="">
     </div>
     <div class="item-info">
       <h3>{{itm.name}}</h3>
@@ -191,7 +191,7 @@
 <span id="resources"></span>
 <div class="info-card">  
   <div class="card-img">
-    <img src="/img/learnmore.svg" alt="DataLad learning">
+    <img src="img/learnmore.svg" alt="DataLad learning">
   </div>
   <div class="card-text">
     <h1>Learn More</h1>
@@ -286,7 +286,32 @@
     </p>
   </div>
   <div class="card-img larger">
-    <img src="/img/funding.svg" alt="DataLad funding">
+    <img src="img/funding.svg" alt="DataLad funding">
+  </div>
+</div>
+
+<!-- SPACER IMAGE -->
+<div class="spacer-dlyellow"></div>
+
+<!-- SECTION: SUPPORTING DATALAD -->
+<span id="cite"></span>
+<div class="info-card">  
+  <div class="card-img larger">
+    <img src="img/cite.svg" alt="DataLad citation">
+  </div>
+  <div class="card-text">
+    <h1>Citing DataLad</h1>
+    <p>
+      Please use the following citation to credit DataLad appropriately:
+
+      <blockquote cite="https://doi.org/10.21105/joss.03262" id="citation_text">
+        <em>Halchenko et al., (2021). DataLad: distributed system for joint management of code, data, and their relationship. Journal of Open Source Software, 6(63), 3262, <a href="https://doi.org/10.21105/joss.03262">https://doi.org/10.21105/joss.03262</a></em>
+      </blockquote>
+      <a class="button-cite" onclick="copyCitation()"><span class="icon-docs"></span>&nbsp;&nbsp;Copy</a>
+      <a class="button-cite" href="/static/datalad-citation.bib" download="datalad-citation.bib"><span class="icon-quote-left"></span>&nbsp;&nbsp;BibTex</a>
+      <a class="button-cite" href="/static/datalad-citation.ris" download="datalad-citation.ris"><span class="icon-quote-left"></span>&nbsp;&nbsp;RIS</a>
+      
+    </p>
   </div>
 </div>
 <br><br>
@@ -294,9 +319,9 @@
 <!-- INCLUDE: VUEJS -->
 <script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
 <!-- RUN: VUE SCRIPT FOR FILTERING ITEMS -->
-<script src="/static/filter_items.js"></script>
+<script src="static/filter_items.js"></script>
 <!-- RUN: OTHER JS SCRIPTS -->
-<script src="/static/scripts.js"></script>
+<script src="static/scripts.js"></script>
 
 </body>
 </html>

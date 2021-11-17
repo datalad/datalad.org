@@ -13,28 +13,28 @@
 /********
  * Base *
  ********/
-/* @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap'); */
+/* @import url('../..https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap'); */
 
 @font-face { /* License: OFL 1.1 */
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/theme/fonts/raleway-v22-latin-ext_latin-regular.woff2') format('woff2'),
-       url('/theme/fonts/raleway-v22-latin-ext_latin-regular.woff') format('woff');
+       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff2') format('woff2'),
+       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/theme/fonts/quicksand-v24-latin-ext_latin-regular.woff2') format('woff2'),
-       url('/theme/fonts/quicksand-v24-latin-ext_latin-regular.woff') format('woff');
+       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff2') format('woff2'),
+       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
   font-family: 'fontello';
-  src: url('/theme/fonts/fontello.woff2?75734824') format('woff2'),
-       url('/theme/fonts/fontello.woff?75734824') format('woff');
+  src: url('../../theme/fonts/fontello.woff2?75734824') format('woff2'),
+       url('../../theme/fonts/fontello.woff?75734824') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -92,6 +92,7 @@
 .icon-link-ext:before { content: '\f08e'; }
 .icon-twitter:before { content: '\f099'; }
 .icon-github:before { content: '\f09b'; }
+.icon-docs:before { content: '\f0c5'; }
 .icon-linkedin:before { content: '\f0e1'; }
 .icon-comment-empty:before { content: '\f0e5'; }
 .icon-download-cloud:before { content: '\f0ed'; }
@@ -225,7 +226,7 @@ section, div.section {
   }
 }
 .spacer-dlyellow {
-  background-image: url(/img/arrow_yellow.svg);
+  background-image: url(../../img/arrow_yellow.svg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -235,7 +236,7 @@ section, div.section {
   margin-bottom: 2em;
 }
 .spacer-dlgrey {
-  background-image: url(/img/arrow_grey.svg);
+  background-image: url(../../img/arrow_grey.svg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -281,7 +282,7 @@ nav.card ul {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 7em;
+  width: 10em;
   display: inline-flexbox;
   flex-wrap: wrap;
 }
@@ -341,7 +342,7 @@ input[type=checkbox]:checked ~ nav.card ul li a {
   display: unset;
 }
 input[type=checkbox]:checked ~ nav.card {
-  height: 10em;
+  height: 13em;
   opacity: 0.95;
 }
 
@@ -1006,6 +1007,37 @@ svg.hero-svg {
   display: none;
   width: 175px;
 }
+
+
+/* 
+ * Cite section
+ */
+
+ .card-text blockquote {
+   border-left: 5px solid rgb(189, 189, 189);
+   padding-left: 1em;
+   margin-left: 0.5em;
+   margin-bottom: 2em;
+   font-size: inherit;
+ }
+
+.button-cite {
+  border: 1px solid var(--datalad-grey);
+  background-color: white;
+  color: var(--datalad-grey);
+  border-radius: 6px;
+  padding: 0 5px;
+  margin: 0px 0px;
+  margin-right: 0.5em;
+  display: inline-block;
+  /* margin-bottom: 1em; */
+}
+.button-cite:hover {
+  background-color: var(--datalad-grey);
+  color: white;
+  cursor: pointer;
+}
+
 
 /* 
  * Footer
