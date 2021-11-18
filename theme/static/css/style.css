@@ -571,7 +571,8 @@ svg.hero-svg {
   height: auto;
   width: 90%;
   margin: 1em;
-  min-width: 400px;
+  margin-right: 0;
+  min-width: 350px;
   max-width: 900px;
 }
 .typewriter-text {
@@ -586,7 +587,8 @@ svg.hero-svg {
   white-space: nowrap;
   opacity: 0;
   text-align: left;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.5em;
   font-weight: 400;
   width: calc(0.6em * var(--n));
   border-right: .15em solid orange;
@@ -652,15 +654,20 @@ svg.hero-svg {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .typewriter-text p {
+    font-size: 20px;
+    line-height: inherit;
+  }
+  .card-img.use-datalad img {
+    margin-right: 1em;
+  }
+}
+
+
 /*
  *  Integrations / extensions
  */
-.selected-tags {
-  flex: 1 1 100%;
-  break-after: always;
-  margin: 2em;
-  text-align: center;
-}
 .integrations input {
   color: var(--datalad-grey);
   font-size: 20px;
@@ -711,17 +718,82 @@ svg.hero-svg {
   position: relative;
   white-space: nowrap;
 }
-
 .tag-anchor span.icon-down-dir {
   padding:0;
   margin: 0;
 }
-
-
+.tag-button {
+  border: 1px solid var(--datalad-grey);
+  border: 1px solid #8a8b8c;
+  background-color: white;
+  /* color: var(--datalad-grey); */
+  color: #8a8b8c;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin:0;
+  /* margin: 5px; */
+}
+.tag-button:hover {
+  background-color: var(--datalad-grey);
+  color: white;
+  cursor: pointer;
+}
+.tag-button:hover a {
+  color: white;
+}
+.tag-button a {
+  color: inherit;
+}
+.tag-tooltip {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  position: absolute;
+  align-content: flex-start;
+  line-height: 2em;
+  width: 60vw;
+  height: auto;
+  background-color: white;
+  border: 1px solid #ced4da;
+  color: var(--datalad-grey);
+  text-align: left;
+  padding: 5px 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  transform: translate(0, 2em);
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tag-anchor:hover .tag-tooltip {
+  visibility: visible;
+}
+.tag-anchor:active .tag-tooltip {
+  visibility: visible;
+}
+.visible {
+  visibility: visible;
+}
+.selected-tags {
+  flex: 1 1 100%;
+  break-after: always;
+  margin: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+@media screen and (min-width: 768px) {
+  .tag-tooltip {
+    width: auto;
+    min-width: 25vw;
+    max-width: 40vw;
+  }
+}
 
 .integrations {
   align-items: flex-start;
-  /* background: repeating-linear-gradient(180deg, #fff 0px, #f6f6f6 498px, #fff 500px, #fff calc(500px + 6em)); */
   border: 0 !important; /* null both border-tops and -bottoms */
   display: flex;
   flex-direction: row;
@@ -883,65 +955,6 @@ svg.hero-svg {
   }
 }
 
-.tag-button {
-  border: 1px solid var(--datalad-grey);
-  border: 1px solid #8a8b8c;
-  background-color: white;
-  /* color: var(--datalad-grey); */
-  color: #8a8b8c;
-  padding: 2px 8px;
-  border-radius: 12px;
-  margin:0;
-  /* margin: 5px; */
-}
-.tag-button:hover {
-  background-color: var(--datalad-grey);
-  color: white;
-  cursor: pointer;
-}
-.tag-button:hover a {
-  color: white;
-}
-.tag-button a {
-  color: inherit;
-}
-.tag-tooltip {
-  visibility: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow-y: scroll;
-  position: absolute;
-  align-content: flex-start;
-  line-height: 2em;
-  width: auto;
-  min-width: 25vw;
-  max-width: 40vw;
-  height: 40vh;
-  background-color: white;
-  border: 1px solid #ced4da;
-  color: var(--datalad-grey);
-  text-align: left;
-  padding: 5px 5px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  top: 0;
-  transform: translate(0, 2em);
-  /* transform: translateY(-25vh);
-  transform: translateX(-50px); */
-}
-/* Show the tooltip text when you mouse over the tooltip container */
-.tag-anchor:hover .tag-tooltip {
-  visibility: visible;
-}
-.visible {
-  visibility: visible;
-}
-.hidden {
-  visibility: hidden;
-}
 
 
 /* 
