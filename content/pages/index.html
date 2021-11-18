@@ -16,7 +16,7 @@
   </iframe>
   <div class="overview-buttons">
     <a class="button" href="https://mybinder.org/v2/gh/datalad-handbook/datalad-tutorial-binder/HEAD"><span class="icon-laptop"></span>&nbsp;&nbsp;Try it out</a>
-    <a class="button" href="https://handbook.datalad.org/en/latest/intro/installation.html"><span class="icon-cog"></span>&nbsp;&nbsp;Install DataLad</a>
+    <a class="button" href="https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration"><span class="icon-cog"></span>&nbsp;&nbsp;Install DataLad</a>
     <a class="button" href="http://handbook.datalad.org/en/latest/"><span class="icon-book"></span>&nbsp;&nbsp;Learn More</a>
     <a class="button" href="https://matrix.to/#/#datalad:matrix.org"><span class="icon-users"></span>&nbsp;&nbsp;Join the Community</a>
   </div>
@@ -90,8 +90,8 @@
   <div class="card-img use-datalad">
     <img src="img/console.svg" alt="">
     <div class="typewriter-text">
-      <p style="--n:25; --d:0">datalad create <em>my_dataset</em></p>
-      <p style="--n:28; --d:1">datalad save <em>-m "hello world"</em></p>
+      <p style="--n:26; --d:0">datalad create <em>my_dataset</em></p>
+      <p style="--n:29; --d:1">datalad save <em>-m "hello world"</em></p>
       <p style="--n:26; --d:2">datalad push <em>--to location</em></p>
       <p style="--n:1; --d:3"></p><br>
       <p style="--n:22; --d:3">datalad clone <em>location</em></p>
@@ -163,7 +163,7 @@
     </div>
   </div>
   <div class="selected-tags">
-    <span v-for="tag in search_tags"><span class="tag-button selected"><a @click="removeSearchTag(tag)">{{tag}} <span class="icon-cancel-circled"></span></a></span>&nbsp;</span>
+    <span v-for="tag in search_tags"><span class="tag-button selected"><a @click="removeSearchTag(tag)">{{tag}} <span class="icon-cancel-circled inner-icon"></span></a></span>&nbsp;</span>
   </div>
   <div v-for="itm in tagFilteredItems" class="item">
     <div v-if="itm.logo" class="item-logo">
@@ -209,7 +209,7 @@
       <span class="icon-cog"></span>
     </div>
     <div class="resource-info">
-      <h3><a href="https://handbook.datalad.org/en/latest/intro/installation.html">Install<br>DataLad</a></h3>
+      <h3><a href="https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration">Install<br>DataLad</a></h3>
       <p class="resource-blurb">Install DataLad and its dependencies on Linux, MacOS, or Windows</p>
     </div>
   </div>
