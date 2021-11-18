@@ -993,7 +993,7 @@ svg.hero-svg {
   border-radius: 100%;
   transition: transform 0.2s linear;
 }
-.learnmore .resource-icon span {
+.learnmore .resource-icon a {
   margin: auto;
   color: var(--datalad-yellow);
 }
@@ -1006,9 +1006,6 @@ svg.hero-svg {
   max-width: 175px;
   text-align: center;
 }
-.learnmore .resource-item:hover .resource-icon {
-  transform: translateY(-0.2em);
-}
 .learnmore .resource-info h3 {
   font-size: 24px;
   font-weight: 700;
@@ -1019,6 +1016,11 @@ svg.hero-svg {
   margin: auto;
   display: none;
   width: 175px;
+}
+@media screen and (min-width: 768px) {
+  .learnmore .resource-item:hover .resource-icon {
+    transform: translateY(-0.2em);
+  }
 }
 
 
