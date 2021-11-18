@@ -1105,28 +1105,30 @@ footer img {
   padding: 0em 1.5em;
   overflow: scroll;
 }
-.footer-links a:hover {
-  transform: translateY(-0.2em);
+
+.footer-links li {
+  transition: translateY 0.2s linear
+}
+.footer-links li:hover {
+  transform: translateY(-0.1em);
 }
 /* Tooltips for footer links */
 .footer-links a::after {
   background: transparent;
   border: 1px solid #aaa;
   color:#aaa;
+  line-height: 1.5em;
   border-radius: 5px;
   content: attr(aria-label);
-  font-size: 0.8em;
-  opacity: 0;
-  padding: 3px 6px;
-  position: absolute; bottom: 120%; left: 50%;
-  transform-origin: top;
-  transform: translate(-50%, 0);
-  transition: opacity 0.2s linear;
+  font-size: 16px;
+  display: none;
+  padding: 0px 3px;
+  z-index: 999;
+  position: absolute; bottom: 3em; right: 0;
+  transition: display 0.2s linear;
   white-space: nowrap;
 }
-.footer-links a:hover::after {
-  opacity: 1;
-}
+
 .license {
   color: rgb(147, 147, 147);
   font-size: 15px;
@@ -1156,6 +1158,11 @@ footer img {
   .footer-top {
     font-size: 24px;
   }
+  .footer-links a:hover::after {
+    display: unset;
+  }
+
+
 }
 @media screen and (min-width: 1000px) {
   footer {
