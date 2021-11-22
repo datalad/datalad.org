@@ -256,7 +256,7 @@ section, div.section {
  */
 
 nav.card {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   background: #fff;
   display: flex;
   position: fixed;
@@ -330,7 +330,7 @@ input[type=checkbox] + label:before
   content: '\f0c9';
   color: var(--datalad-grey);
   display:inline-block;
-  padding: 0 0 0 0px;
+  padding: 0;
   position: fixed;
   right: 0;
   top: 0;
@@ -412,7 +412,7 @@ svg.hero-svg {
   font-family: 'Maven Pro', sans-serif;
   font-size: 2em;
   letter-spacing: 2px;
-  margin-top: 0em;
+  margin-top: 0;
   margin-bottom: 1.5em;
   padding: 0;
 }
@@ -457,7 +457,7 @@ svg.hero-svg {
   height: calc(100vw * 0.5625);
   max-width: 640px;
   max-height: 360px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   margin-bottom: 1em;
 }
 .overview-buttons {
@@ -680,7 +680,7 @@ svg.hero-svg {
   color: var(--datalad-grey);
   border-radius: 6px;
   padding: 16px;
-  margin: 0px 0px;
+  margin: 0;
   display: inline-block;
   margin-bottom: 1em;
 }
@@ -796,7 +796,7 @@ svg.hero-svg {
 .integrations .item {
   position: relative;
   margin: 0.5em;
-  padding: 1em 1em;
+  padding: 1em;
   background-color: #fafafa;
   border-radius: 8px;
   text-align: center;
@@ -961,7 +961,7 @@ svg.hero-svg {
 .learnmore .resource-item {
   position: relative;
   margin: 0.5em;
-  padding: 1em 1em;
+  padding: 1em;
   text-align: center;
   width: 190px;
 }
@@ -973,7 +973,7 @@ svg.hero-svg {
   margin: auto;
   opacity: 1;
   background-color: var(--datalad-grey);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 10px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   text-align: center;
   border-radius: 100%;
   transition: transform 0.2s linear;
@@ -1027,7 +1027,7 @@ svg.hero-svg {
   color: var(--datalad-grey);
   border-radius: 6px;
   padding: 0 5px;
-  margin: 0px 0px;
+  margin: 0;
   margin-right: 0.5em;
   display: inline-block;
 }
@@ -1086,7 +1086,7 @@ footer img {
 }
 .footer-bottom {
   text-align: justify;
-  padding: 0em 1.5em;
+  padding: 0 1.5em;
   overflow: scroll;
 }
 
@@ -1106,7 +1106,7 @@ footer img {
   content: attr(aria-label);
   font-size: 16px;
   display: none;
-  padding: 0px 3px;
+  padding: 0 3px;
   z-index: 999;
   position: absolute; bottom: 3em; right: 0;
   transition: display 0.2s linear;
