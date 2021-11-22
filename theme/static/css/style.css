@@ -498,8 +498,9 @@ svg.hero-svg {
 }
 .install section {
   border-radius: 8px;
-  background-color: white;
+  background-color: rgb(247, 246, 246);
   margin: auto 0.5em;
+  margin-top: 0;
   box-shadow: 0px 5px 5px -1px rgb(147, 147, 147);
   padding: 1em 6vw;
 }
@@ -511,12 +512,19 @@ svg.hero-svg {
   background-color: white;
   color: var(--datalad-grey);
   border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   width:3.5em;
   padding: 0.5em;
-  margin: 0.5em 0em;
+  margin: 0;
+  margin-top: 0.5em;
   display: inline-block;
-  margin-bottom: 0.2em;
 }
+.install input[type=radio]:checked + label{
+  background-color: rgb(247, 246, 246);
+  box-shadow: 0px -5px 5px -1px rgb(147, 147, 147);
+}
+
 .install input[type=radio] + label h3{
   font-size: 18px;
   margin-bottom: 0;
@@ -532,12 +540,8 @@ svg.hero-svg {
   display: block;
   width: 100%
 }
-.install input[type=radio]:hover + label .resource-icon {
+.install input[type=radio]:hover + label .install-icon {
   transform: translateY(-0.2em);
-}
-.install input[type=radio]:checked + label{
-  box-shadow: 0px -5px 5px -1px rgb(147, 147, 147);
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 12px -2px, rgba(0, 0, 0, 0.3) 0px 0px 7px -3px; */
 }
 .install-code {
   background-color: var(--datalad-grey);
@@ -613,6 +617,7 @@ svg.hero-svg {
 @media screen and (min-width: 1000px) {
   .install section {
     margin: auto 2em;
+    margin-top: 0;
   }
   .install input[type=radio] + label{
     width:7em;
