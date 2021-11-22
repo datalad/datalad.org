@@ -50,8 +50,11 @@
         For detailed instructions on all installation and procedures and further configuration, please visit the
         <a href="https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration">DataLad Handbook</a></p>
     </div>
+
     <div class="linux">
-      <p>DataLad is part of the Debian and Ubuntu operating systems and available on CentOS, Redhat, Fedora, and similar systems.</p>
+      <p>DataLad is part of the Debian and Ubuntu operating systems and available on CentOS, Redhat, Fedora, and similar systems.
+        DataLad can be installed or upgraded via <a href="https://docs.conda.io/en/latest/">conda</a> and <a href="https://wiki.debian.org/Apt">apt</a>:
+      </p>
       <p>Using <a href="https://docs.conda.io/en/latest/">conda</a>:</p>
       <div class="install-code">$ conda install -c conda-forge datalad
         <a class="icon-docs" onclick="copyCode('conda install -c conda-forge datalad')"></a>
@@ -60,9 +63,12 @@
       <div class="install-code">$ sudo apt-get install datalad
         <a class="icon-docs" onclick="copyCode('sudo apt-get install datalad')"></a>
       </div>
+      <p>Find out more about Linux installation in the <a href="https://handbook.datalad.org/en/latest/intro/installation.html#linux-neuro-debian-ubuntu-and-similar-systems">DataLad Handbook</a></p>
     </div>
+
     <div class="macos">
-      <p>DataLad is available via OS X’s <a href="https://brew.sh/">homebrew</a> package manager or alterntively via <a href="https://docs.conda.io/en/latest/">conda</a>.</p>
+      <p>DataLad is available via OS X’s <a href="https://brew.sh/">homebrew</a> package manager or alterntively via <a href="https://docs.conda.io/en/latest/">conda</a>:
+      </p>
       <p>Using <a href="https://docs.conda.io/en/latest/">conda</a>:</p>
       <div class="install-code">$ conda install -c conda-forge datalad
         <a class="icon-docs" onclick="copyCode('conda install -c conda-forge datalad')"></a>
@@ -71,7 +77,9 @@
       <div class="install-code">$ brew install datalad
         <a class="icon-docs" onclick="copyCode('brew install datalad')"></a>
       </div>
+      <p>Find out more about MacOS installation in the <a href="https://handbook.datalad.org/en/latest/intro/installation.html#mac-osx">DataLad Handbook</a></p>
     </div>
+
     <div class="windows">
       <p>On a Windows machine with Python, the best route for installing DataLad is to install its dependencies with the 
         <a href="https://pypi.org/project/datalad-installer/">datalad-installer</a> and then follo up with <a href="https://pip.pypa.io/en/stable/">pip</a>:</p>
@@ -82,6 +90,7 @@
           <a class="icon-docs" onclick="copyCode('pip install datalad-installer\ndatalad-installer git-annex -m datalad/packages\npip install datalad')"></a><br>
           $ pip install datalad
         </div>
+        <p>Find out more about Windows installation in the <a href="https://handbook.datalad.org/en/latest/intro/installation.html#windows-10">DataLad Handbook</a></p>
     </div>
   </section>
 </div>
