@@ -47,14 +47,11 @@
     {% block content %}{% endblock %}
     </div>
 
-    <!-- Footer -->
     <footer>
-      <div class="footer-top">
-        <div class="footer-left">
-          <img src="img/logo/datalad_logo_wide_yw.svg" alt="">
-        </div>
-        <div class="footer-right">
-          <ul class="footer-links">
+      <div class='footer-main'>
+        <div class='footer-head'>
+          <img src="img/logo/datalad_logo_wide_yw.svg" alt="DataLad logo">
+          <ul>
             <li><a class='icon-download-cloud' aria-label='Install DataLad' href="https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration"></a></li>
             <li><a class="icon-book" aria-label='Learn with the Handbook' href="http://handbook.datalad.org/en/latest/"></a></li>
             <li><a class="icon-users" aria-label='Join the community' href="https://matrix.to/#/%23datalad:matrix.org"></a></li>
@@ -66,23 +63,21 @@
           </ul>
         </div>
 
-      </div>
-      <div class="footer-bottom">
         <p>
-          <em>
-            DataLad is a distributed and collaborative data management system supporting
-            arbitrarily large datasets, on-demand content retrieval, dataset nesting,
-            data version control, provenance capture, and metadata management.
-            DataLad development is supported primarily by the US National Science Foundation and the German Federal Ministry of Education and Research.
-          </em>
+          DataLad is a distributed and collaborative data management system
+          supporting arbitrarily large datasets, on-demand content retrieval,
+          dataset nesting, data version control, provenance capture, and
+          metadata management. DataLad development is supported primarily by
+          the US National Science Foundation and the German Federal Ministry of
+          Education and Research.
         </p>
+
+        <p class="license"><small>
+          content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
+          <span class='break'>—</span> ©2015–2021 {{ AUTHOR }} <span class='break'>—</span>
+          unless <a rel="license" href='copyright.html'>indicated otherwise</a>
+        </small></p>
       </div>
-      
-      <p class="license"><small>
-        content licensed <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">cc-by-sa</a>
-        <span class='break'>—</span> ©2015–2021 {{ AUTHOR }} <span class='break'>—</span>
-        unless <a rel="license" href='copyright.html'>indicated otherwise</a>
-      </small></p>
     </footer>
   </main>
 </body>
