@@ -6,8 +6,6 @@ from __future__ import unicode_literals
 # About the site
 #
 AUTHOR = 'DataLad Developers'
-SITETITLE = 'datalad.org'
-# SITESUBTITLE = 'at <a href="http://www.fz-juelich.de/inm/inm-7/EN/Home/home_node.html">Jülich</a>'
 SITENAME = 'DataLad'
 SITEURL = ''
 
@@ -23,21 +21,8 @@ PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = [ 'sitemap' ]
 SITEMAP = { 'format': 'xml' }
 
-DIRECT_TEMPLATES = ['404']  # unset all templates; add 404
 THEME = 'theme'
-
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-
-#
-# Configure the site
-#
-MENUITEMS = (
-    ('resources', '#resources'),
-    ('use cases', '#integrate'),
-    ('install datalad', 'https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration'),
-    ('cite datalad', '#cite'),
-)
+DIRECT_TEMPLATES = []  # unset all templates
 STATIC_PATHS = ['img/', 'static/']
 EXTRA_PATH_METADATA = {
     "static/apple-touch-icon.png": {'path': ''},
@@ -52,9 +37,14 @@ EXTRA_PATH_METADATA = {
     "static/robots.txt": {'path': ''},
 }
 
+FEED_ALL_ATOM = None
 
-
-DEFAULT_PAGINATION = False
-
-# We prefer document-relative URLs
-RELATIVE_URLS = True
+#
+# Configure the site
+#
+MENUITEMS = (
+    ('resources', '#resources'),
+    ('use cases', '#integrate'),
+    ('install datalad', 'https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration'),
+    ('cite datalad', '#cite'),
+)
