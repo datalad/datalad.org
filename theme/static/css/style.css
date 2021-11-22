@@ -14,8 +14,6 @@
 /********
  * Base *
  ********/
-/* @import url('../..https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap'); */
-
 @font-face { /* License: OFL 1.1 */
   font-family: 'Raleway';
   font-style: normal;
@@ -365,7 +363,6 @@ input[type=checkbox]:hover + label:before {
   padding: 12px 24px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   cursor: pointer;
   white-space: nowrap;
   font-size: 18px;
@@ -406,7 +403,6 @@ svg.hero-svg {
 .hero-body {
   flex: 1 1 50%;
   color: var(--hero-text-color);
-  /* top | horizontal | bottom */
   margin: 0 auto 10vh;
   position: relative;
   max-width: 280px;
@@ -479,7 +475,7 @@ svg.hero-svg {
 }
 
 
-/* 
+/*
  * Install
  */
 .install {
@@ -508,7 +504,6 @@ svg.hero-svg {
   display: none
 }
 .install input[type=radio] + label{
-  /* border: 1px solid var(--datalad-grey); */
   background-color: white;
   color: var(--datalad-grey);
   border-radius: 6px;
@@ -524,7 +519,6 @@ svg.hero-svg {
   background-color: rgb(247, 246, 246);
   box-shadow: 0px -5px 5px -1px rgb(147, 147, 147);
 }
-
 .install input[type=radio] + label h3{
   font-size: 18px;
   margin-bottom: 0;
@@ -637,10 +631,7 @@ svg.hero-svg {
   
 }
 
-
-
-
-/* 
+/*
  * Info card (i.e. main content module)
  */
  .info-card {
@@ -1208,122 +1199,99 @@ svg.hero-svg {
 /*
  * Footer
  */
- footer {
+footer {
   background-color: var(--datalad-grey);
-  height: auto;
+  color: #bdbdbd;
+  font-size: 1em;
+  font-style: italic;
+  hyphens: auto;
   line-height: 2em;
-  padding: 2em;
-  color: rgb(189, 189, 189);
-  font-size: 15px;
+  text-align: justify;
 }
+footer .footer-main {
+  margin: 2em auto;
+  max-width: 1000px;
+  width: calc(100% - 4em);
+}
+
+footer .footer-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer img {
+  max-width: 50%;
+  width: 100%;
+}
+
 footer ul {
   list-style: none;
-  margin: 0;
+  margin: 1.5em 0 0 0;
   padding: 0;
 }
 footer li {
   display: inline-block;
-  padding-left: 1em;
+  transition: translateY 0.2s linear;
+  margin: 0.25em;
 }
-footer img {
-  height: auto;
-  width: 50%;
-  max-width: 220px;
+footer li:first-child { margin-left:  0; }
+footer li:last-child  { margin-right: 0; }
+footer li a {
+  display: inline-block;
+  font-size: 1.5em;
+  text-align: center;
+  transition: transform 0.2s linear;
 }
-.footer-top {
-  display: flex;
-  font-size: 20px;
-  box-shadow: none;
-  padding: 2em inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: box-shadow 0.4s;
+footer li a:hover {
+  transform: translateY(-0.2em);
 }
-.footer-left {
-  flex: 1 1 35%;
-  padding-right: 2em;
-  position: relative;
-}
-.footer-right {
-  flex: 1 1 65%;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  break-after: always;
-}
-.footer-bottom {
-  text-align: justify;
-  padding: 0 1.5em;
-  overflow: scroll;
-}
-
-.footer-links li {
-  transition: translateY 0.2s linear
-}
-.footer-links li:hover {
-  transform: translateY(-0.1em);
-}
-/* Tooltips for footer links */
-.footer-links a::after {
-  background: transparent;
+footer li a::after {
+  background: var(--datalad-grey);
   border: 1px solid #aaa;
-  color:#aaa;
-  line-height: 1.5em;
   border-radius: 5px;
+  color: #aaa;
   content: attr(aria-label);
-  font-size: 16px;
-  display: none;
-  padding: 0 3px;
-  z-index: 999;
-  position: absolute; bottom: 3em; right: 0;
-  transition: display 0.2s linear;
+  font-size: 0.8em;
+  opacity: 0;
+  padding: 3px 6px;
+  position: absolute; bottom: 120%; left: 50%;
+  transform-origin: top;
+  transform: translate(-50%, 0);
+  transition: opacity 0.2s linear;
   white-space: nowrap;
+}
+footer li a:hover::after {
+  opacity: 1;
 }
 
 .license {
-  color: rgb(147, 147, 147);
-  font-size: 15px;
+  color: #939393;
+  font-size: 0.9em;
+  font-style: normal;
+  line-height: 1em;
   margin: auto;
   text-align: center;
-  align-self: center;
 }
-@media screen and (min-width: 500px) {
-  footer {
-    height: 60vh;
-  }
+.license span.break {
+  display: block;
 }
-@media screen and (min-width: 600px) {
-  footer {
-    height: 55vh;
-    font-size: 17px;
-  }
-  .footer-top {
-    font-size: 22px;
-  }
+
+@media screen and (min-width: 460px) {
+  footer { hyphens: initial; }
 }
+
 @media screen and (min-width: 768px) {
-  footer {
-    height: 50vh;
-    font-size: 17px;
+  footer .footer-main {
+    width: calc(100% - 6em);
   }
-  .footer-top {
-    font-size: 24px;
+  footer .footer-test {
+    justify-content: space-between;
   }
-  .footer-links a:hover::after {
-    display: unset;
+  footer img {
+    max-width: 25%;
   }
-
-
-}
-@media screen and (min-width: 1000px) {
-  footer {
-    height: 45vh;
-    font-size: 18px;
+  .license span.break {
+    display: inline;
   }
-  .footer-top {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  footer span.break { display: inline; }
 }
