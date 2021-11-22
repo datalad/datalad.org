@@ -256,7 +256,7 @@ section, div.section {
  */
 
 nav.card {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   background: #fff;
   display: flex;
   position: fixed;
@@ -271,7 +271,6 @@ nav.card {
   box-sizing: border-box;
   opacity: 1;
   transition: height 0.3s linear;
-  /* overflow: auto; */
 }
 nav.card ul {
   list-style: none;
@@ -331,7 +330,7 @@ input[type=checkbox] + label:before
   content: '\f0c9';
   color: var(--datalad-grey);
   display:inline-block;
-  padding: 0 0 0 0px;
+  padding: 0;
   position: fixed;
   right: 0;
   top: 0;
@@ -351,12 +350,7 @@ input[type=checkbox]:hover + label:before {
 }
 
 
-
-
-
-
-
-/* 
+/*
  * Button
  */
  .button {
@@ -374,8 +368,8 @@ input[type=checkbox]:hover + label:before {
   font-weight: 600;
 }
 
-/* 
- * Hero 
+/*
+ * Hero
  */
 svg.hero-svg {
   position: absolute;
@@ -418,7 +412,7 @@ svg.hero-svg {
   font-family: 'Maven Pro', sans-serif;
   font-size: 2em;
   letter-spacing: 2px;
-  margin-top: 0em;
+  margin-top: 0;
   margin-bottom: 1.5em;
   padding: 0;
 }
@@ -447,7 +441,7 @@ svg.hero-svg {
   }
 }
 
-/* 
+/*
  * Overview
  */
 .overview-vid {
@@ -463,7 +457,7 @@ svg.hero-svg {
   height: calc(100vw * 0.5625);
   max-width: 640px;
   max-height: 360px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   margin-bottom: 1em;
 }
 .overview-buttons {
@@ -480,7 +474,7 @@ svg.hero-svg {
   padding: 12px 24px;
 }
 
-/* 
+/*
  * Info card (i.e. main content module)
  */
  .info-card {
@@ -524,7 +518,7 @@ svg.hero-svg {
   }
 }
 
-/* 
+/*
  * List inside info-card
  */
 .main-list li {
@@ -548,14 +542,13 @@ svg.hero-svg {
   width: 1.6em;
 }
 
-/* 
+/*
  * Typewriter animation
  */
 .card-text.use-datalad {
   flex: 1 1 40%;
   margin: auto;
   text-align: center;
-  /* border: 1px solid black; */
 }
 .card-text.use-datalad p {
   text-align: left;
@@ -565,7 +558,6 @@ svg.hero-svg {
   margin: auto;
   position: relative;
   text-align: center;
-  /* border: 1px solid black; */
 }
 .card-img.use-datalad img {
   height: auto;
@@ -576,7 +568,7 @@ svg.hero-svg {
   max-width: 900px;
 }
 .typewriter-text {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left:10%;
@@ -688,7 +680,7 @@ svg.hero-svg {
   color: var(--datalad-grey);
   border-radius: 6px;
   padding: 16px;
-  margin: 0px 0px;
+  margin: 0;
   display: inline-block;
   margin-bottom: 1em;
 }
@@ -726,12 +718,10 @@ svg.hero-svg {
   border: 1px solid var(--datalad-grey);
   border: 1px solid #8a8b8c;
   background-color: white;
-  /* color: var(--datalad-grey); */
   color: #8a8b8c;
   padding: 2px 8px;
   border-radius: 12px;
   margin:0;
-  /* margin: 5px; */
 }
 .tag-button:hover {
   background-color: var(--datalad-grey);
@@ -806,17 +796,15 @@ svg.hero-svg {
 .integrations .item {
   position: relative;
   margin: 0.5em;
-  padding: 1em 1em;
-  /* border: 1px solid var(--datalad-grey); */
+  padding: 1em;
   background-color: #fafafa;
   border-radius: 8px;
   text-align: center;
   height:200px;
-  width: 190px; 
+  width: 190px;
 }
 .integrations .item-logo {
   margin: auto;
-  /* max-width: 200px; */
   width: 175px;
   height: 100px;
   display: flex;
@@ -850,7 +838,6 @@ svg.hero-svg {
 }
 .integrations .social-links {
   margin: auto;
-  /* display: none; */
   width: 175px;
 }
 .integrations p.blurb {
@@ -878,7 +865,6 @@ svg.hero-svg {
   border-radius: 8px;
   color: var(--datalad-grey);
   border: 1px solid var(--datalad-grey);
-  /* color: #fff; */
   display: inline-block;
   font-size: .7em;
   line-height: 1.5em;
@@ -957,12 +943,11 @@ svg.hero-svg {
 
 
 
-/* 
+/*
  * Learn more section
  */
 .learnmore {
   align-items: flex-start;
-  /* background: repeating-linear-gradient(180deg, #fff 0px, #f6f6f6 498px, #fff 500px, #fff calc(500px + 6em)); */
   border: 0 !important; /* null both border-tops and -bottoms */
   display: flex;
   flex-direction: row;
@@ -976,19 +961,19 @@ svg.hero-svg {
 .learnmore .resource-item {
   position: relative;
   margin: 0.5em;
-  padding: 1em 1em;
+  padding: 1em;
   text-align: center;
-  width: 190px; 
+  width: 190px;
 }
 .learnmore .resource-icon {
   width: 100px;
   height: 100px;
   display: flex;
-  font-size: 45px; 
+  font-size: 45px;
   margin: auto;
   opacity: 1;
   background-color: var(--datalad-grey);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 10px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   text-align: center;
   border-radius: 100%;
   transition: transform 0.2s linear;
@@ -1024,7 +1009,7 @@ svg.hero-svg {
 }
 
 
-/* 
+/*
  * Cite section
  */
 
@@ -1042,10 +1027,9 @@ svg.hero-svg {
   color: var(--datalad-grey);
   border-radius: 6px;
   padding: 0 5px;
-  margin: 0px 0px;
+  margin: 0;
   margin-right: 0.5em;
   display: inline-block;
-  /* margin-bottom: 1em; */
 }
 .button-cite:hover {
   background-color: var(--datalad-grey);
@@ -1054,7 +1038,7 @@ svg.hero-svg {
 }
 
 
-/* 
+/*
  * Footer
  */
  footer {
@@ -1082,7 +1066,7 @@ footer img {
 .footer-top {
   display: flex;
   font-size: 20px;
-  box-shadow: none; 
+  box-shadow: none;
   padding: 2em inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -1102,7 +1086,7 @@ footer img {
 }
 .footer-bottom {
   text-align: justify;
-  padding: 0em 1.5em;
+  padding: 0 1.5em;
   overflow: scroll;
 }
 
@@ -1122,7 +1106,7 @@ footer img {
   content: attr(aria-label);
   font-size: 16px;
   display: none;
-  padding: 0px 3px;
+  padding: 0 3px;
   z-index: 999;
   position: absolute; bottom: 3em; right: 0;
   transition: display 0.2s linear;
