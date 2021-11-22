@@ -25,6 +25,54 @@
 <!-- SPACER IMAGE -->
 <div class="spacer-dlyellow"></div>
 
+<!-- SECTION: INSTALL DATALAD -->
+<span id="install"></span>
+<div class="install">
+  <h1>Install DataLad</h1>
+  <input type="radio" name="operating_system" id="datalad" checked><label for="datalad"><div class="resource-icon"><span class="icon-linux"></span></div><h3>All</h3></label>
+  <input type="radio" name="operating_system" id="linux"><label for="linux"><div class="resource-icon"><span class="icon-linux"></span></div><h3>Linux</h3></label>
+  <input type="radio" name="operating_system" id="macos"><label for="macos"><div class="resource-icon"><span class="icon-apple"></span></div><h3>MacOS</h3></label>
+  <input type="radio" name="operating_system" id="windows"><label for="windows"><div class="resource-icon"><span class="icon-windows"></span></div><h3>Windows</h3></label>
+  <section>
+    <div class="datalad">
+      <p>Install DataLad and its dependencies, <a href="https://git-scm.com/">Git</a>
+        and <a href="https://git-annex.branchable.com/">git-annex</a>, on all major operating systems
+        using Python and the <a href="https://pypi.org/project/datalad-installer/">datalad-installer</a>:
+      </p>
+      <div class="install-code">
+        $ pip install datalad-installer<br>
+        $ datalad-installer git-annex -m datalad/packages
+        <a class="icon-docs" onclick="copyCode('pip install datalad-installer\ndatalad-installer git-annex -m datalad/packages\npip install datalad')"></a><br>
+        $ pip install datalad
+      </div>
+      <p>Depending on your operating system, other installation options are also possible</p>
+    </div>
+    <div class="linux">
+      <p>Using conda:</p>
+      <div class="install-code">$ conda install -c conda-forge datalad
+        <a class="icon-docs" onclick="copyCode('conda install -c conda-forge datalad')"></a>
+      </div>
+      <p>Using apt:</p>
+      <div class="install-code">$ sudo apt-get install datalad
+        <a class="icon-docs" onclick="copyCode('sudo apt-get install datalad')"></a>
+      </div>
+    </div>
+    <div class="macos">
+      <p>Using conda:</p>
+      <div class="install-code">$ conda install -c conda-forge datalad</div>
+      <p>Using brew:</p>
+      <div class="install-code">$ brew install datalad</div>
+    </div>
+    <div class="windows">
+      <div class="install-code">$ pip install datalad</div>
+    </div>
+  </section>
+</div>
+
+
+<!-- SPACER IMAGE -->
+<div class="spacer-dlgrey"></div>
+
 <!-- SECTION: KEEP TRACK -->
 <div class="info-card reverse">
   <div class="card-text">
@@ -48,7 +96,7 @@
 </div>
 
 <!-- SPACER IMAGE -->
-<div class="spacer-dlgrey"></div>
+<div class="spacer-dlyellow"></div>
 
 <!-- SECTION: CREATE STRUCTURE -->
 <div class="info-card">
@@ -66,7 +114,7 @@
 </div>
 
 <!-- SPACER IMAGE -->
-<div class="spacer-dlyellow"></div>
+<div class="spacer-dlgrey"></div>
 
 <!-- SECTION: USE DATALAD -->
 <div id="console" class="info-card reverse">
@@ -88,7 +136,7 @@
     <a class="button" href="https://mybinder.org/v2/gh/datalad-handbook/datalad-tutorial-binder/HEAD"><span class="icon-laptop"></span>&nbsp;&nbsp;Try DataLad in your browser</a>
   </div>
   <div class="card-img use-datalad">
-    <img src="img/console.svg" alt="">
+    <img src="img/console.svg" alt="Computer console">
     <div class="typewriter-text">
       <p style="--n:26; --d:0">datalad create <em>my_dataset</em></p>
       <p style="--n:29; --d:1">datalad save <em>-m "hello world"</em></p>
@@ -102,7 +150,7 @@
 </div>
 
 <!-- SPACER IMAGE -->
-<div class="spacer-dlgrey"></div>
+<div class="spacer-dlyellow"></div>
 
 <!-- SECTION: COLLABORATE -->
 <div class="info-card">
@@ -121,7 +169,7 @@
 </div>
 
 <!-- SPACER IMAGE -->
-<div class="spacer-dlyellow"></div>
+<div class="spacer-dlgrey"></div>
 
 <!-- SECTION: DATALAD IN THE WILD -->
 <span id="integrate"></span>
@@ -185,7 +233,7 @@
 </div>
 
 <!-- SPACER IMAGE -->
-<div class="spacer-dlyellow"></div>
+<div class="spacer-dlgrey"></div>
 
 <!-- SECTION: LEARN MORE -->
 <span id="resources"></span>
@@ -269,7 +317,7 @@
 </div>
 
 <!-- SPACER IMAGE -->
-<div class="spacer-dlgrey"></div>
+<div class="spacer-dlyellow"></div>
 
 <!-- SECTION: SUPPORTING DATALAD -->
 <div class="info-card reverse">
@@ -291,9 +339,9 @@
 </div>
 
 <!-- SPACER IMAGE -->
-<div class="spacer-dlyellow"></div>
+<div class="spacer-dlgrey"></div>
 
-<!-- SECTION: SUPPORTING DATALAD -->
+<!-- SECTION: CITING DATALAD -->
 <span id="cite"></span>
 <div class="info-card">
   <div class="card-img larger">
