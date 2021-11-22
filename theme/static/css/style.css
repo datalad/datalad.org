@@ -8,6 +8,7 @@
   --datalad-grey: #333333;
   --hero-text-color: white;
   --datalad-yellow: #ffa200;
+  --datalad-blue: #7FD5FF;
 }
 
 /********
@@ -107,6 +108,9 @@
 .icon-rocket:before { content: '\f135'; }
 .icon-export-alt:before { content: '\f14d'; }
 .icon-youtube-play:before { content: '\f16a'; }
+.icon-apple:before { content: '\f179'; }
+.icon-windows:before { content: '\f17a'; }
+.icon-linux:before { content: '\f17c'; }
 .icon-google:before { content: '\f1a0'; }
 .icon-fax:before { content: '\f1ac'; }
 .icon-database:before { content: '\f1c0'; }
@@ -480,6 +484,118 @@ svg.hero-svg {
   padding: 12px 24px;
 }
 
+
+/* 
+ * Install
+ */
+/* .install {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 3em;
+  padding-top: 0;
+  padding-bottom: 0;
+} */
+.install {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.install h1 {
+  margin-bottom: 1em;
+}
+.install p {
+  margin: 0;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.install section {
+  border-radius: 8px;
+  background-color: white;
+  /* border: 1px solid rgb(189, 189, 189); */
+  margin: auto 2em;
+  box-shadow: 0px 5px 5px -1px rgb(147, 147, 147);
+}
+
+.install input[type=radio] {
+  display: none
+}
+.install input[type=radio] + label{
+  /* border: 1px solid var(--datalad-grey); */
+  background-color: white;
+  color: var(--datalad-grey);
+  border-radius: 6px;
+  width:7em;
+  padding: 1em;
+  margin: 0.5em;
+  display: inline-block;
+  margin-bottom: 0.2em;
+
+}
+.install input[type=radio] + label h3{
+  margin-bottom: 0;
+}
+.install .datalad, .install .linux, .install .macos, .install .windows {
+  display: none;
+}
+#datalad:checked ~ section .datalad,
+#linux:checked ~ section .linux,
+#macos:checked ~ section .macos,
+#windows:checked ~ section .windows {
+  display: block;
+}
+.install input[type=radio]:hover + label .resource-icon {
+  transform: translateY(-0.2em);
+}
+.install input[type=radio]:checked + label{
+  box-shadow: 0px -5px 5px -1px rgb(147, 147, 147);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 12px -2px, rgba(0, 0, 0, 0.3) 0px 0px 7px -3px; */
+}
+.install-code {
+  background-color: var(--datalad-grey);
+  padding: 0.5em 1em;
+  color: var(--datalad-blue);
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 7px 11px -1px #7A7A7A;
+  box-sizing: border-box;
+}
+.install-code a {
+  float: right;
+  color: #e6e6e6;
+}
+.install-code a:hover {
+  color: var(--datalad-blue);
+}
+@media screen and (min-width: 768px) {
+  .install-code {
+    width: 50%;
+  }
+  .install p {
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .install .resource-item .install-code {
+    width: 90%;
+  }
+}
+
+
+
+
 /* 
  * Info card (i.e. main content module)
  */
@@ -552,7 +668,7 @@ svg.hero-svg {
  * Typewriter animation
  */
 .card-text.use-datalad {
-  flex: 1 1 40%;
+  flex: 1 1 45%;
   margin: auto;
   text-align: center;
   /* border: 1px solid black; */
@@ -561,7 +677,7 @@ svg.hero-svg {
   text-align: left;
 }
 .card-img.use-datalad {
-  flex: 1 1 60%;
+  flex: 1 1 55%;
   margin: auto;
   position: relative;
   text-align: center;
@@ -572,14 +688,15 @@ svg.hero-svg {
   width: 90%;
   margin: 1em;
   margin-right: 0;
-  min-width: 350px;
-  max-width: 900px;
+  min-width: 440px;
+  max-width: 700px;
+  box-shadow: 0px 7px 11px -1px #7A7A7A;
 }
 .typewriter-text {
   position: absolute; 
   top: 50%;
   transform: translateY(-50%);
-  left:10%;
+  left:15%;
 }
 .typewriter-text p {
   overflow: hidden;
@@ -591,9 +708,9 @@ svg.hero-svg {
   line-height: 1.5em;
   font-weight: 400;
   width: calc(0.6em * var(--n));
-  border-right: .15em solid orange;
+  border-right: .15em solid var(--datalad-yellow);
   margin: 0;
-  color: #55ff55;
+  color: var(--datalad-blue);;
 }
 .typing p {
   animation: type-middle 3s steps(20, end);
@@ -973,14 +1090,14 @@ svg.hero-svg {
   padding-top: 0;
   padding-bottom: 0;
 }
-.learnmore .resource-item {
+.resource-item {
   position: relative;
   margin: 0.5em;
   padding: 1em 1em;
   text-align: center;
   width: 190px; 
 }
-.learnmore .resource-icon {
+.resource-icon {
   width: 100px;
   height: 100px;
   display: flex;
@@ -993,7 +1110,11 @@ svg.hero-svg {
   border-radius: 100%;
   transition: transform 0.2s linear;
 }
-.learnmore .resource-icon a {
+.resource-icon a {
+  margin: auto;
+  color: var(--datalad-yellow);
+}
+.resource-icon span {
   margin: auto;
   color: var(--datalad-yellow);
 }
@@ -1018,7 +1139,7 @@ svg.hero-svg {
   width: 175px;
 }
 @media screen and (min-width: 768px) {
-  .learnmore .resource-item:hover .resource-icon {
+  .resource-item:hover .resource-icon {
     transform: translateY(-0.2em);
   }
 }

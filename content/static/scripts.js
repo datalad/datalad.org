@@ -56,3 +56,11 @@ function copyCitation() {
     .catch((error) => { alert(`Copy failed! ${error}`) })
     // this.showCopyTooltip = true;
 }
+
+function copyCode(text) {
+  // https://stackoverflow.com/questions/60581285/execcommand-is-now-obsolete-whats-the-alternative
+  // https://www.sitepoint.com/clipboard-api/
+  navigator.clipboard.writeText(text)
+    .then(() => { })
+    .catch((error) => { alert(`Copy failed! ${error}`) })
+}

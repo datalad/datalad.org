@@ -35,7 +35,7 @@ FEED_ALL_ATOM = None
 MENUITEMS = (
     ('resources', '#resources'),
     ('use cases', '#integrate'),
-    ('install datalad', 'https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration'),
+    ('install datalad', '#install'),
     ('cite datalad', '#cite'),
 )
 STATIC_PATHS = ['img/', 'static/']
