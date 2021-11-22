@@ -271,7 +271,6 @@ nav.card {
   box-sizing: border-box;
   opacity: 1;
   transition: height 0.3s linear;
-  /* overflow: auto; */
 }
 nav.card ul {
   list-style: none;
@@ -351,12 +350,7 @@ input[type=checkbox]:hover + label:before {
 }
 
 
-
-
-
-
-
-/* 
+/*
  * Button
  */
  .button {
@@ -374,8 +368,8 @@ input[type=checkbox]:hover + label:before {
   font-weight: 600;
 }
 
-/* 
- * Hero 
+/*
+ * Hero
  */
 svg.hero-svg {
   position: absolute;
@@ -447,7 +441,7 @@ svg.hero-svg {
   }
 }
 
-/* 
+/*
  * Overview
  */
 .overview-vid {
@@ -480,7 +474,7 @@ svg.hero-svg {
   padding: 12px 24px;
 }
 
-/* 
+/*
  * Info card (i.e. main content module)
  */
  .info-card {
@@ -524,7 +518,7 @@ svg.hero-svg {
   }
 }
 
-/* 
+/*
  * List inside info-card
  */
 .main-list li {
@@ -548,14 +542,13 @@ svg.hero-svg {
   width: 1.6em;
 }
 
-/* 
+/*
  * Typewriter animation
  */
 .card-text.use-datalad {
   flex: 1 1 40%;
   margin: auto;
   text-align: center;
-  /* border: 1px solid black; */
 }
 .card-text.use-datalad p {
   text-align: left;
@@ -565,7 +558,6 @@ svg.hero-svg {
   margin: auto;
   position: relative;
   text-align: center;
-  /* border: 1px solid black; */
 }
 .card-img.use-datalad img {
   height: auto;
@@ -576,7 +568,7 @@ svg.hero-svg {
   max-width: 900px;
 }
 .typewriter-text {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left:10%;
@@ -726,12 +718,10 @@ svg.hero-svg {
   border: 1px solid var(--datalad-grey);
   border: 1px solid #8a8b8c;
   background-color: white;
-  /* color: var(--datalad-grey); */
   color: #8a8b8c;
   padding: 2px 8px;
   border-radius: 12px;
   margin:0;
-  /* margin: 5px; */
 }
 .tag-button:hover {
   background-color: var(--datalad-grey);
@@ -807,16 +797,14 @@ svg.hero-svg {
   position: relative;
   margin: 0.5em;
   padding: 1em 1em;
-  /* border: 1px solid var(--datalad-grey); */
   background-color: #fafafa;
   border-radius: 8px;
   text-align: center;
   height:200px;
-  width: 190px; 
+  width: 190px;
 }
 .integrations .item-logo {
   margin: auto;
-  /* max-width: 200px; */
   width: 175px;
   height: 100px;
   display: flex;
@@ -850,7 +838,6 @@ svg.hero-svg {
 }
 .integrations .social-links {
   margin: auto;
-  /* display: none; */
   width: 175px;
 }
 .integrations p.blurb {
@@ -878,7 +865,6 @@ svg.hero-svg {
   border-radius: 8px;
   color: var(--datalad-grey);
   border: 1px solid var(--datalad-grey);
-  /* color: #fff; */
   display: inline-block;
   font-size: .7em;
   line-height: 1.5em;
@@ -957,12 +943,11 @@ svg.hero-svg {
 
 
 
-/* 
+/*
  * Learn more section
  */
 .learnmore {
   align-items: flex-start;
-  /* background: repeating-linear-gradient(180deg, #fff 0px, #f6f6f6 498px, #fff 500px, #fff calc(500px + 6em)); */
   border: 0 !important; /* null both border-tops and -bottoms */
   display: flex;
   flex-direction: row;
@@ -978,13 +963,13 @@ svg.hero-svg {
   margin: 0.5em;
   padding: 1em 1em;
   text-align: center;
-  width: 190px; 
+  width: 190px;
 }
 .learnmore .resource-icon {
   width: 100px;
   height: 100px;
   display: flex;
-  font-size: 45px; 
+  font-size: 45px;
   margin: auto;
   opacity: 1;
   background-color: var(--datalad-grey);
@@ -1024,7 +1009,7 @@ svg.hero-svg {
 }
 
 
-/* 
+/*
  * Cite section
  */
 
@@ -1045,7 +1030,6 @@ svg.hero-svg {
   margin: 0px 0px;
   margin-right: 0.5em;
   display: inline-block;
-  /* margin-bottom: 1em; */
 }
 .button-cite:hover {
   background-color: var(--datalad-grey);
@@ -1054,7 +1038,7 @@ svg.hero-svg {
 }
 
 
-/* 
+/*
  * Footer
  */
  footer {
@@ -1082,7 +1066,7 @@ footer img {
 .footer-top {
   display: flex;
   font-size: 20px;
-  box-shadow: none; 
+  box-shadow: none;
   padding: 2em inherit;
   text-decoration: none;
   text-transform: uppercase;
