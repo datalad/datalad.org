@@ -1286,7 +1286,7 @@ footer li a:hover::after {
   footer .footer-main {
     width: calc(100% - 6em);
   }
-  footer .footer-test {
+  footer .footer-head {
     justify-content: space-between;
   }
   footer img {
