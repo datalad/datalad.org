@@ -247,6 +247,14 @@ section, div.section {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+.banner {
+  background-color: var(--datalad-grey);
+  color: white;
+  height: 30vh;
+  padding-top: 3em;
+  text-align: center;
+  /* align-items: center; */
+}
 
 
 /************
@@ -388,17 +396,20 @@ svg.hero-svg {
   background-color: var(--datalad-grey);
   align-items: center;
 }
-.hero img {
+.hero-image img {
   height: auto;
-  width: 100%;
+  width: 90%;
+}
+.hero-wide {
+  display: none;
 }
 .hero-image {
   flex: 1 1 50%;
   margin: 3vh auto 0;
   text-align: center;
   position: relative;
-  max-width: 400px;
-  min-width: 300px;
+  max-width: 350px;
+  min-width: 270px;
 }
 .hero-body {
   flex: 1 1 50%;
@@ -410,7 +421,7 @@ svg.hero-svg {
 }
 .hero-body p {
   font-family: 'Maven Pro', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 2px;
   margin-top: 0;
   margin-bottom: 1.5em;
@@ -418,6 +429,14 @@ svg.hero-svg {
 }
 .hero-body .button {
   border: 3px solid var(--datalad-yellow);
+}
+@media screen and (min-width: 540px) {
+  .hero-wide {
+    display: unset;
+  }
+  .hero-narrow {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-image {
@@ -428,6 +447,9 @@ svg.hero-svg {
     flex: 1 1 0%;
     max-width: 400px;
     transform: translateY(-2em);
+  }
+  .hero-body p {
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -506,11 +528,10 @@ svg.hero-svg {
 .install input[type=radio] + label{
   background-color: white;
   color: var(--datalad-grey);
-  border-radius: 6px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  width:3.5em;
-  padding: 0.5em;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width:2.2em;
+  padding: 0.4em;
   margin: 0;
   margin-top: 0.5em;
   display: inline-block;
@@ -522,6 +543,7 @@ svg.hero-svg {
 .install input[type=radio] + label h3{
   font-size: 18px;
   margin-bottom: 0;
+  margin-top: 0.5em;
   display: none;
 }
 .install .datalad, .install .linux, .install .macos, .install .windows {
@@ -557,10 +579,10 @@ svg.hero-svg {
   color: var(--datalad-yellow);
 }
 .install-icon {
-  width: 55px;
-  height: 55px;
+  width: 38px;
+  height: 38px;
   display: flex;
-  font-size: 22px;
+  font-size: 17px;
   margin: auto;
   opacity: 1;
   background-color: var(--datalad-grey);
@@ -574,8 +596,25 @@ svg.hero-svg {
   color: var(--datalad-yellow);
 }
 .install-icon img {
-  width: 22px;
+  width: 17px;
   margin: auto;
+  padding: 0;
+  /* transform: translateY(0.2em); */
+}
+
+@media screen and (min-width: 400px) {
+
+  .install input[type=radio] + label{
+    width:3.5em;
+  }
+  .install-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+  .install-icon img{
+    width: 22px
+  }
 }
 @media screen and (min-width: 768px) {
   .install section {
@@ -597,7 +636,6 @@ svg.hero-svg {
   .install input[type=radio] + label h3{
     font-size: 20px;
     display: block;
-    margin-top: 0.5em;
   }
   .install-icon {
     width: 80px;
@@ -654,8 +692,12 @@ svg.hero-svg {
   flex: 1 1 50%;
   margin: auto;
   text-align: justify;
+  box-sizing: border-box;
+  max-width: 100%
 }
 .card-text ul {
+  margin-left: 0;
+  padding-left: 0;
   text-align: left;
 }
 .card-img {
@@ -666,6 +708,12 @@ svg.hero-svg {
 .info-card.reverse {
   flex-wrap: wrap-reverse;
 }
+@media screen and (max-width: 300px) {
+  .info-card img {
+    min-width: 200px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card-text p {
     font-size: 22px;
@@ -720,8 +768,8 @@ svg.hero-svg {
   height: auto;
   width: 90%;
   margin: 1em;
-  margin-right: 0;
-  min-width: 440px;
+  /* margin-right: 0; */
+  /* min-width: 440px; */
   max-width: 700px;
   box-shadow: 0px 7px 11px -1px #7A7A7A;
   border-radius: 0.4em;
@@ -734,12 +782,12 @@ svg.hero-svg {
 }
 .typewriter-text p {
   overflow: hidden;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   white-space: nowrap;
   opacity: 0;
   text-align: left;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 12px;
+  line-height: 1.2em;
   font-weight: 400;
   width: calc(0.6em * var(--n));
   border-right: .15em solid var(--datalad-yellow);
@@ -802,6 +850,14 @@ svg.hero-svg {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .typewriter-text p {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
   }
 }
 
@@ -1176,24 +1232,40 @@ svg.hero-svg {
    border-left: 5px solid rgb(189, 189, 189);
    padding-left: 1em;
    margin-left: 0.5em;
+   margin-right: 0.5em;
    margin-bottom: 2em;
    font-size: inherit;
- }
+   box-sizing: border-box;
+   text-align: left;
+   max-width: 100%;
 
+ }
+.cite-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
 .button-cite {
   border: 1px solid var(--datalad-grey);
   background-color: white;
   color: var(--datalad-grey);
   border-radius: 6px;
-  padding: 0 5px;
+  padding: 0 0.5em;
   margin: 0;
   margin-right: 0.5em;
   display: inline-block;
+  font-size: 14px;
 }
 .button-cite:hover {
   background-color: var(--datalad-grey);
   color: white;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .cite-buttons {
+    display: block;
+    text-align: center;
+  }
 }
 
 
