@@ -401,6 +401,34 @@
    ]
  },
  {
+  "name": "PRIMAP2",
+  "website": "",
+  "github": "https://github.com/pik-primap/primap2",
+  "docs": "https://primap2.readthedocs.io",
+  "info": "",
+  "logo": "",
+  "description": "PRIMAP2 is a free climate policy analysis suite, using DataLad for metadata extraction and data package management.",
+  "tags": [
+    "climate",
+    "metadata",
+    "data management"
+  ]
+},
+{
+  "name": "PASTA",
+  "website": "",
+  "github": "https://gitlab-public.fz-juelich.de/pasta",
+  "docs": "https://jugit.fz-juelich.de/pasta/main/-/wikis/home",
+  "info": "",
+  "logo": "",
+  "description": "This database for 'adaPtive mAterials Science meTa-dAta' uses DataLad for metadata capturing and synchronization.",
+  "tags": [
+    "materials science",
+    "metadata",
+    "data management"
+  ]
+},
+ {
   "name": "Bitbucket",
   "website": "https://bitbucket.org/product",
   "github": "",
