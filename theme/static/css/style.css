@@ -255,6 +255,9 @@ section, div.section {
   text-align: center;
   /* align-items: center; */
 }
+.banner h1 {
+  margin-top: 2em;
+}
 
 
 /************
@@ -291,7 +294,7 @@ nav.card ul {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 10em;
+  width: 7em;
   display: inline-flexbox;
   flex-wrap: wrap;
 }
@@ -351,7 +354,7 @@ input[type=checkbox]:checked ~ nav.card ul li a {
   display: unset;
 }
 input[type=checkbox]:checked ~ nav.card {
-  height: 13em;
+  height: 14em;
   opacity: 0.95;
 }
 
@@ -471,7 +474,12 @@ svg.hero-svg {
   margin: auto;
   margin-top: 4em;
   text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overview-vid p {
+  margin-bottom: 0;
 }
 .overview-vid iframe {
   border: none;
@@ -480,7 +488,9 @@ svg.hero-svg {
   max-width: 640px;
   max-height: 360px;
   box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  margin-top: 0;
+
 }
 .overview-buttons {
   width: 55%;
@@ -494,6 +504,17 @@ svg.hero-svg {
   margin-bottom: 0.5em;
   line-height: 1em;
   padding: 12px 24px;
+}
+@media screen and (min-width: 768px) {
+  .overview-vid p {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .overview-vid p {
+    width: 60%;
+    margin: inherit auto;
+  }
 }
 
 
@@ -691,9 +712,12 @@ svg.hero-svg {
 .card-text {
   flex: 1 1 50%;
   margin: auto;
-  text-align: justify;
+  text-align: center;
   box-sizing: border-box;
   max-width: 100%
+}
+.card-text p {
+  text-align: justify;
 }
 .card-text ul {
   margin-left: 0;
@@ -753,10 +777,10 @@ svg.hero-svg {
 .card-text.use-datalad {
   flex: 1 1 45%;
   margin: auto;
-  text-align: center;
+  text-align: center
 }
 .card-text.use-datalad p {
-  text-align: left;
+  text-align: justify;
 }
 .card-img.use-datalad {
   flex: 1 1 55%;
