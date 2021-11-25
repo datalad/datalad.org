@@ -398,20 +398,31 @@ svg.hero-svg {
   background-color: var(--datalad-grey);
   align-items: center;
 }
+
+.hero-image {
+  flex: 1 1 50%;
+  margin: 3vh auto 0;
+  text-align: center;
+  position: relative;
+  max-width: 440px;
+  min-width: 270px;
+}
 .hero-image img {
   height: auto;
   width: 90%;
 }
 .hero-wide {
   display: none;
+  position: absolute;
+  min-width: 300px;
+  top: -8em;
+  left: 1em;
 }
-.hero-image {
-  flex: 1 1 50%;
-  margin: 3vh auto 0;
-  text-align: center;
-  position: relative;
-  max-width: 350px;
-  min-width: 270px;
+.hero-wide.flash {
+  opacity: 0;
+  animation-name: imageBlink;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
 }
 .hero-body {
   flex: 1 1 50%;
@@ -432,18 +443,29 @@ svg.hero-svg {
 .hero-body .button {
   border: 3px solid var(--datalad-yellow);
 }
-@media screen and (min-width: 540px) {
+
+/* @media screen and (min-width: 540px) {
+  .hero-image {
+    flex: 1 1 0%;
+  }
+} */
+@media screen and (min-width: 600px) {
+  .hero-image {
+    flex: 2 1 0%;
+  }
   .hero-wide {
     display: unset;
   }
   .hero-narrow {
     display: none;
   }
+  
 }
 @media screen and (min-width: 768px) {
   .hero-image {
     flex: 2 1 0%;
     max-width: 800px;
+    transform: translateY(-3em);
   }
   .hero-body {
     flex: 1 1 0%;
@@ -455,15 +477,55 @@ svg.hero-svg {
   }
 }
 @media screen and (min-width: 1000px) {
+  .hero-image {
+    flex: 2 1 0%;
+    max-width: 900px;
+    transform: translateY(-5em);
+  }
+  .hero-body {
+    transform: translateY(-2em);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero-image {
+    transform: translateY(-6em);
+  }
   .hero-body {
     transform: translateY(-3em);
   }
 }
-@media screen and (min-width: 1400px) {
-  .hero-body {
-    transform: translateY(-4em);
+
+@keyframes imageBlink{
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  25.001% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
+
+#a {
+  animation-delay: 0s;
+}
+#b {
+  animation-delay: 3s;
+}
+#c {
+  animation-delay: 6s;
+}
+#d {
+  animation-delay: 9s;
+}
+
+
+
+
 
 /*
  * Overview
