@@ -43,8 +43,9 @@ FEED_ALL_ATOM = None
 # Configure the site
 #
 MENUITEMS = (
-    ('resources', '#resources'),
-    ('use cases', '#integrate'),
-    ('install datalad', '#install'),
-    ('cite datalad', '#cite'),
+    ('about', '/#what-is-datalad'),
+    ('install', '/#install'),
+    ('use cases', '/#use-cases'),
+    ('resources', '/#resources'),
+    ('cite', '/#cite'),
 )
