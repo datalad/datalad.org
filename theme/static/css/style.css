@@ -249,14 +249,13 @@ section, div.section {
 }
 .banner {
   background-color: var(--datalad-grey);
+  display: flex;
+  flex-direction: column;
   color: white;
-  height: 30vh;
+  height: 40vh;
   padding-top: 3em;
   text-align: center;
-  /* align-items: center; */
-}
-.banner h1 {
-  margin-top: 2em;
+  justify-content: center;
 }
 
 
@@ -902,19 +901,29 @@ svg.hero-svg {
 
 
 /*
- *  Integrations / extensions
+ *  Integrations / extensions / into-the-wild
  */
+ .integrations {
+   margin-top: 2em;
+ }
 .integrations input {
   color: var(--datalad-grey);
   font-size: 20px;
   font-family: inherit;
-  text-align: center;
+  text-align: left;
 }
 .integrations input[type=text] {
-  width: 300px;
+  width: 95%;
   margin-bottom: 1em;
-
+  padding: 0 0.5em;
 }
+
+.integrations input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.5; /* Firefox */
+  text-align: center;
+}
+
+
 .integrations input[type=radio] {
   display: none
 }
@@ -1017,6 +1026,12 @@ svg.hero-svg {
   margin: 2em;
   text-align: center;
   line-height: 2em;
+}
+
+@media screen and (min-width: 340px) {
+  .integrations input[type=text] {
+    width: 300px;
+  }
 }
 @media screen and (min-width: 768px) {
   .tag-tooltip {
@@ -1131,6 +1146,20 @@ svg.hero-svg {
 }
 .integrations .item:hover .item-info .blurb, .integrations .item:active .item-info .blurb {
   display: unset;
+}
+
+.use-case-text {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .use-case-text {
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+  }
 }
 
 .social-links .icon-debian                  { background-color: #d70a53; }
@@ -1397,3 +1426,4 @@ footer li a:hover::after {
     display: inline;
   }
 }
+
