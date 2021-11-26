@@ -28,7 +28,7 @@
     <!-- Navigation bar -->
     <input type="checkbox" id="burger" name="burger" value="showing"><label for="burger" id="burger_label"></label>
     <nav class='card' id="navbar">
-      <a class="logo" href="/"><img src="img/logo/logo_solo.svg" alt="DataLad Logo"/></a>
+      <a class="logo" href="/"><img src="img/logo/datalad_logo_solo.svg" alt="DataLad Logo"/></a>
       <ul class="menu-items">
         {% for title, link in MENUITEMS %}
         <li><a onclick="closeMenu()" href="{{ link }}" {% if page and page.url == link %} class='active' {% endif %}>{{ title }}</a></li>
@@ -50,7 +50,7 @@
     <footer>
       <div class='footer-main'>
         <div class='footer-head'>
-          <img src="img/logo/datalad_logo_wide_yw.svg" alt="DataLad logo">
+          <img src="img/logo/datalad_logo_yw.svg" alt="DataLad logo">
           <ul>
             <li><a class='icon-download-cloud' aria-label='Install DataLad' href="https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration"></a></li>
             <li><a class="icon-book" aria-label='Learn with the Handbook' href="http://handbook.datalad.org/en/latest/"></a></li>
