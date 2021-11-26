@@ -25,6 +25,14 @@
 @font-face { /* License: OFL 1.1 */
   font-family: 'Maven Pro';
   font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/maven-pro-v25-latin-600.woff2') format('woff2'),
+       url('../fonts/maven-pro-v25-latin-600.woff') format('woff');
+}
+@font-face { /* License: OFL 1.1 */
+  font-family: 'Maven Pro';
+  font-style: normal;
   font-weight: 700;
   src: local(''),
        url('../fonts/maven-pro-v25-latin-700.woff2') format('woff2'),
