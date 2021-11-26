@@ -763,7 +763,6 @@ svg.hero-svg {
   font-size: .8em;
   line-height: 1.6em;
   text-align: center;
-  transition: transform 0.2s linear;
   height: 1.6em;
   width: 1.6em;
 }
