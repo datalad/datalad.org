@@ -36,6 +36,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           enable_jekyll: false
           publish_dir: ./output
+          cname: www.datalad.org
           user_name: 'AutoBuild'
           user_email: 'blackhole@datalad.org'
           commit_message: ${{ github.event.head_commit.message }}
