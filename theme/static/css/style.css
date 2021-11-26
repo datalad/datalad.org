@@ -144,7 +144,6 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Maven Pro', sans-serif;
   font-weight: normal;
   line-height: 1.2;
 }
@@ -433,7 +432,6 @@ svg.hero-svg {
   text-align: center;
 }
 .hero-body p {
-  font-family: 'Maven Pro', sans-serif;
   font-size: 1.5em;
   letter-spacing: 2px;
   margin-top: 0;
@@ -956,7 +954,6 @@ svg.hero-svg {
 .integrations input {
   color: var(--datalad-grey);
   font-size: 20px;
-  font-family: inherit;
   text-align: left;
 }
 .integrations input[type=text] {
