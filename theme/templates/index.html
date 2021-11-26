@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %} &ndash; {{ page.title }}{% endblock %}
+
+{% block content %}
+
+<div class="hero">
+  <div class="hero-image">
+    <img class="hero-narrow" src="img/logo/datalad_logo_oneline_yw.svg" alt="DataLad logo" />
+    <img id="backdrop" class="hero-wide" src="img/datalad_hero_backdrop.svg" alt="DataLad logo" />
+    <img id="a" class="hero-wide flash" src="img/datalad_hero_a.svg" alt="DataLad logo" />
+    <img id="b" class="hero-wide flash" src="img/datalad_hero_b.svg" alt="DataLad logo" />
+    <img id="c" class="hero-wide flash" src="img/datalad_hero_c.svg" alt="DataLad logo" />
+    <img id="d" class="hero-wide flash" src="img/datalad_hero_d.svg" alt="DataLad logo" />
+  </div>
+  <div class="hero-body">
+    <p>distributed data management<br><br>free and open source</p>
+    <a class="button" href="#install"><span class="icon-rocket"></span>&nbsp;&nbsp;Get DataLad</a>
+  </div>
+  <svg class="hero-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon points="0,100 100,0 100,100" />
+  </svg>
+</div>
+
+<!-- Enter page content inside div in the article tag -->
+<article>
+  <div>
+    {{ page.content }}
+  </div>
+</article>
+{% endblock %}

@@ -1,11 +1,14 @@
 {% extends "base.html" %}
-{% block title %}{% if page %} &ndash; {{ page.title }}{% endif %}{% endblock %}
+{% block title %} &ndash; {{ page.title }}{% endblock %}
 
 {% block content %}
+
+<div class="banner">
+  <h1 id="{{ page.slug }}">{{ page.title }}</h1>
+</div>
+
+<!-- Enter page content inside div in the article tag -->
 <article>
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
   <div>
     {{ page.content }}
   </div>

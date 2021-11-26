@@ -5,46 +5,47 @@ from __future__ import unicode_literals
 #
 # About the site
 #
-AUTHOR = u'DataLad Team'
-SITENAME = u'DataLad'
+AUTHOR = 'DataLad Developers'
+SITENAME = 'DataLad'
 SITEURL = ''
 
 TIMEZONE = 'Europe/Berlin'
-DEFAULT_LANG = u'en'
-LOCALE = u'en_US.UTF-8'
+DEFAULT_LANG = 'en'
+LOCALE = 'en_US.UTF-8'
 
 #
 # Configure Pelican a bit
 #
+PATH = 'content'
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = [ 'better_tables', 'headerid', 'sitemap' ]
+PLUGINS = [ 'sitemap' ]
 SITEMAP = { 'format': 'xml' }
 
-THEME = 'theme/'
+THEME = 'theme'
+DIRECT_TEMPLATES = []  # unset all templates
+STATIC_PATHS = ['img/', 'static/']
+EXTRA_PATH_METADATA = {
+    "static/apple-touch-icon.png": {'path': ''},
+    "static/browserconfig.xml": {'path': ''},
+    "static/favicon-16x16.png": {'path': ''},
+    "static/favicon-32x32.png": {'path': ''},
+    "static/favicon.ico": {'path': ''},
+    "static/humans.txt": {'path': ''},
+    "static/leitfaden.pdf": {'path': ''},
+    "static/manifest.json": {'path': ''},
+    "static/mstile-150x150.png": {'path': ''},
+    "static/robots.txt": {'path': ''},
+}
 
-# Disable all feed generation
 FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
-HEADERID_LINK_CHAR = '&#xe805;'
 
 #
 # Configure the site
 #
-STATIC_PATHS = ['asciicast', 'css', 'js', 'img', 'badges']
-MENUITEMS = [ ('About', '/about.html', None),
-              ('Integrations', '/integrations.html', None),
-              ('Get DataLad', 'http://handbook.datalad.org/r.html?install', '_blank'),
-              ('Features', 'http://handbook.datalad.org/r.html?about', '_blank'),
-              ('Datasets', '/datasets.html', None),
-              ('Development', '/development.html', None),
-              ('User Handbook', 'http://handbook.datalad.org', '_blank'),
-              ('Developer Docs', 'http://docs.datalad.org', '_blank'),
-]
-DEFAULT_PAGINATION = False
-
-# We prefer document-relative URLs
-RELATIVE_URLS = True
+MENUITEMS = (
+    ('about', '/#what-is-datalad'),
+    ('install', '/#install'),
+    ('use cases', '/#use-cases'),
+    ('learn more', '/#resources'),
+    ('cite', '/#cite'),
+)

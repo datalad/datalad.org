@@ -1,0 +1,45 @@
+﻿
+TY  - JOUR
+AN  - pub.Halchenko2021
+TI  - DataLad: distributed system for joint management of code, data, and their relationship
+AU  - Halchenko, Yaroslav
+AU  - Meyer, Kyle
+AU  - Poldrack, Benjamin
+AU  - Solanky, Debanjum
+AU  - Wagner, Adina
+AU  - Gors, Jason
+AU  - MacFarlane, Dave
+AU  - Pustina, Dorian
+AU  - Sochat, Vanessa
+AU  - Ghosh, Satrajit
+AU  - Mönch, Christian
+AU  - Markiewicz, Christopher
+AU  - Waite, Laura
+AU  - Shlyakhter, Ilya
+AU  - de la Vega, Alejandro
+AU  - Hayashi, Soichi
+AU  - Häusler, Christian
+AU  - Poline, Jean-Baptiste
+AU  - Kadelka, Tobias
+AU  - Skytén, Kusti
+AU  - Jarecka, Dorota
+AU  - Kennedy, David
+AU  - Strauss, Ted
+AU  - Cieslak, Matt
+AU  - Vavra, Peter
+AU  - Ioanas, Horea-Ioan
+AU  - Schneider, Robin
+AU  - Pflüger, Mika
+AU  - Haxby, James
+AU  - Eickhoff, Simon
+AU  - Hanke, Michael
+PY  - 2021
+JO  - The Journal of Open Source Software
+VL  - 6
+IS  - 63
+SP  - 3262
+DO  - 10.21105/joss.03262
+UR  - https://joss.theoj.org/papers/10.21105/joss.03262.pdf
+L2  - https://joss.theoj.org/papers/10.21105/joss.03262.pdf
+Y2  - 2021/11/17
+ER  - 

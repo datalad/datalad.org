@@ -1,7 +1,19 @@
-# Source for datalad.org website #
+# Source for revamped datalad.org website #
 
-[![Build Status](https://travis-ci.org/datalad/datalad.org.svg?branch=master)](https://travis-ci.org/datalad/datalad.org)
+Latest demo: https://jsheunis.github.io/datalad.org/
 
-This repository contains everything needed to build https://www.datalad.org .
+## Run locally
 
-The only dependency is Pelican.
+```
+https://github.com/jsheunis/datalad.org.git
+cd datalad.org
+git submodule update --init --recursive
+
+
+python3 -m venv ~/.venvs/pelican
+source ~/.venvs/pelican/bin/activate
+
+pip3 install pelican
+
+pelican --autoreload --listen
+```
