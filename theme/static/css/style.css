@@ -15,22 +15,6 @@
  * Base *
  ********/
 @font-face { /* License: OFL 1.1 */
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff2') format('woff2'),
-       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff') format('woff');
-}
-@font-face { /* License: OFL 1.1 */
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff2') format('woff2'),
-       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff') format('woff');
-}
-@font-face { /* License: OFL 1.1 */
   font-family: 'fontello';
   src: url('../../theme/fonts/fontello.woff2?75734824') format('woff2'),
        url('../../theme/fonts/fontello.woff?75734824') format('woff');
