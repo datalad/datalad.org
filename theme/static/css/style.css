@@ -289,7 +289,7 @@ nav.card {
   font-size: 20px;
   box-sizing: border-box;
   opacity: 1;
-  transition: height 0.3s linear;
+  transition: height 0.3s ease-in-out;
 }
 nav.card ul {
   list-style: none;
