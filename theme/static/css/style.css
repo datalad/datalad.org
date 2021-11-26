@@ -71,56 +71,28 @@
 }
 .icon-home:before { content: '\e800'; }
 .icon-mail:before { content: '\e801'; }
-.icon-phone:before { content: '\e802'; }
-.icon-gpg:before { content: '\e803'; }
-.icon-link:before { content: '\e804'; }
-.icon-tags:before { content: '\e805'; }
-.icon-tag:before { content: '\e806'; }
 .icon-users:before { content: '\e807'; }
-.icon-th-large:before { content: '\e808'; }
-.icon-th:before { content: '\e809'; }
 .icon-ok:before { content: '\e80a'; }
-.icon-forward:before { content: '\e80b'; }
 .icon-cog:before { content: '\e80c'; }
-.icon-wrench:before { content: '\e80d'; }
-.icon-login:before { content: '\e80e'; }
-.icon-right-big:before { content: '\e80f'; }
-.icon-check:before { content: '\e810'; }
 .icon-book:before { content: '\e811'; }
-.icon-cancel:before { content: '\e812'; }
 .icon-cancel-circled:before { content: '\e813'; }
 .icon-down-dir:before { content: '\e814'; }
-.icon-google-scholar:before { content: '\e900'; }
-.icon-research-gate:before { content: '\e902'; }
-.icon-orcid:before { content: '\e906'; }
 .icon-link-ext:before { content: '\f08e'; }
 .icon-twitter:before { content: '\f099'; }
 .icon-github:before { content: '\f09b'; }
 .icon-docs:before { content: '\f0c5'; }
-.icon-linkedin:before { content: '\f0e1'; }
-.icon-comment-empty:before { content: '\f0e5'; }
+.icon-chat-empty:before { content: '\f0e6'; }
 .icon-download-cloud:before { content: '\f0ed'; }
 .icon-doc-text:before { content: '\f0f6'; }
-.icon-debian:before { content: '\f102'; }
 .icon-laptop:before { content: '\f109'; }
 .icon-quote-left:before { content: '\f10d'; }
-.icon-quote-right:before { content: '\f10e'; }
-.icon-folder-open-empty:before { content: '\f115'; }
 .icon-code:before { content: '\f121'; }
-.icon-info:before { content: '\f129'; }
 .icon-rocket:before { content: '\f135'; }
-.icon-export-alt:before { content: '\f14d'; }
 .icon-youtube-play:before { content: '\f16a'; }
 .icon-apple:before { content: '\f179'; }
 .icon-windows:before { content: '\f17a'; }
 .icon-linux:before { content: '\f17c'; }
-.icon-google:before { content: '\f1a0'; }
-.icon-fax:before { content: '\f1ac'; }
-.icon-database:before { content: '\f1c0'; }
 .icon-file-code:before { content: '\f1c9'; }
-.icon-server:before { content: '\f233'; }
-.icon-menu:before { content: '\f0c9'; }
-.icon-chat-empty:before { content: '\f0e6'; }
 
 a {
   color: var(--datalad-yellow);
@@ -1162,33 +1134,9 @@ svg.hero-svg {
   }
 }
 
-.social-links .icon-debian                  { background-color: #d70a53; }
-.social-links .icon-debian::after           { border-color:     #d70a53; }
-/* .social-links .icon-github                  { color: var(--datalad-grey); } */
 .social-links .icon-github::after           { border-color:     var(--datalad-grey); }
-.social-links .icon-google                  { background-color: #d93e2d; }
-.social-links .icon-google::after           { border-color:     #d93e2d; }
-.social-links .icon-google-scholar          { background-color: #4889f1; }
-.social-links .icon-google-scholar::after   { border-color:     #4889f1; }
-.social-links .icon-gpg                     { background-color: #ff9800; }
-.social-links .icon-gpg::after              { border-color:     #ff9800; }
-/* .social-links .icon-home                    { color: var(--datalad-grey); } */
 .social-links .icon-home::after             { border-color:     var(--datalad-grey); }
-/* .social-links .icon-info                    { color: var(--datalad-grey); } */
-.social-links .icon-info::after             { border-color:     var(--datalad-grey); }
-.social-links .icon-linkedin                { background-color: #0077b5; }
-.social-links .icon-linkedin::after         { border-color:     #0077b5; }
-.social-links .icon-mail                    { background-color: #66cc33; }
-.social-links .icon-mail::after             { border-color:     #66cc33; }
-.social-links .icon-orcid                   { background-color: #a6ce39; }
-.social-links .icon-orcid::after            { border-color:     #a6ce39; }
-.social-links .icon-research-gate           { background-color: #00d0af; }
-.social-links .icon-research-gate::after    { border-color:     #00d0af; }
-.social-links .icon-twitter                 { background-color: #4da7de; }
-.social-links .icon-twitter::after          { border-color:     #4da7de; }
-/* .social-links .icon-link-ext                { color: var(--datalad-grey); } */
 .social-links .icon-link-ext:after          { border-color:     var(--datalad-grey); }
-/* .social-links .icon-doc-text                { color: var(--datalad-grey); } */
 .social-links .icon-doc-text:after          { border-color:     var(--datalad-grey); }
 
 @media screen and (min-width: 768px) {
