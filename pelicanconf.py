@@ -46,6 +46,6 @@ MENUITEMS = (
     ('about', '/#what-is-datalad'),
     ('install', '/#install'),
     ('use cases', '/#use-cases'),
-    ('resources', '/#resources'),
+    ('learn more', '/#resources'),
     ('cite', '/#cite'),
 )
