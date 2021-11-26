@@ -5,7 +5,7 @@
  ******************/
 
 :root {
-  --datalad-grey: #333333;
+  --datalad-grey: #333;
   --hero-text-color: white;
   --datalad-yellow: #ffa200;
   --datalad-blue: #7FD5FF;
@@ -18,24 +18,21 @@
   font-family: 'Maven Pro';
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/maven-pro-v25-latin-regular.woff2') format('woff2'),
+  src: url('../fonts/maven-pro-v25-latin-regular.woff2') format('woff2'),
        url('../fonts/maven-pro-v25-latin-regular.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
   font-family: 'Maven Pro';
   font-style: normal;
   font-weight: 600;
-  src: local(''),
-       url('../fonts/maven-pro-v25-latin-600.woff2') format('woff2'),
+  src: url('../fonts/maven-pro-v25-latin-600.woff2') format('woff2'),
        url('../fonts/maven-pro-v25-latin-600.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
   font-family: 'Maven Pro';
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('../fonts/maven-pro-v25-latin-700.woff2') format('woff2'),
+  src: url('../fonts/maven-pro-v25-latin-700.woff2') format('woff2'),
        url('../fonts/maven-pro-v25-latin-700.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
@@ -337,10 +334,9 @@ nav.card li a:hover {
 }
 
 input[type=checkbox] {
-  display:none;
+  display: none;
 }
-input[type=checkbox] + label:before
-{
+input[type=checkbox] + label:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -348,7 +344,7 @@ input[type=checkbox] + label:before
   speak: none;
   content: '\f0c9';
   color: var(--datalad-grey);
-  display:inline-block;
+  display: inline-block;
   padding: 0;
   position: fixed;
   right: 0;
@@ -495,7 +491,7 @@ svg.hero-svg {
   }
 }
 
-@keyframes imageBlink{
+@keyframes imageBlink {
   0% {
     opacity: 1;
   }
@@ -553,7 +549,7 @@ svg.hero-svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin:auto;
+  margin: auto;
 }
 .overview-buttons .button {
   margin-top: 0;
@@ -793,14 +789,14 @@ svg.hero-svg {
   height: auto;
   width: 90%;
   max-width: 700px;
-  box-shadow: 0px 7px 11px -1px #7A7A7A;
+  box-shadow: 0 7px 11px -1px #7A7A7A;
   border-radius: 0.4em;
 }
 .typewriter-text {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left:15%;
+  left: 15%;
 }
 .typewriter-text p {
   overflow: hidden;
@@ -910,9 +906,9 @@ svg.hero-svg {
 /*
  *  Integrations / extensions / into-the-wild
  */
- .integrations {
+.integrations {
    margin-top: 2em;
- }
+}
 .integrations input {
   color: var(--datalad-grey);
   font-size: 20px;
@@ -929,11 +925,10 @@ svg.hero-svg {
   text-align: center;
 }
 
-
 .integrations input[type=radio] {
   display: none
 }
-.integrations input[type=radio] + label{
+.integrations input[type=radio] + label {
   border: 1px solid var(--datalad-grey);
   background-color: white;
   color: var(--datalad-grey);
@@ -943,11 +938,11 @@ svg.hero-svg {
   display: inline-block;
   margin-bottom: 1em;
 }
-.integrations input[type=radio]:hover + label{
+.integrations input[type=radio]:hover + label {
   background-color: var(--datalad-grey);
   color: white;
 }
-.integrations input[type=radio]:checked + label{
+.integrations input[type=radio]:checked + label {
   border: 3px solid var(--datalad-yellow);
 }
 .integrations .filter-options {
@@ -964,13 +959,13 @@ svg.hero-svg {
   border: 1px solid black;
   padding: 5.5px;
   width: 50px;
-  margin:0;
+  margin: 0;
   border-radius: 6px;
   position: relative;
   white-space: nowrap;
 }
 .tag-anchor span.icon-down-dir {
-  padding:0;
+  padding: 0;
   margin: 0;
 }
 .tag-button {
@@ -980,7 +975,7 @@ svg.hero-svg {
   color: #8a8b8c;
   padding: 2px 8px;
   border-radius: 12px;
-  margin:0;
+  margin: 0;
 }
 .tag-button:hover {
   background-color: var(--datalad-grey);
@@ -1065,7 +1060,7 @@ svg.hero-svg {
   background-color: #fafafa;
   border-radius: 8px;
   text-align: center;
-  height:200px;
+  height: 200px;
   width: 190px;
 }
 .integrations .item-logo {
@@ -1120,7 +1115,7 @@ svg.hero-svg {
   position: absolute;
   left: 0;
   right: 0;
-  width:inherit;
+  width: inherit;
   bottom: 8px;
 }
 .social-links li {
@@ -1210,12 +1205,12 @@ svg.hero-svg {
   .integrations .item:hover .item-info .blurb {
     display: unset;
   }
-  .integrations .item:hover .social-links, .integrations .item:active .social-links  {
+  .integrations .item:hover .social-links, .integrations .item:active .social-links {
     display: unset;
     position: absolute;
     left: 0;
     right: 0;
-    width:inherit;
+    width: inherit;
     bottom: 8px;
   }
 }
@@ -1304,7 +1299,7 @@ svg.hero-svg {
 .cite-buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 .button-cite {
   border: 1px solid var(--datalad-grey);
