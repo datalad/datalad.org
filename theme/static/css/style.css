@@ -93,6 +93,7 @@
 .icon-windows:before { content: '\f17a'; }
 .icon-linux:before { content: '\f17c'; }
 .icon-file-code:before { content: '\f1c9'; }
+.icon-menu:before { content: '\f0c9'; }
 
 a {
   color: var(--datalad-yellow);
