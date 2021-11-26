@@ -15,20 +15,20 @@
  * Base *
  ********/
 @font-face { /* License: OFL 1.1 */
-  font-family: 'Raleway';
+  font-family: 'Maven Pro';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff2') format('woff2'),
-       url('../../theme/fonts/raleway-v22-latin-ext_latin-regular.woff') format('woff');
+       url('../fonts/maven-pro-v25-latin-regular.woff2') format('woff2'),
+       url('../fonts/maven-pro-v25-latin-regular.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
-  font-family: 'Quicksand';
+  font-family: 'Maven Pro';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: local(''),
-       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff2') format('woff2'),
-       url('../../theme/fonts/quicksand-v24-latin-ext_latin-regular.woff') format('woff');
+       url('../fonts/maven-pro-v25-latin-700.woff2') format('woff2'),
+       url('../fonts/maven-pro-v25-latin-700.woff') format('woff');
 }
 @font-face { /* License: OFL 1.1 */
   font-family: 'fontello';
@@ -144,7 +144,6 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Maven Pro', sans-serif;
   font-weight: normal;
   line-height: 1.2;
 }
@@ -433,7 +432,6 @@ svg.hero-svg {
   text-align: center;
 }
 .hero-body p {
-  font-family: 'Maven Pro', sans-serif;
   font-size: 1.5em;
   letter-spacing: 2px;
   margin-top: 0;
@@ -444,11 +442,6 @@ svg.hero-svg {
   border: 3px solid var(--datalad-yellow);
 }
 
-/* @media screen and (min-width: 540px) {
-  .hero-image {
-    flex: 1 1 0%;
-  }
-} */
 @media screen and (min-width: 600px) {
   .hero-image {
     flex: 2 1 0%;
@@ -459,7 +452,6 @@ svg.hero-svg {
   .hero-narrow {
     display: none;
   }
-  
 }
 @media screen and (min-width: 768px) {
   .hero-image {
@@ -524,9 +516,6 @@ svg.hero-svg {
 }
 
 
-
-
-
 /*
  * Overview
  */
@@ -549,9 +538,7 @@ svg.hero-svg {
   max-width: 640px;
   max-height: 360px;
   box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-  margin-bottom: 2em;
-  margin-top: 0;
-
+  margin: 2em 0;
 }
 .overview-buttons {
   width: 55%;
@@ -649,7 +636,7 @@ svg.hero-svg {
   border-radius: 5px;
   text-align: left;
   width: 100%;
-  margin: auto;
+  margin: 1.5em auto 0 auto;
   box-shadow: 0px 7px 11px -1px #7A7A7A;
   box-sizing: border-box;
 }
@@ -681,11 +668,9 @@ svg.hero-svg {
   width: 17px;
   margin: auto;
   padding: 0;
-  /* transform: translateY(0.2em); */
 }
 
 @media screen and (min-width: 400px) {
-
   .install input[type=radio] + label{
     width:3.5em;
   }
@@ -748,7 +733,6 @@ svg.hero-svg {
   .install-icon img{
     width: 45px
   }
-  
 }
 
 /*
@@ -852,7 +836,6 @@ svg.hero-svg {
 .card-img.use-datalad img {
   height: auto;
   width: 90%;
-  /* min-width: 440px; */
   max-width: 700px;
   box-shadow: 0px 7px 11px -1px #7A7A7A;
   border-radius: 0.4em;
@@ -971,7 +954,6 @@ svg.hero-svg {
 .integrations input {
   color: var(--datalad-grey);
   font-size: 20px;
-  font-family: inherit;
   text-align: left;
 }
 .integrations input[type=text] {
@@ -1277,7 +1259,6 @@ svg.hero-svg {
 }
 
 
-
 /*
  * Learn more section
  */
@@ -1347,19 +1328,17 @@ svg.hero-svg {
 /*
  * Cite section
  */
-
- .card-text blockquote {
-   border-left: 5px solid rgb(189, 189, 189);
-   padding-left: 1em;
-   margin-left: 0.5em;
-   margin-right: 0.5em;
-   margin-bottom: 2em;
-   font-size: inherit;
-   box-sizing: border-box;
-   text-align: left;
-   max-width: 100%;
-
- }
+.card-text blockquote {
+  border-left: 5px solid rgb(189, 189, 189);
+  padding-left: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 2em;
+  font-size: inherit;
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 100%;
+}
 .cite-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -1488,4 +1467,3 @@ footer li a:hover::after {
     display: inline;
   }
 }
-
