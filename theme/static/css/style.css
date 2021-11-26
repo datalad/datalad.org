@@ -587,41 +587,47 @@ svg.hero-svg {
   margin-bottom: 1em;
 }
 .install p {
-  margin: 0;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  margin: 1em 0;
 }
 .install section {
+  background-color: #f6f6f6;
   border-radius: 8px;
-  background-color: rgb(247, 246, 246);
-  margin: auto 0.5em;
-  margin-top: 0;
-  box-shadow: 0px 5px 5px -1px rgb(147, 147, 147);
-  padding: 1em 6vw;
+  box-shadow: 0 5px 5px -1px #939393;
+  hyphens: auto;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1em 3em;
+  text-align: justify;
 }
-.install input[type=radio] {
+.install input {
   display: none
 }
-.install input[type=radio] + label{
-  background-color: white;
-  color: var(--datalad-grey);
+.install-tab {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  width:2.2em;
-  padding: 0.4em;
-  margin: 0;
-  margin-top: 0.5em;
   display: inline-block;
+  padding: 0.5em 0.4em 0.4em 0.4em;
+  width: 3.25em;
 }
-.install input[type=radio]:checked + label{
-  background-color: rgb(247, 246, 246);
-  box-shadow: 0px -5px 5px -1px rgb(147, 147, 147);
+.install input:checked + .install-tab {
+  background-color: #f6f6f6;
+  border: 1px solid #eee;
+  border-bottom: none;
 }
-.install input[type=radio] + label h3{
-  font-size: 18px;
-  margin-bottom: 0;
-  margin-top: 0.5em;
-  display: none;
+.install-tab span, .install-tab img {
+  background-color: var(--datalad-grey);
+  border-radius: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 10px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+  color: var(--datalad-yellow);
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  margin: 0 auto 0.2em auto;
+  transition: transform 0.2s linear;
+  width: 38px;
+}
+.install-tab:hover span, .install-tab:hover img {
+  transform: translateY(-0.2em);
 }
 .install .datalad, .install .linux, .install .macos, .install .windows {
   display: none;
@@ -630,23 +636,20 @@ svg.hero-svg {
 #linux:checked ~ section .linux,
 #macos:checked ~ section .macos,
 #windows:checked ~ section .windows {
-  display: block;
-  width: 100%
-}
-.install input[type=radio]:hover + label .install-icon {
-  transform: translateY(-0.2em);
+  display: initial;
 }
 .install-code {
   background-color: var(--datalad-grey);
-  padding: 0.5em 1em;
+  border-radius: 5px;
+  box-shadow: 0 7px 11px -1px #7A7A7A;
+  box-sizing: border-box;
   color: var(--datalad-blue);
   font-size: 20px;
-  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 28em;
+  padding: 0.5em 1em;
   text-align: left;
   width: 100%;
-  margin: 1.5em auto 0 auto;
-  box-shadow: 0px 7px 11px -1px #7A7A7A;
-  box-sizing: border-box;
 }
 .install-code a {
   float: right;
@@ -655,91 +658,36 @@ svg.hero-svg {
 .install-code a:hover {
   color: var(--datalad-yellow);
 }
-.install-icon {
-  width: 38px;
-  height: 38px;
-  display: flex;
-  font-size: 17px;
-  margin: auto;
-  opacity: 1;
-  background-color: var(--datalad-grey);
-  box-shadow: rgba(50, 50, 93, 0.25) 0 10px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
-  text-align: center;
-  border-radius: 100%;
-  transition: transform 0.2s linear;
-}
-.install-icon span {
-  margin: auto;
-  color: var(--datalad-yellow);
-}
-.install-icon img {
-  width: 17px;
-  margin: auto;
-  padding: 0;
-}
 
-@media screen and (min-width: 400px) {
-  .install input[type=radio] + label{
-    width:3.5em;
+@media screen and (min-width: 500px) {
+  .install section {
+    hyphens: initial;
   }
-  .install-icon {
-    width: 55px;
-    height: 55px;
-    font-size: 22px;
-  }
-  .install-icon img{
-    width: 22px
+  .install-tab {
+    width: 4.25em;
   }
 }
 @media screen and (min-width: 768px) {
-  .install section {
-    margin: auto 1em;
+  .install {
+    font-size: 24px;
   }
-  .install-code {
-    width: 60%;
+  .install-tab {
+    width: 5em;
   }
-  .install p {
-    font-size: 22px;
-    width: 100%;
-    margin: auto;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  .install input[type=radio] + label{
-    width:5em;
-  }
-  .install input[type=radio] + label h3{
-    font-size: 20px;
-    display: block;
-  }
-  .install-icon {
-    width: 80px;
-    height: 80px;
-    font-size: 35px;
-  }
-  .install-icon img{
-    width: 35px
+  .install-tab span, .install-tab img {
+    height: 55px;
+    line-height: 55px;
+    width: 55px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .install section {
-    margin: auto 2em;
-    margin-top: 0;
+  .install-tab {
+    font-size: 30px;
   }
-  .install input[type=radio] + label{
-    width:7em;
-  }
-  .install input[type=radio] + label h3{
-    font-size: 1.5em;
-    display: block;
-  }
-  .install-icon {
-    width: 100px;
-    height: 100px;
-    font-size: 45px;
-  }
-  .install-icon img{
-    width: 45px
+  .install-tab span, .install-tab img {
+    height: 70px;
+    line-height: 65px;
+    width: 70px;
   }
 }
 
