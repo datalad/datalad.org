@@ -15,6 +15,22 @@
  * Base *
  ********/
 @font-face { /* License: OFL 1.1 */
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/maven-pro-v25-latin-regular.woff2') format('woff2'),
+       url('../fonts/maven-pro-v25-latin-regular.woff') format('woff');
+}
+@font-face { /* License: OFL 1.1 */
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/maven-pro-v25-latin-700.woff2') format('woff2'),
+       url('../fonts/maven-pro-v25-latin-700.woff') format('woff');
+}
+@font-face { /* License: OFL 1.1 */
   font-family: 'fontello';
   src: url('../../theme/fonts/fontello.woff2?75734824') format('woff2'),
        url('../../theme/fonts/fontello.woff?75734824') format('woff');
