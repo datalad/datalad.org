@@ -20,10 +20,12 @@ jobs:
           content/static/fetch_github_contributors.sh
           git config user.name 'DailyMerge'
           git config user.email 'blackhole@datalad.org'
-          git add content/static/github_contributors.json
-          git commit -m "Automated: daily contributor merge"
-          git push
-
+          if [[ `git status --porcelain` ]]; then
+            git add content/static/github_contributors.json
+            git commit -m "Automated: daily contributor merge"
+            git push
+          fi
+          
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
