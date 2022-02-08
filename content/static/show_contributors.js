@@ -1,5 +1,5 @@
 // File path where integrations/extensions/use cases are listed
-const file_path = 'static/github_contributors.json';
+const contributor_file_path = 'static/github_contributors.json';
 
 // Create VueJS app to load `integrations.json` and allow filtering by name/tag
 var app = new Vue({
@@ -28,6 +28,6 @@ var app = new Vue({
       },
     },
     beforeMount(){
-      this.getJSONblob(file_path)
+      this.getJSONblob(contributor_file_path)
     },
 });
