@@ -410,6 +410,9 @@ svg.hero-svg {
 .hero-body .button {
   border: 3px solid var(--datalad-yellow);
 }
+.hero-star {
+  margin-top: 1.5em;
+}
 
 @media screen and (min-width: 600px) {
   .hero-image {
