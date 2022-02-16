@@ -1269,6 +1269,22 @@ svg.hero-svg {
 
 
 /*
+ * Copyright page
+ */
+ .copyright-intro {
+   text-align: center;
+ }
+
+ .fading-line-copyright {
+  height: 1px;
+  background: linear-gradient(270deg,hsla(0,0%,90%,0),#ccc);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+
+/*
  * Footer
  */
 footer {
