@@ -1,0 +1,54 @@
+name: "fetch github contributors once a daily"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: add new contributors
+        shell: bash
+        run: |
+          chmod -R u+rwx content/static/fetch_github_contributors.sh
+          content/static/fetch_github_contributors.sh
+          git config user.name 'DailyMerge'
+          git config user.email 'blackhole@datalad.org'
+          if [[ `git status --porcelain` ]]; then
+            git add content/static/github_contributors.json
+            git commit -m "Automated: daily contributor merge"
+            git push
+          fi
+          
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Setup pelican
+        shell: bash
+        run: |
+          pip install wheel pyclean pelican beautifulsoup4
+          git submodule update --init
+
+      - name: Build
+        run: |
+          pyclean ./
+          pelican --delete-output-directory --debug --fatal errors content -s publishconf.py
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          enable_jekyll: false
+          publish_dir: ./output
+          cname: www.datalad.org
+          user_name: 'AutoBuild'
+          user_email: 'blackhole@datalad.org'
+          commit_message: ${{ github.event.head_commit.message }}

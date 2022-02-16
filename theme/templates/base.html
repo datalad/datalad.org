@@ -46,6 +46,19 @@
 
     <footer>
       <div class='footer-main'>
+
+        <div class="contributors-heading">
+          <h3>Join the contributor community</h3>
+          <span class="fading-line"></span>
+        </div>
+        
+        <div class='footer-contributors' id='footer-app'>
+          <div v-for="person in all_contributors" class="contributor" v-bind:style="{ backgroundImage: 'url(' + person['avatar_url'] + ')' }"><a :href="'https://github.com/' + person['login']" ></a></div>
+        </div>
+
+        <span class="fading-line-full"></span>
+        <br>
+
         <div class='footer-head'>
           <img src="img/logo/datalad_logo_yw.svg" alt="DataLad logo">
           <ul>
@@ -77,5 +90,10 @@
       </div>
     </footer>
   </main>
+
+  <!-- INCLUDE: VUEJS -->
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"></script>
+  <!-- RUN: VUE SCRIPT FOR FOOTER CONTRIBUTORS -->
+  <script src="static/show_contributors.js"></script>
 </body>
 </html>
