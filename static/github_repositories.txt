@@ -1,0 +1,3 @@
+datalad/datalad
+datalad/datalad-metalad
+datalad-handbook/book
