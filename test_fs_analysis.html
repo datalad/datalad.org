@@ -51,6 +51,19 @@
   <div>
     
 
+<h2>Disclaimer!</h2>
+
+<p><b>Presented here benchmarking was done in 2015!!!</b>
+  <br>Lots of development has happened in filesystems space/kernel
+  since then, so results might no longer hold, and hopefully the
+  differences between various file systems has reduced drastically. We
+  would encourage readers to perform benchmarking on their hardware
+  and target perspective setups before finalizing the deployment
+  having made an informed decision. The <a href="#scripts">scripts</a>
+  we used and shared for our benchmarking could serve as a starting
+  point.
+</p>
+
 <h2>Problem statement</h2>
 <p>For the DataLad project we will establish a large number of git-annex
    repositories.  Majority of those git-annex repositories will not contain any
@@ -86,7 +99,7 @@
       on an LSI SAS3008 HBA</li>
 </ul>
 
-<h3>Scripts</h3>
+<h3 id="scripts">Scripts</h3>
 <p><a href="https://github.com/datalad/benchmarking/blob/master/test_fs.py">test_fs.py</a>
   script was created to initiate a range of prototypical file-system setups,
   with software raid/MD (redundancy), LVM (volume management) and various file
