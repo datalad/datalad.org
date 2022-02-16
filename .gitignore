@@ -3,3 +3,4 @@
 *.pyc
 output/
 .DS_Store
+.vscode

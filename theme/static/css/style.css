@@ -1364,3 +1364,44 @@ footer li a:hover::after {
     display: inline;
   }
 }
+
+
+/* 
+File system specification page
+*/
+
+.table-scrollable { overflow-x: scroll; }
+table {
+  border: 1px solid #555;
+  border-spacing: 0;
+  line-height: 1.1em;
+  width: 100%;
+}
+thead {
+  background: #555;
+  border-bottom: 3px solid #ccc;
+  border: 1px solid #555;
+  color: #fff;
+}
+td, th { padding: 0.5em 1em; }
+th + th { border-left: 1px solid #e0e0e0; }
+tr {
+  border-width: 1px 0;
+  padding: 0.5em;
+}
+tr:nth-of-type(even) { background: #f4f4f4; }
+tr td { border-left: 1px solid #e0e0e0; }
+table ul { margin: 0; }
+@media screen and (min-width: 768px) {
+  table { line-height: inherit; }
+}
+
+tt {
+  border: 1px solid #ddd;
+  color: #e74c3c;
+  padding: 0.1em 0.3em;
+}
+
+img.no-overflow {
+  max-width: 100%;
+}
