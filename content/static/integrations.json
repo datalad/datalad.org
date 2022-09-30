@@ -314,7 +314,7 @@
    ]
  },
  {
-   "name": "Datalad MetaLad",
+   "name": "DataLad MetaLad",
    "website": "",
    "github": "https://github.com/datalad/datalad-metalad",
    "docs": "http://docs.datalad.org/projects/metalad/en/latest/",
@@ -328,7 +328,7 @@
    ]
  },
  {
-   "name": "DataLad Neuro-Imaging",
+   "name": "DataLad NeuroImaging",
    "website": "",
    "github": "https://github.com/datalad/datalad-neuroimaging",
    "docs": "http://docs.datalad.org/projects/neuroimaging/en/latest/",
@@ -344,7 +344,7 @@
    "name": "XNAT",
    "website": "https://www.xnat.org/",
    "github": "https://github.com/datalad/datalad-xnat",
-   "docs": "http://docs.datalad.org/projects/datalad-xnat/en/latest/?badge=latest",
+   "docs": "http://docs.datalad.org/projects/datalad-xnat/en/latest",
    "info": "",
    "logo": "xnat.png",
    "description": "The datalad-xnat extension allows you to track and update medical image acquisitions from XNAT servers",
@@ -359,7 +359,7 @@
    "name": "OSF",
    "website": "https://osf.io/",
    "github": "https://github.com/datalad/datalad-osf",
-   "docs": "http://docs.datalad.org/projects/osf/en/latest/?badge=latest",
+   "docs": "http://docs.datalad.org/projects/osf/en/latest",
    "info": "",
    "logo": "osf.png",
    "description": "With the datalad-osf extension package, DataLad datasets can be hosted on the Open Science Framework.",
@@ -374,10 +374,10 @@
    "name": "DataLad Catalog",
    "website": "",
    "github": "https://github.com/datalad/datalad-catalog",
-   "docs": "",
+   "docs": "https://docs.datalad.org/projects/catalog/en/latest",
    "info": "",
-   "logo": "",
-   "description": "An extension to generate standalone web-based data catalogs from DataLad-extracted metadata",
+   "logo": "datacat_logo.svg",
+   "description": "A DataLad extension to generate standalone web-based data catalogs from structured metadata",
    "tags": [
      "metadata",
      "catalog",
@@ -388,7 +388,7 @@
    "name": "UK Biobank",
    "website": "https://www.ukbiobank.ac.uk/",
    "github": "https://github.com/datalad/datalad-ukbiobank",
-   "docs": "http://docs.datalad.org/projects/ukbiobank/en/latest/?badge=latest",
+   "docs": "http://docs.datalad.org/projects/ukbiobank/en/latest",
    "info": "",
    "logo": "ukbiobank.png",
    "description": "The datalad-ukbiobank extension package represents UK Biobank data as extensible DataLad datasets.",
@@ -485,6 +485,50 @@
   ]
  },
  {
+  "name": "Dataverse",
+  "website": "",
+  "github": "https://github.com/datalad/datalad-dataverse",
+  "docs": "https://docs.datalad.org/projects/datalad-dataverse/en/latest",
+  "info": "",
+  "logo": "dataverse.svg",
+  "description": "This extension integrates DataLad with the widely used open source research data repository software, Dataverse",
+  "tags": [
+    "extension",
+    "data management",
+    "metadata",
+    "open data"
+  ]
+ },
+ {
+  "name": "DataLad Gooey",
+  "website": "",
+  "github": "https://github.com/datalad/datalad-gooey",
+  "docs": "https://docs.datalad.org/projects/datalad-dataverse/en/latest",
+  "info": "",
+  "logo": "datalad_gooey_logo.svg",
+  "description": "This extesion provides a graphical user interface for DataLad, making key tasks more accessible and convenient",
+  "tags": [
+    "extension",
+    "data management",
+    "GUI",
+    "user interface"
+  ]
+ },
+ {
+  "name": "Neurobagel",
+  "website": "https://www.neurobagel.org/",
+  "github": "https://github.com/neurobagel",
+  "docs": "",
+  "info": "",
+  "logo": "neurobagel.svg",
+  "description": "The neurobagel project provides a way to define and find cohorts of individuals across research datasets.",
+  "tags": [
+    "data management",
+    "metadata",
+    "open data"
+  ]
+ },
+ {
    "name": "Gautheron et al. 2021",
    "website": "",
    "github": "",
@@ -541,11 +585,11 @@
      {
       "name": "Wagner et al. 2021",
       "website": "",
-      "github": "",
-      "docs": "https://doi.org/10.1101/2021.10.12.464122",
+      "github": "https://github.com/psychoinformatics-de/fairly-big-processing-workflow",
+      "docs": "https://doi.org/10.1038/s41597-022-01163-2",
       "info": "",
       "logo": "academic.svg",
-      "description": "FAIRly big: A framework for computationally reproducible processing of large-scale data, bioRxiv.",
+      "description": "FAIRly big: A framework for computationally reproducible processing of large-scale data, Nature Scientific Data.",
       "tags": [
         "academic",
         "data management",
