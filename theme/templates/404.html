@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% block meta %}
+  <meta name="author" content="{{ AUTHOR }}" />
+  {% endblock %}
+
+  <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" type="text/css" href="{{ THEME_STATIC_DIR }}/css/style.css">
+
+  <link rel="license" hreflang="en" href="copyright.html" />
+</head>
+
+<body>
+  <main>
+
+    <!-- Main  content of a page -->
+    
+    <div class="banner-404">
+      <h1 id="404">404 - Wan't to play a little game?</h1>
+    </div>
+
+    <div id="game">
+      <div id="game_bg"></div>
+      <h4 id="score">0</h4>
+      <div id="startstop2"><a id="startstop2button"></a></div>
+      <div id="minion"></div>
+      <div id="commit"></div>
+      <!-- <div id="coffee"></div> -->
+      <div id="message"></div>
+    </div>
+    <div id="instructions"><em>hit spacebar to jump</em></div>
+    
+    <script src="static/404_game.js"></script>
+
+    <footer>
+      <div class='footer-main'>
+
+        <div class='footer-head'>
+          <img src="img/logo/datalad_logo_yw.svg" alt="DataLad logo">
+          <ul>
+            <li><a class='icon-download-cloud' aria-label='Install DataLad' href="https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration"></a></li>
+            <li><a class="icon-book" aria-label='Learn with the Handbook' href="http://handbook.datalad.org/en/latest/"></a></li>
+            <li><a class="icon-users" aria-label='Join the community' href="https://matrix.to/#/%23datalad:matrix.org"></a></li>
+            <li><a class="icon-chat-empty" aria-label='Ask a question' href="https://neurostars.org/search?q=datalad%20category%3A1"></a></li>
+            <li><a class='icon-github' aria-label='Contribute via GitHub' href="https://github.com/datalad/datalad"></a></li>
+            <li><a class='icon-mail' aria-label='Email us' href="mailto:info@datalad.org"></a></li>
+            <li><a class='icon-twitter' aria-label='Follow us on Twitter' href="https://twitter.com/datalad"></a></li>
+            <li><a class='icon-youtube-play' aria-label='Visit our Youtube channel' href="https://www.youtube.com/channel/UCB8-Zf7D0DSzAsREoIt0Bvw"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

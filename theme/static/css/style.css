@@ -1488,3 +1488,119 @@ tt {
 img.no-overflow {
   max-width: 100%;
 }
+
+
+/* 404 Game */
+#score {
+  text-align: center;
+  position: relative;
+  right: -35%; top: -105%
+}
+#message {
+  text-align: center;
+  position: relative;
+  right: 0%; top: -450px;
+}
+#instructions {
+  text-align: center;
+  position: relative;
+  right: 0%; top: -5px;
+  color: #939393;
+}
+#startstop2 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  right: -93%; top: -122%;
+  background-image: url(../../img/404_yes.svg);
+  background-size: 100% 100%;
+  border: 2px solid rgb(201, 200, 200);
+  border-radius: 5px;
+}
+
+#game {
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0;
+}
+#game_bg {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  /* top: 0;
+  right: 0; */
+  background-image: url(../../img/404_bg.svg);
+  background-size: 100% 100%;
+}
+
+#minion {
+  height: 60px;
+  width: 60px;
+  top: -238px;
+  position: relative;
+  background-image: url(../../img/404_character.svg);
+  background-size: 100% 100%;
+}
+
+#commit {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -274px;
+  left: 550px;
+  background-image: url(../../img/404_commit.svg);
+  background-size: 100% 100%;
+}
+.commit-animation {
+  animation: commit 1.5s infinite linear;
+}
+@keyframes commit {
+  0%{left: 550px;}
+  100%{left: -10px;}
+}
+
+/* #coffee {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -336px;
+  left: 550px;
+  background-image: url(../../img/404_coffee.svg);
+  background-size: 100% 100%;
+}
+
+.coffee-animation {
+  animation: commit 3s infinite linear;
+}
+
+@keyframes coffee {
+  0%{left: 550px;}
+  100%{left: -10px;}
+} */
+
+.jump-animation {
+  animation: jump 0.4s;
+}
+
+@keyframes jump {
+  0%{top: -238px;}
+  50%{top: -340px;}
+  75%{top: -340px;}
+  100%{top: -238px;}
+}
+
+.banner-404 {
+  background-color: var(--datalad-grey);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 10vh;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  justify-content: center;
+}
