@@ -22,7 +22,7 @@ PLUGINS = [ 'sitemap' ]
 SITEMAP = { 'format': 'xml' }
 
 THEME = 'theme'
-DIRECT_TEMPLATES = []  # unset all templates
+DIRECT_TEMPLATES = ['404']  # unset all templates
 STATIC_PATHS = ['img/', 'static/', 'badges/']
 EXTRA_PATH_METADATA = {
     "static/apple-touch-icon.png": {'path': ''},
