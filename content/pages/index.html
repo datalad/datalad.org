@@ -144,12 +144,14 @@
 <div id="use-datalad" class="spacer-dlgrey"></div>
 
 <!-- SECTION: USE DATALAD -->
+
 <div id="console" class="info-card reverse">
   <div class="card-text use-datalad">
     <h1>Use DataLad</h1>
     <p>
-      DataLad is a free and open source command line tool with a Python API and is compatible with
-      all major operating systems. Use DataLad to:
+      DataLad is a free and open source Python-based tool that is compatible with
+      all major operating systems. It can be used via its Graphical User Interface or
+      via the command line to:
     </p>
     <ul class="main-list">
       <li><span class="icon-code"></span>&nbsp;&nbsp;<code>create</code> new datasets locally</li>
@@ -164,8 +166,8 @@
       <span class="icon-laptop"></span>&nbsp;&nbsp;Try out DataLad</a>
   </div>
   <div class="card-img use-datalad">
-    <img src="img/console.svg" alt="Computer console">
-    <div class="typewriter-text">
+    <img src="img/console.svg" alt="Computer console" id="console_img">    
+    <div class="typewriter-text"  id="typed_text">
       <p style="--n:26; --d:0">datalad create <em>my_dataset</em></p>
       <p style="--n:29; --d:1">datalad save <em>-m "hello world"</em></p>
       <p style="--n:26; --d:2">datalad push <em>--to location</em></p>
@@ -173,6 +175,11 @@
       <p style="--n:22; --d:3">datalad clone <em>location</em></p>
       <p style="--n:24; --d:4">datalad get <em>example.txt</em></p>
       <p style="--n:25; --d:5">datalad drop <em>example.txt</em></p>
+    </div>
+    <img src="img/gooey_30fps_scaled1600.gif" id="gooey_video"></img>
+    <div class="show-use"> 
+      <input type="radio" name="useDataLad" value="console" onclick="selectUseDataLad(this.value, 'click')" id="console-select" checked><label for="console-select"></label>
+      <input type="radio" name="useDataLad" value="gooey" onclick="selectUseDataLad(this.value, 'click')" id="gooey-select"><label for="gooey-select"></label>
     </div>
   </div>
 </div>

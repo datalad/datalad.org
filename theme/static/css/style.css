@@ -1604,3 +1604,27 @@ img.no-overflow {
   text-align: center;
   justify-content: center;
 }
+
+.show-use input[type=radio] {
+  display: none
+}
+.show-use input[type=radio] + label {
+  border: 1px solid var(--datalad-grey);
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: static;
+  display: inline-block;
+}
+.show-use input[type=radio]:hover + label {
+  background-color: #f6f6f6;
+}
+.show-use input[type=radio]:checked + label {
+  background-color: var(--datalad-yellow);
+}
+
+.show-use input[type=radio]:checked + label {
+  background-color: var(--datalad-yellow);
+}
+

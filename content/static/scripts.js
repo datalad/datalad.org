@@ -64,3 +64,60 @@ function copyCode(text) {
     .then(() => { })
     .catch((error) => { alert(`Copy failed! ${error}`) })
 }
+
+// Change "Use DataLad" display
+var gooeyVideo = document.getElementById("gooey_video");
+gooeyVideo.style.display = "none";
+var timer = null
+var interval = 20000
+startTimer()
+
+function startTimer() {
+  if (timer !== null) return;
+  timer = setInterval(toggleUseDataLadRadio, interval);
+}
+
+function stopTimer() {
+  clearInterval(timer);
+  timer = null
+}
+
+function resetTimer() {
+  stopTimer()
+  startTimer()
+}
+
+function selectUseDataLad(val, src) {
+  // Grab elements
+  var consoleImg = document.getElementById("console_img");
+  var typedText = document.getElementById("typed_text");
+  var gooeyVideo = document.getElementById("gooey_video");
+  // Set display
+  if (val==="console") {
+    consoleImg.style.display = "";
+    typedText.style.display = "";
+    gooeyVideo.style.display = "none";
+  } else {
+    consoleImg.style.display = "none";
+    typedText.style.display = "none";
+    gooeyVideo.style.display = "";
+  }
+  if (src==="click") {
+    resetTimer()
+  }
+  
+}
+
+function toggleUseDataLadRadio() {
+  var radioConsole = document.getElementById("console-select");
+  var radioGooey = document.getElementById("gooey-select");
+  if (radioConsole.checked) {
+    radioConsole.checked = false;
+    radioGooey.checked = true;
+    selectUseDataLad("gooey", "timer")
+  } else {
+    radioGooey.checked = false;
+    radioConsole.checked = true;
+    selectUseDataLad("console", "timer")
+  }
+}
