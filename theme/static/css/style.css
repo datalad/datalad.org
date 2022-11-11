@@ -87,6 +87,7 @@
 .icon-linux:before { content: '\f17c'; }
 .icon-file-code:before { content: '\f1c9'; }
 .icon-menu:before { content: '\f0c9'; }
+.icon-mastodon:before { content: '\f647'; }
 
 a {
   color: var(--datalad-yellow);
