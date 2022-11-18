@@ -503,7 +503,7 @@
   "name": "DataLad Gooey",
   "website": "",
   "github": "https://github.com/datalad/datalad-gooey",
-  "docs": "https://docs.datalad.org/projects/datalad-dataverse/en/latest",
+  "docs": "https://docs.datalad.org/projects/gooey/en/latest/",
   "info": "",
   "logo": "datalad_gooey_logo.svg",
   "description": "This extesion provides a graphical user interface for DataLad, making key tasks more accessible and convenient",
