@@ -30,8 +30,8 @@
 }
 @font-face { /* License: OFL 1.1 */
   font-family: 'fontello';
-  src: url('../../theme/fonts/fontello.woff2?75734824') format('woff2'),
-       url('../../theme/fonts/fontello.woff?75734824') format('woff');
+  src: url('../../theme/fonts/fontello.woff2?75734825') format('woff2'),
+       url('../../theme/fonts/fontello.woff?75734825') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -64,6 +64,7 @@
 }
 .icon-home:before { content: '\e800'; }
 .icon-mail:before { content: '\e801'; }
+.icon-mastodon:before { content: '\e802'; }
 .icon-users:before { content: '\e807'; }
 .icon-ok:before { content: '\e80a'; }
 .icon-cog:before { content: '\e80c'; }
@@ -87,6 +88,7 @@
 .icon-linux:before { content: '\f17c'; }
 .icon-file-code:before { content: '\f1c9'; }
 .icon-menu:before { content: '\f0c9'; }
+
 
 a {
   color: var(--datalad-yellow);
@@ -273,6 +275,7 @@ nav.card ul.menu-items {
 nav.card ul.menu-icons {
   transform: translateY(-2em);
   font-size: 22px;
+  width: 9em;
 }
 nav.card img {
   display: flex;
