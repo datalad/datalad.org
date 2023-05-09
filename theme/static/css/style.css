@@ -759,6 +759,15 @@ svg.hero-svg {
   box-shadow: 0 7px 11px -1px #7A7A7A;
   border-radius: 0.4em;
 }
+.card-img.use-datalad video {
+  height: auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 7px 11px -1px #7A7A7A;
+  border-radius: 0.4em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 .typewriter-text {
   position: absolute;
   top: 50%;
