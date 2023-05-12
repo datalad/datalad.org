@@ -769,6 +769,15 @@ svg.hero-svg {
   box-shadow: 0 7px 11px -1px #7A7A7A;
   border-radius: 0.4em;
 }
+.card-img.use-datalad video {
+  height: auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 7px 11px -1px #7A7A7A;
+  border-radius: 0.4em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 .typewriter-text {
   position: absolute;
   top: 50%;
@@ -1614,3 +1623,27 @@ img.no-overflow {
   text-align: center;
   justify-content: center;
 }
+
+.show-use input[type=radio] {
+  display: none
+}
+.show-use input[type=radio] + label {
+  border: 1px solid var(--datalad-grey);
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: static;
+  display: inline-block;
+}
+.show-use input[type=radio]:hover + label {
+  background-color: #f6f6f6;
+}
+.show-use input[type=radio]:checked + label {
+  background-color: var(--datalad-yellow);
+}
+
+.show-use input[type=radio]:checked + label {
+  background-color: var(--datalad-yellow);
+}
+
