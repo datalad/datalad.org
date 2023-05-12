@@ -332,7 +332,7 @@ input[type=checkbox]:checked ~ nav.card ul li a {
   display: unset;
 }
 input[type=checkbox]:checked ~ nav.card {
-  height: 14em;
+  height: 16em;
   opacity: 0.95;
 }
 
