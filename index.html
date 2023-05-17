@@ -29,6 +29,7 @@
         <li><a onclick="closeMenu()" href="/#install" >install</a></li>
         <li><a onclick="closeMenu()" href="/#use-cases" >use cases</a></li>
         <li><a onclick="closeMenu()" href="/#resources" >learn more</a></li>
+        <li><a onclick="closeMenu()" href="/#get-support" >get support</a></li>
         <li><a onclick="closeMenu()" href="/#cite" >cite</a></li>
       </ul>
       <ul class="menu-icons">
@@ -329,24 +330,6 @@
   </div>
   <div class="resource-item">
     <div class="resource-icon">
-      <a class="icon-users" href="https://matrix.to/#/%23datalad:matrix.org"></a>
-    </div>
-    <div class="resource-info">
-      <h3><a href="https://matrix.to/#/%23datalad:matrix.org">Community<br />Chat</a></h3>
-      <p class="resource-blurb">Join the community on Matrix, say hi, and ask questions</p>
-    </div>
-  </div>
-  <div class="resource-item">
-    <div class="resource-icon">
-      <a class="icon-chat-empty" href="https://neurostars.org/search?q=datalad%20category%3A1"></a>
-    </div>
-    <div class="resource-info">
-      <h3><a href="https://neurostars.org/search?q=datalad%20category%3A1">Technical<br />Forum</a></h3>
-      <p class="resource-blurb">Get help from DataLad experts and users to solve your challenges</p>
-    </div>
-  </div>
-  <div class="resource-item">
-    <div class="resource-icon">
       <a class="icon-github" href="https://github.com/datalad/datalad"></a>
     </div>
     <div class="resource-info">
@@ -385,11 +368,63 @@
   
 </div>
 
+
 <!-- SPACER IMAGE -->
-<div id="supporting-datalad" class="spacer-dlgrey"></div>
+<div id="get-support" class="spacer-dlgrey"></div>
+
+<!-- SECTION: GET SUPPORT -->
+<div class="info-card reverse">
+  <div class="card-text">
+    <h1>Get Support</h1>
+    <p>
+      For tougher challenges during your data management journey, there are a number of ways that you can get in touch with
+      the DataLad community, its experts, and core developers. Head over to Matrix to chat, join us in a weekly Office Hour
+      call, or create an issue on GitHub!
+    </p>
+  </div>
+  <div class="card-img larger">
+    <img src="img/get_support.svg" alt="DataLad support">
+  </div>
+</div>
+<div class="learnmore">
+  <div class="resource-item">
+    <div class="resource-icon">
+      <a class="icon-users" href="https://matrix.to/#/%23datalad:matrix.org"></a>
+    </div>
+    <div class="resource-info">
+      <h3><a href="https://matrix.to/#/%23datalad:matrix.org">Community<br />Chat</a></h3>
+      <p class="resource-blurb">Join the community on Matrix, say hi, and ask questions</p>
+    </div>
+  </div>
+  <div class="resource-item">
+    <div class="resource-icon">
+      <a class="icon-chat-empty" href="https://matrix.to/#/!NaMjKIhMXhSicFdxAj:matrix.org"></a>
+    </div>
+    <div class="resource-info">
+      <h3><a href="https://matrix.to/#/!NaMjKIhMXhSicFdxAj:matrix.org">Office<br />Hour</a></h3>
+      <p class="resource-blurb">Get real-time help from DataLad experts to solve your challenges</p>
+    </div>
+  </div>
+  <div class="resource-item">
+    <div class="resource-icon">
+      <a class="icon-github" href="https://github.com/datalad/datalad/issues/new/choose"></a>
+    </div>
+    <div class="resource-info">
+      <h3><a href="https://github.com/datalad/datalad/issues/new/choose">File an<br />issue</a></h3>
+      <p class="resource-blurb">File an issue to let the developers know about a bug or a feature request</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- SPACER IMAGE -->
+<div id="supporting-datalad" class="spacer-dlyellow"></div>
 
 <!-- SECTION: SUPPORTING DATALAD -->
-<div class="info-card reverse">
+<div class="info-card">
+  <div class="card-img larger">
+    <img src="img/funding.png" alt="DataLad funding">
+  </div>
   <div class="card-text">
     <h1>Supporting DataLad</h1>
     <p>
@@ -403,19 +438,13 @@
       and the German federal state of Saxony-Anhalt and the European Regional Development Fund.
     </p>
   </div>
-  <div class="card-img larger">
-    <img src="img/funding.png" alt="DataLad funding">
-  </div>
 </div>
 
 <!-- SPACER IMAGE -->
-<div id="cite" class="spacer-dlyellow"></div>
+<div id="cite" class="spacer-dlgrey"></div>
 
 <!-- SECTION: CITING DATALAD -->
-<div class="info-card">
-  <div class="card-img larger">
-    <img src="img/cite.svg" alt="DataLad citation">
-  </div>
+<div class="info-card reverse">
   <div class="card-text">
     <h1>Citing DataLad</h1>
     <p>
@@ -434,6 +463,9 @@
       <a class="button-cite" href="static/datalad-citation.bib" download="datalad-citation.bib"><span class="icon-quote-left"></span>&nbsp;&nbsp;BibTex</a>
       <a class="button-cite" href="static/datalad-citation.ris" download="datalad-citation.ris"><span class="icon-quote-left"></span>&nbsp;&nbsp;RIS</a>
     </p>
+  </div>
+  <div class="card-img larger">
+    <img src="img/cite.svg" alt="DataLad citation">
   </div>
 </div>
 
@@ -466,7 +498,7 @@
             <li><a class='icon-download-cloud' aria-label='Install DataLad' href="https://handbook.datalad.org/en/latest/intro/installation.html#installation-and-configuration"></a></li>
             <li><a class="icon-book" aria-label='Learn with the Handbook' href="http://handbook.datalad.org/en/latest/"></a></li>
             <li><a class="icon-users" aria-label='Join the community' href="https://matrix.to/#/%23datalad:matrix.org"></a></li>
-            <li><a class="icon-chat-empty" aria-label='Ask a question' href="https://neurostars.org/search?q=datalad%20category%3A1"></a></li>
+            <li><a class="icon-chat-empty" aria-label='Ask a question' href="https://matrix.to/#/!NaMjKIhMXhSicFdxAj:matrix.org"></a></li>
             <li><a class='icon-github' aria-label='Contribute via GitHub' href="https://github.com/datalad/datalad"></a></li>
             <li><a class='icon-mail' aria-label='Email us' href="mailto:info@datalad.org"></a></li>
             <li><a class='icon-twitter' aria-label='Follow us on Twitter' href="https://twitter.com/datalad"></a></li>
