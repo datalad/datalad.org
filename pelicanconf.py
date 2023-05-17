@@ -47,5 +47,6 @@ MENUITEMS = (
     ('install', '/#install'),
     ('use cases', '/#use-cases'),
     ('learn more', '/#resources'),
+    ('get support', '/#get-support'),
     ('cite', '/#cite'),
 )
