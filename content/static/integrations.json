@@ -261,7 +261,7 @@
    "docs": "https://www.templateflow.org/",
    "info": "",
    "logo": "templateflow.png",
-   "description": "TemplateFlow uses DataLad for organization, management, and contributions of teamplates.",
+   "description": "TemplateFlow uses DataLad for organization, management, and contributions of templates.",
    "tags": [
      "templates",
      "data management"
@@ -506,7 +506,7 @@
   "docs": "https://docs.datalad.org/projects/gooey/en/latest/",
   "info": "",
   "logo": "datalad_gooey_logo.svg",
-  "description": "This extesion provides a graphical user interface for DataLad, making key tasks more accessible and convenient",
+  "description": "This extension provides a graphical user interface for DataLad, making key tasks more accessible and convenient",
   "tags": [
     "extension",
     "data management",
