@@ -73,7 +73,7 @@ function set_active() {
     
       if (obsLeft < 50 && obsLeft > 0 && minionTop > -280) {
         lines = score.innerText
-        message.innerText = "Congrats!\nYou commited " + lines + " lines of code :-)\nPlay again?"
+        message.innerText = "Congrats!\nYou committed " + lines + " lines of code :-)\nPlay again?"
         message.style.display = "block";
         startStop();
       }
@@ -88,7 +88,7 @@ function set_active() {
 
     // if (commitLeft < 50 && commitLeft > 0 && minionTop > -280) {
     //   lines = score.innerText
-    //   message.innerText = "Congrats!\nYou commited " + lines + " lines of code :-)\nPlay again?"
+    //   message.innerText = "Congrats!\nYou committed " + lines + " lines of code :-)\nPlay again?"
     //   message.style.display = "block";
     //   startStop();
     // }
