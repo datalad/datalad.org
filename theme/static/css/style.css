@@ -419,7 +419,13 @@ svg.hero-svg {
 }
 .hero-body .button {
   border: 3px solid var(--datalad-yellow);
+  padding: 0.6em;
 }
+.hero-body .hero-buttons {
+  line-height: 3em;
+}
+
+
 .hero-star {
   margin-top: 1.5em;
 }
@@ -495,6 +501,53 @@ svg.hero-svg {
 }
 #d {
   animation-delay: 9s;
+}
+
+
+/*
+ * Distribits
+ */
+ .distribits {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.distribits-teaser {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  height: calc(60vw * 0.45);
+  background: url(../../img/distribits-teaser.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  box-shadow: inset 0 0 1em white, inset 0.5em 0.5em 1em white, inset -0.5em -0.5em 1em white;
+}
+.distribits h1 {
+  margin-bottom: 1em;
+}
+.distribits p {
+  margin: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .distribits p {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .distribits p {
+    width: 60%;
+    margin: inherit auto;
+  }
+  .distribits-teaser {
+    width: 45%;
+    height: calc(45vw * 0.45);
+  }
 }
 
 
