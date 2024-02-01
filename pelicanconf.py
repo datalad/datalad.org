@@ -49,4 +49,5 @@ MENUITEMS = (
     ('learn more', '/#resources'),
     ('get support', '/#get-support'),
     ('cite', '/#cite'),
+    ('merchandise', 'https://www.hellotux.com/datalad'),
 )
