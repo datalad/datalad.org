@@ -1,3 +1,6 @@
 datalad/datalad
-datalad/datalad-metalad
+datalad/datalad-catalog
+datalad/datalad-container
+datalad/datalad-next
+datalad/datalad-registry
 datalad-handbook/book
