@@ -272,7 +272,7 @@ nav.card ul {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 7em;
+  width: 8em;
   display: inline-flexbox;
   flex-wrap: wrap;
 }
