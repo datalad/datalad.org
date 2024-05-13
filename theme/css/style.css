@@ -1506,6 +1506,16 @@ footer li a:hover::after {
   footer .footer-head {
     justify-content: space-between;
   }
+
+  footer .footer-head .netlify-icon a {
+    padding-top: 0.2em;
+  }
+  footer .footer-head .netlify-icon img {
+    margin: 0;
+    height: 1em;
+    max-width: 100% !important;
+  }
+  
   footer img {
     max-width: 25%;
   }
