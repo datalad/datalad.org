@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://www.datalad.org/index.html</loc>
-<lastmod>2024-09-22T01:24:38-00:00</lastmod>
+<lastmod>2024-09-23T01:19:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.datalad.org/copyright.html</loc>
-<lastmod>2024-09-22T01:24:38-00:00</lastmod>
+<lastmod>2024-09-23T01:19:34-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.datalad.org/in-the-wild.html</loc>
-<lastmod>2024-09-22T01:24:38-00:00</lastmod>
+<lastmod>2024-09-23T01:19:34-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.datalad.org/index.html</loc>
-<lastmod>2024-09-22T01:24:38-00:00</lastmod>
+<lastmod>2024-09-23T01:19:34-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://www.datalad.org/test_fs_analysis.html</loc>
-<lastmod>2024-09-22T01:24:38-00:00</lastmod>
+<lastmod>2024-09-23T01:19:34-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
