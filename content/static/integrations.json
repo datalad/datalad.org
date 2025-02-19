@@ -474,7 +474,7 @@
   "name": "Dataverse",
   "website": "",
   "github": "https://github.com/datalad/datalad-dataverse",
-  "docs": "https://docs.datalad.org/projects/datalad-dataverse/en/latest",
+  "docs": "https://docs.datalad.org/projects/dataverse/en/latest",
   "info": "",
   "logo": "dataverse.svg",
   "description": "This extension integrates DataLad with the widely used open source research data repository software, Dataverse",
